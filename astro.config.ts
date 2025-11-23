@@ -5,7 +5,7 @@ import preact from '@astrojs/preact';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://meow-sci.github.io',
+  site: 'https://meow.science.fail',
   base: '/pebkac',
   integrations: [preact({ compat: true })]
 });
