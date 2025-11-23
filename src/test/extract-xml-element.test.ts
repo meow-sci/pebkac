@@ -1,14 +1,14 @@
 import { describe, expect, test } from 'vitest'
-import { DOMParser, XMLSerializer } from '@xmldom/xmldom'
+import { DOMParser } from '@xmldom/xmldom'
 import xpath from "xpath";
 import type { SystemEntry } from '../ts/data/SystemEntry';
 
-import AstronomicalsXml from "../../public/data/mods/Core/Astronomicals.xml?raw";
 import SolSystemXml from "../../public/data/mods/Core/SolSystem.xml?raw";
 import systemEntriesJson from "../../public/data/earth_system_data.json";
 import { transformSystemEntryToKsaXmlIntoElement } from '../ts/transform/transformSystemEntryToKsaXml';
 import { createGeneratorContext } from '../ts/data/GeneratorContext';
 import { isElementNode } from '../ts/xml/isXmlNodeTypeGuards';
+import { assertXmlMatchesEntry } from './util/xml-assertions';
 
 const systemEntries = systemEntriesJson as unknown as SystemEntry[];
 
@@ -17,7 +17,7 @@ const context = createGeneratorContext();
 
 describe('earth system', () => {
 
-  test('hi ', () => {
+  test('update existing jupiter', () => {
 
     const jupiterData = systemEntries.find(entry => entry.ID === "Jupiter")!;
     expect(jupiterData).toBeDefined();
@@ -33,21 +33,20 @@ describe('earth system', () => {
 
       const mangledData = { ...jupiterData, EC_ECCENTRICITY: "0.12345" } as SystemEntry;
 
-      const newElement = transformSystemEntryToKsaXmlIntoElement(context, mangledData, doc, jupiterNode);
+      transformSystemEntryToKsaXmlIntoElement(context, mangledData, doc, jupiterNode);
 
-      const serializer = new XMLSerializer();
-      const xml = serializer.serializeToString(jupiterNode);
+      assertXmlMatchesEntry(context, mangledData, jupiterNode);
 
-      console.log(`node:\n[${xml}]`);
+      expect(context.infoLogs).toContain('Removing existing element <Mass Jupiters="1"> in parent <AtmosphericBody Id="Jupiter" Parent="Sol">');
+      expect(context.infoLogs).toContain('Added element <Mass Kg="1898124625803455200000000000"> to parent <AtmosphericBody Id="Jupiter" Parent="Sol">');
 
-      context.infoLogs.forEach(log => console.error(log));
-
+      // assert existing XML elements remain
+      expect(isElementNode(xpath.select1("Atmosphere", jupiterNode))).toBeTruthy();
+      expect(isElementNode(xpath.select1("Clouds", jupiterNode))).toBeTruthy();
+      expect(isElementNode(xpath.select1("Color", jupiterNode))).toBeTruthy();
 
     }
 
-
-
-    console.log("hi");
   });
 
 });
