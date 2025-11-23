@@ -1,4 +1,6 @@
-export interface EarthSystemEntry {
+import type { CelestialType } from "./CelestialType";
+
+export interface SystemEntry {
   ID: string;
   PARENT: string;
   PARENT_IAU: string;
@@ -16,5 +18,5 @@ export interface EarthSystemEntry {
   "GM_KM3/S2": string;
   PERIOD_SEC: string;
   RETROGRADE_ROT: string;
-  MODEL_TYPE: string;
+  MODEL_TYPE: CelestialType;
 }
