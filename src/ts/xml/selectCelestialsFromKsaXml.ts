@@ -3,7 +3,7 @@ import xpath from "xpath";
 
 import type { ExtractedCelestials } from '../data/ExtractedCelestials';
 
-export function selectCelestialsFromKsaXml(xml: string): ExtractedCelestials {
+export function selectCelestialsFromKsaXml(fileName: string, xml: string): ExtractedCelestials {
   
   const parser = new DOMParser();
   const doc = parser.parseFromString(xml, "application/xml");
@@ -14,6 +14,7 @@ export function selectCelestialsFromKsaXml(xml: string): ExtractedCelestials {
   const q = (expr: string) => xpath.select(expr, root) as Element[];
 
   const result: ExtractedCelestials = {
+    fileName,
     doc,
     stellarBodies: q('.//StellarBody'),
     terrestrialBodies: q('.//TerrestrialBody'),

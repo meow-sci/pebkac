@@ -1,12 +1,13 @@
 import { describe, expect, test } from 'vitest';
+import { selectCelestialsFromKsaXml } from '../ts/xml/selectCelestialsFromKsaXml';
+
 import SolSystemXml from "../../public/data/mods/Core/SolSystem.xml?raw";
 import AstronomicalsXml from "../../public/data/mods/Core/Astronomicals.xml?raw";
-import { selectCelestialsFromKsaXml } from '../ts/xml/selectCelestialsFromKsaXml';
 
 describe('selectCelestialsFromKsaXml', () => {
 
   test('SolSystem.xml: discovers expected number of celestial types', () => {
-    const result = selectCelestialsFromKsaXml(SolSystemXml);
+    const result = selectCelestialsFromKsaXml("Core/SolSystem.xml", SolSystemXml);
 
     // SolSystem.xml contains no StellarBody elements in this file
     expect(result.stellarBodies.length).toBe(0);
@@ -30,7 +31,7 @@ describe('selectCelestialsFromKsaXml', () => {
   });
 
   test('Astronomicals.xml: discovers expected number of celestial types', () => {
-    const result = selectCelestialsFromKsaXml(AstronomicalsXml);
+    const result = selectCelestialsFromKsaXml("Core/Astronimcals.xml", AstronomicalsXml);
 
     // Astronomicals defines the stellar body Sol
     expect(result.stellarBodies.length).toBe(1);
