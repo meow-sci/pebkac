@@ -5,18 +5,15 @@ import type { SystemEntry } from '../ts/data/SystemEntry';
 
 import systemEntriesJson from "../../public/data/earth_system_data.json";
 import { calculateMassKgFromGm, transformSystemEntryToKsaXml } from '../ts/transform/transformSystemEntryToKsaXml';
-import type { GeneratorConfig } from '../ts/data/GeneratorConfig';
+import { createGeneratorContext, type GeneratorContext } from '../ts/data/GeneratorContext';
 
 const systemEntries = systemEntriesJson as unknown as SystemEntry[];
 
-const config: GeneratorConfig = {
-  gravitational_constant: 6.6743e-20 // km^3/kg/s^2
-};
-
+const context = createGeneratorContext();
 
 describe('earth system', () => {
 
-  function assertXmlMatchesEntry(config: GeneratorConfig, entry: SystemEntry) {
+  function assertXmlMatchesEntry(config: GeneratorContext, entry: SystemEntry) {
     const el = transformSystemEntryToKsaXml(config, entry);
     const serializer = new XMLSerializer();
     const xml = serializer.serializeToString(el);
@@ -70,7 +67,7 @@ describe('earth system', () => {
   // generate one test per SystemEntry
   systemEntries.forEach(entry => {
     test(`${entry.ID}`, () => {
-      assertXmlMatchesEntry(config, entry);
+      assertXmlMatchesEntry(context, entry);
     });
   });
 

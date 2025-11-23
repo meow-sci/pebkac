@@ -38,7 +38,7 @@ async function preProcessEarthSystemCsv() {
 
   await mkdir(path.dirname(outputJsonFilePath), { recursive: true });
 
-  await writeFile(outputJsonFilePath, JSON.stringify(rows), 'utf8');
+  await writeFile(outputJsonFilePath, JSON.stringify(rows, null, 2), 'utf8');
 
   console.log(`Wrote JSON data to file ${outputJsonFilePath}`);
 

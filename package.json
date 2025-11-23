@@ -10,7 +10,8 @@
     "astro": "astro",
     "pre-process-data": "tsx scripts/pre-process-data.ts",
     "test": "vitest",
-    "test-run": "vitest --run"
+    "test-run": "vitest --run",
+    "tsc": "tsc"
   },
   "dependencies": {
     "@astrojs/preact": "4.1.3",
