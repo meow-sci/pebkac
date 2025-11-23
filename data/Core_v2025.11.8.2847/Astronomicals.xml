@@ -446,7 +446,7 @@
 
     <KittenEva Id="Hunter" Parent="Earth">
         
-        <Character Id="TestKitty"/>
+        <Character Id="HunterKitten"/>
         
         <Canvas Id="Navball"/>
         <Canvas Id="Altitude"/>
@@ -525,7 +525,7 @@
                     <GroundMaterial>
                         <Diffuse Id="EarthPolesDiffuse" Path="Textures/Planets/Mars/Snow/Snow_Albedo.dds" Category="Terrain"/>
                         <Normal Id="EarthPolesNormal" Path="Textures/Planets/Mars/Snow/Snow_Normal.dds" Category="Terrain"/>
-                        <RoughMetalAo Id="EarthPolesRoughSpecAO" Path="Textures/Planets/Mars/Snow/Snow_RoughSpecAO.dds" Category="Terrain"/>
+                        <AoRoughMetal Id="EarthPolesAoRoughMetal" Path="Textures/Planets/Mars/Snow/Snow_AoRoughMetal.dds" Category="Terrain"/>
                         <Displacement Id="EarthPolesDisplacement" Path="Textures/Planets/Mars/Snow/Snow_Displacement.png" Category="Terrain"/>
                         <Height Id="Grey" Path="Textures/Planets/EmptyGrey.png" Category="Terrain"/>
 
@@ -543,7 +543,7 @@
                         <!-- Luna's cliffs work pretty well here, recoloured orange by the terrain -->
                         <Diffuse Id="EarthTundraCliffsDiffuse" Path="Textures/Planets/Earth/TundraCliffs/TundraCliffs_Albedo.dds" Category="Terrain"/>
                         <Normal Id="EarthTundraCliffsNormal" Path="Textures/Planets/Earth/TundraCliffs/TundraCliffs_Normal.dds" Category="Terrain"/>
-                        <RoughMetalAo Id="EarthTundraCliffsRoughSpecAO" Path="Textures/Planets/Earth/TundraCliffs/TundraCliffs_RoughSpecAO.dds" Category="Terrain"/>
+                        <AoRoughMetal Id="EarthTundraCliffsAoRoughMetal" Path="Textures/Planets/Earth/TundraCliffs/TundraCliffs_AoRoughMetal.dds" Category="Terrain"/>
                         <Displacement Id="EarthTundraCliffsDisplacement" Path="Textures/Planets/Earth/TundraCliffs/TundraCliffs_Displacement.png" Category="Terrain"/>
                         <Height Id="Grey" Path="Textures/Planets/EmptyGrey.png" Category="Terrain"/>
 
@@ -560,7 +560,7 @@
                     <GroundMaterial>
                         <Diffuse Id="EarthBeachDiffuse" Path="Textures/Planets/Earth/Beach/Beach_Albedo.dds" Category="Terrain"/>
                         <Normal Id="EarthBeachNormal" Path="Textures/Planets/Earth/Beach/Beach_Normal.dds" Category="Terrain"/>
-                        <RoughMetalAo Id="EarthBeachRoughSpecAO" Path="Textures/Planets/Earth/Beach/Beach_RoughSpecAO.dds" Category="Terrain"/>
+                        <AoRoughMetal Id="EarthBeachAoRoughMetal" Path="Textures/Planets/Earth/Beach/Beach_AoRoughMetal.dds" Category="Terrain"/>
                         <Displacement Id="EarthBeachDisplacement" Path="Textures/Planets/Earth/Beach/Beach_Displacement.png" Category="Terrain"/>
                         <Height Id="Grey" Path="Textures/Planets/EmptyGrey.png" Category="Terrain"/>
 
@@ -577,7 +577,7 @@
                     <SlopeMaterial>
                         <Diffuse Id="EarthSandstoneCliffsDiffuse" Path="Textures/Planets/Earth/SandstoneCliffs/SandstoneCliffs_Albedo.dds" Category="Terrain"/>
                         <Normal Id="EarthSandstoneCliffsNormal" Path="Textures/Planets/Earth/SandstoneCliffs/SandstoneCliffs_Normal.dds" Category="Terrain"/>
-                        <RoughMetalAo Id="EarthSandstoneCliffsRoughSpecAO" Path="Textures/Planets/Earth/SandstoneCliffs/SandstoneCliffs_RoughSpecAO.dds" Category="Terrain"/>
+                        <AoRoughMetal Id="EarthSandstoneCliffsAoRoughMetal" Path="Textures/Planets/Earth/SandstoneCliffs/SandstoneCliffs_AoRoughMetal.dds" Category="Terrain"/>
                         <Displacement Id="EarthSandstoneCliffsDisplacement" Path="Textures/Planets/Earth/SandstoneCliffs/SandstoneCliffs_Displacement.png" Category="Terrain"/>
                         <Height Id="Grey" Path="Textures/Planets/EmptyGrey.png" Category="Terrain"/>
 
@@ -598,7 +598,7 @@
                     <GroundMaterial>
                         <Diffuse Id="EarthGrassDiffuse" Path="Textures/Planets/Earth/Grass/Grass_Albedo.dds" Category="Terrain"/>
                         <Normal Id="EarthGrassNormal" Path="Textures/Planets/Earth/Grass/Grass_Normal.dds" Category="Terrain"/>
-                        <RoughMetalAo Id="EarthGrassRoughSpecAO" Path="Textures/Planets/Earth/Grass/Grass_RoughSpecAO.dds" Category="Terrain"/>
+                        <AoRoughMetal Id="EarthGrassAoRoughMetal" Path="Textures/Planets/Earth/Grass/Grass_AoRoughMetal.dds" Category="Terrain"/>
                         <Displacement Id="EarthGrassDisplacement" Path="Textures/Planets/Earth/Grass/Grass_Displacement.png" Category="Terrain"/>
                         <Height Id="Grey" Path="Textures/Planets/EmptyGrey.png" Category="Terrain"/>
 
@@ -615,7 +615,7 @@
                     <SlopeMaterial>
                         <Diffuse Id="EarthCliffsDiffuse" Path="Textures/Planets/Earth/Cliffs/Cliffs_Albedo.dds" Category="Terrain"/>
                         <Normal Id="EarthCliffsNormal" Path="Textures/Planets/Earth/Cliffs/Cliffs_Normal.dds" Category="Terrain"/>
-                        <RoughMetalAo Id="EarthCliffsRoughSpecAO" Path="Textures/Planets/Earth/Cliffs/Cliffs_RoughSpecAO.dds" Category="Terrain"/>
+                        <AoRoughMetal Id="EarthCliffsAoRoughMetal" Path="Textures/Planets/Earth/Cliffs/Cliffs_AoRoughMetal.dds" Category="Terrain"/>
                         <Displacement Id="EarthCliffsDisplacement" Path="Textures/Planets/Earth/Cliffs/Cliffs_Displacement.png" Category="Terrain"/>
                         <Height Id="Grey" Path="Textures/Planets/EmptyGrey.png" Category="Terrain"/>
 
@@ -678,7 +678,7 @@
                     <GroundMaterial>
                         <Diffuse Id="EarthBareDesertDiffuse" Path="Textures/Planets/Earth/BareSand/BareSand_Albedo.dds" Category="Terrain"/>
                         <Normal Id="EarthBareDesertNormal" Path="Textures/Planets/Earth/BareSand/BareSand_Normal.dds" Category="Terrain"/>
-                        <RoughMetalAo Id="EarthBareDesertRoughSpecAO" Path="Textures/Planets/Earth/BareSand/BareSand_RoughSpecAO.dds" Category="Terrain"/>
+                        <AoRoughMetal Id="EarthBareDesertAoRoughMetal" Path="Textures/Planets/Earth/BareSand/BareSand_AoRoughMetal.dds" Category="Terrain"/>
                         <Displacement Id="EarthBareDesertDisplacement" Path="Textures/Planets/Earth/BareSand/BareSand_Displacement.png" Category="Terrain"/>
                         <Height Id="Grey" Path="Textures/Planets/EmptyGrey.png" Category="Terrain"/>
 
@@ -695,7 +695,7 @@
                     <SlopeMaterial>
                         <Diffuse Id="EarthBareDesertDiffuse"/>
                         <Normal Id="EarthBareDesertNormal"/>
-                        <RoughMetalAo Id="EarthBareDesertRoughSpecAO" />
+                        <AoRoughMetal Id="EarthBareDesertAoRoughMetal" />
                         <Displacement Id="EarthBareDesertDisplacement"/>
                         <Height Id="Grey" Path="Textures/Planets/EmptyGrey.png" Category="Terrain"/>
 
@@ -1894,7 +1894,7 @@
                     <GroundMaterial>
                         <Diffuse Id="LunaGroundDiffuse" Path="Textures/Planets/Luna/Main/Luna_Albedo.dds" Category="Terrain"/>
                         <Normal Id="LunaGroundNormal" Path="Textures/Planets/Luna/Main/Luna_Normal.dds" Category="Terrain"/>
-                        <RoughMetalAo Id="LunaGroundRoughSpecAO" Path="Textures/Planets/Luna/Main/Luna_RoughSpecAO.dds" Category="Terrain"/>
+                        <AoRoughMetal Id="LunaGroundAoRoughMetal" Path="Textures/Planets/Luna/Main/Luna_AoRoughMetal.dds" Category="Terrain"/>
                         <Displacement Id="LunaGroundDisplacement" Path="Textures/Planets/Luna/Main/Luna_Displacement.png" Category="Terrain"/>
                         <Height Id="LunaTilingDetail" Path="Textures/Luna_Noise.png" Category="Terrain"/>
 
@@ -1912,7 +1912,7 @@
                     <SlopeMaterial>
                         <Diffuse Id="LunaCliffsDiffuse" Path="Textures/Planets/Luna/Cliffs/Luna_Cliffs_Albedo.dds" Category="Terrain"/>
                         <Normal Id="LunaCliffsNormal" Path="Textures/Planets/Luna/Cliffs/Luna_Cliffs_Normal.dds" Category="Terrain"/>
-                        <RoughMetalAo Id="LunaCliffsRoughSpecAO" Path="Textures/Planets/Luna/Cliffs/Luna_Cliffs_RoughSpecAO.dds" Category="Terrain"/>
+                        <AoRoughMetal Id="LunaCliffsAoRoughMetal" Path="Textures/Planets/Luna/Cliffs/Luna_Cliffs_AoRoughMetal.dds" Category="Terrain"/>
                         <Displacement Id="LunaCliffsDisplacement" Path="Textures/Planets/Luna/Cliffs/Luna_Cliffs_Displacement.png" Category="Terrain"/>
                         <Height Id="LunaTilingDetail" Path="Textures/Luna_Noise.png" Category="Terrain"/>
 
@@ -1942,7 +1942,7 @@
                     <GroundMaterial>
                         <Diffuse Id="LunaGroundDiffuse" />
                         <Normal Id="LunaGroundNormal" />
-                        <RoughMetalAo Id="LunaGroundRoughSpecAO" />
+                        <AoRoughMetal Id="LunaGroundAoRoughMetal" />
                         <Displacement Id="LunaGroundDisplacement" />
                         <Height Id="Grey" Path="Textures/Planets/EmptyGrey.png" Category="Terrain"/>
 
@@ -1956,7 +1956,7 @@
                     <SlopeMaterial>
                         <Diffuse Id="LunaCliffsDiffuse" />
                         <Normal Id="LunaCliffsNormal" />
-                        <RoughMetalAo Id="LunaCliffsRoughSpecAO" />
+                        <AoRoughMetal Id="LunaCliffsAoRoughMetal" />
                         <Displacement Id="LunaCliffsDisplacement" />
                         <Height Id="Grey" Path="Textures/Planets/EmptyGrey.png" Category="Terrain"/>
 
@@ -1979,7 +1979,7 @@
                     <GroundMaterial>
                         <Diffuse Id="LunaGroundDiffuse" />
                         <Normal Id="LunaGroundNormal"/>
-                        <RoughMetalAo Id="LunaGroundRoughSpecAO" />
+                        <AoRoughMetal Id="LunaGroundAoRoughMetal" />
                         <Displacement Id="LunaGroundDisplacement" />
                         <Height Id="Grey" Path="Textures/Planets/EmptyGrey.png" Category="Terrain"/>
 
@@ -1993,7 +1993,7 @@
                     <SlopeMaterial>
                         <Diffuse Id="LunaCliffsDiffuse" />
                         <Normal Id="LunaCliffsNormal" />
-                        <RoughMetalAo Id="LunaCliffsRoughSpecAO" />
+                        <AoRoughMetal Id="LunaCliffsAoRoughMetal" />
                         <Displacement Id="LunaCliffsDisplacement" />
                         <Height Id="Grey" Path="Textures/Planets/EmptyGrey.png" Category="Terrain"/>
 

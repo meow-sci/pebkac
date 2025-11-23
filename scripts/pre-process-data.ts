@@ -8,7 +8,7 @@ const outputCsvFilePath = path.resolve(import.meta.dirname, '../public/data/eart
 const outputJsonFilePath = path.resolve(import.meta.dirname, '../public/data/earth_system_data.json');
 
 // Core mode files
-const coreModSourceDir = path.resolve(import.meta.dirname, '../data/Core');
+const coreModSourceDir = path.resolve(import.meta.dirname, '../data/Core_v2025.11.8.2847');
 const coreModDestDir = path.resolve(import.meta.dirname, '../public/data/mods/Core');
 
 

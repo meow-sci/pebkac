@@ -499,7 +499,7 @@
                     <GroundMaterial>
                         <Diffuse Id="MarsRegolithDiffuse" Path="Textures/Planets/Mars/Regolith/Regolith_Albedo.dds" Category="Terrain"/>
                         <Normal Id="MarsRegolithNormal" Path="Textures/Planets/Mars/Regolith/Regolith_Normal.dds" Category="Terrain"/>
-                        <RoughMetalAo Id="MarsRegolithRoughSpecAO" Path="Textures/Planets/Mars/Regolith/Regolith_RoughSpecAO.dds" Category="Terrain"/>
+                        <AoRoughMetal Id="MarsRegolithAoRoughMetal" Path="Textures/Planets/Mars/Regolith/Regolith_AoRoughMetal.dds" Category="Terrain"/>
                         <Displacement Id="MarsRegolithDisplacement" Path="Textures/Planets/Mars/Regolith/Regolith_Displacement.png" Category="Terrain"/>
                         <Height Id="MarsM" Path="Textures/Mars_Noise.png" Category="Terrain"/>
 
@@ -517,7 +517,7 @@
                         <!-- Luna's cliffs work pretty well here, recoloured orange by the terrain -->
                         <Diffuse Id="LunaCliffsDiffuse"/>
                         <Normal Id="LunaCliffsNormal" />
-                        <RoughMetalAo Id="LunaCliffsRoughSpecAO" />
+                        <AoRoughMetal Id="LunaCliffsAoRoughMetal" />
                         <Displacement Id="LunaCliffsDisplacement"/>
                         <Height Id="Grey" Path="Textures/Planets/EmptyGrey.png" Category="Terrain"/>
 
@@ -541,7 +541,7 @@
                     <GroundMaterial>
                         <Diffuse Id="MarsDebrisDiffuse" Path="Textures/Planets/Mars/Debris/Debris_Albedo.dds" Category="Terrain"/>
                         <Normal Id="MarsDebrisNormal" Path="Textures/Planets/Mars/Debris/Debris_Normal.dds" Category="Terrain"/>
-                        <RoughMetalAo Id="MarsDebrisRoughSpecAO" Path="Textures/Planets/Mars/Debris/Debris_RoughSpecAO.dds" Category="Terrain"/>
+                        <AoRoughMetal Id="MarsDebrisAoRoughMetal" Path="Textures/Planets/Mars/Debris/Debris_AoRoughMetal.dds" Category="Terrain"/>
                         <Displacement Id="MarsDebrisDisplacement" Path="Textures/Planets/Mars/Debris/Debris_Displacement.png" Category="Terrain"/>
                         <Height Id="Grey" Path="Textures/Planets/EmptyGrey.png" Category="Terrain"/>
 
@@ -555,7 +555,7 @@
                     <SlopeMaterial>
                         <Diffuse Id="MarsCliffsDiffuse" Path="Textures/Planets/Mars/Cliffs/Cliffs_Albedo.dds" Category="Terrain"/>
                         <Normal Id="MarsCliffsNormal" Path="Textures/Planets/Mars/Cliffs/Cliffs_Normal.dds" Category="Terrain"/>
-                        <RoughMetalAo Id="MarsCliffsRoughSpecAO" Path="Textures/Planets/Mars/Cliffs/Cliffs_RoughSpecAO.dds" Category="Terrain"/>
+                        <AoRoughMetal Id="MarsCliffsAoRoughMetal" Path="Textures/Planets/Mars/Cliffs/Cliffs_AoRoughMetal.dds" Category="Terrain"/>
                         <Displacement Id="MarsCliffsDisplacement" Path="Textures/Planets/Mars/Cliffs/Cliffs_Displacement.png" Category="Terrain"/>
                         <Height Id="Grey" Path="Textures/Planets/EmptyGrey.png" Category="Terrain"/>
 
@@ -594,7 +594,7 @@
                     <GroundMaterial>
                         <Diffuse Id="MarsRegolithDiffuse" />
                         <Normal Id="MarsRegolithNormal"/>
-                        <RoughMetalAo Id="MarsRegolithRoughSpecAO" />
+                        <AoRoughMetal Id="MarsRegolithAoRoughMetal" />
                         <Displacement Id="MarsRegolithDisplacement" />
                         <Height Id="Grey" Path="Textures/Planets/EmptyGrey.png" Category="Terrain"/>
 
@@ -608,7 +608,7 @@
                     <SlopeMaterial>
                         <Diffuse Id="MarsCliffsDiffuse"/>
                         <Normal Id="MarsCliffsNormal"/>
-                        <RoughMetalAo Id="MarsCliffsRoughSpecAO" />
+                        <AoRoughMetal Id="MarsCliffsAoRoughMetal" />
                         <Displacement Id="MarsCliffsDisplacement" />
                         <Height Id="Grey" Path="Textures/Planets/EmptyGrey.png" Category="Terrain"/>
 
@@ -628,7 +628,7 @@
                     <GroundMaterial>
                         <Diffuse Id="MarsSnowDiffuse" Path="Textures/Planets/Mars/Snow/Snow_Albedo.dds" Category="Terrain"/>
                         <Normal Id="MarsSnowNormal" Path="Textures/Planets/Mars/Snow/Snow_Normal.dds" Category="Terrain"/>
-                        <RoughMetalAo Id="MarsSnowRoughSpecAO" Path="Textures/Planets/Mars/Snow/Snow_RoughSpecAO.dds" Category="Terrain"/>
+                        <AoRoughMetal Id="MarsSnowAoRoughMetal" Path="Textures/Planets/Mars/Snow/Snow_AoRoughMetal.dds" Category="Terrain"/>
                         <Displacement Id="MarsSnowDisplacement" Path="Textures/Planets/Mars/Snow/Snow_Displacement.png" Category="Terrain"/>
                         <Height Id="Grey" Path="Textures/Planets/EmptyGrey.png" Category="Terrain"/>
 
@@ -643,7 +643,7 @@
                     <SlopeMaterial>
                         <Diffuse Id="LunaCliffsDiffuse" />
                         <Normal Id="LunaCliffsNormal" />
-                        <RoughMetalAo Id="LunaCliffsRoughSpecAO" />
+                        <AoRoughMetal Id="LunaCliffsAoRoughMetal" />
                         <Displacement Id="LunaCliffsDisplacement" />
                         <Height Id="Grey" Path="Textures/Planets/EmptyGrey.png" Category="Terrain"/>
 
@@ -1106,7 +1106,7 @@
                     <GroundMaterial>
                         <Diffuse Id="PhobosGroundDiffuse" Path="Textures/Planets/Phobos/Main/Phobos_Albedo.dds" Category="Terrain"/>
                         <Normal Id="PhobosGroundNormal" Path="Textures/Planets/Phobos/Main/Phobos_Normal.dds" Category="Terrain"/>
-                        <RoughMetalAo Id="PhobosGroundRoughSpecAO" Path="Textures/Planets/Phobos/Main/Phobos_RoughSpecAO.dds" Category="Terrain"/>
+                        <AoRoughMetal Id="PhobosGroundAoRoughMetal" Path="Textures/Planets/Phobos/Main/Phobos_AoRoughMetal.dds" Category="Terrain"/>
                         <Displacement Id="PhobosGroundDisplacement" Path="Textures/Planets/Phobos/Main/Phobos_Displacement.png" Category="Terrain"/>
                         <Height Id="PhobosTilingDetail" Path="Textures/Luna_Noise.png" Category="Terrain"/>
 
@@ -1124,7 +1124,7 @@
                     <SlopeMaterial>
                         <Diffuse Id="LunaCliffsDiffuse" Path="Textures/Planets/Luna/Cliffs/Luna_Cliffs_Albedo.dds" Category="Terrain"/>
                         <Normal Id="LunaCliffsNormal" Path="Textures/Planets/Luna/Cliffs/Luna_Cliffs_Normal.dds" Category="Terrain"/>
-                        <RoughMetalAo Id="LunaCliffsRoughSpecAO" Path="Textures/Planets/Luna/Cliffs/Luna_Cliffs_RoughSpecAO.dds" Category="Terrain"/>
+                        <AoRoughMetal Id="LunaCliffsAoRoughMetal" Path="Textures/Planets/Luna/Cliffs/Luna_Cliffs_AoRoughMetal.dds" Category="Terrain"/>
                         <Displacement Id="LunaCliffsDisplacement" Path="Textures/Planets/Luna/Cliffs/Luna_Cliffs_Displacement.png" Category="Terrain"/>
                         <Height Id="LunaTilingDetail" Path="Textures/Luna_Noise.png" Category="Terrain"/>
 

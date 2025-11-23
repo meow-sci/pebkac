@@ -3,11 +3,11 @@ import { DOMParser, XMLSerializer } from '@xmldom/xmldom'
 import xpath from "xpath";
 import type { SystemEntry } from '../ts/data/SystemEntry';
 
-import AstronomicalsXml from "../../data/Core/Astronomicals.xml?raw";
-import SolSystemXml from "../../data/Core/SolSystem.xml?raw";
+import AstronomicalsXml from "../../public/data/mods/Core/Astronomicals.xml?raw";
+import SolSystemXml from "../../public/data/mods/Core/SolSystem.xml?raw";
 import systemEntriesJson from "../../public/data/earth_system_data.json";
 import { transformSystemEntryToKsaXmlIntoElement } from '../ts/transform/transformSystemEntryToKsaXml';
-import { createGeneratorContext, type GeneratorContext } from '../ts/data/GeneratorContext';
+import { createGeneratorContext } from '../ts/data/GeneratorContext';
 import { isElementNode } from '../ts/xml/isXmlNodeTypeGuards';
 
 const systemEntries = systemEntriesJson as unknown as SystemEntry[];
@@ -38,7 +38,10 @@ describe('earth system', () => {
       const serializer = new XMLSerializer();
       const xml = serializer.serializeToString(jupiterNode);
 
-      console.log("node", xml);
+      console.log(`node:\n[${xml}]`);
+
+      context.infoLogs.forEach(log => console.error(log));
+
 
     }
 

@@ -8,6 +8,12 @@ import { isElementNode } from '../xml/isXmlNodeTypeGuards';
 import { isNotEmptyString } from '../util/isNotEmptyString';
 import { isTrueString } from '../util/isTrueString';
 
+/**
+ * Given a SystemEntry, transform it into a KSA Celestial XML Element.
+ * @param context The current GeneratorContext
+ * @param source The SystemEntry data
+ * @returns A XML Element representing the celestial body in KSA format
+ */
 export function transformSystemEntryToKsaXml(context: GeneratorContext, source: SystemEntry): Element {
   const doc = createDocument();
   const el = createCelestialRootElement(doc, source.MODEL_TYPE, source.ID, source.PARENT);
@@ -15,6 +21,18 @@ export function transformSystemEntryToKsaXml(context: GeneratorContext, source: 
   return el;
 }
 
+/**
+ * Given a SystemEntry, transform it into a KSA Celestial XML Element.
+ * 
+ * This variant populates an existing Element rather than creating a new one.  If there are data collisions,
+ * the SystemEntry data will replace existing Element data.
+ * 
+ * @param context The current GeneratorContext
+ * @param source The SystemEntry data
+ * @param doc The XML Document to create elements in
+ * @param el The XML Element to populate with child elements
+ * @returns A XML Element representing the celestial body in KSA format
+ */
 export function transformSystemEntryToKsaXmlIntoElement(context: GeneratorContext, source: SystemEntry, doc: Document, el: Element): void {
 
   addElementWithAttribute(context, doc, el, true, "SemiMajorAxis", "Km", source.A_SEMI_MAJOR_AXIS_KM);
@@ -41,6 +59,9 @@ export function transformSystemEntryToKsaXmlIntoElement(context: GeneratorContex
   if (isTrueString(source.RETROGRADE_ROT)) {
     addElementWithAttribute(context, doc, el, true, "Retrograde", "Value", "true");
   }
+
+  // add a newline after last child for formatting
+  el.appendChild(doc.createTextNode("\n"));
 }
 
 export function calculateMassKgFromGm(gmKm3PerS2: string, context: GeneratorContext): string {
@@ -54,21 +75,39 @@ export function addElementWithAttribute(context: GeneratorContext, doc: Document
   if (isNotEmptyString(value)) {
 
     if (replaceExisting) {
-      var exiting = xpath.select1(`/${name}`, doc);
-      if (isElementNode(exiting)) {
-        context.info(`Replacing existing element <${name}> in parent <${parent.nodeName}>`);
-        parent.removeChild(exiting);
+      var existing = xpath.select1(`${name}`, parent);
+      if (isElementNode(existing)) {
+        context.info(`Removing existing element ${prettyNameForElement(existing)} in parent ${prettyNameForElement(parent)}`);
+        parent.removeChild(existing);
       }
     }
-
-    context.info(`Adding element <${name}> in parent <${parent.nodeName}>`);
 
     parent.appendChild(doc.createTextNode("\n    "));
 
     const child = doc.createElement(name);
     child.setAttribute(attrName, value);
     parent.appendChild(child);
+
+    context.info(`Added element ${prettyNameForElement(child)} to parent ${prettyNameForElement(parent)}`);
+
   }
+}
+
+export function prettyNameForElement(el: Element): string {
+
+  let attributeString = "";
+
+  if (el.hasAttributes()) {
+
+    for (let i = 0; i < el.attributes.length; i++) {
+      const attr = el.attributes.item(i);
+      if (attr) {
+        attributeString += ` ${attr.name}="${attr.value}"`;
+      }
+    }
+  }
+
+  return `<${el.nodeName}${attributeString}>`;
 }
 
 export function createDocument(): Document {
@@ -87,6 +126,3 @@ export function createCelestialRootElement(doc: Document, type: CelestialType, i
 
   return el;
 }
-
-
-
