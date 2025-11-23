@@ -4,12 +4,15 @@ import path from "node:path";
 
 // earth system csv
 const inputCsvFilePath = path.resolve(import.meta.dirname, '../data/earth_system_2025-11-22.csv');
-const outputCsvFilePath = path.resolve(import.meta.dirname, '../public/data/earth_system_data.csv');
-const outputJsonFilePath = path.resolve(import.meta.dirname, '../public/data/earth_system_data.json');
+const outputCsvFilePath1 = path.resolve(import.meta.dirname, '../public/data/earth_system_data.csv');
+const outputJsonFilePath1 = path.resolve(import.meta.dirname, '../public/data/earth_system_data.json');
+const outputCsvFilePath2 = path.resolve(import.meta.dirname, '../src/data/earth_system_data.csv');
+const outputJsonFilePath2 = path.resolve(import.meta.dirname, '../src/data/earth_system_data.json');
 
 // Core mode files
 const coreModSourceDir = path.resolve(import.meta.dirname, '../data/Core_v2025.11.8.2847');
-const coreModDestDir = path.resolve(import.meta.dirname, '../public/data/mods/Core');
+const coreModDestDir1 = path.resolve(import.meta.dirname, '../public/data/mods/Core');
+const coreModDestDir2 = path.resolve(import.meta.dirname, '../src/data/mods/Core');
 
 
 function parseCsv(csv: string): Promise<object[]> {
@@ -36,24 +39,32 @@ async function preProcessEarthSystemCsv() {
 
   console.log(`Parsed ${rows.length} rows from CSV file ${inputCsvFilePath}`);
 
-  await mkdir(path.dirname(outputJsonFilePath), { recursive: true });
+  await mkdir(path.dirname(outputJsonFilePath1), { recursive: true });
+  await mkdir(path.dirname(outputJsonFilePath2), { recursive: true });
 
-  await writeFile(outputJsonFilePath, JSON.stringify(rows, null, 2), 'utf8');
+  await writeFile(outputJsonFilePath1, JSON.stringify(rows, null, 2), 'utf8');
+  await writeFile(outputJsonFilePath2, JSON.stringify(rows, null, 2), 'utf8');
 
-  console.log(`Wrote JSON data to file ${outputJsonFilePath}`);
+  console.log(`Wrote JSON data to file ${outputJsonFilePath1}`);
+  console.log(`Wrote JSON data to file ${outputJsonFilePath2}`);
 
-  await copyFile(inputCsvFilePath, outputCsvFilePath);
+  await copyFile(inputCsvFilePath, outputCsvFilePath1);
+  await copyFile(inputCsvFilePath, outputCsvFilePath2);
 
-  console.log(`Copied CSV data to file ${outputCsvFilePath}`);
+  console.log(`Copied CSV data to file ${outputCsvFilePath1}`);
+  console.log(`Copied CSV data to file ${outputCsvFilePath2}`);
 
 }
 
 async function copyCoreModFiles() {
 
-  await mkdir(coreModDestDir, { recursive: true });
-  await cp(coreModSourceDir, coreModDestDir, { recursive: true });
+  await mkdir(coreModDestDir1, { recursive: true });
+  await mkdir(coreModDestDir2, { recursive: true });
+  await cp(coreModSourceDir, coreModDestDir1, { recursive: true });
+  await cp(coreModSourceDir, coreModDestDir2, { recursive: true });
 
-  console.log(`Copied Core mod files from ${coreModSourceDir} to ${coreModDestDir}`);
+  console.log(`Copied Core mod files from ${coreModSourceDir} to ${coreModDestDir1}`);
+  console.log(`Copied Core mod files from ${coreModSourceDir} to ${coreModDestDir2}`);
 
 }
 

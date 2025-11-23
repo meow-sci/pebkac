@@ -1,0 +1,32 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { BuilderPage } from "../components/BuilderPage";
+---
+
+<BaseLayout>
+  <style slot="head">
+
+    body {
+      height: 100vh;
+
+      background-color: #222222;
+
+      color: #00FF00;
+
+      display: grid;
+      grid-template-rows: min-content min-content 1fr;
+
+      row-gap: 0.5rem;
+
+    }
+
+    #grid-wrapper {
+      height: 100%;
+    }
+
+
+
+  </style>
+
+  <BuilderPage client:only="react" />
+</BaseLayout>
