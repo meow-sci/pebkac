@@ -1,4 +1,4 @@
-import { useCallback } from "react";
+import { useCallback, useRef, useState } from "react";
 import { useStore } from "@nanostores/react";
 import xpath from "xpath";
 // import { XMLSerializer } from '@xmldom/xmldom'
@@ -65,6 +65,8 @@ function createSystemDocument(elements: Element[]): Document {
 export function BuilderPage() {
 
   const selection = useStore($builderSelectedRows);
+  const dialogRef = useRef<HTMLDialogElement>(null);
+  const [xmlOutput, setXmlOutput] = useState<string>("");
 
   const generateXML = useCallback(() => {
 
@@ -101,9 +103,18 @@ export function BuilderPage() {
     const xml = serializer.serializeToString(systemDoc);
     console.log(xml);
 
-
+    setXmlOutput(xml);
+    dialogRef.current?.showModal();
 
   }, [selection]);
+
+  const closeDialog = useCallback(() => {
+    dialogRef.current?.close();
+  }, []);
+
+  const copyToClipboard = useCallback(() => {
+    navigator.clipboard.writeText(xmlOutput);
+  }, [xmlOutput]);
 
   return (
     <>
@@ -116,6 +127,33 @@ export function BuilderPage() {
       <div id="grid">
         <BuilderGrid data={systemData} />
       </div>
+      <dialog 
+        ref={dialogRef}
+        style={{
+          width: '75vw',
+          height: '75vh',
+          padding: 0,
+          border: '1px solid #ccc',
+          borderRadius: '4px'
+        }}
+      >
+        <div style={{ display: 'flex', flexDirection: 'column', height: '100%' }}>
+          <div style={{ padding: '10px', borderBottom: '1px solid #ccc', display: 'flex', gap: '10px' }}>
+            <button onClick={closeDialog}>Close</button>
+            <button onClick={copyToClipboard}>Copy</button>
+          </div>
+          <pre style={{ 
+            flex: 1, 
+            margin: 0, 
+            padding: '10px', 
+            overflow: 'auto',
+            whiteSpace: 'pre-wrap',
+            wordWrap: 'break-word'
+          }}>
+            {xmlOutput}
+          </pre>
+        </div>
+      </dialog>
     </>
 
   )
