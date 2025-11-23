@@ -21,9 +21,7 @@ export function transformSystemEntryToKsaXml(config: GeneratorConfig, source: Sy
 
   // mass is (GM_KM3/S2) / (gravitational constant) = celestial mass in Kg
   if (isNotEmptyString(source["GM_KM3/S2"])) {
-    const val = Number(source["GM_KM3/S2"]);
-    const mass = val / config.gravitational_constant;
-    addElementWithAttribute(doc, el, "Mass", "Kg", mass.toLocaleString('en-US', { useGrouping: false, maximumFractionDigits: 2 }));
+    addElementWithAttribute(doc, el, "Mass", "Kg", calculateMassKgFromGm(source["GM_KM3/S2"], config));
   }
 
   // TidallyLocked if PERIOD_SEC is 0
@@ -38,6 +36,13 @@ export function transformSystemEntryToKsaXml(config: GeneratorConfig, source: Sy
 
   return el;
 
+}
+
+export function calculateMassKgFromGm(gmKm3PerS2: string, config: GeneratorConfig): string {
+  const val = Number(gmKm3PerS2);
+  const mass = val / config.gravitational_constant;
+  const str = mass.toLocaleString('en-US', { useGrouping: false, maximumFractionDigits: 2 })
+  return str;
 }
 
 export function addElementWithAttribute(doc: Document, parent: Element, name: string, attrName: string, value: string | null | undefined) {
