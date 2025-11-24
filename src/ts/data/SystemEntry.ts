@@ -19,4 +19,5 @@ export interface SystemEntry {
   PERIOD_SEC: string;
   RETROGRADE_ROT: string;
   MODEL_TYPE: CelestialType;
+  GROUP: string;
 }
