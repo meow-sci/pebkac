@@ -184,11 +184,13 @@ export function BuilderPage() {
 
   const copyToClipboard = useCallback(() => {
     navigator.clipboard.writeText(xmlOutput);
+    alert("Copied to clipboard!");
   }, [xmlOutput]);
 
   return (
     <>
       <div id="actions">
+        <a href="/pebkac/">Home</a>
         <button onClick={addVisibleToSelection}>Add Currently visible to Selection</button>
         <button onClick={generateXML} disabled={disableGoXml}>Go XML!</button>
         <input id="quickfilter" placeholder="filter..." type="text" onChange={e => setQuickfilter(e.currentTarget.value)} />
@@ -211,8 +213,8 @@ export function BuilderPage() {
       >
         <div style={{ display: 'flex', flexDirection: 'column', height: '100%' }}>
           <div style={{ padding: '10px', borderBottom: '1px solid #ccc', display: 'flex', gap: '10px' }}>
-            <button onClick={closeDialog}>Close</button>
             <button onClick={copyToClipboard}>Copy</button>
+            <button onClick={closeDialog}>Close</button>
           </div>
           <pre style={{
             flex: 1,

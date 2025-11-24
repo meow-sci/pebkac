@@ -12,12 +12,16 @@ import "@fontsource/megrim";
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <title>PEBKAC</title>
-    <style>
+    <style is:global>
       body {
         font-family: "Inter Variable", system-ui;
         font-size: 16px;
         margin: 0;
         padding: 0;
+      }
+      a, a:visited {
+        color: #00ff00;
+        text-decoration: underline;
       }
     </style>
   </head>
