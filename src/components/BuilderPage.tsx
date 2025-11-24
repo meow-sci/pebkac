@@ -43,8 +43,17 @@ function findExistingCelestialByID(corpus: ExtractedCelestials, id: string): Ele
 
 export interface GenerateSystemData {
   systemId: string;
+
   addSolReference: boolean;
+
   addRocketReference: boolean;
+  addGemini7Reference: boolean;
+  addGemini6aReference: boolean;
+
+  addHunterReference: boolean;
+  addBanjoReference: boolean;
+  addPolarisReference: boolean;
+
   celestials: Element[];
 }
 
@@ -68,23 +77,42 @@ function createSystemDocument(data: GenerateSystemData): Document {
   loadFromLibraryElement.setAttribute("Value", "GeneratedSystem");
   systemElement.appendChild(loadFromLibraryElement);
 
-  if (data.addSolReference) {
-    systemElement.appendChild(doc.createTextNode("\n    "));
-
+  function addLoadFromLibrary(id: string, parent?: string) {
     const loadFromLibraryElement = doc.createElement("LoadFromLibrary");
-    loadFromLibraryElement.setAttribute("Id", "Sol");
+    loadFromLibraryElement.setAttribute("Id", id);
+    if (parent) {
+      loadFromLibraryElement.setAttribute("Parent", parent);
+    }
     systemElement.appendChild(loadFromLibraryElement);
     systemElement.appendChild(doc.createTextNode("\n"));
   }
 
-  if (data.addRocketReference) {
-    systemElement.appendChild(doc.createTextNode("\n    "));
+  if (data.addSolReference) {
+    addLoadFromLibrary("Sol");
+  }
 
-    const loadFromLibraryElement = doc.createElement("LoadFromLibrary");
-    loadFromLibraryElement.setAttribute("Id", "Rocket");
-    loadFromLibraryElement.setAttribute("Parent", "Earth");
-    systemElement.appendChild(loadFromLibraryElement);
-    systemElement.appendChild(doc.createTextNode("\n"));
+  if (data.addRocketReference) {
+    addLoadFromLibrary("Rocket", "Earth");
+  }
+
+  if (data.addGemini7Reference) {
+    addLoadFromLibrary("Gemini7", "Earth");
+  }
+
+  if (data.addGemini6aReference) {
+    addLoadFromLibrary("Gemini6a", "Earth");
+  }
+
+  if (data.addHunterReference) {
+    addLoadFromLibrary("Hunter", "Earth");
+  }
+
+  if (data.addBanjoReference) {
+    addLoadFromLibrary("Banjo", "Earth");
+  }
+
+  if (data.addPolarisReference) {
+    addLoadFromLibrary("Polaris", "Earth");
   }
 
   doc.appendChild(systemElement);
@@ -169,6 +197,11 @@ export function BuilderPage() {
     const systemXml = createSystemXml({
       addRocketReference: true,
       addSolReference: true,
+      addGemini6aReference: true,
+      addGemini7Reference: true,
+      addHunterReference: true,
+      addBanjoReference: true,
+      addPolarisReference: true,
       systemId: "GeneratedSystem",
       celestials: generatedElements,
     });
