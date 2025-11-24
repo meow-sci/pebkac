@@ -1,4 +1,4 @@
-import { isAttributeNode, isElementNode, isTextNode } from "./isXmlNodeTypeGuards";
+import { isElementNode, isTextNode } from "./isXmlNodeTypeGuards";
 
 const NUM_SPACES = 2;
 

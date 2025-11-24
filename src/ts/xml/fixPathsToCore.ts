@@ -1,4 +1,4 @@
-import { isTextNode, isElementNode, isAttributeNode } from "./isXmlNodeTypeGuards";
+import { isElementNode } from "./isXmlNodeTypeGuards";
 
 /**
  * Recurisively walk the Document, looking for any "Path" attribute and mutate the existing
