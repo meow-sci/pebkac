@@ -11,14 +11,28 @@ import { $builderSelectedRows } from '../state/builder-state';
 
 export interface BuilderGridProps {
   data: SystemEntry[];
+  quickfilterText: string;
 }
 
 interface RowData extends SystemEntry {
 
 }
 
-const COLUMNS: ColDef[] = [
-  { field: "ID", headerName: "Id" },
+const COL_DEFAULTS: Partial<ColDef<SystemEntry>> = {
+  sortable: true,
+  filter: true,
+  resizable: true,
+}
+
+const COLUMNS: ColDef<SystemEntry>[] = [
+  { ...COL_DEFAULTS, field: "ID", headerName: "ID" },
+  { ...COL_DEFAULTS, field: "PARENT", headerName: "Parent" },
+  { ...COL_DEFAULTS, field: "EC_ECCENTRICITY", headerName: "Eccentricity" },
+  { ...COL_DEFAULTS, field: "MEAN_RADIUS_KM", headerName: "Mean Radius (Km)" },
+  { ...COL_DEFAULTS, field: "A_SEMI_MAJOR_AXIS_KM", headerName: "Semi Major Axis (Km)" },
+  { ...COL_DEFAULTS, field: "PR_SIDEREAL_ORBIT_PERIOD_SEC", headerName: "Sidereal (deg)" },
+  { ...COL_DEFAULTS, field: "AXIAL_TILT_DEG", headerName: "Axial Tilt (deg)" },
+  { ...COL_DEFAULTS, field: "RETROGRADE_ROT", headerName: "Retrograde" },
 ];
 
 export function BuilderGrid(props: BuilderGridProps) {
@@ -32,6 +46,7 @@ export function BuilderGrid(props: BuilderGridProps) {
 
   return (
     <AgGridReact
+      quickFilterText={props.quickfilterText}
       rowSelection={{ mode: "multiRow" }}
       cellSelection={false}
       theme={myTheme}
