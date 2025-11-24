@@ -4,7 +4,7 @@ import { BuilderPage } from "../components/BuilderPage";
 ---
 
 <BaseLayout>
-  <style slot="head">
+  <style slot="head" is:global>
 
     body {
       height: 100vh;
@@ -20,9 +20,22 @@ import { BuilderPage } from "../components/BuilderPage";
 
     }
 
-    #grid-wrapper {
-      height: 100%;
+    #actions {
+      padding: 0.5rem;
+      display: grid;
+      grid-auto-flow: column;
+      column-gap: 0.5rem;
+      justify-content: start;
+
+      button {
+        font-size: 1rem;
+        border-radius: 0;
+        border: none;
+
+
+      }
     }
+
 
 
 

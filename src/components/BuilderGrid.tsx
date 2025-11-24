@@ -1,4 +1,4 @@
-import { AllCommunityModule, ModuleRegistry, type ColDef, type SelectionChangedEvent } from 'ag-grid-community';
+import { AllCommunityModule, ModuleRegistry, type ColDef, type GridReadyEvent, type SelectionChangedEvent } from 'ag-grid-community';
 import { AgGridReact } from 'ag-grid-react'; // React Data Grid Component
 import { useMemo } from 'react';
 
@@ -7,7 +7,7 @@ ModuleRegistry.registerModules([AllCommunityModule]);
 
 import { themeQuartz } from 'ag-grid-community';
 import type { SystemEntry } from '../ts/data/SystemEntry';
-import { $builderSelectedRows } from '../state/builder-state';
+import { $builderSelectedRows, $gridApi } from '../state/builder-state';
 
 export interface BuilderGridProps {
   data: SystemEntry[];
@@ -44,6 +44,10 @@ export function BuilderGrid(props: BuilderGridProps) {
     $builderSelectedRows.set(selection);
   }
 
+  const onGridReady = (event: GridReadyEvent<any, any>) => {
+    $gridApi.set(event.api);
+  };
+
   return (
     <AgGridReact
       quickFilterText={props.quickfilterText}
@@ -54,6 +58,7 @@ export function BuilderGrid(props: BuilderGridProps) {
       columnDefs={COLUMNS}
       suppressCellFocus
       onSelectionChanged={onSelectionChanged}
+      onGridReady={onGridReady}
     />
 
   )

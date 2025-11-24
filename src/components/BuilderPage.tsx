@@ -5,7 +5,7 @@ import { useStore } from "@nanostores/react";
 import { BuilderGrid } from "./BuilderGrid";
 
 import type { SystemEntry } from "../ts/data/SystemEntry";
-import { $builderSelectedRows } from "../state/builder-state";
+import { $builderSelectedRows, $gridApi } from "../state/builder-state";
 import { transformSystemEntryToKsaXml, transformSystemEntryToKsaXmlIntoElement } from "../ts/transform/transformSystemEntryToKsaXml";
 import { createGeneratorContext } from "../ts/data/GeneratorContext";
 import { selectCelestialsFromKsaXml } from "../ts/xml/selectCelestialsFromKsaXml";
@@ -93,6 +93,25 @@ export function BuilderPage() {
   const selection = useStore($builderSelectedRows);
   const dialogRef = useRef<HTMLDialogElement>(null);
   const [xmlOutput, setXmlOutput] = useState<string>("");
+  const [quickfilter, setQuickfilter] = useState<string>("");
+
+  const disableGoXml = selection.length === 0;
+
+  const addVisibleToSelection = useCallback(() => {
+
+    const gridApi = $gridApi.get();
+
+    if (!gridApi) {
+      return;
+    }
+
+    gridApi.getRenderedNodes().forEach(node => {
+      node.setSelected(true);
+    });
+
+
+
+  }, []);
 
   const generateXML = useCallback(() => {
 
@@ -142,13 +161,15 @@ export function BuilderPage() {
   return (
     <>
       <div id="actions">
-        <button onClick={generateXML}>Go XML!</button>
+        <button onClick={addVisibleToSelection}>Add Currently visible to Selection</button>
+        <button onClick={generateXML} disabled={disableGoXml}>Go XML!</button>
+        <input id="quickfilter" placeholder="filter..." type="text" onChange={e => setQuickfilter(e.currentTarget.value)} />
       </div>
       <div id="info">
         Num selected: {selection.length}
       </div>
       <div id="grid">
-        <BuilderGrid data={systemData} />
+        <BuilderGrid data={systemData} quickfilterText={quickfilter} />
       </div>
       <dialog
         ref={dialogRef}
