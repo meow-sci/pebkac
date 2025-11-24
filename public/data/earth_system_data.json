@@ -8641,7 +8641,7 @@
   },
   {
     "ID": "Ceres",
-    "PARENT": "Sun",
+    "PARENT": "Sol",
     "PARENT_IAU": "10",
     "ID_IAU": "1",
     "EPOCH": "2451545",
@@ -8661,7 +8661,7 @@
   },
   {
     "ID": "Pallas",
-    "PARENT": "Sun",
+    "PARENT": "Sol",
     "PARENT_IAU": "10",
     "ID_IAU": "2",
     "EPOCH": "2451545",
@@ -8681,7 +8681,7 @@
   },
   {
     "ID": "Juno",
-    "PARENT": "Sun",
+    "PARENT": "Sol",
     "PARENT_IAU": "10",
     "ID_IAU": "3",
     "EPOCH": "2451545",
@@ -8701,7 +8701,7 @@
   },
   {
     "ID": "Vesta",
-    "PARENT": "Sun",
+    "PARENT": "Sol",
     "PARENT_IAU": "10",
     "ID_IAU": "4",
     "EPOCH": "2451545",
@@ -8721,7 +8721,7 @@
   },
   {
     "ID": "Psyche",
-    "PARENT": "Sun",
+    "PARENT": "Sol",
     "PARENT_IAU": "10",
     "ID_IAU": "16",
     "EPOCH": "2451545",
@@ -8741,7 +8741,7 @@
   },
   {
     "ID": "Lutetia",
-    "PARENT": "Sun",
+    "PARENT": "Sol",
     "PARENT_IAU": "10",
     "ID_IAU": "21",
     "EPOCH": "2451545",
@@ -8761,7 +8761,7 @@
   },
   {
     "ID": "Ida",
-    "PARENT": "Sun",
+    "PARENT": "Sol",
     "PARENT_IAU": "10",
     "ID_IAU": "243",
     "EPOCH": "2451545",
@@ -8781,7 +8781,7 @@
   },
   {
     "ID": "Mathilde",
-    "PARENT": "Sun",
+    "PARENT": "Sol",
     "PARENT_IAU": "10",
     "ID_IAU": "253",
     "EPOCH": "2451545",
@@ -8801,7 +8801,7 @@
   },
   {
     "ID": "Eros",
-    "PARENT": "Sun",
+    "PARENT": "Sol",
     "PARENT_IAU": "10",
     "ID_IAU": "433",
     "EPOCH": "2451545",
@@ -8821,7 +8821,7 @@
   },
   {
     "ID": "Gaspra",
-    "PARENT": "Sun",
+    "PARENT": "Sol",
     "PARENT_IAU": "10",
     "ID_IAU": "951",
     "EPOCH": "2451545",
@@ -8841,7 +8841,7 @@
   },
   {
     "ID": "Steins",
-    "PARENT": "Sun",
+    "PARENT": "Sol",
     "PARENT_IAU": "10",
     "ID_IAU": "2867",
     "EPOCH": "2451545",
@@ -8861,7 +8861,7 @@
   },
   {
     "ID": "Toutatis",
-    "PARENT": "Sun",
+    "PARENT": "Sol",
     "PARENT_IAU": "10",
     "ID_IAU": "4179",
     "EPOCH": "2451545",
@@ -8881,7 +8881,7 @@
   },
   {
     "ID": "Annefrank",
-    "PARENT": "Sun",
+    "PARENT": "Sol",
     "PARENT_IAU": "10",
     "ID_IAU": "5535",
     "EPOCH": "2451545",
@@ -8901,7 +8901,7 @@
   },
   {
     "ID": "Braille",
-    "PARENT": "Sun",
+    "PARENT": "Sol",
     "PARENT_IAU": "10",
     "ID_IAU": "9969",
     "EPOCH": "2451545",
@@ -8921,7 +8921,7 @@
   },
   {
     "ID": "Itokawa",
-    "PARENT": "Sun",
+    "PARENT": "Sol",
     "PARENT_IAU": "10",
     "ID_IAU": "25143",
     "EPOCH": "2451545",
@@ -8941,7 +8941,7 @@
   },
   {
     "ID": "Quaoar",
-    "PARENT": "Sun",
+    "PARENT": "Sol",
     "PARENT_IAU": "10",
     "ID_IAU": "50000",
     "EPOCH": "2451545",
@@ -8961,7 +8961,7 @@
   },
   {
     "ID": "Didymos",
-    "PARENT": "Sun",
+    "PARENT": "Sol",
     "PARENT_IAU": "10",
     "ID_IAU": "65803",
     "EPOCH": "2451545",
@@ -8981,7 +8981,7 @@
   },
   {
     "ID": "Sedna",
-    "PARENT": "Sun",
+    "PARENT": "Sol",
     "PARENT_IAU": "10",
     "ID_IAU": "90377",
     "EPOCH": "2451545",
@@ -9001,7 +9001,7 @@
   },
   {
     "ID": "Orcus",
-    "PARENT": "Sun",
+    "PARENT": "Sol",
     "PARENT_IAU": "10",
     "ID_IAU": "90482",
     "EPOCH": "2457388.5",
@@ -9021,7 +9021,7 @@
   },
   {
     "ID": "Bennu",
-    "PARENT": "Sun",
+    "PARENT": "Sol",
     "PARENT_IAU": "10",
     "ID_IAU": "101955",
     "EPOCH": "2451545",
@@ -9041,7 +9041,7 @@
   },
   {
     "ID": "Salacia",
-    "PARENT": "Sun",
+    "PARENT": "Sol",
     "PARENT_IAU": "10",
     "ID_IAU": "120347",
     "EPOCH": "2451545",
@@ -9061,7 +9061,7 @@
   },
   {
     "ID": "Haumea",
-    "PARENT": "Sun",
+    "PARENT": "Sol",
     "PARENT_IAU": "10",
     "ID_IAU": "136108",
     "EPOCH": "2457388.5",
@@ -9081,7 +9081,7 @@
   },
   {
     "ID": "Eris",
-    "PARENT": "Sun",
+    "PARENT": "Sol",
     "PARENT_IAU": "10",
     "ID_IAU": "136199",
     "EPOCH": "2451545",
@@ -9101,7 +9101,7 @@
   },
   {
     "ID": "Ryugu",
-    "PARENT": "Sun",
+    "PARENT": "Sol",
     "PARENT_IAU": "10",
     "ID_IAU": "162173",
     "EPOCH": "2451545",
@@ -9121,7 +9121,7 @@
   },
   {
     "ID": "Kagara",
-    "PARENT": "Sun",
+    "PARENT": "Sol",
     "PARENT_IAU": "10",
     "ID_IAU": "469705",
     "EPOCH": "2451545",
@@ -9141,7 +9141,7 @@
   },
   {
     "ID": "Arrokoth",
-    "PARENT": "Sun",
+    "PARENT": "Sol",
     "PARENT_IAU": "10",
     "ID_IAU": "486958",
     "EPOCH": "2451545",
@@ -9161,7 +9161,7 @@
   },
   {
     "ID": "Oumuamua",
-    "PARENT": "Sun",
+    "PARENT": "Sol",
     "PARENT_IAU": "10",
     "ID_IAU": "1I/2017 U1",
     "EPOCH": "2451545",
@@ -9341,7 +9341,7 @@
   },
   {
     "ID": "Halley",
-    "PARENT": "Sun",
+    "PARENT": "Sol",
     "PARENT_IAU": "10",
     "ID_IAU": "1P",
     "EPOCH": "2451545",
@@ -9361,7 +9361,7 @@
   },
   {
     "ID": "Borrelly",
-    "PARENT": "Sun",
+    "PARENT": "Sol",
     "PARENT_IAU": "10",
     "ID_IAU": "19P",
     "EPOCH": "2451545",
@@ -9381,7 +9381,7 @@
   },
   {
     "ID": "Tempel 1",
-    "PARENT": "Sun",
+    "PARENT": "Sol",
     "PARENT_IAU": "10",
     "ID_IAU": "9P",
     "EPOCH": "2451545",
@@ -9401,7 +9401,7 @@
   },
   {
     "ID": "Wild 2",
-    "PARENT": "Sun",
+    "PARENT": "Sol",
     "PARENT_IAU": "10",
     "ID_IAU": "81P",
     "EPOCH": "2451545",
@@ -9421,7 +9421,7 @@
   },
   {
     "ID": "Hartley 2",
-    "PARENT": "Sun",
+    "PARENT": "Sol",
     "PARENT_IAU": "10",
     "ID_IAU": "103P",
     "EPOCH": "2451545",
@@ -9441,7 +9441,7 @@
   },
   {
     "ID": "Churyumov-Gerasimnko",
-    "PARENT": "Sun",
+    "PARENT": "Sol",
     "PARENT_IAU": "10",
     "ID_IAU": "67P",
     "EPOCH": "2451545",

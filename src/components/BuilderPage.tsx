@@ -1,7 +1,5 @@
 import { useCallback, useRef, useState } from "react";
 import { useStore } from "@nanostores/react";
-import xpath from "xpath";
-// import { XMLSerializer } from '@xmldom/xmldom'
 
 
 import { BuilderGrid } from "./BuilderGrid";
@@ -17,6 +15,9 @@ import ksaAstronomicalsXml from "../data/mods/Core/Astronomicals.xml?raw";
 import ksaSolSystemXml from "../data/mods/Core/SolSystem.xml?raw";
 import type { ExtractedCelestials } from "../ts/data/ExtractedCelestials";
 import { isElementNode } from "../ts/xml/isXmlNodeTypeGuards";
+import { serializeDocument } from "../ts/xml/serializeDocument";
+import { collapseXmlDeadspace } from "../ts/xml/collapseXmlDeadspace";
+import { prettifyDocument } from "../ts/xml/prettifyDocument";
 
 const systemData = systemDataJson as SystemEntry[];
 
@@ -39,12 +40,36 @@ function findExistingCelestialByID(corpus: ExtractedCelestials, id: string): Ele
   return null;
 }
 
-function createSystemDocument(elements: Element[]): Document {
+export interface GenerateSystemData {
+  systemId: string;
+  addSolReference: boolean;
+  celestials: Element[];
+}
+
+function createSystemXml(data: GenerateSystemData): string {
+  const doc = createSystemDocument(data);
+  collapseXmlDeadspace(doc);
+  prettifyDocument(doc);
+  return serializeDocument(doc);
+}
+
+function createSystemDocument(data: GenerateSystemData): Document {
 
   // create an empty xml document
   const doc = new Document();
 
   const systemElement = doc.createElement("System");
+  systemElement.setAttribute("Id", data.systemId);
+
+  if (data.addSolReference) {
+    systemElement.appendChild(doc.createTextNode("\n    "));
+
+    const loadFromLibraryElement = doc.createElement("LoadFromLibrary");
+    loadFromLibraryElement.setAttribute("Id", "Sol");
+    systemElement.appendChild(loadFromLibraryElement);
+    systemElement.appendChild(doc.createTextNode("\n"));
+  }
+
   doc.appendChild(systemElement);
   systemElement.appendChild(doc.createTextNode("\n"));
 
@@ -52,7 +77,8 @@ function createSystemDocument(elements: Element[]): Document {
     throw new Error("Failed to create System document");
   }
 
-  for (const el of elements) {
+  for (const el of data.celestials) {
+    systemElement.appendChild(doc.createTextNode("\n"));
     doc.importNode(el, true);
     systemElement.appendChild(el);
   }
@@ -98,12 +124,9 @@ export function BuilderPage() {
     }
 
 
-    const systemDoc = createSystemDocument(generatedElements);
-    const serializer = new XMLSerializer();
-    const xml = serializer.serializeToString(systemDoc);
-    console.log(xml);
+    const systemXml = createSystemXml({ addSolReference: true, systemId: "GeneratedSystem", celestials: generatedElements });
 
-    setXmlOutput(xml);
+    setXmlOutput(systemXml);
     dialogRef.current?.showModal();
 
   }, [selection]);
@@ -127,7 +150,7 @@ export function BuilderPage() {
       <div id="grid">
         <BuilderGrid data={systemData} />
       </div>
-      <dialog 
+      <dialog
         ref={dialogRef}
         style={{
           width: '75vw',
@@ -142,10 +165,10 @@ export function BuilderPage() {
             <button onClick={closeDialog}>Close</button>
             <button onClick={copyToClipboard}>Copy</button>
           </div>
-          <pre style={{ 
-            flex: 1, 
-            margin: 0, 
-            padding: '10px', 
+          <pre style={{
+            flex: 1,
+            margin: 0,
+            padding: '10px',
             overflow: 'auto',
             whiteSpace: 'pre-wrap',
             wordWrap: 'break-word'
