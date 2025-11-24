@@ -2,6 +2,8 @@ import { parse } from '@fast-csv/parse';
 import { readFile, writeFile, copyFile, cp, mkdir } from "node:fs/promises";
 import path from "node:path";
 
+const KSA_VERSION = "v2025.11.5.2897";
+
 // earth system csv
 const inputCsvFilePath = path.resolve(import.meta.dirname, '../data/earth_system_2025-11-22.csv');
 const outputCsvFilePath1 = path.resolve(import.meta.dirname, '../public/data/earth_system_data.csv');
@@ -10,7 +12,7 @@ const outputCsvFilePath2 = path.resolve(import.meta.dirname, '../src/data/earth_
 const outputJsonFilePath2 = path.resolve(import.meta.dirname, '../src/data/earth_system_data.json');
 
 // Core mode files
-const coreModSourceDir = path.resolve(import.meta.dirname, '../data/Core_v2025.11.8.2847');
+const coreModSourceDir = path.resolve(import.meta.dirname, `../data/Core_${KSA_VERSION}`);
 const coreModDestDir1 = path.resolve(import.meta.dirname, '../public/data/mods/Core');
 const coreModDestDir2 = path.resolve(import.meta.dirname, '../src/data/mods/Core');
 

@@ -36,5 +36,6 @@
     
     <LoadFromLibrary Id="Rocket" Parent="Earth" />
     <LoadFromLibrary Id="Hunter" Parent="Earth" />
-
+    <LoadFromLibrary Id="Banjo" Parent="Earth" />
+    <LoadFromLibrary Id="Polaris" Parent="Earth" />
 </System>

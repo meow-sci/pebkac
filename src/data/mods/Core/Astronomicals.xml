@@ -20,9 +20,9 @@
         <Canvas Id="RendezvousControl"/>
         <WindSound SoundId="AtmosphericMovement"/>
 
-        <RootPart Id="SetA_Capsule_Medium">
+        <RootPart Id="Core_Command_A_Prefab_MediumCapsule_VariantA">
 
-            <Part Id="SetA_ServiceModule_Medium">
+            <Part Id="Core_ServiceModule_A_Prefab_MediumServiceModuleA">
                 <Transform>
                     <Position X="-2.1748"/>
                 </Transform>
@@ -52,13 +52,6 @@
                     <Transform>
                         <Position X="-1.4197" Z="1.3013"/>
                         <Rotation Y="3.24631"/>
-                    </Transform>
-                </Part>
-
-                <Part Id="FuelTank_HalfA">
-                    <Transform>
-                        <Position X="-2.8665"/>
-                        <Rotation Y="3.14"/>
                     </Transform>
                 </Part>
 
@@ -136,7 +129,7 @@
                         </Transform>
                     </Part>
 
-                    <Part Id="SetA_EngineA">
+                    <Part Id="Core_Propulsion_A_Prefab_EngineA1">
                         <Transform>
                             <Position X="-7.5389"/>
                         </Transform>
@@ -146,7 +139,7 @@
 
             </Part>
 
-            <Part Id="MonoTank_HalfA">
+            <Part Id="MonoTank_HalfB">
                 <Transform>
                     <Position X="1.2825"/>
                 </Transform>
@@ -253,9 +246,9 @@
         <Canvas Id="Telemetry"/>
         <WindSound SoundId="AtmosphericMovement"/>
 
-        <RootPart Id="SetA_Capsule_Medium">
+        <RootPart Id="Core_Command_A_Prefab_MediumCapsule_VariantA">
 
-            <Part Id="SetA_ServiceModule_Medium">
+            <Part Id="Core_ServiceModule_A_Prefab_MediumServiceModuleA">
                 <Transform>
                     <Position X="-2.1748"/>
                 </Transform>
@@ -285,13 +278,6 @@
                     <Transform>
                         <Position X="-1.4197" Z="1.3013"/>
                         <Rotation Y="3.24631"/>
-                    </Transform>
-                </Part>
-
-                <Part Id="MonoTank_HalfA">
-                    <Transform>
-                        <Position X="-2.8665"/>
-                        <Rotation Y="3.14"/>
                     </Transform>
                 </Part>
 
@@ -369,7 +355,7 @@
                         </Transform>
                     </Part>
 
-                    <Part Id="SetA_EngineA">
+                    <Part Id="Core_Propulsion_A_Prefab_EngineA1">
                         <Transform>
                             <Position X="-7.5389"/>
                         </Transform>
@@ -379,7 +365,7 @@
 
             </Part>
 
-            <Part Id="MonoTank_HalfA">
+            <Part Id="MonoTank_HalfB">
                 <Transform>
                     <Position X="1.2825"/>
                 </Transform>
@@ -461,6 +447,68 @@
         </RootPart>
 
         <SemiMajorAxis Km="6713" />
+        <Inclination Degrees="28.87" />
+        <Eccentricity Value="0.0077" />
+        <LongitudeOfAscendingNode Degrees="60.48" />
+        <ArgumentOfPeriapsis Degrees="30.003" />
+        <MeanRadius M="1.5" />
+        <MassSpecificPMI X="1.13" Y="2.83" Z="2.83" />
+        <Mass Kg="50" />
+        <PropellantMass Kg="20" />
+        <Body2Cce X="-1.8158" Y="-0.0083" Z="-1.2297" />
+        <BodyRates X="0" Y="-0.0011657209075534262" Z="0" />
+        <Color R="0.37" G="0.85" B="0" />
+        <SoundEvent Action="Rcs" SoundId="DefaultRcsThruster"/>
+    </KittenEva>
+
+    <KittenEva Id="Banjo" Parent="Earth">
+
+        <Character Id="BanjoKitten"/>
+
+        <Canvas Id="Navball"/>
+        <Canvas Id="Altitude"/>
+        <Canvas Id="GameTime"/>
+        <Canvas Id="PitchYawRoll"/>
+        <Canvas Id="AutopilotSettings"/>
+        <Canvas Id="RendezvousControl"/>
+        <Canvas Id="Telemetry"/>
+        <WindSound SoundId="AtmosphericMovement"/>
+
+        <RootPart Id="KittenBackPackPart">
+        </RootPart>
+
+        <SemiMajorAxis Km="6712" />
+        <Inclination Degrees="28.87" />
+        <Eccentricity Value="0.0077" />
+        <LongitudeOfAscendingNode Degrees="60.48" />
+        <ArgumentOfPeriapsis Degrees="30.003" />
+        <MeanRadius M="1.5" />
+        <MassSpecificPMI X="1.13" Y="2.83" Z="2.83" />
+        <Mass Kg="50" />
+        <PropellantMass Kg="20" />
+        <Body2Cce X="-1.8158" Y="-0.0083" Z="-1.2297" />
+        <BodyRates X="0" Y="-0.0011657209075534262" Z="0" />
+        <Color R="0.37" G="0.85" B="0" />
+        <SoundEvent Action="Rcs" SoundId="DefaultRcsThruster"/>
+    </KittenEva>
+
+    <KittenEva Id="Polaris" Parent="Earth">
+
+        <Character Id="PolarisKitten"/>
+
+        <Canvas Id="Navball"/>
+        <Canvas Id="Altitude"/>
+        <Canvas Id="GameTime"/>
+        <Canvas Id="PitchYawRoll"/>
+        <Canvas Id="AutopilotSettings"/>
+        <Canvas Id="RendezvousControl"/>
+        <Canvas Id="Telemetry"/>
+        <WindSound SoundId="AtmosphericMovement"/>
+
+        <RootPart Id="KittenBackPackPart">
+        </RootPart>
+
+        <SemiMajorAxis Km="6711" />
         <Inclination Degrees="28.87" />
         <Eccentricity Value="0.0077" />
         <LongitudeOfAscendingNode Degrees="60.48" />
