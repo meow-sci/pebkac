@@ -105,11 +105,9 @@ export function BuilderPage() {
       return;
     }
 
-    gridApi.getRenderedNodes().forEach(node => {
+    gridApi.forEachNodeAfterFilter(node => {
       node.setSelected(true);
     });
-
-
 
   }, []);
 
