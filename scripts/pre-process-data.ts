@@ -5,7 +5,7 @@ import path from "node:path";
 const KSA_VERSION = "v2025.11.5.2897";
 
 // earth system csv
-const inputCsvFilePath = path.resolve(import.meta.dirname, '../data/earth_system_2025-11-22.csv');
+const inputCsvFilePath = path.resolve(import.meta.dirname, '../data/earth_system.csv');
 const outputCsvFilePath1 = path.resolve(import.meta.dirname, '../public/data/earth_system_data.csv');
 const outputJsonFilePath1 = path.resolve(import.meta.dirname, '../public/data/earth_system_data.json');
 const outputCsvFilePath2 = path.resolve(import.meta.dirname, '../src/data/earth_system_data.csv');
