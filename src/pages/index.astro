@@ -1,11 +1,8 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-
-
 ---
 
 <BaseLayout>
-
   <style slot="head">
     body {
       padding: 1rem;
@@ -17,21 +14,65 @@ import BaseLayout from "../layouts/BaseLayout.astro";
       margin: 0;
       padding: 0;
     }
-    h6 
-    {
+    h6 {
       font-family: "Oxanium Variable", system-ui;
       font-size: 0.875rem;
       font-weight: 300;
       margin: 0;
       padding: 0;
     }
-  </style>
-  
-  <h1>PEBKAC</h1>
-  <h6>Pick Everything Builder KSA Astronomical Center</h6>
+    #main {
+      display: grid;
+      grid-auto-flow: row;
+      align-items: center;
+      justify-items: center;
+    }
+    #brought-to-you-by {
+      margin-top: 4rem;
+      display: grid;
+      grid-auto-flow: row;
+      align-items: center;
+      justify-items: center;
+      row-gap: 0.25rem;
+    }
 
-  <p>
-    <a href="/pebkac/builder/">Pick a celestial, any celestial!</a>
-  </p>
-  
+    #byline {
+      margin-bottom: 0.5rem;
+      font-size: 0.875rem;
+      font-weight: 300;
+    }
+
+    #and {
+      font-size: 1.5rem;
+      font-weight: 200;
+    }
+
+    #briarthrain {
+      font-family: "Asimovian", system-ui;
+      font-size: 2rem;
+      font-weight: 700;
+    }
+    #tomservo {
+      font-family: "Megrim", system-ui;
+      font-size: 2rem;
+      font-weight: 200;
+    }
+  </style>
+
+  <div id="main">
+    <h1>PEBKAC</h1>
+    <h6>Pick Everything Builder KSA Astronomical Center</h6>
+    <h6><i>the backronym is a WIP</i></h6>
+
+    <p>
+      <a href="/pebkac/builder/">Pick a celestial, any celestial!</a>
+    </p>
+  </div>
+
+  <div id="brought-to-you-by">
+    <div id="byline">brought to you by</div>
+    <div id="briarthrain">Briar Thrain</div>
+    <div id="and">&amp;</div>
+    <div id="tomservo">tomservo</div>
+  </div>
 </BaseLayout>

@@ -17,6 +17,12 @@ importers:
       '@fontsource-variable/oxanium':
         specifier: 5.2.8
         version: 5.2.8
+      '@fontsource/asimovian':
+        specifier: 5.2.2
+        version: 5.2.2
+      '@fontsource/megrim':
+        specifier: 5.2.8
+        version: 5.2.8
       '@fontsource/science-gothic':
         specifier: 5.2.1
         version: 5.2.1
@@ -404,6 +410,12 @@ packages:
 
   '@fontsource-variable/oxanium@5.2.8':
     resolution: {integrity: sha512-W3HWxRLXVB6yox3dgm1DIGOp98pz8KglwiM6/2BsMopvZrg98mXI9citFWz2pUX0FOOLwf8fmHxX+KrIn+6BoA==}
+
+  '@fontsource/asimovian@5.2.2':
+    resolution: {integrity: sha512-i9XimbgI4imHSdK45qGtwkiSxoe/JZdLzrBraNQ9MPS6rxzzHthXzM3a64hsw5brt1SHQO1xmgu2OTffkTug5w==}
+
+  '@fontsource/megrim@5.2.8':
+    resolution: {integrity: sha512-j1cIAEMRDlLdIBAMrhdN1exGtNkAlaFlgF0XIalMi0ZQYcWwsBi8T1MHtChOgQu9DUOtu7fdYaho0x6dMbT4hQ==}
 
   '@fontsource/science-gothic@5.2.1':
     resolution: {integrity: sha512-mkhQ4jkQFC04+4f/wo5qofP0+L1QX9d4N4FpbhoDhqTFTevHe56uppkUzNxIYTJdIGgS4LZ/DA9Ji2vGAUA1VQ==}
@@ -2703,6 +2715,10 @@ snapshots:
   '@fontsource-variable/inter@5.2.8': {}
 
   '@fontsource-variable/oxanium@5.2.8': {}
+
+  '@fontsource/asimovian@5.2.2': {}
+
+  '@fontsource/megrim@5.2.8': {}
 
   '@fontsource/science-gothic@5.2.1': {}
 
