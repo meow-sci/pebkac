@@ -18,6 +18,7 @@ import { isElementNode } from "../ts/xml/isXmlNodeTypeGuards";
 import { serializeDocument } from "../ts/xml/serializeDocument";
 import { collapseXmlDeadspace } from "../ts/xml/collapseXmlDeadspace";
 import { prettifyDocument } from "../ts/xml/prettifyDocument";
+import { fixPathsToCore } from "../ts/xml/fixPathsToCore";
 
 const systemData = systemDataJson as SystemEntry[];
 
@@ -43,11 +44,13 @@ function findExistingCelestialByID(corpus: ExtractedCelestials, id: string): Ele
 export interface GenerateSystemData {
   systemId: string;
   addSolReference: boolean;
+  addRocketReference: boolean;
   celestials: Element[];
 }
 
 function createSystemXml(data: GenerateSystemData): string {
   const doc = createSystemDocument(data);
+  fixPathsToCore(doc);
   collapseXmlDeadspace(doc);
   prettifyDocument(doc);
   return serializeDocument(doc);
@@ -61,11 +64,25 @@ function createSystemDocument(data: GenerateSystemData): Document {
   const systemElement = doc.createElement("System");
   systemElement.setAttribute("Id", data.systemId);
 
+  const loadFromLibraryElement = doc.createElement("DisplayName");
+  loadFromLibraryElement.setAttribute("Value", "GeneratedSystem");
+  systemElement.appendChild(loadFromLibraryElement);
+
   if (data.addSolReference) {
     systemElement.appendChild(doc.createTextNode("\n    "));
 
     const loadFromLibraryElement = doc.createElement("LoadFromLibrary");
     loadFromLibraryElement.setAttribute("Id", "Sol");
+    systemElement.appendChild(loadFromLibraryElement);
+    systemElement.appendChild(doc.createTextNode("\n"));
+  }
+
+  if (data.addRocketReference) {
+    systemElement.appendChild(doc.createTextNode("\n    "));
+
+    const loadFromLibraryElement = doc.createElement("LoadFromLibrary");
+    loadFromLibraryElement.setAttribute("Id", "Rocket");
+    loadFromLibraryElement.setAttribute("Parent", "Earth");
     systemElement.appendChild(loadFromLibraryElement);
     systemElement.appendChild(doc.createTextNode("\n"));
   }
@@ -123,7 +140,12 @@ export function BuilderPage() {
 
     const generatedElements: Element[] = [];
 
-    // const elementsForSelection = selection.map(o => transformSystemEntryToKsaXml(context, o));
+    // always ensure Earth is included
+    if (!selectedIDs.includes("Earth")) {
+      // const earth = findExistingCelestialByIDFromAll("Earth");
+      selectedIDs.push("Earth");
+      selection.push(systemData.find(s => s.ID === "Earth")!);
+    }
 
     for (let i = 0; i < selectedIDs.length; i++) {
       let id = selectedIDs[i];
@@ -131,17 +153,25 @@ export function BuilderPage() {
 
       const existing = findExistingCelestialByIDFromAll(id);
 
-      if (isElementNode(existing)) {
-        transformSystemEntryToKsaXmlIntoElement(context, data, existing.ownerDocument, existing);
-        generatedElements.push(existing);
-      } else {
-        const el = transformSystemEntryToKsaXml(context, data);
-        generatedElements.push(el);
+      try {
+        if (isElementNode(existing)) {
+          transformSystemEntryToKsaXmlIntoElement(context, data, existing.ownerDocument, existing);
+          generatedElements.push(existing);
+        } else {
+          const el = transformSystemEntryToKsaXml(context, data);
+          generatedElements.push(el);
+        }
+      } catch (e) {
+        console.error(e);
       }
     }
 
-
-    const systemXml = createSystemXml({ addSolReference: true, systemId: "GeneratedSystem", celestials: generatedElements });
+    const systemXml = createSystemXml({
+      addRocketReference: true,
+      addSolReference: true,
+      systemId: "GeneratedSystem",
+      celestials: generatedElements,
+    });
 
     setXmlOutput(systemXml);
     dialogRef.current?.showModal();
