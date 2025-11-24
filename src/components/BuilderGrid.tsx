@@ -27,12 +27,12 @@ const COL_DEFAULTS: Partial<ColDef<SystemEntry>> = {
 const COLUMNS: ColDef<SystemEntry>[] = [
   { ...COL_DEFAULTS, field: "ID", headerName: "ID" },
   { ...COL_DEFAULTS, field: "PARENT", headerName: "Parent" },
-  { ...COL_DEFAULTS, field: "EC_ECCENTRICITY", headerName: "Eccentricity" },
+  { ...COL_DEFAULTS, field: "GM_KM3/S2", headerName: "GM (km3/m2)" },
   { ...COL_DEFAULTS, field: "MEAN_RADIUS_KM", headerName: "Mean Radius (Km)" },
-  { ...COL_DEFAULTS, field: "A_SEMI_MAJOR_AXIS_KM", headerName: "Semi Major Axis (Km)" },
-  { ...COL_DEFAULTS, field: "PR_SIDEREAL_ORBIT_PERIOD_SEC", headerName: "Sidereal (deg)" },
-  { ...COL_DEFAULTS, field: "AXIAL_TILT_DEG", headerName: "Axial Tilt (deg)" },
-  { ...COL_DEFAULTS, field: "RETROGRADE_ROT", headerName: "Retrograde" },
+  { ...COL_DEFAULTS, field: "A_SEMI_MAJOR_AXIS_KM", headerName: "SemiMajor Axis (Km)" },
+  { ...COL_DEFAULTS, field: "EC_ECCENTRICITY", headerName: "Eccentricity" },
+  { ...COL_DEFAULTS, field: "PERIOD_SEC", headerName: "Sidereal Rotation (S)" },
+  { ...COL_DEFAULTS, field: "GROUP", headerName: "Orbital Group" },
 ];
 
 export function BuilderGrid(props: BuilderGridProps) {
