@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<System Id="SolLite">
+    <DisplayName Value="Earth and Moon" />
+
+    <!-- generated and cached using the 'textures summarize' in game and used for VRAM estimates -->
+    <VesselTextures Size="184 MB">
+        <Texture Width="4096" Height="4096" Count="12" Size="181 MB" />
+        <Texture Width="512" Height="512" Count="3" Size="3 MB" />
+    </VesselTextures>
+    <TerrainTextures Size="2 GB">
+        <Texture Width="16384" Height="8192" Count="4" Size="0.8 GB" />
+        <Texture Width="10800" Height="5400" Count="1" Size="37 MB" />
+        <Texture Width="8192" Height="4096" Count="3" Size="277 MB" />
+        <Texture Width="4096" Height="4096" Count="18" Size="1 GB" />
+        <Texture Width="4096" Height="2048" Count="2" Size="64 MB" />
+        <Texture Width="2048" Height="2048" Count="1" Size="16 MB" />
+        <Texture Width="2048" Height="1024" Count="1" Size="8 MB" />
+        <Texture Width="8" Height="8" Count="2" Size="512 B" />
+    </TerrainTextures>
+    <UnscaledTextures Size="8 MB">
+        <Texture Width="128" Height="8192" Count="1" Size="4 MB" />
+        <Texture Width="1024" Height="1024" Count="1" Size="4 MB" />
+        <Texture Width="64" Height="64" Count="1" Size="16 KB" />
+        <Texture Width="8" Height="8" Count="3" Size="768 B" />
+        <Texture Width="1" Height="1" Count="2" Size="8 B" />
+    </UnscaledTextures>
+    
+    <LoadFromLibrary Id="Sol"/>
+
+    <LoadFromLibrary Id="Earth" Parent="Sol"/>
+    
+    <LoadFromLibrary Id="Luna" Parent="Earth"/>
+    
+    <LoadFromLibrary Id="Gemini7" Parent="Earth" />
+    <LoadFromLibrary Id="Gemini6a" Parent="Earth" />
+    
+    <LoadFromLibrary Id="Rocket" Parent="Earth" />
+    <LoadFromLibrary Id="Hunter" Parent="Earth" />
+    <LoadFromLibrary Id="Banjo" Parent="Earth" />
+    <LoadFromLibrary Id="Polaris" Parent="Earth" />
+</System>
