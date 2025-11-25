@@ -33,6 +33,7 @@ const COLUMNS: ColDef<SystemEntry>[] = [
   { ...COL_DEFAULTS, field: "EC_ECCENTRICITY", headerName: "Eccentricity" },
   { ...COL_DEFAULTS, field: "PERIOD_SEC", headerName: "Sidereal Rotation (S)" },
   { ...COL_DEFAULTS, field: "GROUP", headerName: "Orbital Group" },
+  { ...COL_DEFAULTS, field: "BODY_TYPE", headerName: "Body Type" },
 ];
 
 export function BuilderGrid(props: BuilderGridProps) {

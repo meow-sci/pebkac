@@ -18,7 +18,8 @@
     "PERIOD_SEC": "5067014",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Planet"
+    "GROUP": "Planet",
+    "BODY_TYPE": "PlanetaryBody"
   },
   {
     "ID": "Venus",
@@ -39,7 +40,8 @@
     "PERIOD_SEC": "20996755",
     "RETROGRADE_ROT": "TRUE",
     "MODEL_TYPE": "AtmosphericBody",
-    "GROUP": "Planet"
+    "GROUP": "Planet",
+    "BODY_TYPE": "AtmosphericBody"
   },
   {
     "ID": "Earth",
@@ -60,7 +62,8 @@
     "PERIOD_SEC": "86162",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Planet"
+    "GROUP": "Planet",
+    "BODY_TYPE": "PlanetaryBody"
   },
   {
     "ID": "Mars",
@@ -81,7 +84,8 @@
     "PERIOD_SEC": "88639",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "AtmosphericBody",
-    "GROUP": "Planet"
+    "GROUP": "Planet",
+    "BODY_TYPE": "AtmosphericBody"
   },
   {
     "ID": "Jupiter",
@@ -102,7 +106,8 @@
     "PERIOD_SEC": "35730",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "AtmosphericBody",
-    "GROUP": "Planet"
+    "GROUP": "Planet",
+    "BODY_TYPE": "AtmosphericBody"
   },
   {
     "ID": "Saturn",
@@ -123,7 +128,8 @@
     "PERIOD_SEC": "38358",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "AtmosphericBody",
-    "GROUP": "Planet"
+    "GROUP": "Planet",
+    "BODY_TYPE": "AtmosphericBody"
   },
   {
     "ID": "Uranus",
@@ -144,7 +150,8 @@
     "PERIOD_SEC": "62064",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "AtmosphericBody",
-    "GROUP": "Planet"
+    "GROUP": "Planet",
+    "BODY_TYPE": "AtmosphericBody"
   },
   {
     "ID": "Neptune",
@@ -165,7 +172,8 @@
     "PERIOD_SEC": "57996",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "AtmosphericBody",
-    "GROUP": "Planet"
+    "GROUP": "Planet",
+    "BODY_TYPE": "AtmosphericBody"
   },
   {
     "ID": "Pluto",
@@ -186,7 +194,8 @@
     "PERIOD_SEC": "551844",
     "RETROGRADE_ROT": "TRUE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Planet"
+    "GROUP": "Planet",
+    "BODY_TYPE": "PlanetaryBody"
   },
   {
     "ID": "Luna",
@@ -207,7 +216,8 @@
     "PERIOD_SEC": "0",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Planet"
+    "GROUP": "Planet",
+    "BODY_TYPE": "PlanetaryBody"
   },
   {
     "ID": "Phobos",
@@ -228,7 +238,8 @@
     "PERIOD_SEC": "27561.6",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Planet"
+    "GROUP": "Planet",
+    "BODY_TYPE": "PlanetaryBody"
   },
   {
     "ID": "Deimos",
@@ -249,7 +260,8 @@
     "PERIOD_SEC": "109123.2",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Planet"
+    "GROUP": "Planet",
+    "BODY_TYPE": "PlanetaryBody"
   },
   {
     "ID": "Io",
@@ -270,7 +282,8 @@
     "PERIOD_SEC": "0",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Galilean"
+    "GROUP": "Galilean",
+    "BODY_TYPE": "PlanetaryBody"
   },
   {
     "ID": "Europa",
@@ -291,7 +304,8 @@
     "PERIOD_SEC": "0",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Galilean"
+    "GROUP": "Galilean",
+    "BODY_TYPE": "PlanetaryBody"
   },
   {
     "ID": "Ganymede",
@@ -312,7 +326,8 @@
     "PERIOD_SEC": "0",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Galilean"
+    "GROUP": "Galilean",
+    "BODY_TYPE": "PlanetaryBody"
   },
   {
     "ID": "Callisto",
@@ -333,7 +348,8 @@
     "PERIOD_SEC": "0",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Galilean"
+    "GROUP": "Galilean",
+    "BODY_TYPE": "PlanetaryBody"
   },
   {
     "ID": "Amalthea",
@@ -354,7 +370,8 @@
     "PERIOD_SEC": "0",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Inner"
+    "GROUP": "Inner",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "Thebe",
@@ -375,7 +392,8 @@
     "PERIOD_SEC": "0",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Inner"
+    "GROUP": "Inner",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "Adrastea",
@@ -396,7 +414,8 @@
     "PERIOD_SEC": "0",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Inner"
+    "GROUP": "Inner",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "Metis",
@@ -417,7 +436,8 @@
     "PERIOD_SEC": "0",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Inner"
+    "GROUP": "Inner",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "Himalia",
@@ -438,7 +458,8 @@
     "PERIOD_SEC": "34560",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Himalia"
+    "GROUP": "Himalia",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "Elara",
@@ -459,7 +480,8 @@
     "PERIOD_SEC": "43200",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Himalia"
+    "GROUP": "Himalia",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "Pasiphae",
@@ -480,7 +502,8 @@
     "PERIOD_SEC": "86400",
     "RETROGRADE_ROT": "TRUE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Pasiphae"
+    "GROUP": "Pasiphae",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "Sinope",
@@ -501,7 +524,8 @@
     "PERIOD_SEC": "47376",
     "RETROGRADE_ROT": "TRUE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Pasiphae"
+    "GROUP": "Pasiphae",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "Lysithea",
@@ -522,7 +546,8 @@
     "PERIOD_SEC": "46008",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Himalia"
+    "GROUP": "Himalia",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "Carme",
@@ -543,7 +568,8 @@
     "PERIOD_SEC": "37440",
     "RETROGRADE_ROT": "TRUE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Carme"
+    "GROUP": "Carme",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "Ananke",
@@ -564,7 +590,8 @@
     "PERIOD_SEC": "29916",
     "RETROGRADE_ROT": "TRUE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Ananke"
+    "GROUP": "Ananke",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "Leda",
@@ -585,7 +612,8 @@
     "PERIOD_SEC": "86400",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Himalia"
+    "GROUP": "Himalia",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "Callirrhoe",
@@ -606,7 +634,8 @@
     "PERIOD_SEC": "35640",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Pasiphae"
+    "GROUP": "Pasiphae",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "Themisto",
@@ -627,7 +656,8 @@
     "PERIOD_SEC": "86400",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Themisto"
+    "GROUP": "Themisto",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "Magaclite",
@@ -648,7 +678,8 @@
     "PERIOD_SEC": "35640",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Pasiphae"
+    "GROUP": "Pasiphae",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "Taygete",
@@ -669,7 +700,8 @@
     "PERIOD_SEC": "86400",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Carme"
+    "GROUP": "Carme",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "Chaldene",
@@ -690,7 +722,8 @@
     "PERIOD_SEC": "86400",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Carme"
+    "GROUP": "Carme",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "Harpalyke",
@@ -711,7 +744,8 @@
     "PERIOD_SEC": "86400",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Ananke"
+    "GROUP": "Ananke",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "Kalyke",
@@ -732,7 +766,8 @@
     "PERIOD_SEC": "86400",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Carme"
+    "GROUP": "Carme",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "Iocaste",
@@ -753,7 +788,8 @@
     "PERIOD_SEC": "86400",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Ananke"
+    "GROUP": "Ananke",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "Erinome",
@@ -774,7 +810,8 @@
     "PERIOD_SEC": "86400",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Carme"
+    "GROUP": "Carme",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "Isonoe",
@@ -795,7 +832,8 @@
     "PERIOD_SEC": "86400",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Carme"
+    "GROUP": "Carme",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "Praxidike",
@@ -816,7 +854,8 @@
     "PERIOD_SEC": "86400",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Ananke"
+    "GROUP": "Ananke",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "Autonoe",
@@ -837,7 +876,8 @@
     "PERIOD_SEC": "86400",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Pasiphae"
+    "GROUP": "Pasiphae",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "Thyone",
@@ -858,7 +898,8 @@
     "PERIOD_SEC": "86400",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Ananke"
+    "GROUP": "Ananke",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "Hermippe",
@@ -879,7 +920,8 @@
     "PERIOD_SEC": "86400",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Ananke"
+    "GROUP": "Ananke",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "Aitne",
@@ -900,7 +942,8 @@
     "PERIOD_SEC": "86400",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Carme"
+    "GROUP": "Carme",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "Eurydome",
@@ -921,7 +964,8 @@
     "PERIOD_SEC": "86400",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Pasiphae"
+    "GROUP": "Pasiphae",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "Euanthe",
@@ -942,7 +986,8 @@
     "PERIOD_SEC": "86400",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Ananke"
+    "GROUP": "Ananke",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "Euporie",
@@ -963,7 +1008,8 @@
     "PERIOD_SEC": "86400",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Ananke"
+    "GROUP": "Ananke",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "Orthosie",
@@ -984,7 +1030,8 @@
     "PERIOD_SEC": "86400",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Ananke"
+    "GROUP": "Ananke",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "Sponde",
@@ -1005,7 +1052,8 @@
     "PERIOD_SEC": "86400",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Pasiphae"
+    "GROUP": "Pasiphae",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "Kale",
@@ -1026,7 +1074,8 @@
     "PERIOD_SEC": "86400",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Carme"
+    "GROUP": "Carme",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "Pasithee",
@@ -1047,7 +1096,8 @@
     "PERIOD_SEC": "86400",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Carme"
+    "GROUP": "Carme",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "Hegemone",
@@ -1068,7 +1118,8 @@
     "PERIOD_SEC": "86400",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Pasiphae"
+    "GROUP": "Pasiphae",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "Mneme",
@@ -1089,7 +1140,8 @@
     "PERIOD_SEC": "86400",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Ananke"
+    "GROUP": "Ananke",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "Aoede",
@@ -1110,7 +1162,8 @@
     "PERIOD_SEC": "86400",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Pasiphae"
+    "GROUP": "Pasiphae",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "Thelxinoe",
@@ -1131,7 +1184,8 @@
     "PERIOD_SEC": "86400",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Ananke"
+    "GROUP": "Ananke",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "Arche",
@@ -1152,7 +1206,8 @@
     "PERIOD_SEC": "86400",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Carme"
+    "GROUP": "Carme",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "Kallichore",
@@ -1173,7 +1228,8 @@
     "PERIOD_SEC": "86400",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Carme"
+    "GROUP": "Carme",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "Helike",
@@ -1194,7 +1250,8 @@
     "PERIOD_SEC": "86400",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Ananke"
+    "GROUP": "Ananke",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "Carpo",
@@ -1215,7 +1272,8 @@
     "PERIOD_SEC": "86400",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Carpo"
+    "GROUP": "Carpo",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "Eukelade",
@@ -1236,7 +1294,8 @@
     "PERIOD_SEC": "86400",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Carme"
+    "GROUP": "Carme",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "Cyllene",
@@ -1257,7 +1316,8 @@
     "PERIOD_SEC": "86400",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Pasiphae"
+    "GROUP": "Pasiphae",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "Kore",
@@ -1278,7 +1338,8 @@
     "PERIOD_SEC": "86400",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Pasiphae"
+    "GROUP": "Pasiphae",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "Herse",
@@ -1299,7 +1360,8 @@
     "PERIOD_SEC": "86400",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Carme"
+    "GROUP": "Carme",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2010_J_1",
@@ -1320,7 +1382,8 @@
     "PERIOD_SEC": "86400",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Carme"
+    "GROUP": "Carme",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2010_J_2",
@@ -1341,7 +1404,8 @@
     "PERIOD_SEC": "86400",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Ananke"
+    "GROUP": "Ananke",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "Dia",
@@ -1362,7 +1426,8 @@
     "PERIOD_SEC": "86400",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Himalia"
+    "GROUP": "Himalia",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2016_J_1",
@@ -1383,7 +1448,8 @@
     "PERIOD_SEC": "86400",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Ananke"
+    "GROUP": "Ananke",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2003_J_18",
@@ -1404,7 +1470,8 @@
     "PERIOD_SEC": "86400",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Ananke"
+    "GROUP": "Ananke",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2011_J_2",
@@ -1425,7 +1492,8 @@
     "PERIOD_SEC": "86400",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Pasiphae"
+    "GROUP": "Pasiphae",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "Eirene",
@@ -1446,7 +1514,8 @@
     "PERIOD_SEC": "86400",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Carme"
+    "GROUP": "Carme",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "Philophrosyne",
@@ -1467,7 +1536,8 @@
     "PERIOD_SEC": "86400",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Carme"
+    "GROUP": "Carme",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2017_J_1",
@@ -1488,7 +1558,8 @@
     "PERIOD_SEC": "86400",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Pasiphae"
+    "GROUP": "Pasiphae",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "Eupheme",
@@ -1509,7 +1580,8 @@
     "PERIOD_SEC": "86400",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Ananke"
+    "GROUP": "Ananke",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2003_J_19",
@@ -1530,7 +1602,8 @@
     "PERIOD_SEC": "86400",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Carme"
+    "GROUP": "Carme",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "Valetudo",
@@ -1551,7 +1624,8 @@
     "PERIOD_SEC": "86400",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Valetudo"
+    "GROUP": "Valetudo",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2017_J_2",
@@ -1572,7 +1646,8 @@
     "PERIOD_SEC": "86400",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Carme"
+    "GROUP": "Carme",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2017_J_3",
@@ -1593,7 +1668,8 @@
     "PERIOD_SEC": "86400",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Ananke"
+    "GROUP": "Ananke",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "Pandia",
@@ -1614,7 +1690,8 @@
     "PERIOD_SEC": "86400",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Himalia"
+    "GROUP": "Himalia",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2017_J_5",
@@ -1635,7 +1712,8 @@
     "PERIOD_SEC": "86400",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Carme"
+    "GROUP": "Carme",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2017_J_6",
@@ -1656,7 +1734,8 @@
     "PERIOD_SEC": "86400",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Pasiphae"
+    "GROUP": "Pasiphae",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2017_J_7",
@@ -1677,7 +1756,8 @@
     "PERIOD_SEC": "86400",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Ananke"
+    "GROUP": "Ananke",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2017_J_8",
@@ -1698,7 +1778,8 @@
     "PERIOD_SEC": "86400",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Carme"
+    "GROUP": "Carme",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2017_J_9",
@@ -1719,7 +1800,8 @@
     "PERIOD_SEC": "86400",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Ananke"
+    "GROUP": "Ananke",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "Ersa",
@@ -1740,7 +1822,8 @@
     "PERIOD_SEC": "86400",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Himalia"
+    "GROUP": "Himalia",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2011_J_1",
@@ -1761,7 +1844,8 @@
     "PERIOD_SEC": "86400",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Carme"
+    "GROUP": "Carme",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2003_J_2",
@@ -1782,7 +1866,8 @@
     "PERIOD_SEC": "86400",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Ananke"
+    "GROUP": "Ananke",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2003_J_4",
@@ -1803,7 +1888,8 @@
     "PERIOD_SEC": "86400",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Pasiphae"
+    "GROUP": "Pasiphae",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2003_J_9",
@@ -1824,7 +1910,8 @@
     "PERIOD_SEC": "86400",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Carme"
+    "GROUP": "Carme",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2003_J_10",
@@ -1845,7 +1932,8 @@
     "PERIOD_SEC": "86400",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Carme"
+    "GROUP": "Carme",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2003_J_12",
@@ -1866,7 +1954,8 @@
     "PERIOD_SEC": "86400",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Ananke"
+    "GROUP": "Ananke",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2003_J_16",
@@ -1887,7 +1976,8 @@
     "PERIOD_SEC": "86400",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Ananke"
+    "GROUP": "Ananke",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2003_J_23",
@@ -1908,7 +1998,8 @@
     "PERIOD_SEC": "86400",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Pasiphae"
+    "GROUP": "Pasiphae",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2003_J_24",
@@ -1929,7 +2020,8 @@
     "PERIOD_SEC": "86400",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Carme"
+    "GROUP": "Carme",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2011_J_3",
@@ -1950,7 +2042,8 @@
     "PERIOD_SEC": "86400",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Himalia"
+    "GROUP": "Himalia",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2018_J_2",
@@ -1971,7 +2064,8 @@
     "PERIOD_SEC": "86400",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Himalia"
+    "GROUP": "Himalia",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2018_J_3",
@@ -1992,7 +2086,8 @@
     "PERIOD_SEC": "86400",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Carme"
+    "GROUP": "Carme",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2021_J_1",
@@ -2013,7 +2108,8 @@
     "PERIOD_SEC": "86400",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Ananke"
+    "GROUP": "Ananke",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2021_J_2",
@@ -2034,7 +2130,8 @@
     "PERIOD_SEC": "86400",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Ananke"
+    "GROUP": "Ananke",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2021_J_3",
@@ -2055,7 +2152,8 @@
     "PERIOD_SEC": "86400",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Ananke"
+    "GROUP": "Ananke",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2021_J_4",
@@ -2076,7 +2174,8 @@
     "PERIOD_SEC": "86400",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Carme"
+    "GROUP": "Carme",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2021_J_5",
@@ -2097,7 +2196,8 @@
     "PERIOD_SEC": "86400",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Carme"
+    "GROUP": "Carme",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2021_J_6",
@@ -2118,7 +2218,8 @@
     "PERIOD_SEC": "86400",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Carme"
+    "GROUP": "Carme",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2016_J_3",
@@ -2139,7 +2240,8 @@
     "PERIOD_SEC": "86400",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Carme"
+    "GROUP": "Carme",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2016_J_4",
@@ -2160,7 +2262,8 @@
     "PERIOD_SEC": "86400",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Pasiphae"
+    "GROUP": "Pasiphae",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2018_J_4",
@@ -2181,7 +2284,8 @@
     "PERIOD_SEC": "86400",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Carpo"
+    "GROUP": "Carpo",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2022_J_1",
@@ -2202,7 +2306,8 @@
     "PERIOD_SEC": "86400",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Carme"
+    "GROUP": "Carme",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2022_J_2",
@@ -2223,7 +2328,8 @@
     "PERIOD_SEC": "86400",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Carme"
+    "GROUP": "Carme",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2022_J_3",
@@ -2244,7 +2350,8 @@
     "PERIOD_SEC": "86400",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Ananke"
+    "GROUP": "Ananke",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2017_J_10",
@@ -2265,7 +2372,8 @@
     "PERIOD_SEC": "86400",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Ananke"
+    "GROUP": "Ananke",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2017_J_11",
@@ -2286,7 +2394,8 @@
     "PERIOD_SEC": "86400",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Carme"
+    "GROUP": "Carme",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "Mimas",
@@ -2307,7 +2416,8 @@
     "PERIOD_SEC": "0",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Major"
+    "GROUP": "Major",
+    "BODY_TYPE": "PlanetaryBody"
   },
   {
     "ID": "Enceladus",
@@ -2328,7 +2438,8 @@
     "PERIOD_SEC": "0",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Major"
+    "GROUP": "Major",
+    "BODY_TYPE": "PlanetaryBody"
   },
   {
     "ID": "Tethys",
@@ -2349,7 +2460,8 @@
     "PERIOD_SEC": "0",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Major"
+    "GROUP": "Major",
+    "BODY_TYPE": "PlanetaryBody"
   },
   {
     "ID": "Dione",
@@ -2370,7 +2482,8 @@
     "PERIOD_SEC": "0",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Major"
+    "GROUP": "Major",
+    "BODY_TYPE": "PlanetaryBody"
   },
   {
     "ID": "Rhea",
@@ -2391,7 +2504,8 @@
     "PERIOD_SEC": "0",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Major"
+    "GROUP": "Major",
+    "BODY_TYPE": "PlanetaryBody"
   },
   {
     "ID": "Titan",
@@ -2412,7 +2526,8 @@
     "PERIOD_SEC": "0",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "AtmosphericBody",
-    "GROUP": "Major"
+    "GROUP": "Major",
+    "BODY_TYPE": "PlanetaryBody"
   },
   {
     "ID": "Hyperion",
@@ -2433,7 +2548,8 @@
     "PERIOD_SEC": "1123200",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Irregular"
+    "GROUP": "Irregular",
+    "BODY_TYPE": "PlanetaryBody"
   },
   {
     "ID": "Iapetus",
@@ -2454,7 +2570,8 @@
     "PERIOD_SEC": "0",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Major"
+    "GROUP": "Major",
+    "BODY_TYPE": "PlanetaryBody"
   },
   {
     "ID": "Phoebe",
@@ -2475,7 +2592,8 @@
     "PERIOD_SEC": "33480",
     "RETROGRADE_ROT": "TRUE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "PlanetaryBody"
   },
   {
     "ID": "Janus",
@@ -2496,7 +2614,8 @@
     "PERIOD_SEC": "0",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Irregular"
+    "GROUP": "Irregular",
+    "BODY_TYPE": "PlanetaryBody"
   },
   {
     "ID": "Epimetheus",
@@ -2517,7 +2636,8 @@
     "PERIOD_SEC": "0",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Irregular"
+    "GROUP": "Irregular",
+    "BODY_TYPE": "PlanetaryBody"
   },
   {
     "ID": "Helene",
@@ -2538,7 +2658,8 @@
     "PERIOD_SEC": "0",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Irregular"
+    "GROUP": "Irregular",
+    "BODY_TYPE": "PlanetaryBody"
   },
   {
     "ID": "Telesto",
@@ -2559,7 +2680,8 @@
     "PERIOD_SEC": "0",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Irregular"
+    "GROUP": "Irregular",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "Calypso",
@@ -2580,7 +2702,8 @@
     "PERIOD_SEC": "0",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Irregular"
+    "GROUP": "Irregular",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "Atlas",
@@ -2601,7 +2724,8 @@
     "PERIOD_SEC": "0",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Irregular"
+    "GROUP": "Irregular",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "Prometheus",
@@ -2622,7 +2746,8 @@
     "PERIOD_SEC": "0",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Irregular"
+    "GROUP": "Irregular",
+    "BODY_TYPE": "PlanetaryBody"
   },
   {
     "ID": "Pandora",
@@ -2643,7 +2768,8 @@
     "PERIOD_SEC": "0",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Irregular"
+    "GROUP": "Irregular",
+    "BODY_TYPE": "PlanetaryBody"
   },
   {
     "ID": "Pan",
@@ -2664,7 +2790,8 @@
     "PERIOD_SEC": "0",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Irregular"
+    "GROUP": "Irregular",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "Ymir",
@@ -2685,7 +2812,8 @@
     "PERIOD_SEC": "42919",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "Paaliaq",
@@ -2706,7 +2834,8 @@
     "PERIOD_SEC": "67644",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Inuit"
+    "GROUP": "Inuit",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "Tarvos",
@@ -2727,7 +2856,8 @@
     "PERIOD_SEC": "38376",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Gallic"
+    "GROUP": "Gallic",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "Ijiraq",
@@ -2748,7 +2878,8 @@
     "PERIOD_SEC": "46908",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Inuit"
+    "GROUP": "Inuit",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "Suttungr",
@@ -2769,7 +2900,8 @@
     "PERIOD_SEC": "27612",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "Kiviuq",
@@ -2790,7 +2922,8 @@
     "PERIOD_SEC": "78552",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Inuit"
+    "GROUP": "Inuit",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "Mundilfari",
@@ -2811,7 +2944,8 @@
     "PERIOD_SEC": "24264",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "Albiorix",
@@ -2832,7 +2966,8 @@
     "PERIOD_SEC": "47988",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Gallic"
+    "GROUP": "Gallic",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "Skathi",
@@ -2853,7 +2988,8 @@
     "PERIOD_SEC": "39960",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "Erriapus",
@@ -2874,7 +3010,8 @@
     "PERIOD_SEC": "101340",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Gallic"
+    "GROUP": "Gallic",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "Siarnaq",
@@ -2895,7 +3032,8 @@
     "PERIOD_SEC": "36673",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Inuit"
+    "GROUP": "Inuit",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "Thrymr",
@@ -2916,7 +3054,8 @@
     "PERIOD_SEC": "139644",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "Narvi",
@@ -2937,7 +3076,8 @@
     "PERIOD_SEC": "36756",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norsee"
+    "GROUP": "Norsee",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "Methone",
@@ -2958,7 +3098,8 @@
     "PERIOD_SEC": "0",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Irregular"
+    "GROUP": "Irregular",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "Pallene",
@@ -2979,7 +3120,8 @@
     "PERIOD_SEC": "0",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Irregular"
+    "GROUP": "Irregular",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "Polydeuces",
@@ -3000,7 +3142,8 @@
     "PERIOD_SEC": "0",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Irregular"
+    "GROUP": "Irregular",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "Daphnis",
@@ -3021,7 +3164,8 @@
     "PERIOD_SEC": "0",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Irregular"
+    "GROUP": "Irregular",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "Aegir",
@@ -3042,7 +3186,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "Bebhionn",
@@ -3063,7 +3208,8 @@
     "PERIOD_SEC": "58788",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Gallic"
+    "GROUP": "Gallic",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "Bergelmir",
@@ -3084,7 +3230,8 @@
     "PERIOD_SEC": "29268",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "Bestla",
@@ -3105,7 +3252,8 @@
     "PERIOD_SEC": "52632",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "Farbauti",
@@ -3126,7 +3274,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "Fenrir",
@@ -3147,7 +3296,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "Fornjot",
@@ -3168,7 +3318,8 @@
     "PERIOD_SEC": "29520",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "Hati",
@@ -3189,7 +3340,8 @@
     "PERIOD_SEC": "19620",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "Hyrrokkin",
@@ -3210,7 +3362,8 @@
     "PERIOD_SEC": "45936",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "Kari",
@@ -3231,7 +3384,8 @@
     "PERIOD_SEC": "27720",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "Loge",
@@ -3252,7 +3406,8 @@
     "PERIOD_SEC": "24840",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "Skoll",
@@ -3273,7 +3428,8 @@
     "PERIOD_SEC": "26136",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "Surtur",
@@ -3294,7 +3450,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "Anthe",
@@ -3315,7 +3472,8 @@
     "PERIOD_SEC": "0",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Irregular"
+    "GROUP": "Irregular",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "Jarnsaxa",
@@ -3336,7 +3494,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "Greip",
@@ -3357,7 +3516,8 @@
     "PERIOD_SEC": "45900",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "Tarqeq",
@@ -3378,7 +3538,8 @@
     "PERIOD_SEC": "274068",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Inuit"
+    "GROUP": "Inuit",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "Aegaeon",
@@ -3399,7 +3560,8 @@
     "PERIOD_SEC": "0",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Irregular"
+    "GROUP": "Irregular",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "Gridr",
@@ -3420,7 +3582,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "Angrboda",
@@ -3441,7 +3604,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "Skrymir",
@@ -3462,7 +3626,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "Gerd",
@@ -3483,7 +3648,8 @@
     "PERIOD_SEC": "0",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "Eggther",
@@ -3504,7 +3670,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "Beli",
@@ -3525,7 +3692,8 @@
     "PERIOD_SEC": "19800",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "Gunnlod",
@@ -3546,7 +3714,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "Thiazzi",
@@ -3567,7 +3736,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "Alvaldi",
@@ -3588,7 +3758,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "Geirrod",
@@ -3609,7 +3780,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2004_S_07",
@@ -3630,7 +3802,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2004_S_12",
@@ -3651,7 +3824,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2004_S_13",
@@ -3672,7 +3846,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2004_S_17",
@@ -3693,7 +3868,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2004_S_21",
@@ -3714,7 +3890,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2004_S_24",
@@ -3735,7 +3912,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Gallic"
+    "GROUP": "Gallic",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2004_S_28",
@@ -3756,7 +3934,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2004_S_26",
@@ -3777,7 +3956,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2004_S_29",
@@ -3798,7 +3978,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Gallic"
+    "GROUP": "Gallic",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2004_S_31",
@@ -3819,7 +4000,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Inuit"
+    "GROUP": "Inuit",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2004_S_34",
@@ -3840,7 +4022,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2004_S_36",
@@ -3861,7 +4044,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2004_S_37",
@@ -3882,7 +4066,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2004_S_39",
@@ -3903,7 +4088,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2004_S_40",
@@ -3924,7 +4110,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2004_S_41",
@@ -3945,7 +4132,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2004_S_42",
@@ -3966,7 +4154,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2004_S_43",
@@ -3987,7 +4176,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2004_S_44",
@@ -4008,7 +4198,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2004_S_45",
@@ -4029,7 +4220,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2004_S_46",
@@ -4050,7 +4242,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2004_S_47",
@@ -4071,7 +4264,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2004_S_48",
@@ -4092,7 +4286,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2004_S_49",
@@ -4113,7 +4308,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2004_S_50",
@@ -4134,7 +4330,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2004_S_51",
@@ -4155,7 +4352,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2004_S_52",
@@ -4176,7 +4374,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2004_S_53",
@@ -4197,7 +4396,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2004_S_54",
@@ -4218,7 +4418,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Inuit"
+    "GROUP": "Inuit",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2004_S_55",
@@ -4239,7 +4440,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Inuit"
+    "GROUP": "Inuit",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2004_S_56",
@@ -4260,7 +4462,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2004_S_57",
@@ -4281,7 +4484,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2004_S_58",
@@ -4302,7 +4506,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Inuit"
+    "GROUP": "Inuit",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2004_S_59",
@@ -4323,7 +4528,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2004_S_60",
@@ -4344,7 +4550,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2004_S_61",
@@ -4365,7 +4572,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2005_S_04",
@@ -4386,7 +4594,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Inuit"
+    "GROUP": "Inuit",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2005_S_05",
@@ -4407,7 +4616,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2005_S_06",
@@ -4428,7 +4638,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Inuit"
+    "GROUP": "Inuit",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2005_S_07",
@@ -4449,7 +4660,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Gallic"
+    "GROUP": "Gallic",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2006_S_01",
@@ -4470,7 +4682,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2006_S_03",
@@ -4491,7 +4704,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2006_S_09",
@@ -4512,7 +4726,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2006_S_10",
@@ -4533,7 +4748,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2006_S_11",
@@ -4554,7 +4770,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2006_S_12",
@@ -4575,7 +4792,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Gallic"
+    "GROUP": "Gallic",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2006_S_13",
@@ -4596,7 +4814,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2006_S_14",
@@ -4617,7 +4836,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2006_S_15",
@@ -4638,7 +4858,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2006_S_16",
@@ -4659,7 +4880,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2006_S_17",
@@ -4680,7 +4902,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2006_S_18",
@@ -4701,7 +4924,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2006_S_19",
@@ -4722,7 +4946,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2006_S_20",
@@ -4743,7 +4968,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2006_S_21",
@@ -4764,7 +4990,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2006_S_22",
@@ -4785,7 +5012,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2006_S_23",
@@ -4806,7 +5034,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Inuit"
+    "GROUP": "Inuit",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2006_S_24",
@@ -4827,7 +5056,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2006_S_25",
@@ -4848,7 +5078,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2006_S_26",
@@ -4869,7 +5100,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2006_S_27",
@@ -4890,7 +5122,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2006_S_28",
@@ -4911,7 +5144,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2006_S_29",
@@ -4932,7 +5166,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2007_S_02",
@@ -4953,7 +5188,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2007_S_03",
@@ -4974,7 +5210,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2007_S_05",
@@ -4995,7 +5232,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2007_S_06",
@@ -5016,7 +5254,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2007_S_07",
@@ -5037,7 +5276,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2007_S_08",
@@ -5058,7 +5298,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Gallic"
+    "GROUP": "Gallic",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2007_S_09",
@@ -5079,7 +5320,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2007_S_10",
@@ -5100,7 +5342,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Inuit"
+    "GROUP": "Inuit",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2007_S_11",
@@ -5121,7 +5364,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Gallic"
+    "GROUP": "Gallic",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2019_S_01",
@@ -5142,7 +5386,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2019_S_02",
@@ -5163,7 +5408,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2019_S_03",
@@ -5184,7 +5430,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2019_S_04",
@@ -5205,7 +5452,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2019_S_05",
@@ -5226,7 +5474,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2019_S_06",
@@ -5247,7 +5496,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Inuit"
+    "GROUP": "Inuit",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2019_S_07",
@@ -5268,7 +5518,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2019_S_08",
@@ -5289,7 +5540,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2019_S_09",
@@ -5310,7 +5562,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2019_S_10",
@@ -5331,7 +5584,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2019_S_11",
@@ -5352,7 +5606,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2019_S_12",
@@ -5373,7 +5628,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2019_S_13",
@@ -5394,7 +5650,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2019_S_14",
@@ -5415,7 +5672,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Inuit"
+    "GROUP": "Inuit",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2019_S_15",
@@ -5436,7 +5694,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2019_S_16",
@@ -5457,7 +5716,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2019_S_17",
@@ -5478,7 +5738,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2019_S_18",
@@ -5499,7 +5760,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2019_S_19",
@@ -5520,7 +5782,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2019_S_20",
@@ -5541,7 +5804,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2019_S_21",
@@ -5562,7 +5826,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2019_S_22",
@@ -5583,7 +5848,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Inuit"
+    "GROUP": "Inuit",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2019_S_23",
@@ -5604,7 +5870,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Inuit"
+    "GROUP": "Inuit",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2019_S_24",
@@ -5625,7 +5892,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Inuit"
+    "GROUP": "Inuit",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2019_S_25",
@@ -5646,7 +5914,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Inuit"
+    "GROUP": "Inuit",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2019_S_26",
@@ -5667,7 +5936,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Inuit"
+    "GROUP": "Inuit",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2019_S_27",
@@ -5688,7 +5958,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2019_S_28",
@@ -5709,7 +5980,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2019_S_29",
@@ -5730,7 +6002,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Gallic"
+    "GROUP": "Gallic",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2019_S_30",
@@ -5751,7 +6024,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2019_S_31",
@@ -5772,7 +6046,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Gallic"
+    "GROUP": "Gallic",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2019_S_32",
@@ -5793,7 +6068,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Inuit"
+    "GROUP": "Inuit",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2019_S_33",
@@ -5814,7 +6090,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2019_S_34",
@@ -5835,7 +6112,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Gallic"
+    "GROUP": "Gallic",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2019_S_35",
@@ -5856,7 +6134,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2019_S_36",
@@ -5877,7 +6156,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2019_S_37",
@@ -5898,7 +6178,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2019_S_38",
@@ -5919,7 +6200,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2019_S_39",
@@ -5940,7 +6222,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2019_S_40",
@@ -5961,7 +6244,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2019_S_41",
@@ -5982,7 +6266,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2019_S_42",
@@ -6003,7 +6288,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2019_S_43",
@@ -6024,7 +6310,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2019_S_44",
@@ -6045,7 +6332,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2020_S_01",
@@ -6066,7 +6354,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Inuit"
+    "GROUP": "Inuit",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2020_S_02",
@@ -6087,7 +6376,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2020_S_03",
@@ -6108,7 +6398,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Inuit"
+    "GROUP": "Inuit",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2020_S_04",
@@ -6129,7 +6420,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Gallic"
+    "GROUP": "Gallic",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2020_S_05",
@@ -6150,7 +6442,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Inuit"
+    "GROUP": "Inuit",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2020_S_06",
@@ -6171,7 +6464,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2020_S_07",
@@ -6192,7 +6486,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2020_S_08",
@@ -6213,7 +6508,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2020_S_09",
@@ -6234,7 +6530,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2020_S_10",
@@ -6255,7 +6552,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2020_S_11",
@@ -6276,7 +6574,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Inuit"
+    "GROUP": "Inuit",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2020_S_12",
@@ -6297,7 +6596,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Inuit"
+    "GROUP": "Inuit",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2020_S_13",
@@ -6318,7 +6618,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Inuit"
+    "GROUP": "Inuit",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2020_S_14",
@@ -6339,7 +6640,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2020_S_15",
@@ -6360,7 +6662,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Gallic"
+    "GROUP": "Gallic",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2020_S_16",
@@ -6381,7 +6684,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2020_S_17",
@@ -6402,7 +6706,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2020_S_18",
@@ -6423,7 +6728,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2020_S_19",
@@ -6444,7 +6750,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Inuit"
+    "GROUP": "Inuit",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2020_S_20",
@@ -6465,7 +6772,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2020_S_21",
@@ -6486,7 +6794,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2020_S_22",
@@ -6507,7 +6816,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2020_S_23",
@@ -6528,7 +6838,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2020_S_24",
@@ -6549,7 +6860,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2020_S_25",
@@ -6570,7 +6882,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2020_S_26",
@@ -6591,7 +6904,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2020_S_27",
@@ -6612,7 +6926,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2020_S_28",
@@ -6633,7 +6948,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2020_S_29",
@@ -6654,7 +6970,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2020_S_30",
@@ -6675,7 +6992,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2020_S_31",
@@ -6696,7 +7014,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2020_S_32",
@@ -6717,7 +7036,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2020_S_33",
@@ -6738,7 +7058,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2020_S_34",
@@ -6759,7 +7080,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2020_S_35",
@@ -6780,7 +7102,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2020_S_36",
@@ -6801,7 +7124,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2020_S_37",
@@ -6822,7 +7146,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2020_S_38",
@@ -6843,7 +7168,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2020_S_39",
@@ -6864,7 +7190,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2020_S_40",
@@ -6885,7 +7212,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2020_S_41",
@@ -6906,7 +7234,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2020_S_42",
@@ -6927,7 +7256,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2020_S_43",
@@ -6948,7 +7278,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2020_S_44",
@@ -6969,7 +7300,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2023_S_01",
@@ -6990,7 +7322,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Inuit"
+    "GROUP": "Inuit",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2023_S_02",
@@ -7011,7 +7344,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Inuit"
+    "GROUP": "Inuit",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2023_S_03",
@@ -7032,7 +7366,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Inuit"
+    "GROUP": "Inuit",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2023_S_04",
@@ -7053,7 +7388,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2023_S_05",
@@ -7074,7 +7410,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2023_S_06",
@@ -7095,7 +7432,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Inuit"
+    "GROUP": "Inuit",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2023_S_07",
@@ -7116,7 +7454,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Inuit"
+    "GROUP": "Inuit",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2023_S_08",
@@ -7137,7 +7476,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2023_S_09",
@@ -7158,7 +7498,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2023_S_10",
@@ -7179,7 +7520,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2023_S_11",
@@ -7200,7 +7542,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2023_S_12",
@@ -7221,7 +7564,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2023_S_13",
@@ -7242,7 +7586,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2023_S_14",
@@ -7263,7 +7608,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2023_S_15",
@@ -7284,7 +7630,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2023_S_16",
@@ -7305,7 +7652,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2023_S_17",
@@ -7326,7 +7674,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Gallic"
+    "GROUP": "Gallic",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2023_S_18",
@@ -7347,7 +7696,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Gallic"
+    "GROUP": "Gallic",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2023_S_19",
@@ -7368,7 +7718,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Inuit"
+    "GROUP": "Inuit",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2023_S_20",
@@ -7389,7 +7740,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2023_S_21",
@@ -7410,7 +7762,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2023_S_22",
@@ -7431,7 +7784,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Inuit"
+    "GROUP": "Inuit",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2023_S_23",
@@ -7452,7 +7806,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2023_S_24",
@@ -7473,7 +7828,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2023_S_25",
@@ -7494,7 +7850,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2023_S_26",
@@ -7515,7 +7872,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2023_S_27",
@@ -7536,7 +7894,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2023_S_28",
@@ -7557,7 +7916,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2023_S_29",
@@ -7578,7 +7938,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2023_S_30",
@@ -7599,7 +7960,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2023_S_31",
@@ -7620,7 +7982,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2023_S_32",
@@ -7641,7 +8004,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2023_S_33",
@@ -7662,7 +8026,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2023_S_34",
@@ -7683,7 +8048,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2023_S_35",
@@ -7704,7 +8070,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2023_S_36",
@@ -7725,7 +8092,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2023_S_37",
@@ -7746,7 +8114,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2023_S_38",
@@ -7767,7 +8136,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2023_S_39",
@@ -7788,7 +8158,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2023_S_40",
@@ -7809,7 +8180,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2023_S_41",
@@ -7830,7 +8202,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2023_S_42",
@@ -7851,7 +8224,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2023_S_43",
@@ -7872,7 +8246,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2023_S_44",
@@ -7893,7 +8268,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2023_S_45",
@@ -7914,7 +8290,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2023_S_46",
@@ -7935,7 +8312,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2023_S_47",
@@ -7956,7 +8334,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2023_S_48",
@@ -7977,7 +8356,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2023_S_49",
@@ -7998,7 +8378,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2023_S_50",
@@ -8019,7 +8400,8 @@
     "PERIOD_SEC": "38160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Norse"
+    "GROUP": "Norse",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "Ariel",
@@ -8040,7 +8422,8 @@
     "PERIOD_SEC": "0",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Major"
+    "GROUP": "Major",
+    "BODY_TYPE": "PlanetaryBody"
   },
   {
     "ID": "Umbriel",
@@ -8061,7 +8444,8 @@
     "PERIOD_SEC": "0",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Major"
+    "GROUP": "Major",
+    "BODY_TYPE": "PlanetaryBody"
   },
   {
     "ID": "Titania",
@@ -8082,7 +8466,8 @@
     "PERIOD_SEC": "0",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Major"
+    "GROUP": "Major",
+    "BODY_TYPE": "PlanetaryBody"
   },
   {
     "ID": "Oberon",
@@ -8103,7 +8488,8 @@
     "PERIOD_SEC": "0",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Major"
+    "GROUP": "Major",
+    "BODY_TYPE": "PlanetaryBody"
   },
   {
     "ID": "Miranda",
@@ -8124,7 +8510,8 @@
     "PERIOD_SEC": "0",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Major"
+    "GROUP": "Major",
+    "BODY_TYPE": "PlanetaryBody"
   },
   {
     "ID": "Cordelia",
@@ -8145,7 +8532,8 @@
     "PERIOD_SEC": "0",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Inner"
+    "GROUP": "Inner",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "Ophelia",
@@ -8166,7 +8554,8 @@
     "PERIOD_SEC": "0",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Inner"
+    "GROUP": "Inner",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "Bianca",
@@ -8187,7 +8576,8 @@
     "PERIOD_SEC": "0",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Inner"
+    "GROUP": "Inner",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "Cressida",
@@ -8208,7 +8598,8 @@
     "PERIOD_SEC": "0",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Inner"
+    "GROUP": "Inner",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "Desdemona",
@@ -8229,7 +8620,8 @@
     "PERIOD_SEC": "0",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Inner"
+    "GROUP": "Inner",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "Juliet",
@@ -8250,7 +8642,8 @@
     "PERIOD_SEC": "0",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Inner"
+    "GROUP": "Inner",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "Portia",
@@ -8271,7 +8664,8 @@
     "PERIOD_SEC": "0",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Inner"
+    "GROUP": "Inner",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "Rosalind",
@@ -8292,7 +8686,8 @@
     "PERIOD_SEC": "0",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Inner"
+    "GROUP": "Inner",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "Belinda",
@@ -8313,7 +8708,8 @@
     "PERIOD_SEC": "0",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Inner"
+    "GROUP": "Inner",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "Puck",
@@ -8334,7 +8730,8 @@
     "PERIOD_SEC": "0",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Inner"
+    "GROUP": "Inner",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "Caliban",
@@ -8355,7 +8752,8 @@
     "PERIOD_SEC": "35812",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Caliban"
+    "GROUP": "Caliban",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "Sycorax",
@@ -8376,7 +8774,8 @@
     "PERIOD_SEC": "24898",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Irregular"
+    "GROUP": "Irregular",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "Prospero",
@@ -8397,7 +8796,8 @@
     "PERIOD_SEC": "25722",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Irregular"
+    "GROUP": "Irregular",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "Setebos",
@@ -8418,7 +8818,8 @@
     "PERIOD_SEC": "15318",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Irregular"
+    "GROUP": "Irregular",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "Stephano",
@@ -8439,7 +8840,8 @@
     "PERIOD_SEC": "35812",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Caliban"
+    "GROUP": "Caliban",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "Trinculo",
@@ -8460,7 +8862,8 @@
     "PERIOD_SEC": "15318",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Irregular"
+    "GROUP": "Irregular",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "Francisco",
@@ -8481,7 +8884,8 @@
     "PERIOD_SEC": "15318",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Irregular"
+    "GROUP": "Irregular",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "Margaret",
@@ -8502,7 +8906,8 @@
     "PERIOD_SEC": "15318",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Margaret"
+    "GROUP": "Margaret",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "Ferdinand",
@@ -8523,7 +8928,8 @@
     "PERIOD_SEC": "42624",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Irregular"
+    "GROUP": "Irregular",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "Perdita",
@@ -8544,7 +8950,8 @@
     "PERIOD_SEC": "0",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Inner"
+    "GROUP": "Inner",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "Mab",
@@ -8565,7 +8972,8 @@
     "PERIOD_SEC": "0",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Inner"
+    "GROUP": "Inner",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "Cupid",
@@ -8586,7 +8994,8 @@
     "PERIOD_SEC": "0",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Inner"
+    "GROUP": "Inner",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2023_U_01",
@@ -8607,7 +9016,8 @@
     "PERIOD_SEC": "15318",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Caliban"
+    "GROUP": "Caliban",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2025_U_01",
@@ -8628,7 +9038,8 @@
     "PERIOD_SEC": "0",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Inner"
+    "GROUP": "Inner",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "Triton",
@@ -8649,7 +9060,8 @@
     "PERIOD_SEC": "0",
     "RETROGRADE_ROT": "TRUE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Triton"
+    "GROUP": "Triton",
+    "BODY_TYPE": "PlanetaryBody"
   },
   {
     "ID": "Nereid",
@@ -8670,7 +9082,8 @@
     "PERIOD_SEC": "48960",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Nereid"
+    "GROUP": "Nereid",
+    "BODY_TYPE": "PlanetaryBody"
   },
   {
     "ID": "Naiad",
@@ -8691,7 +9104,8 @@
     "PERIOD_SEC": "0",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Inner"
+    "GROUP": "Inner",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "Thalassa",
@@ -8712,7 +9126,8 @@
     "PERIOD_SEC": "0",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Inner"
+    "GROUP": "Inner",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "Despina",
@@ -8733,7 +9148,8 @@
     "PERIOD_SEC": "0",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Inner"
+    "GROUP": "Inner",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "Galatea",
@@ -8754,7 +9170,8 @@
     "PERIOD_SEC": "0",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Inner"
+    "GROUP": "Inner",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "Larissa",
@@ -8775,7 +9192,8 @@
     "PERIOD_SEC": "0",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Inner"
+    "GROUP": "Inner",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "Proteus",
@@ -8796,7 +9214,8 @@
     "PERIOD_SEC": "0",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Inner"
+    "GROUP": "Inner",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "Halimede",
@@ -8817,7 +9236,8 @@
     "PERIOD_SEC": "0",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Halimede"
+    "GROUP": "Halimede",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "Psamathe",
@@ -8838,7 +9258,8 @@
     "PERIOD_SEC": "0",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Neso"
+    "GROUP": "Neso",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "Sao",
@@ -8859,7 +9280,8 @@
     "PERIOD_SEC": "0",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Sao"
+    "GROUP": "Sao",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "Laomedeia",
@@ -8880,7 +9302,8 @@
     "PERIOD_SEC": "0",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Sao"
+    "GROUP": "Sao",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "Neso",
@@ -8901,7 +9324,8 @@
     "PERIOD_SEC": "0",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Neso"
+    "GROUP": "Neso",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "Hippocamp",
@@ -8922,7 +9346,8 @@
     "PERIOD_SEC": "0",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Inner"
+    "GROUP": "Inner",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2002_N_05",
@@ -8943,7 +9368,8 @@
     "PERIOD_SEC": "0",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Sao"
+    "GROUP": "Sao",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "S2021_N_01",
@@ -8964,7 +9390,8 @@
     "PERIOD_SEC": "0",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Neso"
+    "GROUP": "Neso",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "Charon",
@@ -8985,7 +9412,8 @@
     "PERIOD_SEC": "0",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Charon"
+    "GROUP": "Charon",
+    "BODY_TYPE": "PlanetaryBody"
   },
   {
     "ID": "Nix",
@@ -9006,7 +9434,8 @@
     "PERIOD_SEC": "158025",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Minor"
+    "GROUP": "Minor",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "Hydra",
@@ -9027,7 +9456,8 @@
     "PERIOD_SEC": "37116",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Minor"
+    "GROUP": "Minor",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "Kerberos",
@@ -9048,7 +9478,8 @@
     "PERIOD_SEC": "458784",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Minor"
+    "GROUP": "Minor",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "Styx",
@@ -9069,7 +9500,8 @@
     "PERIOD_SEC": "279936",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Minor"
+    "GROUP": "Minor",
+    "BODY_TYPE": "MinorBody"
   },
   {
     "ID": "Ceres",
@@ -9090,7 +9522,8 @@
     "PERIOD_SEC": "32757",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Asteroid"
+    "GROUP": "Asteroid",
+    "BODY_TYPE": "Asteroid"
   },
   {
     "ID": "Pallas",
@@ -9111,7 +9544,8 @@
     "PERIOD_SEC": "28126",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Asteroid"
+    "GROUP": "Asteroid",
+    "BODY_TYPE": "Asteroid"
   },
   {
     "ID": "Juno",
@@ -9132,7 +9566,8 @@
     "PERIOD_SEC": "25956",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Asteroid"
+    "GROUP": "Asteroid",
+    "BODY_TYPE": "Asteroid"
   },
   {
     "ID": "Vesta",
@@ -9153,7 +9588,8 @@
     "PERIOD_SEC": "19224",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Asteroid"
+    "GROUP": "Asteroid",
+    "BODY_TYPE": "Asteroid"
   },
   {
     "ID": "Psyche",
@@ -9174,7 +9610,8 @@
     "PERIOD_SEC": "15105",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Asteroid"
+    "GROUP": "Asteroid",
+    "BODY_TYPE": "Asteroid"
   },
   {
     "ID": "Lutetia",
@@ -9195,7 +9632,8 @@
     "PERIOD_SEC": "29395",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Asteroid"
+    "GROUP": "Asteroid",
+    "BODY_TYPE": "Asteroid"
   },
   {
     "ID": "Ida",
@@ -9216,7 +9654,8 @@
     "PERIOD_SEC": "16682",
     "RETROGRADE_ROT": "TRUE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Asteroid"
+    "GROUP": "Asteroid",
+    "BODY_TYPE": "Asteroid"
   },
   {
     "ID": "Mathilde",
@@ -9237,7 +9676,8 @@
     "PERIOD_SEC": "1503720",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Asteroid"
+    "GROUP": "Asteroid",
+    "BODY_TYPE": "Asteroid"
   },
   {
     "ID": "Eros",
@@ -9258,7 +9698,8 @@
     "PERIOD_SEC": "18972",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Asteroid"
+    "GROUP": "Asteroid",
+    "BODY_TYPE": "Asteroid"
   },
   {
     "ID": "Gaspra",
@@ -9279,7 +9720,8 @@
     "PERIOD_SEC": "255351",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Asteroid"
+    "GROUP": "Asteroid",
+    "BODY_TYPE": "Asteroid"
   },
   {
     "ID": "Steins",
@@ -9300,7 +9742,8 @@
     "PERIOD_SEC": "21776",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Asteroid"
+    "GROUP": "Asteroid",
+    "BODY_TYPE": "Asteroid"
   },
   {
     "ID": "Toutatis",
@@ -9321,7 +9764,8 @@
     "PERIOD_SEC": "633600",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Asteroid"
+    "GROUP": "Asteroid",
+    "BODY_TYPE": "Asteroid"
   },
   {
     "ID": "Annefrank",
@@ -9342,7 +9786,8 @@
     "PERIOD_SEC": "54432",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Asteroid"
+    "GROUP": "Asteroid",
+    "BODY_TYPE": "Asteroid"
   },
   {
     "ID": "Braille",
@@ -9363,7 +9808,8 @@
     "PERIOD_SEC": "815040",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Asteroid"
+    "GROUP": "Asteroid",
+    "BODY_TYPE": "Asteroid"
   },
   {
     "ID": "Itokawa",
@@ -9384,7 +9830,8 @@
     "PERIOD_SEC": "43675",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Asteroid"
+    "GROUP": "Asteroid",
+    "BODY_TYPE": "Asteroid"
   },
   {
     "ID": "Quaoar",
@@ -9405,7 +9852,8 @@
     "PERIOD_SEC": "63644",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Asteroid"
+    "GROUP": "Asteroid",
+    "BODY_TYPE": "Asteroid"
   },
   {
     "ID": "Didymos",
@@ -9426,7 +9874,8 @@
     "PERIOD_SEC": "8136",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Asteroid"
+    "GROUP": "Asteroid",
+    "BODY_TYPE": "Asteroid"
   },
   {
     "ID": "Sedna",
@@ -9447,7 +9896,8 @@
     "PERIOD_SEC": "36982",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Asteroid"
+    "GROUP": "Asteroid",
+    "BODY_TYPE": "Asteroid"
   },
   {
     "ID": "Orcus",
@@ -9468,7 +9918,8 @@
     "PERIOD_SEC": "47484",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Asteroid"
+    "GROUP": "Asteroid",
+    "BODY_TYPE": "Asteroid"
   },
   {
     "ID": "Bennu",
@@ -9489,7 +9940,8 @@
     "PERIOD_SEC": "15466",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Asteroid"
+    "GROUP": "Asteroid",
+    "BODY_TYPE": "Asteroid"
   },
   {
     "ID": "Salacia",
@@ -9510,7 +9962,8 @@
     "PERIOD_SEC": "21924",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Asteroid"
+    "GROUP": "Asteroid",
+    "BODY_TYPE": "Asteroid"
   },
   {
     "ID": "Haumea",
@@ -9531,7 +9984,8 @@
     "PERIOD_SEC": "14094",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Asteroid"
+    "GROUP": "Asteroid",
+    "BODY_TYPE": "Asteroid"
   },
   {
     "ID": "Eris",
@@ -9552,7 +10006,8 @@
     "PERIOD_SEC": "1365120",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Asteroid"
+    "GROUP": "Asteroid",
+    "BODY_TYPE": "Asteroid"
   },
   {
     "ID": "Ryugu",
@@ -9573,7 +10028,8 @@
     "PERIOD_SEC": "27477",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Asteroid"
+    "GROUP": "Asteroid",
+    "BODY_TYPE": "Asteroid"
   },
   {
     "ID": "Kagara",
@@ -9594,7 +10050,8 @@
     "PERIOD_SEC": "34740",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Asteroid"
+    "GROUP": "Asteroid",
+    "BODY_TYPE": "Asteroid"
   },
   {
     "ID": "Arrokoth",
@@ -9615,7 +10072,8 @@
     "PERIOD_SEC": "57376",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Asteroid"
+    "GROUP": "Asteroid",
+    "BODY_TYPE": "Asteroid"
   },
   {
     "ID": "Dimorphos",
@@ -9636,7 +10094,8 @@
     "PERIOD_SEC": "42912",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Asteroid"
+    "GROUP": "Asteroid",
+    "BODY_TYPE": "Asteroid"
   },
   {
     "ID": "Dysnomia",
@@ -9657,7 +10116,8 @@
     "PERIOD_SEC": "0",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Asteroid"
+    "GROUP": "Asteroid",
+    "BODY_TYPE": "Asteroid"
   },
   {
     "ID": "Haunu",
@@ -9678,7 +10138,8 @@
     "PERIOD_SEC": "0",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Asteroid"
+    "GROUP": "Asteroid",
+    "BODY_TYPE": "Asteroid"
   },
   {
     "ID": "Hiaka",
@@ -9699,7 +10160,8 @@
     "PERIOD_SEC": "35280",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Asteroid"
+    "GROUP": "Asteroid",
+    "BODY_TYPE": "Asteroid"
   },
   {
     "ID": "Namaka",
@@ -9720,7 +10182,8 @@
     "PERIOD_SEC": "0",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Asteroid"
+    "GROUP": "Asteroid",
+    "BODY_TYPE": "Asteroid"
   },
   {
     "ID": "Vanth",
@@ -9741,7 +10204,8 @@
     "PERIOD_SEC": "0",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Asteroid"
+    "GROUP": "Asteroid",
+    "BODY_TYPE": "Asteroid"
   },
   {
     "ID": "Weywot",
@@ -9762,7 +10226,8 @@
     "PERIOD_SEC": "0",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Asteroid"
+    "GROUP": "Asteroid",
+    "BODY_TYPE": "Asteroid"
   },
   {
     "ID": "Dactyl",
@@ -9783,7 +10248,8 @@
     "PERIOD_SEC": "0",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Asteroid"
+    "GROUP": "Asteroid",
+    "BODY_TYPE": "Asteroid"
   },
   {
     "ID": "Oumuamua",
@@ -9804,7 +10270,8 @@
     "PERIOD_SEC": "28573",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "TerrestrialBody",
-    "GROUP": "Interstellar"
+    "GROUP": "Interstellar",
+    "BODY_TYPE": "Asteroid"
   },
   {
     "ID": "Halley",
@@ -9825,7 +10292,8 @@
     "PERIOD_SEC": "190080",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "Comet",
-    "GROUP": "Comet"
+    "GROUP": "Comet",
+    "BODY_TYPE": "Comet"
   },
   {
     "ID": "Borrelly",
@@ -9846,7 +10314,8 @@
     "PERIOD_SEC": "45000",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "Comet",
-    "GROUP": "Comet"
+    "GROUP": "Comet",
+    "BODY_TYPE": "Comet"
   },
   {
     "ID": "Tempel 1",
@@ -9867,7 +10336,8 @@
     "PERIOD_SEC": "146520",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "Comet",
-    "GROUP": "Comet"
+    "GROUP": "Comet",
+    "BODY_TYPE": "Comet"
   },
   {
     "ID": "Wild 2",
@@ -9888,7 +10358,8 @@
     "PERIOD_SEC": "146880",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "Comet",
-    "GROUP": "Comet"
+    "GROUP": "Comet",
+    "BODY_TYPE": "Comet"
   },
   {
     "ID": "Hartley 2",
@@ -9909,7 +10380,8 @@
     "PERIOD_SEC": "65160",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "Comet",
-    "GROUP": "Comet"
+    "GROUP": "Comet",
+    "BODY_TYPE": "Comet"
   },
   {
     "ID": "Churyumov-Gerasimnko",
@@ -9930,6 +10402,29 @@
     "PERIOD_SEC": "44640",
     "RETROGRADE_ROT": "FALSE",
     "MODEL_TYPE": "Comet",
-    "GROUP": "Comet"
+    "GROUP": "Comet",
+    "BODY_TYPE": "Comet"
+  },
+  {
+    "ID": "",
+    "ID_IAU": "",
+    "PARENT": "",
+    "PARENT_IAU": "",
+    "EPOCH": "",
+    "A_SEMI_MAJOR_AXIS_KM": "",
+    "EC_ECCENTRICITY": "",
+    "W_ARG_PERIAPSIS_DEG": "",
+    "MA_MEAN_ANOMALY_DEG": "",
+    "IN_INCLINATION_DEG": "",
+    "OM_LONGITUDE_ASCENDING_NODE_DEG": "",
+    "PR_SIDEREAL_ORBIT_PERIOD_SEC": "",
+    "AXIAL_TILT_DEG": "",
+    "MEAN_RADIUS_KM": "",
+    "GM_KM3/S2": "",
+    "PERIOD_SEC": "",
+    "RETROGRADE_ROT": "",
+    "MODEL_TYPE": "",
+    "GROUP": "",
+    "BODY_TYPE": ""
   }
 ]

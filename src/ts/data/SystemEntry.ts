@@ -1,4 +1,4 @@
-import type { CelestialType } from "./CelestialType";
+import type { BodyType, CelestialType } from "./CelestialType";
 
 export interface SystemEntry {
   ID: string;
@@ -20,4 +20,5 @@ export interface SystemEntry {
   RETROGRADE_ROT: string;
   MODEL_TYPE: CelestialType;
   GROUP: string;
+  BODY_TYPE: BodyType;
 }

@@ -1313,7 +1313,7 @@
         </Landmark>
     </AtmosphericBody>
 
-    <TerrestrialBody Id="Luna" Parent="Earth">
+    <PlanetaryBody Id="Luna" Parent="Earth">
         <MeshCollection Id="Default"/>
         <SemiMajorAxis Km="384400" />
         <Inclination Degrees="18.28" />
@@ -2148,7 +2148,7 @@
             <Latitude Degrees="22.8" />
             <Longitude Degrees="4.0" />
         </Crater>
-    </TerrestrialBody>
+    </PlanetaryBody>
 
 
     <Comet Id="MakemakeComet" Parent="Sol">

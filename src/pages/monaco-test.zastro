@@ -1,0 +1,26 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { BuilderPage } from "../components/BuilderPage";
+import { MonacoTestPage } from "../components/monaco/MonacoTestPage";
+---
+
+<BaseLayout>
+  <style slot="head" is:global>
+    body {
+      height: 100vh;
+      padding: 0;
+      margin: 0;
+
+      display: grid;
+      grid-template-rows: 1fr;
+      grid-template-columns: 1fr;
+    }
+    #editor-wrapper {
+      margin: 1rem;
+    }
+  </style>
+
+  <div id="editor-wrapper">
+    <MonacoTestPage client:only="react" />
+  </div>
+</BaseLayout>

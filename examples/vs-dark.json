@@ -1,0 +1,3591 @@
+{
+  "semanticHighlighting": false,
+  "themeData": {
+    "base": "vs-dark",
+    "inherit": false,
+    "rules": [
+      {
+        "token": "",
+        "foreground": "D4D4D4",
+        "background": "1E1E1E"
+      },
+      {
+        "token": "invalid",
+        "foreground": "f44747"
+      },
+      {
+        "token": "emphasis",
+        "fontStyle": "italic"
+      },
+      {
+        "token": "strong",
+        "fontStyle": "bold"
+      },
+      {
+        "token": "variable",
+        "foreground": "74B0DF"
+      },
+      {
+        "token": "variable.predefined",
+        "foreground": "4864AA"
+      },
+      {
+        "token": "variable.parameter",
+        "foreground": "9CDCFE"
+      },
+      {
+        "token": "constant",
+        "foreground": "569CD6"
+      },
+      {
+        "token": "comment",
+        "foreground": "608B4E"
+      },
+      {
+        "token": "number",
+        "foreground": "B5CEA8"
+      },
+      {
+        "token": "number.hex",
+        "foreground": "5BB498"
+      },
+      {
+        "token": "regexp",
+        "foreground": "B46695"
+      },
+      {
+        "token": "annotation",
+        "foreground": "cc6666"
+      },
+      {
+        "token": "type",
+        "foreground": "3DC9B0"
+      },
+      {
+        "token": "delimiter",
+        "foreground": "DCDCDC"
+      },
+      {
+        "token": "delimiter.html",
+        "foreground": "808080"
+      },
+      {
+        "token": "delimiter.xml",
+        "foreground": "808080"
+      },
+      {
+        "token": "tag",
+        "foreground": "569CD6"
+      },
+      {
+        "token": "tag.id.pug",
+        "foreground": "4F76AC"
+      },
+      {
+        "token": "tag.class.pug",
+        "foreground": "4F76AC"
+      },
+      {
+        "token": "meta.scss",
+        "foreground": "A79873"
+      },
+      {
+        "token": "meta.tag",
+        "foreground": "CE9178"
+      },
+      {
+        "token": "metatag",
+        "foreground": "DD6A6F"
+      },
+      {
+        "token": "metatag.content.html",
+        "foreground": "9CDCFE"
+      },
+      {
+        "token": "metatag.html",
+        "foreground": "569CD6"
+      },
+      {
+        "token": "metatag.xml",
+        "foreground": "569CD6"
+      },
+      {
+        "token": "metatag.php",
+        "fontStyle": "bold"
+      },
+      {
+        "token": "key",
+        "foreground": "9CDCFE"
+      },
+      {
+        "token": "string.key.json",
+        "foreground": "9CDCFE"
+      },
+      {
+        "token": "string.value.json",
+        "foreground": "CE9178"
+      },
+      {
+        "token": "attribute.name",
+        "foreground": "9CDCFE"
+      },
+      {
+        "token": "attribute.value",
+        "foreground": "CE9178"
+      },
+      {
+        "token": "attribute.value.number.css",
+        "foreground": "B5CEA8"
+      },
+      {
+        "token": "attribute.value.unit.css",
+        "foreground": "B5CEA8"
+      },
+      {
+        "token": "attribute.value.hex.css",
+        "foreground": "D4D4D4"
+      },
+      {
+        "token": "string",
+        "foreground": "CE9178"
+      },
+      {
+        "token": "string.sql",
+        "foreground": "FF0000"
+      },
+      {
+        "token": "keyword",
+        "foreground": "569CD6"
+      },
+      {
+        "token": "keyword.flow",
+        "foreground": "C586C0"
+      },
+      {
+        "token": "keyword.json",
+        "foreground": "CE9178"
+      },
+      {
+        "token": "keyword.flow.scss",
+        "foreground": "569CD6"
+      },
+      {
+        "token": "operator.scss",
+        "foreground": "909090"
+      },
+      {
+        "token": "operator.sql",
+        "foreground": "778899"
+      },
+      {
+        "token": "operator.swift",
+        "foreground": "909090"
+      },
+      {
+        "token": "predefined.sql",
+        "foreground": "FF00FF"
+      }
+    ],
+    "colors": {
+      "editor.background": "#1E1E1E",
+      "editor.foreground": "#D4D4D4",
+      "editor.inactiveSelectionBackground": "#3A3D41",
+      "editorIndentGuide.background1": "#404040",
+      "editorIndentGuide.activeBackground1": "#707070",
+      "editor.selectionHighlightBackground": "#ADD6FF26"
+    }
+  },
+  "id": "vs-dark",
+  "themeName": "vs-dark",
+  "colors": {},
+  "defaultColors": {
+    "editor.lineHighlightBorder": {
+      "rgba": {
+        "r": 40,
+        "g": 40,
+        "b": 40,
+        "a": 1
+      },
+      "_toString": "#282828"
+    },
+    "editorBracketHighlight.foreground1": {
+      "rgba": {
+        "r": 255,
+        "g": 215,
+        "b": 0,
+        "a": 1
+      },
+      "_toString": "#ffd700"
+    },
+    "editorBracketPairGuide.background1": {
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 0
+      },
+      "_toString": "rgba(0, 0, 0, 0)"
+    },
+    "editorBracketPairGuide.activeBackground1": {
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 0
+      },
+      "_toString": "rgba(0, 0, 0, 0)"
+    },
+    "editorBracketHighlight.foreground2": {
+      "rgba": {
+        "r": 218,
+        "g": 112,
+        "b": 214,
+        "a": 1
+      },
+      "_toString": "#da70d6"
+    },
+    "editorBracketPairGuide.background2": {
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 0
+      },
+      "_toString": "rgba(0, 0, 0, 0)"
+    },
+    "editorBracketPairGuide.activeBackground2": {
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 0
+      },
+      "_toString": "rgba(0, 0, 0, 0)"
+    },
+    "editorBracketHighlight.foreground3": {
+      "rgba": {
+        "r": 23,
+        "g": 159,
+        "b": 255,
+        "a": 1
+      },
+      "_toString": "#179fff"
+    },
+    "editorBracketPairGuide.background3": {
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 0
+      },
+      "_toString": "rgba(0, 0, 0, 0)"
+    },
+    "editorBracketPairGuide.activeBackground3": {
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 0
+      },
+      "_toString": "rgba(0, 0, 0, 0)"
+    },
+    "editorBracketHighlight.foreground4": {
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 0
+      },
+      "_toString": "rgba(0, 0, 0, 0)"
+    },
+    "editorBracketPairGuide.background4": {
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 0
+      },
+      "_toString": "rgba(0, 0, 0, 0)"
+    },
+    "editorBracketPairGuide.activeBackground4": {
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 0
+      },
+      "_toString": "rgba(0, 0, 0, 0)"
+    },
+    "editorBracketHighlight.foreground5": {
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 0
+      },
+      "_toString": "rgba(0, 0, 0, 0)"
+    },
+    "editorBracketPairGuide.background5": {
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 0
+      },
+      "_toString": "rgba(0, 0, 0, 0)"
+    },
+    "editorBracketPairGuide.activeBackground5": {
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 0
+      },
+      "_toString": "rgba(0, 0, 0, 0)"
+    },
+    "editorBracketHighlight.foreground6": {
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 0
+      },
+      "_toString": "rgba(0, 0, 0, 0)"
+    },
+    "editorBracketPairGuide.background6": {
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 0
+      },
+      "_toString": "rgba(0, 0, 0, 0)"
+    },
+    "editorBracketPairGuide.activeBackground6": {
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 0
+      },
+      "_toString": "rgba(0, 0, 0, 0)"
+    },
+    "editorIndentGuide.background2": {
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 0
+      },
+      "_toString": "rgba(0, 0, 0, 0)"
+    },
+    "editorIndentGuide.activeBackground2": {
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 0
+      },
+      "_toString": "rgba(0, 0, 0, 0)"
+    },
+    "editorIndentGuide.background3": {
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 0
+      },
+      "_toString": "rgba(0, 0, 0, 0)"
+    },
+    "editorIndentGuide.activeBackground3": {
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 0
+      },
+      "_toString": "rgba(0, 0, 0, 0)"
+    },
+    "editorIndentGuide.background4": {
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 0
+      },
+      "_toString": "rgba(0, 0, 0, 0)"
+    },
+    "editorIndentGuide.activeBackground4": {
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 0
+      },
+      "_toString": "rgba(0, 0, 0, 0)"
+    },
+    "editorIndentGuide.background5": {
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 0
+      },
+      "_toString": "rgba(0, 0, 0, 0)"
+    },
+    "editorIndentGuide.activeBackground5": {
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 0
+      },
+      "_toString": "rgba(0, 0, 0, 0)"
+    },
+    "editorIndentGuide.background6": {
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 0
+      },
+      "_toString": "rgba(0, 0, 0, 0)"
+    },
+    "editorIndentGuide.activeBackground6": {
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 0
+      },
+      "_toString": "rgba(0, 0, 0, 0)"
+    },
+    "editorLineNumber.foreground": {
+      "rgba": {
+        "r": 133,
+        "g": 133,
+        "b": 133,
+        "a": 1
+      },
+      "_toString": "#858585"
+    },
+    "editorCursor.foreground": {
+      "rgba": {
+        "r": 174,
+        "g": 175,
+        "b": 173,
+        "a": 1
+      },
+      "_toString": "#aeafad"
+    },
+    "editorMultiCursor.primary.foreground": {
+      "rgba": {
+        "r": 174,
+        "g": 175,
+        "b": 173,
+        "a": 1
+      },
+      "_toString": "#aeafad"
+    },
+    "editorMultiCursor.secondary.foreground": {
+      "rgba": {
+        "r": 174,
+        "g": 175,
+        "b": 173,
+        "a": 1
+      },
+      "_toString": "#aeafad"
+    },
+    "editorBracketHighlight.unexpectedBracket.foreground": {
+      "rgba": {
+        "r": 255,
+        "g": 18,
+        "b": 18,
+        "a": 0.8
+      },
+      "_toString": "rgba(255, 18, 18, 0.8)"
+    },
+    "editorError.foreground": {
+      "rgba": {
+        "r": 241,
+        "g": 76,
+        "b": 76,
+        "a": 1
+      },
+      "_toString": "#f14c4c"
+    },
+    "editorWarning.foreground": {
+      "rgba": {
+        "r": 204,
+        "g": 167,
+        "b": 0,
+        "a": 1
+      },
+      "_toString": "#cca700"
+    },
+    "editorInfo.foreground": {
+      "rgba": {
+        "r": 55,
+        "g": 148,
+        "b": 255,
+        "a": 1
+      },
+      "_toString": "#3794ff"
+    },
+    "editorHint.foreground": {
+      "rgba": {
+        "r": 238,
+        "g": 238,
+        "b": 238,
+        "a": 0.7
+      },
+      "_toString": "rgba(238, 238, 238, 0.7)"
+    },
+    "editorUnnecessaryCode.opacity": {
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 0.667
+      },
+      "_toString": "rgba(0, 0, 0, 0.67)"
+    },
+    "editor.findMatchHighlightBackground": {
+      "rgba": {
+        "r": 234,
+        "g": 92,
+        "b": 0,
+        "a": 0.333
+      },
+      "_toString": "rgba(234, 92, 0, 0.33)"
+    },
+    "editorWidget.border": {
+      "rgba": {
+        "r": 69,
+        "g": 69,
+        "b": 69,
+        "a": 1
+      },
+      "_toString": "#454545"
+    },
+    "editorHoverWidget.border": {
+      "rgba": {
+        "r": 69,
+        "g": 69,
+        "b": 69,
+        "a": 1
+      },
+      "_toString": "#454545"
+    },
+    "foreground": {
+      "rgba": {
+        "r": 204,
+        "g": 204,
+        "b": 204,
+        "a": 1
+      },
+      "_toString": "#cccccc"
+    },
+    "disabledForeground": {
+      "rgba": {
+        "r": 204,
+        "g": 204,
+        "b": 204,
+        "a": 0.502
+      },
+      "_toString": "rgba(204, 204, 204, 0.5)"
+    },
+    "errorForeground": {
+      "rgba": {
+        "r": 244,
+        "g": 135,
+        "b": 113,
+        "a": 1
+      },
+      "_toString": "#f48771"
+    },
+    "descriptionForeground": {
+      "rgba": {
+        "r": 204,
+        "g": 204,
+        "b": 204,
+        "a": 0.7
+      },
+      "_toString": "rgba(204, 204, 204, 0.7)"
+    },
+    "icon.foreground": {
+      "rgba": {
+        "r": 197,
+        "g": 197,
+        "b": 197,
+        "a": 1
+      },
+      "_toString": "#c5c5c5"
+    },
+    "focusBorder": {
+      "rgba": {
+        "r": 0,
+        "g": 127,
+        "b": 212,
+        "a": 1
+      },
+      "_toString": "#007fd4"
+    },
+    "textLink.foreground": {
+      "rgba": {
+        "r": 55,
+        "g": 148,
+        "b": 255,
+        "a": 1
+      },
+      "_toString": "#3794ff"
+    },
+    "textLink.activeForeground": {
+      "rgba": {
+        "r": 55,
+        "g": 148,
+        "b": 255,
+        "a": 1
+      },
+      "_toString": "#3794ff"
+    },
+    "textSeparator.foreground": {
+      "rgba": {
+        "r": 255,
+        "g": 255,
+        "b": 255,
+        "a": 0.18
+      },
+      "_toString": "rgba(255, 255, 255, 0.18)"
+    },
+    "textPreformat.foreground": {
+      "rgba": {
+        "r": 215,
+        "g": 186,
+        "b": 125,
+        "a": 1
+      },
+      "_toString": "#d7ba7d"
+    },
+    "textPreformat.background": {
+      "rgba": {
+        "r": 255,
+        "g": 255,
+        "b": 255,
+        "a": 0.102
+      },
+      "_toString": "rgba(255, 255, 255, 0.1)"
+    },
+    "textBlockQuote.background": {
+      "rgba": {
+        "r": 34,
+        "g": 34,
+        "b": 34,
+        "a": 1
+      },
+      "_toString": "#222222"
+    },
+    "textBlockQuote.border": {
+      "rgba": {
+        "r": 0,
+        "g": 122,
+        "b": 204,
+        "a": 0.502
+      },
+      "_toString": "rgba(0, 122, 204, 0.5)"
+    },
+    "textCodeBlock.background": {
+      "rgba": {
+        "r": 10,
+        "g": 10,
+        "b": 10,
+        "a": 0.4
+      },
+      "_toString": "rgba(10, 10, 10, 0.4)"
+    },
+    "sash.hoverBorder": {
+      "rgba": {
+        "r": 0,
+        "g": 127,
+        "b": 212,
+        "a": 1
+      },
+      "_toString": "#007fd4"
+    },
+    "badge.background": {
+      "rgba": {
+        "r": 77,
+        "g": 77,
+        "b": 77,
+        "a": 1
+      },
+      "_toString": "#4d4d4d"
+    },
+    "badge.foreground": {
+      "rgba": {
+        "r": 255,
+        "g": 255,
+        "b": 255,
+        "a": 1
+      },
+      "_toString": "#ffffff"
+    },
+    "activityWarningBadge.foreground": {
+      "_hsla": {
+        "h": 0,
+        "s": 0,
+        "l": 0,
+        "a": 1
+      },
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 1
+      },
+      "_toString": "#000000"
+    },
+    "activityWarningBadge.background": {
+      "rgba": {
+        "r": 204,
+        "g": 167,
+        "b": 0,
+        "a": 1
+      },
+      "_toString": "#cca700"
+    },
+    "activityErrorBadge.foreground": {
+      "_hsla": {
+        "h": 0,
+        "s": 0,
+        "l": 0,
+        "a": 1
+      },
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 1
+      },
+      "_toString": "#000000"
+    },
+    "activityErrorBadge.background": {
+      "rgba": {
+        "r": 241,
+        "g": 76,
+        "b": 76,
+        "a": 1
+      },
+      "_toString": "#f14c4c"
+    },
+    "scrollbar.shadow": {
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 1
+      },
+      "_toString": "#000000"
+    },
+    "scrollbarSlider.background": {
+      "rgba": {
+        "r": 121,
+        "g": 121,
+        "b": 121,
+        "a": 0.4
+      },
+      "_toString": "rgba(121, 121, 121, 0.4)"
+    },
+    "scrollbarSlider.hoverBackground": {
+      "rgba": {
+        "r": 100,
+        "g": 100,
+        "b": 100,
+        "a": 0.7
+      },
+      "_toString": "rgba(100, 100, 100, 0.7)"
+    },
+    "scrollbarSlider.activeBackground": {
+      "rgba": {
+        "r": 191,
+        "g": 191,
+        "b": 191,
+        "a": 0.4
+      },
+      "_toString": "rgba(191, 191, 191, 0.4)"
+    },
+    "progressBar.background": {
+      "rgba": {
+        "r": 14,
+        "g": 112,
+        "b": 192,
+        "a": 1
+      },
+      "_toString": "#0e70c0"
+    },
+    "chart.line": {
+      "rgba": {
+        "r": 35,
+        "g": 107,
+        "b": 142,
+        "a": 1
+      },
+      "_toString": "#236b8e"
+    },
+    "chart.axis": {
+      "rgba": {
+        "r": 191,
+        "g": 191,
+        "b": 191,
+        "a": 0.4
+      },
+      "_toString": "rgba(191, 191, 191, 0.4)"
+    },
+    "chart.guide": {
+      "rgba": {
+        "r": 191,
+        "g": 191,
+        "b": 191,
+        "a": 0.2
+      },
+      "_toString": "rgba(191, 191, 191, 0.2)"
+    },
+    "editorStickyScroll.background": {
+      "rgba": {
+        "r": 30,
+        "g": 30,
+        "b": 30,
+        "a": 1
+      },
+      "_toString": "#1e1e1e"
+    },
+    "editorStickyScrollGutter.background": {
+      "rgba": {
+        "r": 30,
+        "g": 30,
+        "b": 30,
+        "a": 1
+      },
+      "_toString": "#1e1e1e"
+    },
+    "editorStickyScrollHover.background": {
+      "rgba": {
+        "r": 42,
+        "g": 45,
+        "b": 46,
+        "a": 1
+      },
+      "_toString": "#2a2d2e"
+    },
+    "editorStickyScroll.shadow": {
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 1
+      },
+      "_toString": "#000000"
+    },
+    "editorWidget.background": {
+      "rgba": {
+        "r": 37,
+        "g": 37,
+        "b": 38,
+        "a": 1
+      },
+      "_toString": "#252526"
+    },
+    "editorWidget.foreground": {
+      "rgba": {
+        "r": 204,
+        "g": 204,
+        "b": 204,
+        "a": 1
+      },
+      "_toString": "#cccccc"
+    },
+    "editorLink.activeForeground": {
+      "rgba": {
+        "r": 78,
+        "g": 148,
+        "b": 206,
+        "a": 1
+      },
+      "_toString": "#4e94ce"
+    },
+    "editor.selectionBackground": {
+      "rgba": {
+        "r": 38,
+        "g": 79,
+        "b": 120,
+        "a": 1
+      },
+      "_toString": "#264f78"
+    },
+    "editor.compositionBorder": {
+      "rgba": {
+        "r": 255,
+        "g": 255,
+        "b": 255,
+        "a": 1
+      },
+      "_toString": "#ffffff"
+    },
+    "editor.findMatchBackground": {
+      "rgba": {
+        "r": 81,
+        "g": 92,
+        "b": 106,
+        "a": 1
+      },
+      "_toString": "#515c6a"
+    },
+    "editor.findRangeHighlightBackground": {
+      "rgba": {
+        "r": 58,
+        "g": 61,
+        "b": 65,
+        "a": 0.4
+      },
+      "_toString": "rgba(58, 61, 65, 0.4)"
+    },
+    "editor.hoverHighlightBackground": {
+      "rgba": {
+        "r": 38,
+        "g": 79,
+        "b": 120,
+        "a": 0.251
+      },
+      "_toString": "rgba(38, 79, 120, 0.25)"
+    },
+    "editorHoverWidget.background": {
+      "rgba": {
+        "r": 37,
+        "g": 37,
+        "b": 38,
+        "a": 1
+      },
+      "_toString": "#252526"
+    },
+    "editorHoverWidget.foreground": {
+      "rgba": {
+        "r": 204,
+        "g": 204,
+        "b": 204,
+        "a": 1
+      },
+      "_toString": "#cccccc"
+    },
+    "editorHoverWidget.statusBarBackground": {
+      "_hsla": {
+        "h": 240,
+        "s": 0.013,
+        "l": 0.176,
+        "a": 1
+      },
+      "rgba": {
+        "r": 44,
+        "g": 44,
+        "b": 45,
+        "a": 1
+      },
+      "_toString": "#2c2c2d"
+    },
+    "editorInlayHint.foreground": {
+      "rgba": {
+        "r": 150,
+        "g": 150,
+        "b": 150,
+        "a": 1
+      },
+      "_toString": "#969696"
+    },
+    "editorInlayHint.background": {
+      "rgba": {
+        "r": 77,
+        "g": 77,
+        "b": 77,
+        "a": 0.1
+      },
+      "_toString": "rgba(77, 77, 77, 0.1)"
+    },
+    "editorInlayHint.typeForeground": {
+      "rgba": {
+        "r": 150,
+        "g": 150,
+        "b": 150,
+        "a": 1
+      },
+      "_toString": "#969696"
+    },
+    "editorInlayHint.typeBackground": {
+      "rgba": {
+        "r": 77,
+        "g": 77,
+        "b": 77,
+        "a": 0.1
+      },
+      "_toString": "rgba(77, 77, 77, 0.1)"
+    },
+    "editorInlayHint.parameterForeground": {
+      "rgba": {
+        "r": 150,
+        "g": 150,
+        "b": 150,
+        "a": 1
+      },
+      "_toString": "#969696"
+    },
+    "editorInlayHint.parameterBackground": {
+      "rgba": {
+        "r": 77,
+        "g": 77,
+        "b": 77,
+        "a": 0.1
+      },
+      "_toString": "rgba(77, 77, 77, 0.1)"
+    },
+    "editorLightBulb.foreground": {
+      "rgba": {
+        "r": 255,
+        "g": 204,
+        "b": 0,
+        "a": 1
+      },
+      "_toString": "#ffcc00"
+    },
+    "editorLightBulbAutoFix.foreground": {
+      "rgba": {
+        "r": 117,
+        "g": 190,
+        "b": 255,
+        "a": 1
+      },
+      "_toString": "#75beff"
+    },
+    "editorLightBulbAi.foreground": {
+      "rgba": {
+        "r": 255,
+        "g": 204,
+        "b": 0,
+        "a": 1
+      },
+      "_toString": "#ffcc00"
+    },
+    "editor.snippetTabstopHighlightBackground": {
+      "rgba": {
+        "r": 124,
+        "g": 124,
+        "b": 124,
+        "a": 0.3
+      },
+      "_toString": "rgba(124, 124, 124, 0.3)"
+    },
+    "editor.snippetFinalTabstopHighlightBorder": {
+      "rgba": {
+        "r": 82,
+        "g": 82,
+        "b": 82,
+        "a": 1
+      },
+      "_toString": "#525252"
+    },
+    "diffEditor.insertedTextBackground": {
+      "rgba": {
+        "r": 156,
+        "g": 204,
+        "b": 44,
+        "a": 0.2
+      },
+      "_toString": "rgba(156, 204, 44, 0.2)"
+    },
+    "diffEditor.removedTextBackground": {
+      "rgba": {
+        "r": 255,
+        "g": 0,
+        "b": 0,
+        "a": 0.2
+      },
+      "_toString": "rgba(255, 0, 0, 0.2)"
+    },
+    "diffEditor.insertedLineBackground": {
+      "rgba": {
+        "r": 155,
+        "g": 185,
+        "b": 85,
+        "a": 0.2
+      },
+      "_toString": "rgba(155, 185, 85, 0.2)"
+    },
+    "diffEditor.removedLineBackground": {
+      "rgba": {
+        "r": 255,
+        "g": 0,
+        "b": 0,
+        "a": 0.2
+      },
+      "_toString": "rgba(255, 0, 0, 0.2)"
+    },
+    "diffEditor.diagonalFill": {
+      "rgba": {
+        "r": 204,
+        "g": 204,
+        "b": 204,
+        "a": 0.2
+      },
+      "_toString": "rgba(204, 204, 204, 0.2)"
+    },
+    "diffEditor.unchangedRegionForeground": {
+      "rgba": {
+        "r": 204,
+        "g": 204,
+        "b": 204,
+        "a": 1
+      },
+      "_toString": "#cccccc"
+    },
+    "diffEditor.unchangedCodeBackground": {
+      "rgba": {
+        "r": 116,
+        "g": 116,
+        "b": 116,
+        "a": 0.161
+      },
+      "_toString": "rgba(116, 116, 116, 0.16)"
+    },
+    "widget.shadow": {
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 0.36
+      },
+      "_toString": "rgba(0, 0, 0, 0.36)"
+    },
+    "toolbar.hoverBackground": {
+      "rgba": {
+        "r": 90,
+        "g": 93,
+        "b": 94,
+        "a": 0.314
+      },
+      "_toString": "rgba(90, 93, 94, 0.31)"
+    },
+    "toolbar.activeBackground": {
+      "_hsla": {
+        "h": 195,
+        "s": 0.022,
+        "l": 0.397,
+        "a": 0.314
+      },
+      "rgba": {
+        "r": 99,
+        "g": 102,
+        "b": 103,
+        "a": 0.314
+      },
+      "_toString": "rgba(99, 102, 103, 0.31)"
+    },
+    "breadcrumb.foreground": {
+      "rgba": {
+        "r": 204,
+        "g": 204,
+        "b": 204,
+        "a": 0.8
+      },
+      "_toString": "rgba(204, 204, 204, 0.8)"
+    },
+    "breadcrumb.background": {
+      "rgba": {
+        "r": 30,
+        "g": 30,
+        "b": 30,
+        "a": 1
+      },
+      "_toString": "#1e1e1e"
+    },
+    "breadcrumb.focusForeground": {
+      "_hsla": {
+        "h": 0,
+        "s": 0,
+        "l": 0.88,
+        "a": 1
+      },
+      "rgba": {
+        "r": 224,
+        "g": 224,
+        "b": 224,
+        "a": 1
+      },
+      "_toString": "#e0e0e0"
+    },
+    "breadcrumb.activeSelectionForeground": {
+      "_hsla": {
+        "h": 0,
+        "s": 0,
+        "l": 0.88,
+        "a": 1
+      },
+      "rgba": {
+        "r": 224,
+        "g": 224,
+        "b": 224,
+        "a": 1
+      },
+      "_toString": "#e0e0e0"
+    },
+    "breadcrumbPicker.background": {
+      "rgba": {
+        "r": 37,
+        "g": 37,
+        "b": 38,
+        "a": 1
+      },
+      "_toString": "#252526"
+    },
+    "merge.currentHeaderBackground": {
+      "rgba": {
+        "r": 64,
+        "g": 200,
+        "b": 174,
+        "a": 0.5
+      },
+      "_toString": "rgba(64, 200, 174, 0.5)"
+    },
+    "merge.currentContentBackground": {
+      "rgba": {
+        "r": 64,
+        "g": 200,
+        "b": 174,
+        "a": 0.2
+      },
+      "_toString": "rgba(64, 200, 174, 0.2)"
+    },
+    "merge.incomingHeaderBackground": {
+      "rgba": {
+        "r": 64,
+        "g": 166,
+        "b": 255,
+        "a": 0.5
+      },
+      "_toString": "rgba(64, 166, 255, 0.5)"
+    },
+    "merge.incomingContentBackground": {
+      "rgba": {
+        "r": 64,
+        "g": 166,
+        "b": 255,
+        "a": 0.2
+      },
+      "_toString": "rgba(64, 166, 255, 0.2)"
+    },
+    "merge.commonHeaderBackground": {
+      "rgba": {
+        "r": 96,
+        "g": 96,
+        "b": 96,
+        "a": 0.4
+      },
+      "_toString": "rgba(96, 96, 96, 0.4)"
+    },
+    "merge.commonContentBackground": {
+      "rgba": {
+        "r": 96,
+        "g": 96,
+        "b": 96,
+        "a": 0.16
+      },
+      "_toString": "rgba(96, 96, 96, 0.16)"
+    },
+    "editorOverviewRuler.currentContentForeground": {
+      "rgba": {
+        "r": 64,
+        "g": 200,
+        "b": 174,
+        "a": 0.5
+      },
+      "_toString": "rgba(64, 200, 174, 0.5)"
+    },
+    "editorOverviewRuler.incomingContentForeground": {
+      "rgba": {
+        "r": 64,
+        "g": 166,
+        "b": 255,
+        "a": 0.5
+      },
+      "_toString": "rgba(64, 166, 255, 0.5)"
+    },
+    "editorOverviewRuler.commonContentForeground": {
+      "rgba": {
+        "r": 96,
+        "g": 96,
+        "b": 96,
+        "a": 0.4
+      },
+      "_toString": "rgba(96, 96, 96, 0.4)"
+    },
+    "editorOverviewRuler.findMatchForeground": {
+      "rgba": {
+        "r": 209,
+        "g": 134,
+        "b": 22,
+        "a": 0.494
+      },
+      "_toString": "rgba(209, 134, 22, 0.49)"
+    },
+    "editorOverviewRuler.selectionHighlightForeground": {
+      "rgba": {
+        "r": 160,
+        "g": 160,
+        "b": 160,
+        "a": 0.8
+      },
+      "_toString": "rgba(160, 160, 160, 0.8)"
+    },
+    "problemsErrorIcon.foreground": {
+      "rgba": {
+        "r": 241,
+        "g": 76,
+        "b": 76,
+        "a": 1
+      },
+      "_toString": "#f14c4c"
+    },
+    "problemsWarningIcon.foreground": {
+      "rgba": {
+        "r": 204,
+        "g": 167,
+        "b": 0,
+        "a": 1
+      },
+      "_toString": "#cca700"
+    },
+    "problemsInfoIcon.foreground": {
+      "rgba": {
+        "r": 55,
+        "g": 148,
+        "b": 255,
+        "a": 1
+      },
+      "_toString": "#3794ff"
+    },
+    "minimap.findMatchHighlight": {
+      "rgba": {
+        "r": 209,
+        "g": 134,
+        "b": 22,
+        "a": 1
+      },
+      "_toString": "#d18616"
+    },
+    "minimap.selectionOccurrenceHighlight": {
+      "rgba": {
+        "r": 103,
+        "g": 103,
+        "b": 103,
+        "a": 1
+      },
+      "_toString": "#676767"
+    },
+    "minimap.selectionHighlight": {
+      "rgba": {
+        "r": 38,
+        "g": 79,
+        "b": 120,
+        "a": 1
+      },
+      "_toString": "#264f78"
+    },
+    "minimap.infoHighlight": {
+      "rgba": {
+        "r": 55,
+        "g": 148,
+        "b": 255,
+        "a": 1
+      },
+      "_toString": "#3794ff"
+    },
+    "minimap.warningHighlight": {
+      "rgba": {
+        "r": 204,
+        "g": 167,
+        "b": 0,
+        "a": 1
+      },
+      "_toString": "#cca700"
+    },
+    "minimap.errorHighlight": {
+      "rgba": {
+        "r": 255,
+        "g": 18,
+        "b": 18,
+        "a": 0.7
+      },
+      "_toString": "rgba(255, 18, 18, 0.7)"
+    },
+    "minimap.foregroundOpacity": {
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 1
+      },
+      "_toString": "#000000"
+    },
+    "minimapSlider.background": {
+      "rgba": {
+        "r": 121,
+        "g": 121,
+        "b": 121,
+        "a": 0.2
+      },
+      "_toString": "rgba(121, 121, 121, 0.2)"
+    },
+    "minimapSlider.hoverBackground": {
+      "rgba": {
+        "r": 100,
+        "g": 100,
+        "b": 100,
+        "a": 0.35
+      },
+      "_toString": "rgba(100, 100, 100, 0.35)"
+    },
+    "minimapSlider.activeBackground": {
+      "rgba": {
+        "r": 191,
+        "g": 191,
+        "b": 191,
+        "a": 0.2
+      },
+      "_toString": "rgba(191, 191, 191, 0.2)"
+    },
+    "charts.foreground": {
+      "rgba": {
+        "r": 204,
+        "g": 204,
+        "b": 204,
+        "a": 1
+      },
+      "_toString": "#cccccc"
+    },
+    "charts.lines": {
+      "rgba": {
+        "r": 204,
+        "g": 204,
+        "b": 204,
+        "a": 0.5
+      },
+      "_toString": "rgba(204, 204, 204, 0.5)"
+    },
+    "charts.red": {
+      "rgba": {
+        "r": 241,
+        "g": 76,
+        "b": 76,
+        "a": 1
+      },
+      "_toString": "#f14c4c"
+    },
+    "charts.blue": {
+      "rgba": {
+        "r": 55,
+        "g": 148,
+        "b": 255,
+        "a": 1
+      },
+      "_toString": "#3794ff"
+    },
+    "charts.yellow": {
+      "rgba": {
+        "r": 204,
+        "g": 167,
+        "b": 0,
+        "a": 1
+      },
+      "_toString": "#cca700"
+    },
+    "charts.orange": {
+      "rgba": {
+        "r": 209,
+        "g": 134,
+        "b": 22,
+        "a": 1
+      },
+      "_toString": "#d18616"
+    },
+    "charts.green": {
+      "rgba": {
+        "r": 137,
+        "g": 209,
+        "b": 133,
+        "a": 1
+      },
+      "_toString": "#89d185"
+    },
+    "charts.purple": {
+      "rgba": {
+        "r": 177,
+        "g": 128,
+        "b": 215,
+        "a": 1
+      },
+      "_toString": "#b180d7"
+    },
+    "input.background": {
+      "rgba": {
+        "r": 60,
+        "g": 60,
+        "b": 60,
+        "a": 1
+      },
+      "_toString": "#3c3c3c"
+    },
+    "input.foreground": {
+      "rgba": {
+        "r": 204,
+        "g": 204,
+        "b": 204,
+        "a": 1
+      },
+      "_toString": "#cccccc"
+    },
+    "inputOption.activeBorder": {
+      "rgba": {
+        "r": 0,
+        "g": 122,
+        "b": 204,
+        "a": 1
+      },
+      "_toString": "#007acc"
+    },
+    "inputOption.hoverBackground": {
+      "rgba": {
+        "r": 90,
+        "g": 93,
+        "b": 94,
+        "a": 0.502
+      },
+      "_toString": "rgba(90, 93, 94, 0.5)"
+    },
+    "inputOption.activeBackground": {
+      "rgba": {
+        "r": 0,
+        "g": 127,
+        "b": 212,
+        "a": 0.4
+      },
+      "_toString": "rgba(0, 127, 212, 0.4)"
+    },
+    "inputOption.activeForeground": {
+      "rgba": {
+        "r": 255,
+        "g": 255,
+        "b": 255,
+        "a": 1
+      },
+      "_toString": "#ffffff"
+    },
+    "input.placeholderForeground": {
+      "rgba": {
+        "r": 204,
+        "g": 204,
+        "b": 204,
+        "a": 0.5
+      },
+      "_toString": "rgba(204, 204, 204, 0.5)"
+    },
+    "inputValidation.infoBackground": {
+      "rgba": {
+        "r": 6,
+        "g": 59,
+        "b": 73,
+        "a": 1
+      },
+      "_toString": "#063b49"
+    },
+    "inputValidation.infoBorder": {
+      "rgba": {
+        "r": 0,
+        "g": 122,
+        "b": 204,
+        "a": 1
+      },
+      "_toString": "#007acc"
+    },
+    "inputValidation.warningBackground": {
+      "rgba": {
+        "r": 53,
+        "g": 42,
+        "b": 5,
+        "a": 1
+      },
+      "_toString": "#352a05"
+    },
+    "inputValidation.warningBorder": {
+      "rgba": {
+        "r": 184,
+        "g": 149,
+        "b": 0,
+        "a": 1
+      },
+      "_toString": "#b89500"
+    },
+    "inputValidation.errorBackground": {
+      "rgba": {
+        "r": 90,
+        "g": 29,
+        "b": 29,
+        "a": 1
+      },
+      "_toString": "#5a1d1d"
+    },
+    "inputValidation.errorBorder": {
+      "rgba": {
+        "r": 190,
+        "g": 17,
+        "b": 0,
+        "a": 1
+      },
+      "_toString": "#be1100"
+    },
+    "dropdown.background": {
+      "rgba": {
+        "r": 60,
+        "g": 60,
+        "b": 60,
+        "a": 1
+      },
+      "_toString": "#3c3c3c"
+    },
+    "dropdown.foreground": {
+      "rgba": {
+        "r": 240,
+        "g": 240,
+        "b": 240,
+        "a": 1
+      },
+      "_toString": "#f0f0f0"
+    },
+    "dropdown.border": {
+      "rgba": {
+        "r": 60,
+        "g": 60,
+        "b": 60,
+        "a": 1
+      },
+      "_toString": "#3c3c3c"
+    },
+    "button.foreground": {
+      "rgba": {
+        "r": 255,
+        "g": 255,
+        "b": 255,
+        "a": 1
+      },
+      "_toString": "#ffffff"
+    },
+    "button.separator": {
+      "rgba": {
+        "r": 255,
+        "g": 255,
+        "b": 255,
+        "a": 0.4
+      },
+      "_toString": "rgba(255, 255, 255, 0.4)"
+    },
+    "button.background": {
+      "rgba": {
+        "r": 14,
+        "g": 99,
+        "b": 156,
+        "a": 1
+      },
+      "_toString": "#0e639c"
+    },
+    "button.hoverBackground": {
+      "_hsla": {
+        "h": 204,
+        "s": 0.835,
+        "l": 0.4,
+        "a": 1
+      },
+      "rgba": {
+        "r": 17,
+        "g": 119,
+        "b": 187,
+        "a": 1
+      },
+      "_toString": "#1177bb"
+    },
+    "button.secondaryForeground": {
+      "rgba": {
+        "r": 255,
+        "g": 255,
+        "b": 255,
+        "a": 1
+      },
+      "_toString": "#ffffff"
+    },
+    "button.secondaryBackground": {
+      "rgba": {
+        "r": 58,
+        "g": 61,
+        "b": 65,
+        "a": 1
+      },
+      "_toString": "#3a3d41"
+    },
+    "button.secondaryHoverBackground": {
+      "_hsla": {
+        "h": 214,
+        "s": 0.057,
+        "l": 0.289,
+        "a": 1
+      },
+      "rgba": {
+        "r": 69,
+        "g": 73,
+        "b": 78,
+        "a": 1
+      },
+      "_toString": "#45494e"
+    },
+    "radio.activeForeground": {
+      "rgba": {
+        "r": 255,
+        "g": 255,
+        "b": 255,
+        "a": 1
+      },
+      "_toString": "#ffffff"
+    },
+    "radio.activeBackground": {
+      "rgba": {
+        "r": 0,
+        "g": 127,
+        "b": 212,
+        "a": 0.4
+      },
+      "_toString": "rgba(0, 127, 212, 0.4)"
+    },
+    "radio.activeBorder": {
+      "rgba": {
+        "r": 0,
+        "g": 122,
+        "b": 204,
+        "a": 1
+      },
+      "_toString": "#007acc"
+    },
+    "radio.inactiveBorder": {
+      "rgba": {
+        "r": 255,
+        "g": 255,
+        "b": 255,
+        "a": 0.2
+      },
+      "_toString": "rgba(255, 255, 255, 0.2)"
+    },
+    "radio.inactiveHoverBackground": {
+      "rgba": {
+        "r": 90,
+        "g": 93,
+        "b": 94,
+        "a": 0.502
+      },
+      "_toString": "rgba(90, 93, 94, 0.5)"
+    },
+    "checkbox.background": {
+      "rgba": {
+        "r": 60,
+        "g": 60,
+        "b": 60,
+        "a": 1
+      },
+      "_toString": "#3c3c3c"
+    },
+    "checkbox.selectBackground": {
+      "rgba": {
+        "r": 37,
+        "g": 37,
+        "b": 38,
+        "a": 1
+      },
+      "_toString": "#252526"
+    },
+    "checkbox.foreground": {
+      "rgba": {
+        "r": 240,
+        "g": 240,
+        "b": 240,
+        "a": 1
+      },
+      "_toString": "#f0f0f0"
+    },
+    "checkbox.border": {
+      "rgba": {
+        "r": 60,
+        "g": 60,
+        "b": 60,
+        "a": 1
+      },
+      "_toString": "#3c3c3c"
+    },
+    "checkbox.selectBorder": {
+      "rgba": {
+        "r": 197,
+        "g": 197,
+        "b": 197,
+        "a": 1
+      },
+      "_toString": "#c5c5c5"
+    },
+    "checkbox.disabled.background": {
+      "rgba": {
+        "r": 119,
+        "g": 119,
+        "b": 119,
+        "a": 1
+      },
+      "_toString": "#777777"
+    },
+    "checkbox.disabled.foreground": {
+      "rgba": {
+        "r": 180,
+        "g": 180,
+        "b": 180,
+        "a": 1
+      },
+      "_toString": "#b4b4b4"
+    },
+    "keybindingLabel.background": {
+      "rgba": {
+        "r": 128,
+        "g": 128,
+        "b": 128,
+        "a": 0.17
+      },
+      "_toString": "rgba(128, 128, 128, 0.17)"
+    },
+    "keybindingLabel.foreground": {
+      "rgba": {
+        "r": 204,
+        "g": 204,
+        "b": 204,
+        "a": 1
+      },
+      "_toString": "#cccccc"
+    },
+    "keybindingLabel.border": {
+      "rgba": {
+        "r": 51,
+        "g": 51,
+        "b": 51,
+        "a": 0.6
+      },
+      "_toString": "rgba(51, 51, 51, 0.6)"
+    },
+    "keybindingLabel.bottomBorder": {
+      "rgba": {
+        "r": 68,
+        "g": 68,
+        "b": 68,
+        "a": 0.6
+      },
+      "_toString": "rgba(68, 68, 68, 0.6)"
+    },
+    "list.focusOutline": {
+      "rgba": {
+        "r": 0,
+        "g": 127,
+        "b": 212,
+        "a": 1
+      },
+      "_toString": "#007fd4"
+    },
+    "list.activeSelectionBackground": {
+      "rgba": {
+        "r": 4,
+        "g": 57,
+        "b": 94,
+        "a": 1
+      },
+      "_toString": "#04395e"
+    },
+    "list.activeSelectionForeground": {
+      "rgba": {
+        "r": 255,
+        "g": 255,
+        "b": 255,
+        "a": 1
+      },
+      "_toString": "#ffffff"
+    },
+    "list.inactiveSelectionBackground": {
+      "rgba": {
+        "r": 55,
+        "g": 55,
+        "b": 61,
+        "a": 1
+      },
+      "_toString": "#37373d"
+    },
+    "list.hoverBackground": {
+      "rgba": {
+        "r": 42,
+        "g": 45,
+        "b": 46,
+        "a": 1
+      },
+      "_toString": "#2a2d2e"
+    },
+    "list.dropBackground": {
+      "rgba": {
+        "r": 6,
+        "g": 47,
+        "b": 74,
+        "a": 1
+      },
+      "_toString": "#062f4a"
+    },
+    "list.dropBetweenBackground": {
+      "rgba": {
+        "r": 197,
+        "g": 197,
+        "b": 197,
+        "a": 1
+      },
+      "_toString": "#c5c5c5"
+    },
+    "list.highlightForeground": {
+      "rgba": {
+        "r": 42,
+        "g": 170,
+        "b": 255,
+        "a": 1
+      },
+      "_toString": "#2aaaff"
+    },
+    "list.focusHighlightForeground": {
+      "rgba": {
+        "r": 42,
+        "g": 170,
+        "b": 255,
+        "a": 1
+      },
+      "_toString": "#2aaaff"
+    },
+    "list.invalidItemForeground": {
+      "rgba": {
+        "r": 184,
+        "g": 149,
+        "b": 0,
+        "a": 1
+      },
+      "_toString": "#b89500"
+    },
+    "list.errorForeground": {
+      "rgba": {
+        "r": 248,
+        "g": 128,
+        "b": 112,
+        "a": 1
+      },
+      "_toString": "#f88070"
+    },
+    "list.warningForeground": {
+      "rgba": {
+        "r": 204,
+        "g": 167,
+        "b": 0,
+        "a": 1
+      },
+      "_toString": "#cca700"
+    },
+    "listFilterWidget.background": {
+      "_hsla": {
+        "h": 240,
+        "s": 0.013,
+        "l": 0.147,
+        "a": 1
+      },
+      "rgba": {
+        "r": 37,
+        "g": 37,
+        "b": 38,
+        "a": 1
+      },
+      "_toString": "#252526"
+    },
+    "listFilterWidget.outline": {
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 0
+      },
+      "_toString": "rgba(0, 0, 0, 0)"
+    },
+    "listFilterWidget.noMatchesOutline": {
+      "rgba": {
+        "r": 190,
+        "g": 17,
+        "b": 0,
+        "a": 1
+      },
+      "_toString": "#be1100"
+    },
+    "listFilterWidget.shadow": {
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 0.36
+      },
+      "_toString": "rgba(0, 0, 0, 0.36)"
+    },
+    "list.filterMatchBackground": {
+      "rgba": {
+        "r": 234,
+        "g": 92,
+        "b": 0,
+        "a": 0.333
+      },
+      "_toString": "rgba(234, 92, 0, 0.33)"
+    },
+    "list.deemphasizedForeground": {
+      "rgba": {
+        "r": 140,
+        "g": 140,
+        "b": 140,
+        "a": 1
+      },
+      "_toString": "#8c8c8c"
+    },
+    "tree.indentGuidesStroke": {
+      "rgba": {
+        "r": 88,
+        "g": 88,
+        "b": 88,
+        "a": 1
+      },
+      "_toString": "#585858"
+    },
+    "tree.inactiveIndentGuidesStroke": {
+      "rgba": {
+        "r": 88,
+        "g": 88,
+        "b": 88,
+        "a": 0.4
+      },
+      "_toString": "rgba(88, 88, 88, 0.4)"
+    },
+    "tree.tableColumnsBorder": {
+      "rgba": {
+        "r": 204,
+        "g": 204,
+        "b": 204,
+        "a": 0.125
+      },
+      "_toString": "rgba(204, 204, 204, 0.13)"
+    },
+    "tree.tableOddRowsBackground": {
+      "rgba": {
+        "r": 204,
+        "g": 204,
+        "b": 204,
+        "a": 0.04
+      },
+      "_toString": "rgba(204, 204, 204, 0.04)"
+    },
+    "editorActionList.background": {
+      "rgba": {
+        "r": 37,
+        "g": 37,
+        "b": 38,
+        "a": 1
+      },
+      "_toString": "#252526"
+    },
+    "editorActionList.foreground": {
+      "rgba": {
+        "r": 204,
+        "g": 204,
+        "b": 204,
+        "a": 1
+      },
+      "_toString": "#cccccc"
+    },
+    "editorActionList.focusForeground": {
+      "rgba": {
+        "r": 255,
+        "g": 255,
+        "b": 255,
+        "a": 1
+      },
+      "_toString": "#ffffff"
+    },
+    "editorActionList.focusBackground": {
+      "rgba": {
+        "r": 4,
+        "g": 57,
+        "b": 94,
+        "a": 1
+      },
+      "_toString": "#04395e"
+    },
+    "menu.foreground": {
+      "rgba": {
+        "r": 240,
+        "g": 240,
+        "b": 240,
+        "a": 1
+      },
+      "_toString": "#f0f0f0"
+    },
+    "menu.background": {
+      "rgba": {
+        "r": 60,
+        "g": 60,
+        "b": 60,
+        "a": 1
+      },
+      "_toString": "#3c3c3c"
+    },
+    "menu.selectionForeground": {
+      "rgba": {
+        "r": 255,
+        "g": 255,
+        "b": 255,
+        "a": 1
+      },
+      "_toString": "#ffffff"
+    },
+    "menu.selectionBackground": {
+      "rgba": {
+        "r": 4,
+        "g": 57,
+        "b": 94,
+        "a": 1
+      },
+      "_toString": "#04395e"
+    },
+    "menu.separatorBackground": {
+      "rgba": {
+        "r": 96,
+        "g": 96,
+        "b": 96,
+        "a": 1
+      },
+      "_toString": "#606060"
+    },
+    "quickInput.background": {
+      "rgba": {
+        "r": 37,
+        "g": 37,
+        "b": 38,
+        "a": 1
+      },
+      "_toString": "#252526"
+    },
+    "quickInput.foreground": {
+      "rgba": {
+        "r": 204,
+        "g": 204,
+        "b": 204,
+        "a": 1
+      },
+      "_toString": "#cccccc"
+    },
+    "quickInputTitle.background": {
+      "rgba": {
+        "r": 255,
+        "g": 255,
+        "b": 255,
+        "a": 0.105
+      },
+      "_toString": "rgba(255, 255, 255, 0.1)"
+    },
+    "pickerGroup.foreground": {
+      "rgba": {
+        "r": 55,
+        "g": 148,
+        "b": 255,
+        "a": 1
+      },
+      "_toString": "#3794ff"
+    },
+    "pickerGroup.border": {
+      "rgba": {
+        "r": 63,
+        "g": 63,
+        "b": 70,
+        "a": 1
+      },
+      "_toString": "#3f3f46"
+    },
+    "quickInputList.focusForeground": {
+      "rgba": {
+        "r": 255,
+        "g": 255,
+        "b": 255,
+        "a": 1
+      },
+      "_toString": "#ffffff"
+    },
+    "quickInputList.focusBackground": {
+      "rgba": {
+        "r": 4,
+        "g": 57,
+        "b": 94,
+        "a": 1
+      },
+      "_toString": "#04395e"
+    },
+    "search.resultsInfoForeground": {
+      "rgba": {
+        "r": 204,
+        "g": 204,
+        "b": 204,
+        "a": 0.65
+      },
+      "_toString": "rgba(204, 204, 204, 0.65)"
+    },
+    "searchEditor.findMatchBackground": {
+      "rgba": {
+        "r": 234,
+        "g": 92,
+        "b": 0,
+        "a": 0.22
+      },
+      "_toString": "rgba(234, 92, 0, 0.22)"
+    },
+    "editor.rangeHighlightBackground": {
+      "rgba": {
+        "r": 255,
+        "g": 255,
+        "b": 255,
+        "a": 0.043
+      },
+      "_toString": "rgba(255, 255, 255, 0.04)"
+    },
+    "editor.symbolHighlightBackground": {
+      "rgba": {
+        "r": 234,
+        "g": 92,
+        "b": 0,
+        "a": 0.333
+      },
+      "_toString": "rgba(234, 92, 0, 0.33)"
+    },
+    "editorWhitespace.foreground": {
+      "rgba": {
+        "r": 227,
+        "g": 228,
+        "b": 226,
+        "a": 0.161
+      },
+      "_toString": "rgba(227, 228, 226, 0.16)"
+    },
+    "editorIndentGuide.background": {
+      "rgba": {
+        "r": 227,
+        "g": 228,
+        "b": 226,
+        "a": 0.161
+      },
+      "_toString": "rgba(227, 228, 226, 0.16)"
+    },
+    "editorIndentGuide.activeBackground": {
+      "rgba": {
+        "r": 227,
+        "g": 228,
+        "b": 226,
+        "a": 0.161
+      },
+      "_toString": "rgba(227, 228, 226, 0.16)"
+    },
+    "editorActiveLineNumber.foreground": {
+      "rgba": {
+        "r": 198,
+        "g": 198,
+        "b": 198,
+        "a": 1
+      },
+      "_toString": "#c6c6c6"
+    },
+    "editorLineNumber.activeForeground": {
+      "rgba": {
+        "r": 198,
+        "g": 198,
+        "b": 198,
+        "a": 1
+      },
+      "_toString": "#c6c6c6"
+    },
+    "editorRuler.foreground": {
+      "rgba": {
+        "r": 90,
+        "g": 90,
+        "b": 90,
+        "a": 1
+      },
+      "_toString": "#5a5a5a"
+    },
+    "editorCodeLens.foreground": {
+      "rgba": {
+        "r": 153,
+        "g": 153,
+        "b": 153,
+        "a": 1
+      },
+      "_toString": "#999999"
+    },
+    "editorBracketMatch.background": {
+      "rgba": {
+        "r": 0,
+        "g": 100,
+        "b": 0,
+        "a": 0.102
+      },
+      "_toString": "rgba(0, 100, 0, 0.1)"
+    },
+    "editorBracketMatch.border": {
+      "rgba": {
+        "r": 136,
+        "g": 136,
+        "b": 136,
+        "a": 1
+      },
+      "_toString": "#888888"
+    },
+    "editorOverviewRuler.border": {
+      "rgba": {
+        "r": 127,
+        "g": 127,
+        "b": 127,
+        "a": 0.302
+      },
+      "_toString": "rgba(127, 127, 127, 0.3)"
+    },
+    "editorGutter.background": {
+      "rgba": {
+        "r": 30,
+        "g": 30,
+        "b": 30,
+        "a": 1
+      },
+      "_toString": "#1e1e1e"
+    },
+    "editorGhostText.foreground": {
+      "rgba": {
+        "r": 255,
+        "g": 255,
+        "b": 255,
+        "a": 0.337
+      },
+      "_toString": "rgba(255, 255, 255, 0.34)"
+    },
+    "editorOverviewRuler.rangeHighlightForeground": {
+      "rgba": {
+        "r": 0,
+        "g": 122,
+        "b": 204,
+        "a": 0.6
+      },
+      "_toString": "rgba(0, 122, 204, 0.6)"
+    },
+    "editorOverviewRuler.errorForeground": {
+      "rgba": {
+        "r": 255,
+        "g": 18,
+        "b": 18,
+        "a": 0.7
+      },
+      "_toString": "rgba(255, 18, 18, 0.7)"
+    },
+    "editorOverviewRuler.warningForeground": {
+      "rgba": {
+        "r": 204,
+        "g": 167,
+        "b": 0,
+        "a": 1
+      },
+      "_toString": "#cca700"
+    },
+    "editorOverviewRuler.infoForeground": {
+      "rgba": {
+        "r": 55,
+        "g": 148,
+        "b": 255,
+        "a": 1
+      },
+      "_toString": "#3794ff"
+    },
+    "editorUnicodeHighlight.border": {
+      "rgba": {
+        "r": 204,
+        "g": 167,
+        "b": 0,
+        "a": 1
+      },
+      "_toString": "#cca700"
+    },
+    "diffEditor.move.border": {
+      "rgba": {
+        "r": 139,
+        "g": 139,
+        "b": 139,
+        "a": 0.612
+      },
+      "_toString": "rgba(139, 139, 139, 0.61)"
+    },
+    "diffEditor.moveActive.border": {
+      "rgba": {
+        "r": 255,
+        "g": 165,
+        "b": 0,
+        "a": 1
+      },
+      "_toString": "#ffa500"
+    },
+    "diffEditor.unchangedRegionShadow": {
+      "rgba": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 1
+      },
+      "_toString": "#000000"
+    },
+    "editorOverviewRuler.bracketMatchForeground": {
+      "rgba": {
+        "r": 160,
+        "g": 160,
+        "b": 160,
+        "a": 1
+      },
+      "_toString": "#a0a0a0"
+    },
+    "actionBar.toggledBackground": {
+      "rgba": {
+        "r": 0,
+        "g": 127,
+        "b": 212,
+        "a": 0.4
+      },
+      "_toString": "rgba(0, 127, 212, 0.4)"
+    },
+    "symbolIcon.arrayForeground": {
+      "rgba": {
+        "r": 204,
+        "g": 204,
+        "b": 204,
+        "a": 1
+      },
+      "_toString": "#cccccc"
+    },
+    "symbolIcon.booleanForeground": {
+      "rgba": {
+        "r": 204,
+        "g": 204,
+        "b": 204,
+        "a": 1
+      },
+      "_toString": "#cccccc"
+    },
+    "symbolIcon.classForeground": {
+      "rgba": {
+        "r": 238,
+        "g": 157,
+        "b": 40,
+        "a": 1
+      },
+      "_toString": "#ee9d28"
+    },
+    "symbolIcon.colorForeground": {
+      "rgba": {
+        "r": 204,
+        "g": 204,
+        "b": 204,
+        "a": 1
+      },
+      "_toString": "#cccccc"
+    },
+    "symbolIcon.constantForeground": {
+      "rgba": {
+        "r": 204,
+        "g": 204,
+        "b": 204,
+        "a": 1
+      },
+      "_toString": "#cccccc"
+    },
+    "symbolIcon.constructorForeground": {
+      "rgba": {
+        "r": 177,
+        "g": 128,
+        "b": 215,
+        "a": 1
+      },
+      "_toString": "#b180d7"
+    },
+    "symbolIcon.enumeratorForeground": {
+      "rgba": {
+        "r": 238,
+        "g": 157,
+        "b": 40,
+        "a": 1
+      },
+      "_toString": "#ee9d28"
+    },
+    "symbolIcon.enumeratorMemberForeground": {
+      "rgba": {
+        "r": 117,
+        "g": 190,
+        "b": 255,
+        "a": 1
+      },
+      "_toString": "#75beff"
+    },
+    "symbolIcon.eventForeground": {
+      "rgba": {
+        "r": 238,
+        "g": 157,
+        "b": 40,
+        "a": 1
+      },
+      "_toString": "#ee9d28"
+    },
+    "symbolIcon.fieldForeground": {
+      "rgba": {
+        "r": 117,
+        "g": 190,
+        "b": 255,
+        "a": 1
+      },
+      "_toString": "#75beff"
+    },
+    "symbolIcon.fileForeground": {
+      "rgba": {
+        "r": 204,
+        "g": 204,
+        "b": 204,
+        "a": 1
+      },
+      "_toString": "#cccccc"
+    },
+    "symbolIcon.folderForeground": {
+      "rgba": {
+        "r": 204,
+        "g": 204,
+        "b": 204,
+        "a": 1
+      },
+      "_toString": "#cccccc"
+    },
+    "symbolIcon.functionForeground": {
+      "rgba": {
+        "r": 177,
+        "g": 128,
+        "b": 215,
+        "a": 1
+      },
+      "_toString": "#b180d7"
+    },
+    "symbolIcon.interfaceForeground": {
+      "rgba": {
+        "r": 117,
+        "g": 190,
+        "b": 255,
+        "a": 1
+      },
+      "_toString": "#75beff"
+    },
+    "symbolIcon.keyForeground": {
+      "rgba": {
+        "r": 204,
+        "g": 204,
+        "b": 204,
+        "a": 1
+      },
+      "_toString": "#cccccc"
+    },
+    "symbolIcon.keywordForeground": {
+      "rgba": {
+        "r": 204,
+        "g": 204,
+        "b": 204,
+        "a": 1
+      },
+      "_toString": "#cccccc"
+    },
+    "symbolIcon.methodForeground": {
+      "rgba": {
+        "r": 177,
+        "g": 128,
+        "b": 215,
+        "a": 1
+      },
+      "_toString": "#b180d7"
+    },
+    "symbolIcon.moduleForeground": {
+      "rgba": {
+        "r": 204,
+        "g": 204,
+        "b": 204,
+        "a": 1
+      },
+      "_toString": "#cccccc"
+    },
+    "symbolIcon.namespaceForeground": {
+      "rgba": {
+        "r": 204,
+        "g": 204,
+        "b": 204,
+        "a": 1
+      },
+      "_toString": "#cccccc"
+    },
+    "symbolIcon.nullForeground": {
+      "rgba": {
+        "r": 204,
+        "g": 204,
+        "b": 204,
+        "a": 1
+      },
+      "_toString": "#cccccc"
+    },
+    "symbolIcon.numberForeground": {
+      "rgba": {
+        "r": 204,
+        "g": 204,
+        "b": 204,
+        "a": 1
+      },
+      "_toString": "#cccccc"
+    },
+    "symbolIcon.objectForeground": {
+      "rgba": {
+        "r": 204,
+        "g": 204,
+        "b": 204,
+        "a": 1
+      },
+      "_toString": "#cccccc"
+    },
+    "symbolIcon.operatorForeground": {
+      "rgba": {
+        "r": 204,
+        "g": 204,
+        "b": 204,
+        "a": 1
+      },
+      "_toString": "#cccccc"
+    },
+    "symbolIcon.packageForeground": {
+      "rgba": {
+        "r": 204,
+        "g": 204,
+        "b": 204,
+        "a": 1
+      },
+      "_toString": "#cccccc"
+    },
+    "symbolIcon.propertyForeground": {
+      "rgba": {
+        "r": 204,
+        "g": 204,
+        "b": 204,
+        "a": 1
+      },
+      "_toString": "#cccccc"
+    },
+    "symbolIcon.referenceForeground": {
+      "rgba": {
+        "r": 204,
+        "g": 204,
+        "b": 204,
+        "a": 1
+      },
+      "_toString": "#cccccc"
+    },
+    "symbolIcon.snippetForeground": {
+      "rgba": {
+        "r": 204,
+        "g": 204,
+        "b": 204,
+        "a": 1
+      },
+      "_toString": "#cccccc"
+    },
+    "symbolIcon.stringForeground": {
+      "rgba": {
+        "r": 204,
+        "g": 204,
+        "b": 204,
+        "a": 1
+      },
+      "_toString": "#cccccc"
+    },
+    "symbolIcon.structForeground": {
+      "rgba": {
+        "r": 204,
+        "g": 204,
+        "b": 204,
+        "a": 1
+      },
+      "_toString": "#cccccc"
+    },
+    "symbolIcon.textForeground": {
+      "rgba": {
+        "r": 204,
+        "g": 204,
+        "b": 204,
+        "a": 1
+      },
+      "_toString": "#cccccc"
+    },
+    "symbolIcon.typeParameterForeground": {
+      "rgba": {
+        "r": 204,
+        "g": 204,
+        "b": 204,
+        "a": 1
+      },
+      "_toString": "#cccccc"
+    },
+    "symbolIcon.unitForeground": {
+      "rgba": {
+        "r": 204,
+        "g": 204,
+        "b": 204,
+        "a": 1
+      },
+      "_toString": "#cccccc"
+    },
+    "symbolIcon.variableForeground": {
+      "rgba": {
+        "r": 117,
+        "g": 190,
+        "b": 255,
+        "a": 1
+      },
+      "_toString": "#75beff"
+    },
+    "peekViewTitle.background": {
+      "rgba": {
+        "r": 37,
+        "g": 37,
+        "b": 38,
+        "a": 1
+      },
+      "_toString": "#252526"
+    },
+    "peekViewTitleLabel.foreground": {
+      "rgba": {
+        "r": 255,
+        "g": 255,
+        "b": 255,
+        "a": 1
+      },
+      "_toString": "#ffffff"
+    },
+    "peekViewTitleDescription.foreground": {
+      "rgba": {
+        "r": 204,
+        "g": 204,
+        "b": 204,
+        "a": 0.702
+      },
+      "_toString": "rgba(204, 204, 204, 0.7)"
+    },
+    "peekView.border": {
+      "rgba": {
+        "r": 55,
+        "g": 148,
+        "b": 255,
+        "a": 1
+      },
+      "_toString": "#3794ff"
+    },
+    "peekViewResult.background": {
+      "rgba": {
+        "r": 37,
+        "g": 37,
+        "b": 38,
+        "a": 1
+      },
+      "_toString": "#252526"
+    },
+    "peekViewResult.lineForeground": {
+      "rgba": {
+        "r": 187,
+        "g": 187,
+        "b": 187,
+        "a": 1
+      },
+      "_toString": "#bbbbbb"
+    },
+    "peekViewResult.fileForeground": {
+      "rgba": {
+        "r": 255,
+        "g": 255,
+        "b": 255,
+        "a": 1
+      },
+      "_toString": "#ffffff"
+    },
+    "peekViewResult.selectionBackground": {
+      "rgba": {
+        "r": 51,
+        "g": 153,
+        "b": 255,
+        "a": 0.2
+      },
+      "_toString": "rgba(51, 153, 255, 0.2)"
+    },
+    "peekViewResult.selectionForeground": {
+      "rgba": {
+        "r": 255,
+        "g": 255,
+        "b": 255,
+        "a": 1
+      },
+      "_toString": "#ffffff"
+    },
+    "peekViewEditor.background": {
+      "rgba": {
+        "r": 0,
+        "g": 31,
+        "b": 51,
+        "a": 1
+      },
+      "_toString": "#001f33"
+    },
+    "peekViewEditorGutter.background": {
+      "rgba": {
+        "r": 0,
+        "g": 31,
+        "b": 51,
+        "a": 1
+      },
+      "_toString": "#001f33"
+    },
+    "peekViewEditorStickyScroll.background": {
+      "rgba": {
+        "r": 0,
+        "g": 31,
+        "b": 51,
+        "a": 1
+      },
+      "_toString": "#001f33"
+    },
+    "peekViewEditorStickyScrollGutter.background": {
+      "rgba": {
+        "r": 0,
+        "g": 31,
+        "b": 51,
+        "a": 1
+      },
+      "_toString": "#001f33"
+    },
+    "peekViewResult.matchHighlightBackground": {
+      "rgba": {
+        "r": 234,
+        "g": 92,
+        "b": 0,
+        "a": 0.302
+      },
+      "_toString": "rgba(234, 92, 0, 0.3)"
+    },
+    "peekViewEditor.matchHighlightBackground": {
+      "rgba": {
+        "r": 255,
+        "g": 143,
+        "b": 0,
+        "a": 0.6
+      },
+      "_toString": "rgba(255, 143, 0, 0.6)"
+    },
+    "editorMarkerNavigationError.background": {
+      "rgba": {
+        "r": 241,
+        "g": 76,
+        "b": 76,
+        "a": 1
+      },
+      "_toString": "#f14c4c"
+    },
+    "editorMarkerNavigationError.headerBackground": {
+      "rgba": {
+        "r": 241,
+        "g": 76,
+        "b": 76,
+        "a": 0.1
+      },
+      "_toString": "rgba(241, 76, 76, 0.1)"
+    },
+    "editorMarkerNavigationWarning.background": {
+      "rgba": {
+        "r": 204,
+        "g": 167,
+        "b": 0,
+        "a": 1
+      },
+      "_toString": "#cca700"
+    },
+    "editorMarkerNavigationWarning.headerBackground": {
+      "rgba": {
+        "r": 204,
+        "g": 167,
+        "b": 0,
+        "a": 0.1
+      },
+      "_toString": "rgba(204, 167, 0, 0.1)"
+    },
+    "editorMarkerNavigationInfo.background": {
+      "rgba": {
+        "r": 55,
+        "g": 148,
+        "b": 255,
+        "a": 1
+      },
+      "_toString": "#3794ff"
+    },
+    "editorMarkerNavigationInfo.headerBackground": {
+      "rgba": {
+        "r": 55,
+        "g": 148,
+        "b": 255,
+        "a": 0.1
+      },
+      "_toString": "rgba(55, 148, 255, 0.1)"
+    },
+    "editorMarkerNavigation.background": {
+      "rgba": {
+        "r": 30,
+        "g": 30,
+        "b": 30,
+        "a": 1
+      },
+      "_toString": "#1e1e1e"
+    },
+    "editor.foldBackground": {
+      "rgba": {
+        "r": 38,
+        "g": 79,
+        "b": 120,
+        "a": 0.3
+      },
+      "_toString": "rgba(38, 79, 120, 0.3)"
+    },
+    "editor.foldPlaceholderForeground": {
+      "rgba": {
+        "r": 128,
+        "g": 128,
+        "b": 128,
+        "a": 1
+      },
+      "_toString": "#808080"
+    },
+    "editorGutter.foldingControlForeground": {
+      "rgba": {
+        "r": 197,
+        "g": 197,
+        "b": 197,
+        "a": 1
+      },
+      "_toString": "#c5c5c5"
+    },
+    "editorSuggestWidget.background": {
+      "rgba": {
+        "r": 37,
+        "g": 37,
+        "b": 38,
+        "a": 1
+      },
+      "_toString": "#252526"
+    },
+    "editorSuggestWidget.border": {
+      "rgba": {
+        "r": 69,
+        "g": 69,
+        "b": 69,
+        "a": 1
+      },
+      "_toString": "#454545"
+    },
+    "editorSuggestWidget.foreground": {
+      "rgba": {
+        "r": 212,
+        "g": 212,
+        "b": 212,
+        "a": 1
+      },
+      "_toString": "#d4d4d4"
+    },
+    "editorSuggestWidget.selectedForeground": {
+      "rgba": {
+        "r": 255,
+        "g": 255,
+        "b": 255,
+        "a": 1
+      },
+      "_toString": "#ffffff"
+    },
+    "editorSuggestWidget.selectedBackground": {
+      "rgba": {
+        "r": 4,
+        "g": 57,
+        "b": 94,
+        "a": 1
+      },
+      "_toString": "#04395e"
+    },
+    "editorSuggestWidget.highlightForeground": {
+      "rgba": {
+        "r": 42,
+        "g": 170,
+        "b": 255,
+        "a": 1
+      },
+      "_toString": "#2aaaff"
+    },
+    "editorSuggestWidget.focusHighlightForeground": {
+      "rgba": {
+        "r": 42,
+        "g": 170,
+        "b": 255,
+        "a": 1
+      },
+      "_toString": "#2aaaff"
+    },
+    "editorSuggestWidgetStatus.foreground": {
+      "rgba": {
+        "r": 212,
+        "g": 212,
+        "b": 212,
+        "a": 0.5
+      },
+      "_toString": "rgba(212, 212, 212, 0.5)"
+    },
+    "inlineEdit.originalBackground": {
+      "rgba": {
+        "r": 255,
+        "g": 0,
+        "b": 0,
+        "a": 0.04
+      },
+      "_toString": "rgba(255, 0, 0, 0.04)"
+    },
+    "inlineEdit.modifiedBackground": {
+      "rgba": {
+        "r": 156,
+        "g": 204,
+        "b": 44,
+        "a": 0.06
+      },
+      "_toString": "rgba(156, 204, 44, 0.06)"
+    },
+    "inlineEdit.originalChangedLineBackground": {
+      "rgba": {
+        "r": 255,
+        "g": 0,
+        "b": 0,
+        "a": 0.16
+      },
+      "_toString": "rgba(255, 0, 0, 0.16)"
+    },
+    "inlineEdit.originalChangedTextBackground": {
+      "rgba": {
+        "r": 255,
+        "g": 0,
+        "b": 0,
+        "a": 0.16
+      },
+      "_toString": "rgba(255, 0, 0, 0.16)"
+    },
+    "inlineEdit.modifiedChangedLineBackground": {
+      "rgba": {
+        "r": 155,
+        "g": 185,
+        "b": 85,
+        "a": 0.14
+      },
+      "_toString": "rgba(155, 185, 85, 0.14)"
+    },
+    "inlineEdit.modifiedChangedTextBackground": {
+      "rgba": {
+        "r": 156,
+        "g": 204,
+        "b": 44,
+        "a": 0.14
+      },
+      "_toString": "rgba(156, 204, 44, 0.14)"
+    },
+    "inlineEdit.gutterIndicator.primaryForeground": {
+      "rgba": {
+        "r": 255,
+        "g": 255,
+        "b": 255,
+        "a": 1
+      },
+      "_toString": "#ffffff"
+    },
+    "inlineEdit.gutterIndicator.primaryBorder": {
+      "rgba": {
+        "r": 14,
+        "g": 99,
+        "b": 156,
+        "a": 1
+      },
+      "_toString": "#0e639c"
+    },
+    "inlineEdit.gutterIndicator.primaryBackground": {
+      "rgba": {
+        "r": 14,
+        "g": 99,
+        "b": 156,
+        "a": 0.4
+      },
+      "_toString": "rgba(14, 99, 156, 0.4)"
+    },
+    "inlineEdit.gutterIndicator.secondaryForeground": {
+      "rgba": {
+        "r": 255,
+        "g": 255,
+        "b": 255,
+        "a": 1
+      },
+      "_toString": "#ffffff"
+    },
+    "inlineEdit.gutterIndicator.secondaryBorder": {
+      "rgba": {
+        "r": 58,
+        "g": 61,
+        "b": 65,
+        "a": 1
+      },
+      "_toString": "#3a3d41"
+    },
+    "inlineEdit.gutterIndicator.secondaryBackground": {
+      "rgba": {
+        "r": 58,
+        "g": 61,
+        "b": 65,
+        "a": 1
+      },
+      "_toString": "#3a3d41"
+    },
+    "inlineEdit.gutterIndicator.successfulForeground": {
+      "rgba": {
+        "r": 255,
+        "g": 255,
+        "b": 255,
+        "a": 1
+      },
+      "_toString": "#ffffff"
+    },
+    "inlineEdit.gutterIndicator.successfulBorder": {
+      "rgba": {
+        "r": 14,
+        "g": 99,
+        "b": 156,
+        "a": 1
+      },
+      "_toString": "#0e639c"
+    },
+    "inlineEdit.gutterIndicator.successfulBackground": {
+      "rgba": {
+        "r": 14,
+        "g": 99,
+        "b": 156,
+        "a": 1
+      },
+      "_toString": "#0e639c"
+    },
+    "inlineEdit.originalBorder": {
+      "rgba": {
+        "r": 255,
+        "g": 0,
+        "b": 0,
+        "a": 0.2
+      },
+      "_toString": "rgba(255, 0, 0, 0.2)"
+    },
+    "inlineEdit.modifiedBorder": {
+      "rgba": {
+        "r": 156,
+        "g": 204,
+        "b": 44,
+        "a": 0.2
+      },
+      "_toString": "rgba(156, 204, 44, 0.2)"
+    },
+    "inlineEdit.tabWillAcceptModifiedBorder": {
+      "_hsla": {
+        "h": 78,
+        "s": 0.645,
+        "l": 0.486,
+        "a": 0.2
+      },
+      "rgba": {
+        "r": 156,
+        "g": 204,
+        "b": 44,
+        "a": 0.2
+      },
+      "_toString": "rgba(156, 204, 44, 0.2)"
+    },
+    "inlineEdit.tabWillAcceptOriginalBorder": {
+      "_hsla": {
+        "h": 0,
+        "s": 1,
+        "l": 0.5,
+        "a": 0.2
+      },
+      "rgba": {
+        "r": 255,
+        "g": 0,
+        "b": 0,
+        "a": 0.2
+      },
+      "_toString": "rgba(255, 0, 0, 0.2)"
+    },
+    "editor.linkedEditingBackground": {
+      "rgba": {
+        "r": 255,
+        "g": 0,
+        "b": 0,
+        "a": 0.3
+      },
+      "_toString": "rgba(255, 0, 0, 0.3)"
+    },
+    "editor.wordHighlightBackground": {
+      "rgba": {
+        "r": 87,
+        "g": 87,
+        "b": 87,
+        "a": 0.722
+      },
+      "_toString": "rgba(87, 87, 87, 0.72)"
+    },
+    "editor.wordHighlightStrongBackground": {
+      "rgba": {
+        "r": 0,
+        "g": 73,
+        "b": 114,
+        "a": 0.722
+      },
+      "_toString": "rgba(0, 73, 114, 0.72)"
+    },
+    "editor.wordHighlightTextBackground": {
+      "rgba": {
+        "r": 87,
+        "g": 87,
+        "b": 87,
+        "a": 0.722
+      },
+      "_toString": "rgba(87, 87, 87, 0.72)"
+    },
+    "editorOverviewRuler.wordHighlightForeground": {
+      "rgba": {
+        "r": 160,
+        "g": 160,
+        "b": 160,
+        "a": 0.8
+      },
+      "_toString": "rgba(160, 160, 160, 0.8)"
+    },
+    "editorOverviewRuler.wordHighlightStrongForeground": {
+      "rgba": {
+        "r": 192,
+        "g": 160,
+        "b": 192,
+        "a": 0.8
+      },
+      "_toString": "rgba(192, 160, 192, 0.8)"
+    },
+    "editorOverviewRuler.wordHighlightTextForeground": {
+      "rgba": {
+        "r": 160,
+        "g": 160,
+        "b": 160,
+        "a": 0.8
+      },
+      "_toString": "rgba(160, 160, 160, 0.8)"
+    },
+    "editorHoverWidget.highlightForeground": {
+      "rgba": {
+        "r": 42,
+        "g": 170,
+        "b": 255,
+        "a": 1
+      },
+      "_toString": "#2aaaff"
+    },
+    "editor.placeholder.foreground": {
+      "rgba": {
+        "r": 255,
+        "g": 255,
+        "b": 255,
+        "a": 0.337
+      },
+      "_toString": "rgba(255, 255, 255, 0.34)"
+    },
+    "multiDiffEditor.headerBackground": {
+      "rgba": {
+        "r": 38,
+        "g": 38,
+        "b": 38,
+        "a": 1
+      },
+      "_toString": "#262626"
+    },
+    "multiDiffEditor.background": {
+      "rgba": {
+        "r": 30,
+        "g": 30,
+        "b": 30,
+        "a": 1
+      },
+      "_toString": "#1e1e1e"
+    }
+  },
+  "_tokenTheme": {
+    "_colorMap": {
+      "_lastColorId": 24,
+      "_id2color": [
+        null,
+        {
+          "rgba": {
+            "r": 212,
+            "g": 212,
+            "b": 212,
+            "a": 1
+          },
+          "_toString": "#d4d4d4"
+        },
+        {
+          "rgba": {
+            "r": 30,
+            "g": 30,
+            "b": 30,
+            "a": 1
+          },
+          "_toString": "#1e1e1e"
+        },
+        {
+          "rgba": {
+            "r": 204,
+            "g": 102,
+            "b": 102,
+            "a": 1
+          },
+          "_toString": "#cc6666"
+        },
+        {
+          "rgba": {
+            "r": 156,
+            "g": 220,
+            "b": 254,
+            "a": 1
+          },
+          "_toString": "#9cdcfe"
+        },
+        {
+          "rgba": {
+            "r": 206,
+            "g": 145,
+            "b": 120,
+            "a": 1
+          },
+          "_toString": "#ce9178"
+        },
+        {
+          "rgba": {
+            "r": 181,
+            "g": 206,
+            "b": 168,
+            "a": 1
+          },
+          "_toString": "#b5cea8"
+        },
+        {
+          "rgba": {
+            "r": 96,
+            "g": 139,
+            "b": 78,
+            "a": 1
+          },
+          "_toString": "#608b4e"
+        },
+        {
+          "rgba": {
+            "r": 86,
+            "g": 156,
+            "b": 214,
+            "a": 1
+          },
+          "_toString": "#569cd6"
+        },
+        {
+          "rgba": {
+            "r": 220,
+            "g": 220,
+            "b": 220,
+            "a": 1
+          },
+          "_toString": "#dcdcdc"
+        },
+        {
+          "rgba": {
+            "r": 128,
+            "g": 128,
+            "b": 128,
+            "a": 1
+          },
+          "_toString": "#808080"
+        },
+        {
+          "rgba": {
+            "r": 244,
+            "g": 71,
+            "b": 71,
+            "a": 1
+          },
+          "_toString": "#f44747"
+        },
+        {
+          "rgba": {
+            "r": 197,
+            "g": 134,
+            "b": 192,
+            "a": 1
+          },
+          "_toString": "#c586c0"
+        },
+        {
+          "rgba": {
+            "r": 167,
+            "g": 152,
+            "b": 115,
+            "a": 1
+          },
+          "_toString": "#a79873"
+        },
+        {
+          "rgba": {
+            "r": 221,
+            "g": 106,
+            "b": 111,
+            "a": 1
+          },
+          "_toString": "#dd6a6f"
+        },
+        {
+          "rgba": {
+            "r": 91,
+            "g": 180,
+            "b": 152,
+            "a": 1
+          },
+          "_toString": "#5bb498"
+        },
+        {
+          "rgba": {
+            "r": 144,
+            "g": 144,
+            "b": 144,
+            "a": 1
+          },
+          "_toString": "#909090"
+        },
+        {
+          "rgba": {
+            "r": 119,
+            "g": 136,
+            "b": 153,
+            "a": 1
+          },
+          "_toString": "#778899"
+        },
+        {
+          "rgba": {
+            "r": 255,
+            "g": 0,
+            "b": 255,
+            "a": 1
+          },
+          "_toString": "#ff00ff"
+        },
+        {
+          "rgba": {
+            "r": 180,
+            "g": 102,
+            "b": 149,
+            "a": 1
+          },
+          "_toString": "#b46695"
+        },
+        {
+          "rgba": {
+            "r": 255,
+            "g": 0,
+            "b": 0,
+            "a": 1
+          },
+          "_toString": "#ff0000"
+        },
+        {
+          "rgba": {
+            "r": 79,
+            "g": 118,
+            "b": 172,
+            "a": 1
+          },
+          "_toString": "#4f76ac"
+        },
+        {
+          "rgba": {
+            "r": 61,
+            "g": 201,
+            "b": 176,
+            "a": 1
+          },
+          "_toString": "#3dc9b0"
+        },
+        {
+          "rgba": {
+            "r": 116,
+            "g": 176,
+            "b": 223,
+            "a": 1
+          },
+          "_toString": "#74b0df"
+        },
+        {
+          "rgba": {
+            "r": 72,
+            "g": 100,
+            "b": 170,
+            "a": 1
+          },
+          "_toString": "#4864aa"
+        }
+      ],
+      "_color2id": {}
+    },
+    "_root": {
+      "_mainRule": {
+        "_fontStyle": 0,
+        "_foreground": 1,
+        "_background": 2,
+        "metadata": 33587200
+      },
+      "_children": {}
+    },
+    "_cache": {}
+  }
+}

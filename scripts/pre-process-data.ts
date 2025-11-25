@@ -2,7 +2,7 @@ import { parse } from '@fast-csv/parse';
 import { readFile, writeFile, copyFile, cp, mkdir } from "node:fs/promises";
 import path from "node:path";
 
-const KSA_VERSION = "v2025.11.5.2897";
+const KSA_VERSION = "v2025.11.5.2897_hacked";
 
 // earth system csv
 const inputCsvFilePath = path.resolve(import.meta.dirname, '../data/earth_system.csv');

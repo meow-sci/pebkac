@@ -1,6 +1,7 @@
 ---
-import "@fontsource-variable/oxanium";
 import "@fontsource-variable/inter";
+import "@fontsource-variable/oxanium";
+import "@fontsource-variable/source-code-pro";
 import "@fontsource/asimovian";
 import "@fontsource/megrim";
 ---
@@ -13,6 +14,11 @@ import "@fontsource/megrim";
     <meta name="generator" content={Astro.generator} />
     <title>PEBKAC</title>
     <style is:global>
+      .monaco-editor { 
+        /* hack to make monaco horizontal resizing (shrinking, specifically) work */
+        position: absolute !important; 
+      }
+
       body {
         font-family: "Inter Variable", system-ui;
         font-size: 16px;

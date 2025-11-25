@@ -3,7 +3,7 @@ import xpath from "xpath";
 
 import type { SystemEntry } from "../data/SystemEntry";
 import type { GeneratorContext } from '../data/GeneratorContext';
-import type { CelestialType } from '../data/CelestialType';
+import type { BodyType, CelestialType } from '../data/CelestialType';
 import { isElementNode } from '../xml/isXmlNodeTypeGuards';
 import { isNotEmptyString } from '../util/isNotEmptyString';
 import { isTrueString } from '../util/isTrueString';
@@ -16,7 +16,7 @@ import { isTrueString } from '../util/isTrueString';
  */
 export function transformSystemEntryToKsaXml(context: GeneratorContext, source: SystemEntry): Element {
   const doc = createDocument();
-  const el = createCelestialRootElement(doc, source.MODEL_TYPE, source.ID, source.PARENT);
+  const el = createCelestialRootElement(doc, source.BODY_TYPE, source.ID, source.PARENT);
   transformSystemEntryToKsaXmlIntoElement(context, source, doc, el);
   return el;
 }
@@ -116,7 +116,7 @@ export function createDocument(): Document {
   return parser.parseFromString("<root/>", "application/xml");
 }
 
-export function createCelestialRootElement(doc: Document, type: CelestialType, id: string, parent: string | undefined | null): Element {
+export function createCelestialRootElement(doc: Document, type: BodyType, id: string, parent: string | undefined | null): Element {
   const el = doc.createElement(type);
 
   el.setAttribute("Id", id);
