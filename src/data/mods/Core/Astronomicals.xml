@@ -9,16 +9,6 @@
     </StellarBody>
 
     <Vehicle Id="Gemini7" Parent="Earth">
-        <Canvas Id="Navball"/>
-        <Canvas Id="Altitude"/>
-        <Canvas Id="GameTime"/>
-        <Canvas Id="PitchYawRoll"/>
-        <Canvas Id="AutopilotSettings"/>
-        <Canvas Id="Telemetry"/>
-        <Canvas Id="EngineControl"/>
-        <Canvas Id="BurnControl"/>
-        <Canvas Id="RendezvousControl"/>
-        <WindSound SoundId="AtmosphericMovement"/>
 
         <RootPart Id="Core_Command_A_Prefab_MediumCapsule_VariantA">
 
@@ -204,16 +194,6 @@
     </Vehicle>
 
     <Vehicle Id="Gemini6a" Parent="Earth">
-        <Canvas Id="Navball"/>
-        <Canvas Id="Altitude"/>
-        <Canvas Id="GameTime"/>
-        <Canvas Id="PitchYawRoll"/>
-        <Canvas Id="AutopilotSettings"/>
-        <Canvas Id="Telemetry"/>
-        <Canvas Id="EngineControl"/>
-        <Canvas Id="BurnControl"/>
-        <Canvas Id="RendezvousControl"/>
-        <WindSound SoundId="AtmosphericMovement"/>
 
         <RootPart Id="GeminiCapsulePart">
             <Part Id="GeminiCapPart"/>
@@ -235,16 +215,6 @@
     </Vehicle>
 
     <Vehicle Id="Rocket" Parent="Earth">
-        <Canvas Id="Navball"/>
-        <Canvas Id="Altitude"/>
-        <Canvas Id="GameTime"/>
-        <Canvas Id="PitchYawRoll"/>
-        <Canvas Id="AutopilotSettings"/>
-        <Canvas Id="BurnControl"/>
-        <Canvas Id="RendezvousControl"/>
-        <Canvas Id="EngineControl"/>
-        <Canvas Id="Telemetry"/>
-        <WindSound SoundId="AtmosphericMovement"/>
 
         <RootPart Id="Core_Command_A_Prefab_MediumCapsule_VariantA">
 
@@ -433,16 +403,6 @@
     <KittenEva Id="Hunter" Parent="Earth">
         
         <Character Id="HunterKitten"/>
-        
-        <Canvas Id="Navball"/>
-        <Canvas Id="Altitude"/>
-        <Canvas Id="GameTime"/>
-        <Canvas Id="PitchYawRoll"/>
-        <Canvas Id="AutopilotSettings"/>
-        <Canvas Id="RendezvousControl"/>        
-        <Canvas Id="Telemetry"/>
-        <WindSound SoundId="AtmosphericMovement"/>
-
         <RootPart Id="KittenBackPackPart">
         </RootPart>
 
@@ -464,16 +424,6 @@
     <KittenEva Id="Banjo" Parent="Earth">
 
         <Character Id="BanjoKitten"/>
-
-        <Canvas Id="Navball"/>
-        <Canvas Id="Altitude"/>
-        <Canvas Id="GameTime"/>
-        <Canvas Id="PitchYawRoll"/>
-        <Canvas Id="AutopilotSettings"/>
-        <Canvas Id="RendezvousControl"/>
-        <Canvas Id="Telemetry"/>
-        <WindSound SoundId="AtmosphericMovement"/>
-
         <RootPart Id="KittenBackPackPart">
         </RootPart>
 
@@ -495,16 +445,6 @@
     <KittenEva Id="Polaris" Parent="Earth">
 
         <Character Id="PolarisKitten"/>
-
-        <Canvas Id="Navball"/>
-        <Canvas Id="Altitude"/>
-        <Canvas Id="GameTime"/>
-        <Canvas Id="PitchYawRoll"/>
-        <Canvas Id="AutopilotSettings"/>
-        <Canvas Id="RendezvousControl"/>
-        <Canvas Id="Telemetry"/>
-        <WindSound SoundId="AtmosphericMovement"/>
-
         <RootPart Id="KittenBackPackPart">
         </RootPart>
 
@@ -826,7 +766,7 @@
             <VolumetricsFlickerReductionDistance Km="100.0"/>
             <Layer Id="EarthClouds">
                 <RotationSpeed X="0" Y="0" Z="-20" />
-                <Texture Id="Textures/Clouds/compressed/Earth_clouds_tile_mask.dds" Path="Textures/Clouds/compressed/Earth_clouds_tile_mask.dds" Category="Terrain"/>
+                <Texture Id="Textures/Clouds/Compressed/Earth_clouds_tile_mask.dds" Path="Textures/Clouds/Compressed/Earth_clouds_tile_mask.dds" Category="Terrain"/>
                 <Detail>
                     <Texture Id="CloudDetail2048" Path="Textures/Clouds/CloudDetail2048.png" Category="Terrain"/>
                     <Size Km ="400"/>
@@ -1045,9 +985,9 @@
         </Layer>
         <Layer Id="EarthClouds2">
             <RotationSpeed X="0" Y="0" Z="-30" />
-            <Texture Id="Textures/Clouds/compressed/Earth_clouds_placeholder_top_layer.dds" Path="Textures/Clouds/compressed/Earth_clouds_placeholder_top_layer.dds" Category="Terrain"/>
+            <Texture Id="Textures/Clouds/Compressed/Earth_clouds_placeholder_top_layer.dds" Path="Textures/Clouds/Compressed/Earth_clouds_placeholder_top_layer.dds" Category="Terrain"/>
                 <Detail>
-                    <Texture Path="Textures/Clouds/compressed/CirroStratusDetail.dds" Category="Terrain"/>
+                    <Texture Path="Textures/Clouds/Compressed/CirroStratusDetail.dds" Category="Terrain"/>
                     <Size Km ="400"/>
                 </Detail>
                 <Color R="1.0" G="1.0" B="1.0" />

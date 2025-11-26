@@ -68,7 +68,7 @@
             <OrbitTransitionEndAltitude Km="320.0"/>
             <Layer Id="EarthClouds">
                 <RotationSpeed X="0" Y="0" Z="-20" />
-                <Texture Path="Textures/Clouds/compressed/Earth_clouds_tile_mask.dds"/>
+                <Texture Path="Textures/Clouds/Compressed/Earth_clouds_tile_mask.dds"/>
                 <Detail>
                     <Texture Path="Textures/Clouds/CloudDetail2048.png"/>
                     <Size Km ="400"/>
@@ -280,9 +280,9 @@
             </Layer>
             <Layer Id="EarthClouds2">
                 <RotationSpeed X="0" Y="0" Z="-30" />
-                <Texture Path="Textures/Clouds/compressed/Earth_clouds_placeholder_top_layer.dds"/>
+                <Texture Path="Textures/Clouds/Compressed/Earth_clouds_placeholder_top_layer.dds"/>
                 <Detail>
-                    <Texture Path="Textures/Clouds/compressed/CirroStratusDetail.dds"/>
+                    <Texture Path="Textures/Clouds/Compressed/CirroStratusDetail.dds"/>
                     <Size Km ="400"/>
                 </Detail>
                 <Raymarching>
