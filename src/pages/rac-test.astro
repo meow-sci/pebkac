@@ -1,0 +1,96 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { ReactAriaTestPage } from "../components/rac/ReactAriaTestPage";
+---
+
+<BaseLayout>
+  <style slot="head" is:global>
+    body {
+      padding: 0;
+      margin: 0;
+      background-color: var(--bg-color);
+      min-height: 100vh;
+      display: grid;
+      color: var(--default-font-color);
+    }
+
+    #page {
+      display: grid;
+
+      grid-auto-flow: column;
+      grid-template-areas:
+      "header  header"
+      "tablist tabpanel"
+      "info    tabpanel";
+      
+      grid-template-columns: minmax(max-content, 15rem) 1fr;
+      grid-template-rows: max-content max-content 1fr;
+      
+      column-gap: var(--container-gap);
+      row-gap: var(--container-gap);
+
+      margin: var(--container-gap);
+
+      .react-aria-Tabs {
+        display: contents;
+
+        .react-aria-TabList {
+          grid-area: tablist;
+
+          display: grid;
+          grid-auto-flow: row;
+
+          border: solid 1px var(--container-border-color);
+        }
+
+        .react-aria-Tab {
+          font-size: 0.875rem;
+          cursor: pointer;
+
+          color: var(--green-500);
+
+          padding-inline: var(--container-padding-inline);
+          padding-block: 0.5rem;
+
+          margin-inline: -1px;
+
+          transition: all 150ms ease-out;
+
+          &:first-child {
+            margin-top: -1px;
+          }
+          &:last-child {
+            margin-bottom: -1px;
+          }
+
+          &[data-hovered="true"] {
+            background-color: var(--select-hover-bg-color);
+            color: var(--select-hover-fg-color);
+          }
+
+          &[data-selected="true"] {
+            background-color: var(--selection-bg-color);
+            color: var(--selection-fg-color);
+          }
+        }
+
+        .react-aria-TabPanel {
+          grid-area: tabpanel;
+
+          display: grid;
+          border: solid 1px var(--container-border-color);
+        }
+      }
+
+      #info {
+        grid-area: info;
+      }
+
+      #header {
+        grid-area: header;
+      }
+    }
+  </style>
+
+  <ReactAriaTestPage client:only="react" />
+</BaseLayout>

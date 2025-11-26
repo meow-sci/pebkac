@@ -452,7 +452,7 @@
         <LongitudeOfAscendingNode Degrees="60.48" />
         <ArgumentOfPeriapsis Degrees="30.003" />
         <MeanRadius M="1.5" />
-        <MassSpecificPMI X="1.13" Y="2.83" Z="2.83" />
+        <MassSpecificPMI X="0.5" Y="0.5" Z="0.25" />
         <Mass Kg="50" />
         <PropellantMass Kg="20" />
         <Body2Cce X="-1.8158" Y="-0.0083" Z="-1.2297" />
@@ -483,7 +483,7 @@
         <LongitudeOfAscendingNode Degrees="60.48" />
         <ArgumentOfPeriapsis Degrees="30.003" />
         <MeanRadius M="1.5" />
-        <MassSpecificPMI X="1.13" Y="2.83" Z="2.83" />
+        <MassSpecificPMI X="0.5" Y="0.5" Z="0.25" />
         <Mass Kg="50" />
         <PropellantMass Kg="20" />
         <Body2Cce X="-1.8158" Y="-0.0083" Z="-1.2297" />
@@ -514,7 +514,7 @@
         <LongitudeOfAscendingNode Degrees="60.48" />
         <ArgumentOfPeriapsis Degrees="30.003" />
         <MeanRadius M="1.5" />
-        <MassSpecificPMI X="1.13" Y="2.83" Z="2.83" />
+        <MassSpecificPMI X="0.5" Y="0.5" Z="0.25" />
         <Mass Kg="50" />
         <PropellantMass Kg="20" />
         <Body2Cce X="-1.8158" Y="-0.0083" Z="-1.2297" />

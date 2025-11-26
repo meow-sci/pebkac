@@ -34,12 +34,12 @@ export function XmlEditor() {
       defaultValue={`<?xml version="1.0" encoding="UTF-8"?>
 <Wrapper Id="abc">
   <Node Kg="12345">hi</Node>
-  <Node Id="Hello  Other="Abc" />
+  <Node Id="Hello" Other="Abc" />
 </Wrapper>
 `}
       beforeMount={handleEditorWillMount}
       onMount={handleEditorDidMount}
-      theme="vs-dark"
+      theme="pebkac-dark"
       options={{
         fontFamily: "Source Code Pro Variable",
         fontSize: 15,

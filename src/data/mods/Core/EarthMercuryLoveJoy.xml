@@ -6,7 +6,7 @@
         <Mass Suns="1" />
         <SphereOfInfluence Ly="4500000000" />
     </StellarBody>
-    <PlanetaryBody Id="Mercury" Parent="Sol">
+    <TerrestrialBody Id="Mercury" Parent="Sol">
         <MeshCollection Id="Default"/>
         <SemiMajorAxis Au="0.39" />
         <Inclination Degrees="7.00487" />
@@ -28,7 +28,7 @@
         <Color R="1" G="1" B="0.3" />
         <Period Days="58" Hours="15" Minutes="30" Seconds="14"/>
         <SphereOfInfluence Km="117000" />
-    </PlanetaryBody>
+    </TerrestrialBody>
     <AtmosphericBody Id="Earth" Parent="Sol">
         <MeshCollection Id="Default"/>
         <SemiMajorAxis Au="1" />
@@ -533,7 +533,7 @@
         </City>
     </AtmosphericBody>
     
-    <PlanetaryBody Id="Luna" Parent="Earth">
+    <TerrestrialBody Id="Luna" Parent="Earth">
         <MeshCollection Id="Default"/>
         <SemiMajorAxis Km="384400" />
         <Inclination Degrees="5.145" />
@@ -547,9 +547,9 @@
         <AxialTilt Degrees="6.68" />
         <AxialAlignment Degrees="0" />
         <SphereOfInfluence Km="64300" />
-    </PlanetaryBody>
+    </TerrestrialBody>
 
-    <PlanetaryBody Id="Mars" Parent="Sol">
+    <TerrestrialBody Id="Mars" Parent="Sol">
         <MeshCollection Id="Default"/>
         <SemiMajorAxis Au="1.523679" />
         <Inclination Degrees="1.85061" />
@@ -564,7 +564,7 @@
         <AxialTilt Degrees="25.19" />
         <AxialAlignment Degrees="0" />
         <SphereOfInfluence Km="578000" />
-    </PlanetaryBody>
+    </TerrestrialBody>
     <Comet Id="LovejoyComet" Parent="Sol">
         <SemiMajorAxis Au="78.68" />
         <Inclination Degrees="134.2" />
@@ -627,6 +627,7 @@
                         <Normal Id="Apollo2Normal"/>
                         <RoughMetalAo Id="Apollo2RMAo"/>-->
         </Renderer>
+        <!-- TODO: Migrate to new rocket data. -->
         <Thruster Id="A1">
             <Location X="-0.050996" Y="-0.75996" Z="-1.9897" />
             <ExhaustDirection X="0" Y="-0.9862856015" Z="0.1650476058" />

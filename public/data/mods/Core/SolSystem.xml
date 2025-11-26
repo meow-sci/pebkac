@@ -963,7 +963,7 @@
             <Longitude Degrees="45.0" />
         </Crater>
     </AtmosphericBody>
-    <PlanetaryBody Id="Phobos" Parent="Mars">
+    <MinorBody Id="Phobos" Parent="Mars">
         <MeshCollection Id="Asteroid"/>
         <SphereOfInfluence Km = "30" /> <!-- Wrong! Just here so we can collide with and land on it -->
         <SemiMajorAxis Km="9377" />
@@ -1147,8 +1147,8 @@
 
         </Terrain>
 
-    </PlanetaryBody>
-    <PlanetaryBody Id="Deimos" Parent="Mars">
+    </MinorBody>
+    <MinorBody Id="Deimos" Parent="Mars">
         <SemiMajorAxis Km="23463.2" />
         <Inclination Degrees="1.788" />
         <Eccentricity Value="0.00033" />
@@ -1158,9 +1158,9 @@
         <MeanRadius Km="6.2" />
         <Mass Pg="1.4762" />
         <TidallyLocked Value="true" />
-    </PlanetaryBody>
+    </MinorBody>
 
-    <PlanetaryBody Id="Ceres" Parent="Sol">
+    <MinorBody Id="Ceres" Parent="Sol">
         <SemiMajorAxis Au="2.769" />
         <Inclination Degrees="10.594" />
         <Eccentricity Value="0.0758" />
@@ -1170,9 +1170,9 @@
         <MeanRadius Km="469.73" />
         <Mass Zg="9.393" />
         <Color R="0.72" G="0.72" B="0.72" />
-    </PlanetaryBody>
+    </MinorBody>
 
-    <PlanetaryBody Id="Vesta" Parent="Sol">
+    <MinorBody Id="Vesta" Parent="Sol">
         <SemiMajorAxis Au="2.361" />
         <Inclination Degrees="7.140" />
         <Eccentricity Value="0.089" />
@@ -1182,9 +1182,9 @@
         <MeanRadius Km="262.7" />
         <Mass Zg="2.59076" />
         <Color R="0.8" G="0.7" B="0.5" />
-    </PlanetaryBody>
+    </MinorBody>
 
-    <PlanetaryBody Id="Pallas" Parent="Sol">
+    <MinorBody Id="Pallas" Parent="Sol">
         <SemiMajorAxis Au="2.773" />
         <Inclination Degrees="34.837" />
         <Eccentricity Value="0.231" />
@@ -1194,9 +1194,9 @@
         <MeanRadius Km="265" />
         <Mass Zg="2.11" />
         <Color R="0.75" G="0.75" B="0.75" />
-    </PlanetaryBody>
+    </MinorBody>
 
-    <PlanetaryBody Id="Hygiea" Parent="Sol">
+    <MinorBody Id="Hygiea" Parent="Sol">
         <SemiMajorAxis Au="3.139" />
         <Inclination Degrees="3.842" />
         <Eccentricity Value="0.113" />
@@ -1206,9 +1206,9 @@
         <MeanRadius Km="215" />
         <Mass Zg="8.67" />
         <Color R="0.6" G="0.6" B="0.6" />
-    </PlanetaryBody>
+    </MinorBody>
 
-    <PlanetaryBody Id="Eros" Parent="Sol">
+    <MinorBody Id="Eros" Parent="Sol">
         <SemiMajorAxis Au="1.458" />
         <Inclination Degrees="10.829" />
         <Eccentricity Value="0.223" />
@@ -1218,7 +1218,7 @@
         <MeanRadius Km="8.42" />
         <Mass Zg="0.006687" />
         <Color R="0.9" G="0.8" B="0.7" />
-    </PlanetaryBody>
+    </MinorBody>
 
     <AtmosphericBody Id="Jupiter" Parent="Sol">	
         <MeshCollection Id="Default"/>
@@ -1796,7 +1796,7 @@
         <TidallyLocked Value="true" />
     </PlanetaryBody>
 
-    <PlanetaryBody Id="Amalthea" Parent="Jupiter">
+    <MinorBody Id="Amalthea" Parent="Jupiter">
         <SemiMajorAxis Km="181400" />
         <Inclination Degrees="0.374" />
         <Eccentricity Value="0.0032" />
@@ -1807,9 +1807,9 @@
         <Mass Zg="0.025" />
         <Color R="1.0" G="0.2" B="0.1" />
         <TidallyLocked Value="true" />
-    </PlanetaryBody>
+    </MinorBody>
 
-    <PlanetaryBody Id="Himalia" Parent="Jupiter">
+    <MinorBody Id="Himalia" Parent="Jupiter">
         <SemiMajorAxis Km="11461000" />
         <Inclination Degrees="27.5" />
         <Eccentricity Value="0.162" />
@@ -1819,9 +1819,9 @@
         <MeanRadius Km="85" />
         <Color R="1.0" G="0.82" B="0.57" />
         <TidallyLocked Value="true" />
-    </PlanetaryBody>
+    </MinorBody>
 
-    <PlanetaryBody Id="Elara" Parent="Jupiter">
+    <MinorBody Id="Elara" Parent="Jupiter">
         <SemiMajorAxis Km="11740000" />
         <Inclination Degrees="26.6" />
         <Eccentricity Value="0.217" />
@@ -1830,9 +1830,9 @@
         <MeanAnomalyAtEpoch Degrees="141.4" />
         <MeanRadius Km="43" />
         <TidallyLocked Value="true" />
-    </PlanetaryBody>
+    </MinorBody>
 
-    <PlanetaryBody Id="Pasiphae" Parent="Jupiter">
+    <MinorBody Id="Pasiphae" Parent="Jupiter">
         <SemiMajorAxis Km="23509000" />
         <Inclination Degrees="151.4" />
         <Eccentricity Value="0.409" />
@@ -1841,9 +1841,9 @@
         <MeanAnomalyAtEpoch Degrees="45.9" />
         <MeanRadius Km="30" />
         <TidallyLocked Value="true" />
-    </PlanetaryBody>
+    </MinorBody>
 
-    <PlanetaryBody Id="Sinope" Parent="Jupiter">
+    <MinorBody Id="Sinope" Parent="Jupiter">
         <SemiMajorAxis Km="23760000" />
         <Inclination Degrees="158.1" />
         <Eccentricity Value="0.250" />
@@ -1852,9 +1852,9 @@
         <MeanAnomalyAtEpoch Degrees="298.5" />
         <MeanRadius Km="19" />
         <TidallyLocked Value="true" />
-    </PlanetaryBody>
+    </MinorBody>
 
-    <PlanetaryBody Id="Lysithea" Parent="Jupiter">
+    <MinorBody Id="Lysithea" Parent="Jupiter">
         <SemiMajorAxis Km="11717000" />
         <Inclination Degrees="28.3" />
         <Eccentricity Value="0.110" />
@@ -1863,7 +1863,7 @@
         <MeanAnomalyAtEpoch Degrees="116.7" />
         <MeanRadius Km="18" />
         <TidallyLocked Value="true" />
-    </PlanetaryBody>
+    </MinorBody>
 
     <AtmosphericBody Id="Saturn" Parent="Sol">
         <MeshCollection Id="Default"/>
@@ -2302,7 +2302,7 @@
             </Layer>
         </Clouds>
     </AtmosphericBody>
-    <PlanetaryBody Id="Iapetus" Parent="Saturn">
+    <MinorBody Id="Iapetus" Parent="Saturn">
         <SemiMajorAxis Km="3560820" />
         <Inclination Degrees="14.72" />
         <Eccentricity Value="0.0293" />
@@ -2312,7 +2312,7 @@
         <MeanRadius Km="734.5" />
         <Mass Zg="1.81" />
         <TidallyLocked Value="true" />
-    </PlanetaryBody>
+    </MinorBody>
 
     <AtmosphericBody Id="Uranus" Parent="Sol">
         <MeshCollection Id="Default"/>
@@ -2354,7 +2354,7 @@
             </Physical>
         </Atmosphere>
     </AtmosphericBody>
-    <PlanetaryBody Id="Miranda" Parent="Uranus">
+    <MinorBody Id="Miranda" Parent="Uranus">
         <SemiMajorAxis Km="129390" />
         <Inclination Degrees="4.338" />
         <Eccentricity Value="0.0013" />
@@ -2364,8 +2364,8 @@
         <MeanRadius Km="235.8" />
         <Mass Eg="66.1" />
         <TidallyLocked Value="true" />
-    </PlanetaryBody>
-    <PlanetaryBody Id="Ariel" Parent="Uranus">
+    </MinorBody>
+    <MinorBody Id="Ariel" Parent="Uranus">
         <SemiMajorAxis Km="191020" />
         <Inclination Degrees="0.260" />
         <Eccentricity Value="0.0012" />
@@ -2375,8 +2375,8 @@
         <MeanRadius Km="578.9" />
         <Mass Zg="1.2597" />
         <TidallyLocked Value="true" />
-    </PlanetaryBody>
-    <PlanetaryBody Id="Umbriel" Parent="Uranus">
+    </MinorBody>
+    <MinorBody Id="Umbriel" Parent="Uranus">
         <SemiMajorAxis Km="266300" />
         <Inclination Degrees="0.128" />
         <Eccentricity Value="0.0039" />
@@ -2386,8 +2386,8 @@
         <MeanRadius Km="584.7" />
         <Mass Zg="1.167" />
         <TidallyLocked Value="true" />
-    </PlanetaryBody>
-    <PlanetaryBody Id="Titania" Parent="Uranus">
+    </MinorBody>
+    <MinorBody Id="Titania" Parent="Uranus">
         <SemiMajorAxis Km="435910" />
         <Inclination Degrees="0.340" />
         <Eccentricity Value="0.0011" />
@@ -2397,8 +2397,8 @@
         <MeanRadius Km="788.9" />
         <Mass Zg="3.5275" />
         <TidallyLocked Value="true" />
-    </PlanetaryBody>
-    <PlanetaryBody Id="Oberon" Parent="Uranus">
+    </MinorBody>
+    <MinorBody Id="Oberon" Parent="Uranus">
         <SemiMajorAxis Km="583520" />
         <Inclination Degrees="0.058" />
         <Eccentricity Value="0.0014" />
@@ -2408,7 +2408,7 @@
         <MeanRadius Km="761.4" />
         <Mass Zg="3.014" />
         <TidallyLocked Value="true" />
-    </PlanetaryBody>
+    </MinorBody>
 
     <AtmosphericBody Id="Neptune" Parent="Sol">
         <MeshCollection Id="Default"/>
@@ -2450,7 +2450,7 @@
             </Physical>
         </Atmosphere>
     </AtmosphericBody>
-    <PlanetaryBody Id="Triton" Parent="Neptune">
+    <MinorBody Id="Triton" Parent="Neptune">
         <SemiMajorAxis Km="354759" />
         <Inclination Degrees="156.865" />
         <Eccentricity Value="0.0000" />
@@ -2460,7 +2460,7 @@
         <MeanRadius Km="1353.4" />
         <Mass Zg="21.4" />
         <TidallyLocked Value="true" />
-    </PlanetaryBody>
+    </MinorBody>
 
     <PlanetaryBody Id="Pluto" Parent="Sol">
         <MeshCollection Id="Default"/>
@@ -2475,7 +2475,7 @@
         <Color R="0.95" G="0.78" B="0.64" />
     </PlanetaryBody>
 
-    <PlanetaryBody Id="Charon" Parent="Pluto">
+    <MinorBody Id="Charon" Parent="Pluto">
         <MeshCollection Id="Default"/>
         <SemiMajorAxis Km="19571" />
         <Inclination Degrees="0.001" />
@@ -2486,9 +2486,9 @@
         <MeanRadius Km="606" />
         <Mass Zg="1.586" />
         <TidallyLocked Value="true" />
-    </PlanetaryBody>
+    </MinorBody>
 
-    <PlanetaryBody Id="Eris" Parent="Sol">
+    <MinorBody Id="Eris" Parent="Sol">
         <SemiMajorAxis Au="67.78" />
         <Inclination Degrees="44.187" />
         <Eccentricity Value="0.436" />
@@ -2498,9 +2498,9 @@
         <MeanRadius Km="1163" />
         <Mass Zg="16.7" />
         <Diffuse Path="Textures/Eris_Diffuse.jpg" Category="Terrain"/>
-    </PlanetaryBody>
+    </MinorBody>
 
-    <PlanetaryBody Id="Haumea" Parent="Sol">
+    <MinorBody Id="Haumea" Parent="Sol">
         <SemiMajorAxis Au="43.34" />
         <Inclination Degrees="28.19" />
         <Eccentricity Value="0.195" />
@@ -2509,9 +2509,9 @@
         <MeanAnomalyAtEpoch Degrees="239.61" />
         <MeanRadius Km="816" />
         <Mass Zg="4.006" />
-    </PlanetaryBody>
+    </MinorBody>
 
-    <PlanetaryBody Id="Sedna" Parent="Sol">
+    <MinorBody Id="Sedna" Parent="Sol">
         <SemiMajorAxis Au="506" />
         <Inclination Degrees="11.93" />
         <Eccentricity Value="0.8496" />
@@ -2520,9 +2520,9 @@
         <MeanAnomalyAtEpoch Degrees="358.117" />
         <MeanRadius Km="995" />
         <Mass Zg="4.77" />
-    </PlanetaryBody>
+    </MinorBody>
 
-    <PlanetaryBody Id="Oumuamua" Parent="Sol">
+    <Comet Id="Oumuamua" Parent="Sol">
         <Periapsis Au="0.255916"/>
         <Inclination Degrees="122.5" />
         <Eccentricity Value="1.20113" />
@@ -2530,7 +2530,7 @@
         <ArgumentOfPeriapsis Degrees="241.1" />
         <TimeAtPeriapsis Months="-3"/>
         <MeanRadius Km="0.1" />
-    </PlanetaryBody>
+    </Comet>
     
     <LoadFromLibrary Id="Gemini7" Parent="Earth" />
     <LoadFromLibrary Id="Gemini6a" Parent="Earth" />
@@ -2547,7 +2547,7 @@
     <LoadFromLibrary Id="Borisov" Parent="Sol"/>
     <LoadFromLibrary Id="3I_ATLAS" Parent="Sol"/>
    
-    <PlanetaryBody Id="ScottManleyAsteroid" Parent="Sol">
+    <Asteroid Id="ScottManleyAsteroid" Parent="Sol">
         <SemiMajorAxis Au="2.9321432"/>
         <Inclination Degrees="1.30163"/>
         <LongitudeOfAscendingNode Degrees="333.87360"/>
@@ -2556,6 +2556,6 @@
         <MeanAnomalyAtEpoch Degrees="68.19045"/>
         <MeanRadius Km="2.3"/>
         <Color R="1" G="1" B="1"/>
-    </PlanetaryBody>
+    </Asteroid>
 
 </System>
