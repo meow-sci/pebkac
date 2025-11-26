@@ -1,4 +1,15 @@
-import { SelectionIndicator, Tab, TabList, TabPanel, Tabs } from 'react-aria-components';
+import { Button, SelectionIndicator, Tab, TabList, TabPanel, Tabs } from 'react-aria-components';
+import { BuilderGrid } from '../BuilderGrid';
+
+
+import systemDataJson from "../../data/earth_system_data.json";
+import systemDataCsv from "../../data/earth_system_data.csv?raw";
+
+import type { SystemEntry } from '../../ts/data/SystemEntry';
+import { XmlEditor } from '../monaco/XmlEditor';
+import { CsvEditor } from '../monaco/CsvEditor';
+
+const systemData = systemDataJson as SystemEntry[];
 
 
 export function ReactAriaTestPage() {
@@ -20,8 +31,8 @@ export function ReactAriaTestPage() {
             <span>Crafts</span>
             <SelectionIndicator />
           </Tab>
-          <Tab id="CSV Data">
-            <span>CSV Data</span>
+          <Tab id="Source CSV Data">
+            <span>Source CSV Data</span>
             <SelectionIndicator />
           </Tab>
           <Tab id="Other Stuff">
@@ -30,13 +41,18 @@ export function ReactAriaTestPage() {
           </Tab>
         </TabList>
         <TabPanel id="Celestials Grid">
-          body: Celestials Grid
+          <BuilderGrid data={systemData} quickfilterText='' />
         </TabPanel>
         <TabPanel id="Crafts">
-          body: Crafts
+          <XmlEditor defaultValue={`<?xml version="1.0" encoding="UTF-8"?>
+<Wrapper Id="abc">
+  <Node Kg="12345">hi</Node>
+  <Node Id="Hello" Other="Abc" />
+</Wrapper>
+`} />
         </TabPanel>
-        <TabPanel id="CSV Data">
-          body: CSV Data
+        <TabPanel id="Source CSV Data">
+          <CsvEditor defaultValue={systemDataCsv} />
         </TabPanel>
         <TabPanel id="Other Stuff">
           body: Other Stuff
@@ -44,7 +60,10 @@ export function ReactAriaTestPage() {
       </Tabs>
 
       <div id="info" className="page-container">
-        info !
+
+        <Button onPress={() => alert('Hello world!')}>Generate XML 🚀</Button>
+
+
       </div>
 
     </div>

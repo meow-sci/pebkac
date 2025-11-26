@@ -51,6 +51,7 @@ export function BuilderGrid(props: BuilderGridProps) {
 
   return (
     <AgGridReact
+    autoSizeStrategy={{type: "fitCellContents", skipHeader: false}}
       quickFilterText={props.quickfilterText}
       rowSelection={{ mode: "multiRow" }}
       cellSelection={false}
@@ -72,8 +73,8 @@ function toRowData(data: SystemEntry): RowData {
 const myTheme = themeQuartz
   .withParams({
     accentColor: "#FCFF00",
-    backgroundColor: "#222222",
-    borderColor: "#429356",
+    backgroundColor: "#1a1a1a",
+    borderColor: "var(--green-50)",
     borderRadius: 0,
     browserColorScheme: "dark",
     cellHorizontalPaddingScale: 0.8,
@@ -82,15 +83,18 @@ const myTheme = themeQuartz
     fontFamily: {
       googleFont: "Inter Variable"
     },
-    fontSize: 12,
+    fontSize: 13,
     foregroundColor: "#00FF00",
-    headerBackgroundColor: "#282828",
+    
+    headerBackgroundColor: "var(--selection-bg-color)",
     headerFontSize: 14,
-    headerFontWeight: 700,
+    headerFontWeight: 600,
     headerRowBorder: true,
-    headerTextColor: "#00FF00",
-    headerVerticalPaddingScale: 1.5,
-    oddRowBackgroundColor: "#282828",
+    headerTextColor: "var(--bg-color)",
+    headerVerticalPaddingScale: 1.2,
+    headerHeight: 33,
+    
+    oddRowBackgroundColor: "#1c1c1c",
     rangeSelectionBackgroundColor: "#FFFF0020",
     rangeSelectionBorderColor: "yellow",
     rangeSelectionBorderStyle: "dashed",

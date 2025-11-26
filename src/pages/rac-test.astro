@@ -54,7 +54,7 @@ import { ReactAriaTestPage } from "../components/rac/ReactAriaTestPage";
 
           margin-inline: -1px;
 
-          transition: all 150ms ease-out;
+          transition: var(--default-transition);
 
           &:first-child {
             margin-top: -1px;
@@ -84,6 +84,10 @@ import { ReactAriaTestPage } from "../components/rac/ReactAriaTestPage";
 
       #info {
         grid-area: info;
+
+        display: grid;
+        grid-auto-flow: row;
+        align-items: start;
       }
 
       #header {
@@ -93,4 +97,5 @@ import { ReactAriaTestPage } from "../components/rac/ReactAriaTestPage";
   </style>
 
   <ReactAriaTestPage client:only="react" />
+  
 </BaseLayout>

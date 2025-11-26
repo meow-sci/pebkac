@@ -5,14 +5,11 @@ import type { editor } from 'monaco-editor';
 import { useRef } from 'react';
 
 
-
-
-export interface XmlEditorProps {
+export interface CsvEditorProps {
   defaultValue?: string;
 }
 
-
-export function XmlEditor(props: XmlEditorProps) {
+export function CsvEditor(props: CsvEditorProps) {
 
   const monacoRef = useRef(null);
 
@@ -36,11 +33,11 @@ export function XmlEditor(props: XmlEditorProps) {
     <Editor
       // height="100%"
       // height="calc(100vh - 2rem)"
-      language="xml"
+      language="csv"
       defaultValue={props.defaultValue ?? ""}
       beforeMount={handleEditorWillMount}
       onMount={handleEditorDidMount}
-      theme="pebkac-xml-dark"
+      theme="pebkac-csv-dark"
       options={{
         fontFamily: "Source Code Pro Variable",
         fontSize: 15,
