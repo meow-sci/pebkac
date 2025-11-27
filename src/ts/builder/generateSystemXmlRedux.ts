@@ -100,7 +100,7 @@ function createSystemDocument(config: GenerateSystemXmlConfig, celestials: Eleme
   systemElement.setAttribute("Id", config.systemId);
 
   const loadFromLibraryElement = doc.createElement("DisplayName");
-  loadFromLibraryElement.setAttribute("Value", "GeneratedSystem");
+  loadFromLibraryElement.setAttribute("Value", config.systemId);
   systemElement.appendChild(loadFromLibraryElement);
 
   function addLoadFromLibrary(id: string, parent?: string) {

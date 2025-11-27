@@ -179,11 +179,10 @@ section.settings {
   flex-direction: column;
   min-width: 12rem;
   color: var(--green-600);
-  height: 2rem;
-
+  
   .react-aria-Input,
   .react-aria-TextArea {
-    height: 100%;
+    height: calc(2rem - 0.625rem);
     padding: 0.286rem;
     margin: 0;
     border: 1px solid var(--green-600);
