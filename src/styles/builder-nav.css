@@ -102,6 +102,19 @@
       align-self: center;
       justify-self: center;
       color: var(--default-font-color);
+
+      display: grid;
+      align-items: center;
+      justify-items: center;
+
+      .lucide {
+        width: 0.875rem;
+        transition: all 150ms ease-out;
+      }
+    }
+
+    &[data-selected="true"] .step .lucide {
+      width: 1.25rem;
     }
   }
 
@@ -112,4 +125,3 @@
     border: solid 1px var(--container-border-color);
   }
 }
-

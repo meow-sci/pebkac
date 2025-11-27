@@ -7,6 +7,7 @@ import { Button, Input, TextField } from 'react-aria-components';
 import type { SystemEntry } from '../../ts/data/SystemEntry';
 import { $gridQuickfilter, $selectedSystemEntries, $systemEntries, $systemEntryGridApi } from '../../state/builder-state';
 import { builderGridTheme } from './builder-grid-theme';
+import { CircleMinus, CirclePlus, Flame } from 'lucide-react';
 
 // Register all Community features
 ModuleRegistry.registerModules([AllCommunityModule]);
@@ -31,11 +32,11 @@ export function BuilderGrid() {
           <Input placeholder='filter...' />
         </TextField>
 
-        <Button onClick={addFiltered}>Add Filtered</Button>
+        <Button onClick={addFiltered}><CirclePlus strokeWidth={1} size={20} /> add filtered</Button>
 
-        <Button onClick={removeFiltered}>Remove Filtered</Button>
+        <Button onClick={removeFiltered}><CircleMinus strokeWidth={1} size={20} />remove filtered</Button>
 
-        <Button onClick={clearSelection}>🔥 Clear Selection</Button>
+        <Button onClick={clearSelection}><Flame strokeWidth={1} size={20} />clear selection</Button>
 
       </section>
       <AgGridReact<SystemEntry>

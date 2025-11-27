@@ -148,6 +148,8 @@ section.settings {
   display: grid;
   align-items: center;
   justify-items: center;
+  grid-auto-flow: column;
+  column-gap: 0.375rem;
   height: 2rem;
   background-color: color-mix(in srgb, var(--selection-bg-color) 5%, transparent);
   border: solid 1px var(--green-600);
