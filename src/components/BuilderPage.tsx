@@ -6,6 +6,7 @@ import { TabContent } from './TabContent';
 import { BuilderGrid } from './builder/BuilderGrid';
 import { BuilderCsvEditor } from './builder/BuilderCsvEditor';
 import { SystemXmlEditor } from './builder/SystemXmlEditor';
+import { BuilderInstructions } from './builder/BuilderInstructions';
 
 
 export function BuilderPage() {
@@ -58,7 +59,7 @@ export function Inner() {
         </TabList>
 
         <TabPanel id="instructions">
-          do stuff
+          <BuilderInstructions />
         </TabPanel>
 
         <TabPanel id="csv">
