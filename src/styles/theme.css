@@ -141,3 +141,62 @@ section.settings {
     }
   }
 }
+
+.react-aria-Button {
+  --focus-ring-color: var(--green-400);
+
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  height: 2rem;
+  background-color: color-mix(in srgb, var(--selection-bg-color) 5%, transparent);
+  border: solid 1px var(--green-600);
+  color: color-mix(in srgb, var(--default-font-color) 90%, transparent);
+  
+  cursor: pointer;
+  font-size: 0.875rem;
+  border-radius: 0;
+
+  transition: var(--default-transition);
+
+  &[data-hovered] {
+    background-color: color-mix(in srgb, var(--selection-bg-color) 15%, transparent);
+    color: var(--default-font-color);
+  }
+
+  &[data-pressed] {
+    background-color: color-mix(in srgb, var(--selection-bg-color) 30%, transparent);
+    color: var(--default-font-color);
+  }
+
+  
+}
+
+.react-aria-TextField {
+  display: flex;
+  flex-direction: column;
+  min-width: 12rem;
+  color: var(--green-600);
+  height: 2rem;
+
+  .react-aria-Input,
+  .react-aria-TextArea {
+    height: 100%;
+    padding: 0.286rem;
+    margin: 0;
+    border: 1px solid var(--green-600);
+    border-radius: 0;
+    background: color-mix(in srgb, var(--green-600) 8%, transparent);
+    font-size: 0.875rem;
+    color: var(--field-text-color);
+
+    &::placeholder {
+      color: color-mix(in srgb, #ffffff 60%, transparent);
+    }
+
+    &[data-focused] {
+      outline: 2px solid var(--focus-ring-color);
+      outline-offset: -1px;
+    }
+  }
+}

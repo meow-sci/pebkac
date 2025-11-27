@@ -1,11 +1,12 @@
 import { AllCommunityModule, ModuleRegistry, type ColDef, type GridReadyEvent, type IRowNode, type SelectionChangedEvent } from 'ag-grid-community';
 import { AgGridReact } from 'ag-grid-react'; // React Data Grid Component
-import { useMemo } from 'react';
+import { useLayoutEffect, useMemo } from 'react';
 import { useStore } from '@nanostores/react';
 
 import type { SystemEntry } from '../../ts/data/SystemEntry';
 import { $gridQuickfilter, $selectedSystemEntries, $systemEntries, $systemEntryGridApi } from '../../state/builder-state';
 import { builderGridTheme } from './builder-grid-theme';
+import { Button, Input, Label, TextField } from 'react-aria-components';
 
 // Register all Community features
 ModuleRegistry.registerModules([AllCommunityModule]);
@@ -15,8 +16,40 @@ export function BuilderGrid() {
 
   const data = useStore($systemEntries);
   const quickfilter = useStore($gridQuickfilter);
+  const selected = useStore($selectedSystemEntries);
 
   const rowData = useMemo<RowData[]>(() => data.map(toRowData), [data]);
+
+  useLayoutEffect(() => {
+
+    const api = $systemEntryGridApi.get()!;
+
+    if (!api) {
+      return;
+    }
+
+    if (selected.length > 0) {
+
+      // pre-select existing selections using a bulk operation, else XML will generate per node selection (thats bad 💀)
+      const selectedIds = new Set(selected.map(o => o.ID));
+
+      const nodesToSelectByDefault: IRowNode<any>[] = [];
+
+      api.forEachNode(node => {
+        if (selectedIds.has(node.data.ID)) {
+          nodesToSelectByDefault.push(node);
+        }
+      });
+
+      if (nodesToSelectByDefault.length > 0) {
+        api.setNodesSelected({ nodes: nodesToSelectByDefault, newValue: true, source: "api" });
+      }
+    } else {
+      console.log("clearing selection");
+      api.deselectAll();
+    }
+
+  }, [selected]);
 
   const onGridReady = (event: GridReadyEvent<any, any>) => {
     $systemEntryGridApi.set(event.api);
@@ -39,19 +72,53 @@ export function BuilderGrid() {
     }
   };
 
+  const addVisible = () => {
+
+    const entries = $selectedSystemEntries.get();
+
+    $systemEntryGridApi.get()?.forEachNodeAfterFilter(node => {
+
+      if (!entries.includes(node.data)) {
+        $selectedSystemEntries.set([...$selectedSystemEntries.get(), node.data]);
+      }
+
+    });
+  };
+
+  const clearSelection = () => {
+    $selectedSystemEntries.set([]);
+  };
+
+  const onQuickfilterChange = (value: string) => {
+    $gridQuickfilter.set(value);
+  }
+
   return (
-    <AgGridReact
-      autoSizeStrategy={{ type: "fitCellContents", skipHeader: false }}
-      quickFilterText={quickfilter}
-      rowSelection={{ mode: "multiRow" }}
-      cellSelection={false}
-      theme={builderGridTheme}
-      rowData={rowData}
-      columnDefs={COLUMNS}
-      suppressCellFocus
-      onSelectionChanged={onSelectionChanged}
-      onGridReady={onGridReady}
-    />
+    <section id="builder-grid-section">
+      <section className="actions">
+
+        <Button onClick={addVisible}>Add Visible to Selection</Button>
+
+        <Button onClick={clearSelection}>Clear Selection</Button>
+
+        <TextField onChange={onQuickfilterChange} value={quickfilter}>
+          <Input placeholder='filter...' />
+        </TextField>
+
+      </section>
+      <AgGridReact
+        autoSizeStrategy={{ type: "fitCellContents", skipHeader: false }}
+        quickFilterText={quickfilter}
+        rowSelection={{ mode: "multiRow" }}
+        cellSelection={false}
+        theme={builderGridTheme}
+        rowData={rowData}
+        columnDefs={COLUMNS}
+        suppressCellFocus
+        onSelectionChanged={onSelectionChanged}
+        onGridReady={onGridReady}
+      />
+    </section>
 
   )
 }

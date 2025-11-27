@@ -46,3 +46,20 @@ body {
 
   }
 }
+
+#builder-grid-section {
+  display: grid;
+  grid-auto-flow: row;
+  grid-template-rows: max-content 1fr;
+  row-gap: var(--container-gap);
+
+  section.actions {
+    margin-inline: var(--container-gap);
+    margin-top: var(--container-gap);
+    display: grid;
+    grid-auto-flow: column;
+    column-gap: var(--container-gap);
+    align-items: center;
+    justify-content: start;
+  }
+}
