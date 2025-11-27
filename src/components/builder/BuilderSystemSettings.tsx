@@ -31,7 +31,7 @@ export function BuilderSystemSettings() {
 
       <Checkbox onChange={onChangeHackMarsLunaCliffsDiffuse} isSelected={settings.hack_RemoveMarsLunaCliffsDiffuse}>
         {checkbox}
-        <span className="label"><b>HACK:</b> Remove Mars LunaCliffsDiffuse references (bug when using from a mod 🥺)</span>
+        <span className="label"><b>HACK:</b> Remove Mars LunaCliffsDiffuse references (current game build bug/issue - will remove this option when game patch resolves)</span>
       </Checkbox>
 
     </section>
