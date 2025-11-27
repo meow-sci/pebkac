@@ -1,5 +1,7 @@
 import { Button, SelectionIndicator, Tab, TabList, TabPanel, Tabs } from 'react-aria-components';
 import { BuilderGrid } from '../BuilderGrid';
+import { NuqsAdapter } from 'nuqs/adapters/react'
+import { useQueryState } from 'nuqs';
 
 
 import systemDataJson from "../../data/earth_system_data.json";
@@ -15,6 +17,18 @@ const systemData = systemDataJson as SystemEntry[];
 
 export function ReactAriaTestPage() {
   return (
+    <NuqsAdapter>
+      <Inner />
+    </NuqsAdapter>
+  )
+}
+
+export function Inner() {
+
+  const [tab, setTab] = useQueryState('tab')
+
+  return (
+
 
     <div id="page">
 
@@ -23,26 +37,25 @@ export function ReactAriaTestPage() {
       </div>
 
       <div id="tabs-wrapper"></div>
-      <Tabs className="nav-tabs" orientation='vertical' defaultSelectedKey="instructions">
+      <Tabs className="nav-tabs" orientation='vertical' selectedKey={tab} onSelectionChange={e => setTab(e as string)}>
         <TabList aria-label="History of Ancient Rome">
-
           <Tab id="instructions">
             <TabContent label="Instructions" step="1" />
           </Tab>
           <Tab id="csv">
-            <TabContent label="Primary CSV Data"  step="2" />
+            <TabContent label="Primary CSV Data" step="2" />
           </Tab>
           <Tab id="json">
-            <TabContent label="JSON Data"  step="3" />
+            <TabContent label="JSON Data" step="3" />
           </Tab>
           <Tab id="grid">
-            <TabContent label="Pick Celestials" step="4"  />
+            <TabContent label="Pick Celestials" step="4" />
           </Tab>
           <Tab id="crafts">
-            <TabContent label="Pick Crafts &amp; Kittenauts"  step="5" />
+            <TabContent label="Pick Crafts &amp; Kittenauts" step="5" />
           </Tab>
           <Tab id="other">
-            <TabContent label="Other... things"  step="6" />
+            <TabContent label="Other... things" step="6" />
           </Tab>
         </TabList>
         <TabPanel id="instructions">
@@ -75,7 +88,6 @@ export function ReactAriaTestPage() {
       </div>
 
     </div>
-
 
   )
 }
