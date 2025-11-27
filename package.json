@@ -26,6 +26,7 @@
     "ag-grid-community": "34.3.1",
     "ag-grid-react": "34.3.1",
     "astro": "5.16.1",
+    "lucide-react": "0.555.0",
     "monaco-editor": "0.55.1",
     "nanostores": "1.1.0",
     "nuqs": "2.8.1",

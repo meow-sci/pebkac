@@ -1,4 +1,5 @@
 ---
+import { Pointer } from "lucide-react";
 import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
@@ -63,23 +64,32 @@ import BaseLayout from "../layouts/BaseLayout.astro";
     /* Gold glow animation for byline names (subtle) */
     @keyframes goldGlow {
       0% {
-        text-shadow: 0 0 4px rgba(255, 215, 0, 0.10), 0 0 8px rgba(255, 215, 0, 0.08);
+        text-shadow:
+          0 0 4px rgba(255, 215, 0, 0.1),
+          0 0 8px rgba(255, 215, 0, 0.08);
       }
       50% {
-        text-shadow: 0 0 10px rgba(255, 217, 0, 0.5), 0 0 12px rgba(255, 165, 0, 0.25);
+        text-shadow:
+          0 0 10px rgba(255, 217, 0, 0.5),
+          0 0 12px rgba(255, 165, 0, 0.25);
       }
       100% {
-        text-shadow: 0 0 4px rgba(255, 215, 0, 0.10), 0 0 8px rgba(255, 215, 0, 0.08);
+        text-shadow:
+          0 0 4px rgba(255, 215, 0, 0.1),
+          0 0 8px rgba(255, 215, 0, 0.08);
       }
     }
 
-    #briarthrain, #tomservo {
+    #briarthrain,
+    #tomservo {
       /* keep original green text color from body #00ff00; only animate gold glow */
       animation: goldGlow 4000ms ease-in-out infinite; /* shorter full cycle */
       /* GPU hint: animate the transform/text-shadow only */
       will-change: transform, text-shadow;
       /* base gold glow only (subtle) */
-      text-shadow: 0 0 4px rgba(255, 215, 0, 0.20), 0 0 8px rgba(255, 215, 0, 0.08);
+      text-shadow:
+        0 0 4px rgba(255, 215, 0, 0.2),
+        0 0 8px rgba(255, 215, 0, 0.08);
     }
     .v-spacer-2x {
       height: 1.5rem;
@@ -87,27 +97,96 @@ import BaseLayout from "../layouts/BaseLayout.astro";
     .v-spacer-1x {
       height: 0.5rem;
     }
+
+    .thelink {
+      position: relative;
+    }
+
+    .pointer-left-1 {
+      position: absolute;
+      right: calc(100% + 0.5rem);
+      top: -0.5rem;
+      width: 1.25rem;
+      height: 1.25rem;
+      transform: rotate(120deg);
+      transform-origin: center;
+      pointer-events: none;
+    }
+
+    .pointer-left-2 {
+      position: absolute;
+      right: calc(100% + 0rem);
+      top: 1.75rem;
+      width: 1.25rem;
+      height: 1.25rem;
+      transform: rotate(60deg);
+      transform-origin: center;
+      pointer-events: none;
+    }
+
+    .pointer-right-1 {
+      position: absolute;
+      left: calc(100% + 0.5rem);
+      top: -0.75rem;
+      width: 1.25rem;
+      height: 1.25rem;
+      transform: rotate(-120deg);
+      transform-origin: center;
+      transition: transform 160ms ease;
+    }
+
+    .pointer-right-2 {
+      position: absolute;
+      left: calc(100% + 0.5rem);
+      top: 1rem;
+      width: 1.25rem;
+      height: 1.25rem;
+      transform: rotate(-60deg);
+      transform-origin: center;
+      transition: transform 160ms ease;
+    }
   </style>
 
   <div id="main">
     <h1>PEBKAC</h1>
-    <h6>Problem Exists Between Kittens and Chair</h6>
-    <h6><i>the backronym is a WIP</i></h6>
+    <h6 class="acronym">
+      Problem Exists Between Kittens and Chair
+    </h6>
 
     <p>
-      <a href="/pebkac/builder/">Pick a celestial, any celestial!</a>
+      <a class="thelink" href="/pebkac/builder/">
+      <Pointer className="pointer-left-1" />
+      <Pointer className="pointer-left-2" />
+        Pick a celestial, any celestial!
+      <Pointer className="pointer-right-1" />
+      <Pointer className="pointer-right-2" />
+      </a>
     </p>
+    <div class="v-spacer-2x"></div>
     <h6>game data baked from KSA v2025.11.6.2939</h6>
     <div class="v-spacer-2x"></div>
-    <h6>The orbits are currently taken using the J2000 reference Epoch / time (mostly)</h6>
+    <h6>
+      The orbits are currently taken using the J2000 reference Epoch / time
+      (mostly)
+    </h6>
     <div class="v-spacer-2x"></div>
 
-    <h6>---------------------------------------------------------------------------------------------</h6>
+    <h6>
+      ---------------------------------------------------------------------------------------------
+    </h6>
     <div class="v-spacer-2x"></div>
-    <h6><u><b>WIP</b></u>: Default inclinations / orbits need revision with better averaged data and over a larger time scale.</h6>
+    <h6>
+      <u><b>WIP</b></u>: Default inclinations / orbits need revision with better
+      averaged data and over a larger time scale.
+    </h6>
     <div class="v-spacer-2x"></div>
-    <h6><u><b>TBD</b></u>: Will show a custom script which can be used to generate one's own orbit data (For any object in the NASA Horizons system)</h6>
-    <h6>on a selectable Epoch / time, which can then get uploaded to the site!</h6>
+    <h6>
+      <u><b>TBD</b></u>: Will show a custom script which can be used to generate
+      one's own orbit data (For any object in the NASA Horizons system)
+    </h6>
+    <h6>
+      on a selectable Epoch / time, which can then get uploaded to the site!
+    </h6>
   </div>
 
   <div id="brought-to-you-by">
@@ -116,5 +195,4 @@ import BaseLayout from "../layouts/BaseLayout.astro";
     <div id="and">&amp;</div>
     <div id="tomservo">tomservo</div>
   </div>
-  
 </BaseLayout>
