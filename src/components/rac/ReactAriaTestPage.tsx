@@ -1,5 +1,5 @@
 import { Button, SelectionIndicator, Tab, TabList, TabPanel, Tabs } from 'react-aria-components';
-import { BuilderGrid } from '../BuilderGrid';
+import { BuilderGrid } from '../BuilderGridOld';
 import { NuqsAdapter } from 'nuqs/adapters/react'
 import { useQueryState } from 'nuqs';
 

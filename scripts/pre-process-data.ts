@@ -29,6 +29,7 @@ function parseCsv(csv: string): Promise<object[]> {
 
     stream.write(csv);
     stream.end();
+    console.log("AFTER END");
 
 
   });

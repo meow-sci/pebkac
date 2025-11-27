@@ -11,6 +11,9 @@ importers:
       '@astrojs/react':
         specifier: 4.4.2
         version: 4.4.2(@types/node@24.10.1)(@types/react-dom@19.2.3(@types/react@19.2.6))(@types/react@19.2.6)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)(tsx@4.20.6)(yaml@2.8.1)
+      '@fast-csv/parse':
+        specifier: 5.0.5
+        version: 5.0.5
       '@fontsource-variable/inter':
         specifier: 5.2.8
         version: 5.2.8
@@ -29,6 +32,9 @@ importers:
       '@monaco-editor/react':
         specifier: 4.8.0-rc.3
         version: 4.8.0-rc.3(monaco-editor@0.55.1)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@nanostores/logger':
+        specifier: 1.0.0
+        version: 1.0.0(nanostores@1.1.0)
       '@nanostores/persistent':
         specifier: 1.2.0
         version: 1.2.0(nanostores@1.1.0)
@@ -65,6 +71,9 @@ importers:
       react-hook-form:
         specifier: 7.66.1
         version: 7.66.1(react@19.2.0)
+      udsv:
+        specifier: 0.7.3
+        version: 0.7.3
       xpath:
         specifier: 0.0.34
         version: 0.0.34
@@ -72,9 +81,6 @@ importers:
       '@astrojs/check':
         specifier: 0.9.5
         version: 0.9.5(prettier@3.6.2)(typescript@5.9.3)
-      '@fast-csv/parse':
-        specifier: 5.0.5
-        version: 5.0.5
       '@types/react':
         specifier: 19.2.6
         version: 19.2.6
@@ -621,6 +627,12 @@ packages:
       monaco-editor: '>= 0.25.0 < 1'
       react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
       react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
+
+  '@nanostores/logger@1.0.0':
+    resolution: {integrity: sha512-QPqkNJWKO9Ya9ne8TeKq8Sv+yZDbgFos5IMCj+mmDxUeUGDqtC7o+YStibECI2B2TnVNF/iuz/Kt3Q64RGJbOQ==}
+    engines: {node: ^20.0.0 || >=22.0.0}
+    peerDependencies:
+      nanostores: ^0.10.0 || ^0.11.0 || ^1.0.0
 
   '@nanostores/persistent@1.2.0':
     resolution: {integrity: sha512-kf5WOLpVI9Pk+AwXHIax4in3pesNe8299BEGQ2H8kgI05SZw7KKWCDv7bt2FOlND8E5y7rO5PRW34q0UCAl/DA==}
@@ -2635,6 +2647,9 @@ packages:
     engines: {node: '>=14.17'}
     hasBin: true
 
+  udsv@0.7.3:
+    resolution: {integrity: sha512-RLDImCO8M0DQmMi9V9YRjoecAc8+GiylpZico6ZuibPvRGRj3LGI1YPYLzBrnQTSax0metXnDoBFg/1zSgGIhg==}
+
   ufo@1.6.1:
     resolution: {integrity: sha512-9a4/uxlTWJ4+a5i0ooc1rU7C7YOw3wT+UGqdeNNHWnOF9qcMBgLRS+4IYUqbczewFx4mLEig6gawh7X6mFlEkA==}
 
@@ -3595,6 +3610,10 @@ snapshots:
       monaco-editor: 0.55.1
       react: 19.2.0
       react-dom: 19.2.0(react@19.2.0)
+
+  '@nanostores/logger@1.0.0(nanostores@1.1.0)':
+    dependencies:
+      nanostores: 1.1.0
 
   '@nanostores/persistent@1.2.0(nanostores@1.1.0)':
     dependencies:
@@ -6481,6 +6500,8 @@ snapshots:
       semver: 7.7.3
 
   typescript@5.9.3: {}
+
+  udsv@0.7.3: {}
 
   ufo@1.6.1: {}
 

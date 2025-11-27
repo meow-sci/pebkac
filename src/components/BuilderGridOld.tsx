@@ -7,7 +7,7 @@ ModuleRegistry.registerModules([AllCommunityModule]);
 
 import { themeQuartz } from 'ag-grid-community';
 import type { SystemEntry } from '../ts/data/SystemEntry';
-import { $builderSelectedRows, $gridApi } from '../state/builder-state';
+import { $builderSelectedRows, $gridApi } from '../state/builder-state_old';
 
 export interface BuilderGridProps {
   data: SystemEntry[];
