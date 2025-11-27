@@ -37,7 +37,7 @@ export function CsvEditor(props: CsvEditorProps) {
       defaultValue={props.defaultValue ?? ""}
       beforeMount={handleEditorWillMount}
       onMount={handleEditorDidMount}
-      theme="pebkac-csv-dark"
+      theme="vs-dark"
       options={{
         fontFamily: "Source Code Pro Variable",
         fontSize: 15,
