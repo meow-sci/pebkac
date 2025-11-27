@@ -90,8 +90,32 @@ body {
       justify-self: right;
       font-size: 1.25rem;
       font-weight: 700;
+      /* Ensure transform works as expected */
+      display: inline-block;
+      transform-origin: center;
     }
 
   }
 
+}
+
+/* simple pop animation: scale up and then back over 150ms */
+@keyframes pop {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.5);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.count-data.pop {
+  animation: pop 200ms ease-in-out;
+  color: #FCFF00;
+  transition: color 200ms ease-out;
 }
