@@ -1,4 +1,4 @@
-import { AllCommunityModule, ModuleRegistry, type ColDef, type GetRowIdParams, type GridReadyEvent, type IRowNode, type SelectionChangedEvent } from 'ag-grid-community';
+import { AllCommunityModule, ModuleRegistry, type ColDef, type GetRowIdParams, type GridReadyEvent, type IRowNode, type RowClickedEvent, type SelectionChangedEvent } from 'ag-grid-community';
 import { AgGridReact } from 'ag-grid-react'; // React Data Grid Component
 import { useLayoutEffect, useMemo } from 'react';
 import { useStore } from '@nanostores/react';
@@ -37,7 +37,6 @@ export function BuilderGrid() {
 
         <Button onClick={clearSelection}>🔥 Clear Selection</Button>
 
-
       </section>
       <AgGridReact<SystemEntry>
         autoSizeStrategy={{ type: "fitCellContents", skipHeader: false }}
@@ -51,6 +50,7 @@ export function BuilderGrid() {
         suppressCellFocus
         onSelectionChanged={onSelectionChanged}
         onGridReady={onGridReady}
+        onRowClicked={onRowClicked}
       />
     </section>
 
@@ -190,4 +190,8 @@ function clearSelection() {
 
 function onQuickfilterChange(value: string) {
   $gridQuickfilter.set(value);
+}
+
+function onRowClicked(event: RowClickedEvent<SystemEntry, any>) {
+  event.node.setSelected(!event.node.isSelected());
 }
