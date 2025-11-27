@@ -108,9 +108,18 @@ import BaseLayout from "../layouts/BaseLayout.astro";
       top: -0.5rem;
       width: 1.25rem;
       height: 1.25rem;
-      transform: rotate(120deg);
       transform-origin: center;
       pointer-events: none;
+
+      /* keep arrow orientation only */
+      transform: rotate(120deg);
+      will-change: right;
+
+      /* animate 1rem away from where it points, and back */
+      animation: pointer-left-1-wiggle 1s ease-in-out infinite;
+      animation-delay: 0s;
+      animation-fill-mode: both;
+      animation-direction: alternate;
     }
 
     .pointer-left-2 {
@@ -119,9 +128,15 @@ import BaseLayout from "../layouts/BaseLayout.astro";
       top: 1.75rem;
       width: 1.25rem;
       height: 1.25rem;
-      transform: rotate(60deg);
       transform-origin: center;
       pointer-events: none;
+
+      transform: rotate(50deg);
+      will-change: right;
+      animation: pointer-left-2-wiggle 1s ease-in-out infinite;
+      animation-delay: 0.18s;
+      animation-fill-mode: both;
+      animation-direction: alternate;
     }
 
     .pointer-right-1 {
@@ -130,9 +145,15 @@ import BaseLayout from "../layouts/BaseLayout.astro";
       top: -0.75rem;
       width: 1.25rem;
       height: 1.25rem;
-      transform: rotate(-120deg);
       transform-origin: center;
       transition: transform 160ms ease;
+
+      transform: rotate(-120deg);
+      will-change: left;
+      animation: pointer-right-1-wiggle 1s ease-in-out infinite;
+      animation-delay: 0.1s;
+      animation-fill-mode: both;
+      animation-direction: alternate;
     }
 
     .pointer-right-2 {
@@ -141,9 +162,39 @@ import BaseLayout from "../layouts/BaseLayout.astro";
       top: 1rem;
       width: 1.25rem;
       height: 1.25rem;
-      transform: rotate(-60deg);
       transform-origin: center;
       transition: transform 160ms ease;
+
+      transform: rotate(-60deg);
+      will-change: left;
+      animation: pointer-right-2-wiggle 1s ease-in-out infinite;
+      animation-delay: 0.24s;
+      animation-fill-mode: both;
+      animation-direction: alternate;
+    }
+
+    /* Keyframes animate the position property so each pointer
+       moves along a straight line in/out from the link. */
+    @keyframes pointer-left-1-wiggle {
+      0%   { right: calc(100% + 0.5rem); }
+      50%  { right: calc(100% + 1.5rem); }
+      100% { right: calc(100% + 0.5rem); }
+    }
+    @keyframes pointer-left-2-wiggle {
+      0%   { right: calc(100% + 0rem); }
+      50%  { right: calc(100% + 1rem); }
+      100% { right: calc(100% + 0rem); }
+    }
+
+    @keyframes pointer-right-1-wiggle {
+      0%   { left: calc(100% + 0.5rem); }
+      50%  { left: calc(100% + 1.5rem); }
+      100% { left: calc(100% + 0.5rem); }
+    }
+    @keyframes pointer-right-2-wiggle {
+      0%   { left: calc(100% + 0.5rem); }
+      50%  { left: calc(100% + 1.5rem); }
+      100% { left: calc(100% + 0.5rem); }
     }
   </style>
 
