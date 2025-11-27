@@ -763,7 +763,7 @@
         <Clouds>
             <OrbitTransitionStartAltitude Km="500.0"/>
             <OrbitTransitionEndAltitude Km="1500.0"/>
-            <VolumetricsFlickerReductionDistance Km="100.0"/>
+            <VolumetricsFlickerReductionDistance Km="50.0"/>
             <Layer Id="EarthClouds">
                 <RotationSpeed X="0" Y="0" Z="-20" />
                 <Texture Id="Textures/Clouds/Compressed/Earth_clouds_tile_mask.dds" Path="Textures/Clouds/Compressed/Earth_clouds_tile_mask.dds" Category="Terrain"/>
