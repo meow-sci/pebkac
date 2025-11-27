@@ -42,6 +42,7 @@ export const $systemEntries = computed<SystemEntry[], typeof $csvData>(
 
 export const $systemSettings = map<SystemSettings>({
   systemId: "My System",
+  forceEarthReference: true,
   addSolReference: true,
   addRocketReference: true,
   addGemini7Reference: true,

@@ -25,11 +25,13 @@ export function generateSystemXml(config: GenerateSystemXmlConfig): string {
 
   const workingSetOfCelestials = [...config.selectedCelestials];
 
-  // always ensure Earth is included if possible
-  if (workingSetOfCelestials.some(o => o.ID === "Earth") === false) {
-    const earth = config.allCelestials.find(o => o.ID === "Earth");
-    if (earth) {
-      workingSetOfCelestials.push(earth);
+  // commonly used since crafts default to orbiting Earth
+  if (config.forceEarthReference) {
+    if (workingSetOfCelestials.some(o => o.ID === "Earth") === false) {
+      const earth = config.allCelestials.find(o => o.ID === "Earth");
+      if (earth) {
+        workingSetOfCelestials.push(earth);
+      }
     }
   }
 

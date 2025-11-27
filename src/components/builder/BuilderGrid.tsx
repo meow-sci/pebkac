@@ -1,4 +1,4 @@
-import { AllCommunityModule, ModuleRegistry, type ColDef, type GridReadyEvent, type SelectionChangedEvent } from 'ag-grid-community';
+import { AllCommunityModule, ModuleRegistry, type ColDef, type GridReadyEvent, type IRowNode, type SelectionChangedEvent } from 'ag-grid-community';
 import { AgGridReact } from 'ag-grid-react'; // React Data Grid Component
 import { useMemo } from 'react';
 import { useStore } from '@nanostores/react';
@@ -20,6 +20,23 @@ export function BuilderGrid() {
 
   const onGridReady = (event: GridReadyEvent<any, any>) => {
     $systemEntryGridApi.set(event.api);
+
+    if ($selectedSystemEntries.get().length > 0) {
+
+      // pre-select existing selections using a bulk operation, else XML will generate per node selection (thats bad 💀)
+      const selectedIds = new Set($selectedSystemEntries.get().map(o => o.ID));
+
+      const nodesToSelectByDefault: IRowNode<any>[] = [];
+      event.api.forEachNode(node => {
+        if (selectedIds.has(node.data.ID)) {
+          nodesToSelectByDefault.push(node);
+        }
+      });
+
+      if (nodesToSelectByDefault.length > 0) {
+        event.api.setNodesSelected({ nodes: nodesToSelectByDefault, newValue: true, source: "api" });
+      }
+    }
   };
 
   return (
