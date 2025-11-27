@@ -21,6 +21,11 @@ export function BuilderSystemSettings() {
         <span className="label">Force Earth Always</span>
       </Checkbox>
 
+      <Checkbox onChange={onChangeHackMarsLunaCliffsDiffuse} isSelected={settings.hack_RemoveMarsLunaCliffsDiffuse}>
+        {checkbox}
+        <span className="label"><b>HACK:</b> Remove Mars LunaCliffsDiffuse references (bug when using from a mod 🥺)</span>
+      </Checkbox>
+
     </section>
   );
 
@@ -28,3 +33,4 @@ export function BuilderSystemSettings() {
 
 const onChangeSol = (selected: boolean) => $systemSettings.setKey("addSolReference", selected);
 const onChangeForceEarth = (selected: boolean) => $systemSettings.setKey("forceEarthReference", selected);
+const onChangeHackMarsLunaCliffsDiffuse = (selected: boolean) => $systemSettings.setKey("hack_RemoveMarsLunaCliffsDiffuse", selected);

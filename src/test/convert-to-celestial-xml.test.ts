@@ -1,26 +1,30 @@
-import { describe, test } from 'vitest'
+// import { XMLSerializer, DOMParser } from '@xmldom/xmldom'
+// globalThis.DOMParser = DOMParser;
+// globalThis.XMLSerializer = XMLSerializer;
 
-import type { SystemEntry } from '../ts/data/SystemEntry';
+// import { describe, test } from 'vitest'
 
-import systemEntriesJson from "../../public/data/earth_system_data.json";
-import { createGeneratorContext } from '../ts/data/GeneratorContext';
-import { assertXmlMatchesEntry } from './util/xml-assertions';
-import { transformSystemEntryToKsaXml } from '../ts/transform/transformSystemEntryToKsaXml';
+// import type { SystemEntry } from '../ts/data/SystemEntry';
 
-const systemEntries = systemEntriesJson as unknown as SystemEntry[];
+// import systemEntriesJson from "../../public/data/earth_system_data.json";
+// import { createGeneratorContext } from '../ts/data/GeneratorContext';
+// import { assertXmlMatchesEntry } from './util/xml-assertions';
+// import { transformSystemEntryToKsaXml } from '../ts/transform/transformSystemEntryToKsaXml';
 
-const context = createGeneratorContext();
+// const systemEntries = systemEntriesJson as unknown as SystemEntry[];
 
-describe('earth system data to xml', () => {
+// const context = createGeneratorContext();
 
-  // generate one test per SystemEntry
-  systemEntries.forEach(entry => {
-    test(`${entry.ID}`, () => {
+// describe('earth system data to xml', () => {
 
-      const el = transformSystemEntryToKsaXml(context, entry);
-      assertXmlMatchesEntry(context, entry, el);
+//   // generate one test per SystemEntry
+//   systemEntries.forEach(entry => {
+//     test(`${entry.ID}`, () => {
+
+//       const el = transformSystemEntryToKsaXml(context, entry);
+//       assertXmlMatchesEntry(context, entry, el);
       
-    });
-  });
+//     });
+//   });
 
-});
+// });

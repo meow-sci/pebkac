@@ -4,10 +4,14 @@ export interface ExtractedCelestials {
 
   doc: Document;
 
-  stellarBodies: Element[];
-  terrestrialBodies: Element[];
-  atmosphericBodies: Element[];
-  comets: Element[];
+  StellarBody: Element[];
+  AtmosphericBody: Element[];
+  Comet: Element[];
+  PlanetaryBody: Element[];
+  MinorBody: Element[];
+  Asteroid: Element[];
+
   allBodies: Element[];
 
 }
+

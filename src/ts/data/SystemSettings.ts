@@ -13,5 +13,9 @@ export interface SystemSettings {
   addBanjoReference: boolean;
   addPolarisReference: boolean;
 
+  // HACKS AND BUG MITIGATION
+
+  hack_RemoveMarsLunaCliffsDiffuse: boolean;
+
 }
 

@@ -49,7 +49,8 @@ export const $systemSettings = map<SystemSettings>({
   addGemini6aReference: true,
   addHunterReference: true,
   addBanjoReference: true,
-  addPolarisReference: true
+  addPolarisReference: true,
+  hack_RemoveMarsLunaCliffsDiffuse: true,
 });
 
 

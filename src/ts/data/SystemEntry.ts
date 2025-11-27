@@ -1,4 +1,4 @@
-import type { BodyType, CelestialType } from "./CelestialType";
+import type { BodyType } from "./CelestialType";
 
 export interface SystemEntry {
   ID: string;
@@ -18,7 +18,6 @@ export interface SystemEntry {
   "GM_KM3/S2": string;
   PERIOD_SEC: string;
   RETROGRADE_ROT: string;
-  MODEL_TYPE: CelestialType;
   GROUP: string;
   BODY_TYPE: BodyType;
 }

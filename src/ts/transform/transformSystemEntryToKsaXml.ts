@@ -1,4 +1,3 @@
-// import { DOMParser } from '@xmldom/xmldom';
 import xpath from "xpath";
 
 import type { SystemEntry } from "../data/SystemEntry";

@@ -3,8 +3,8 @@ import { createGeneratorContext } from "../data/GeneratorContext";
 import type { SystemEntry } from "../data/SystemEntry";
 import type { SystemSettings } from "../data/SystemSettings";
 import { transformSystemEntryToKsaXml, transformSystemEntryToKsaXmlIntoElement } from "../transform/transformSystemEntryToKsaXml";
-import { collapseXmlDeadspace } from "../xml/collapseXmlDeadspace";
 import { fixPathsToCore } from "../xml/fixPathsToCore";
+import { hack_stripBrokenDiffuseNode } from "../xml/hack_stripBrokenDiffuseNode";
 import { isElementNode } from "../xml/isXmlNodeTypeGuards";
 import { prettifyDocument } from "../xml/prettifyDocument";
 import { serializeDocument } from "../xml/serializeDocument";
@@ -58,6 +58,11 @@ export function generateSystemXml(config: GenerateSystemXmlConfig): string {
 
 
   const doc = createSystemDocument(config, generatedElements);
+  
+  if (config.hack_RemoveMarsLunaCliffsDiffuse) {
+    hack_stripBrokenDiffuseNode(doc);
+  }
+
   fixPathsToCore(doc);
   prettifyDocument(doc);
   return serializeDocument(doc);

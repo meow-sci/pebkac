@@ -1,4 +1,3 @@
-// import { DOMParser } from '@xmldom/xmldom'
 import xpath from "xpath";
 
 import type { ExtractedCelestials } from '../data/ExtractedCelestials';
@@ -16,18 +15,23 @@ export function selectCelestialsFromKsaXml(fileName: string, xml: string): Extra
   const result: ExtractedCelestials = {
     fileName,
     doc,
-    stellarBodies: q('.//StellarBody'),
-    terrestrialBodies: q('.//TerrestrialBody'),
-    atmosphericBodies: q('.//AtmosphericBody'),
-    comets: q('.//Comet'),
+    StellarBody: q('.//StellarBody'),
+    AtmosphericBody: q('.//AtmosphericBody'),
+    Comet: q('.//Comet'),
+    PlanetaryBody: q('.//PlanetaryBody'),
+    MinorBody: q('.//MinorBody'),
+    Asteroid: q('.//Asteroid'),
+
     allBodies: [],
   };
 
   result.allBodies = [
-    ...result.stellarBodies,
-    ...result.terrestrialBodies,
-    ...result.atmosphericBodies,
-    ...result.comets,
+    ...result.StellarBody,
+    ...result.AtmosphericBody,
+    ...result.Comet,
+    ...result.PlanetaryBody,
+    ...result.MinorBody,
+    ...result.Asteroid,
   ];
 
   return result;
