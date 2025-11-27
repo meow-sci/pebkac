@@ -7,6 +7,8 @@ import { BuilderGrid } from './builder/BuilderGrid';
 import { BuilderCsvEditor } from './builder/BuilderCsvEditor';
 import { SystemXmlEditor } from './builder/SystemXmlEditor';
 import { BuilderInstructions } from './builder/BuilderInstructions';
+import { BuilderSystemSettings } from './builder/BuilderSystemSettings';
+import { BuilderCrafts } from './builder/BuilderCrafts';
 
 
 export function BuilderPage() {
@@ -71,11 +73,11 @@ export function Inner() {
         </TabPanel>
 
         <TabPanel id="crafts">
-
+          <BuilderCrafts />
         </TabPanel>
 
         <TabPanel id="other">
-          body: Other Stuff
+          <BuilderSystemSettings />
         </TabPanel>
 
         <TabPanel id="systemxml">
