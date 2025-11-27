@@ -59,7 +59,6 @@ export function generateSystemXml(config: GenerateSystemXmlConfig): string {
 
   const doc = createSystemDocument(config, generatedElements);
   fixPathsToCore(doc);
-  collapseXmlDeadspace(doc);
   prettifyDocument(doc);
   return serializeDocument(doc);
 }
