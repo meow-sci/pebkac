@@ -20,7 +20,7 @@ export function XmlEditor(props: XmlEditorProps) {
     monaco.languages.typescript.javascriptDefaults.setEagerModelSync(true);
   }
 
-  function handleEditorDidMount(editor: editor.IStandaloneCodeEditor, monaco: Monaco) {
+  function handleEditorDidMount(_editor: editor.IStandaloneCodeEditor, monaco: Monaco) {
     monacoRef.current = monaco;
   }
 

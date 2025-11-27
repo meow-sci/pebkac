@@ -3,7 +3,7 @@ import xpath from "xpath";
 
 import type { SystemEntry } from "../data/SystemEntry";
 import type { GeneratorContext } from '../data/GeneratorContext';
-import type { BodyType, CelestialType } from '../data/CelestialType';
+import type { BodyType } from '../data/CelestialType';
 import { isElementNode } from '../xml/isXmlNodeTypeGuards';
 import { isNotEmptyString } from '../util/isNotEmptyString';
 import { isTrueString } from '../util/isTrueString';
