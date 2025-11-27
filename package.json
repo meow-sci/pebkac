@@ -5,7 +5,7 @@
   "scripts": {
     "check": "astro check",
     "dev": "astro dev",
-    "build": "npm run pre-process-data && astro build",
+    "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
     "pre-process-data": "tsx scripts/pre-process-data.ts",
