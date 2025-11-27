@@ -141,8 +141,8 @@ const COLUMNS: ColDef<SystemEntry>[] = [
   { ...COL_DEFAULTS, field: "A_SEMI_MAJOR_AXIS_KM", headerName: "SemiMajor Axis (Km)" },
   { ...COL_DEFAULTS, field: "EC_ECCENTRICITY", headerName: "Eccentricity" },
   { ...COL_DEFAULTS, field: "PERIOD_SEC", headerName: "Sidereal Rotation (S)" },
+  { ...COL_DEFAULTS, field: "RETROGRADE_ROT", headerName: "Retrograde Roation" },
   { ...COL_DEFAULTS, field: "GROUP", headerName: "Orbital Group" },
-  { ...COL_DEFAULTS, field: "BODY_TYPE", headerName: "Body Type" },
 ];
 
 function onSelectionChanged(event: SelectionChangedEvent<any, any>) {
