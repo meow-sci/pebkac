@@ -63,3 +63,34 @@ body {
     justify-content: start;
   }
 }
+
+#builder-selection {
+
+  display: grid;
+  grid-template-rows: max-content 1fr;
+  grid-auto-flow: row;
+
+  .label {
+    font-size: 1;
+    font-weight: 700;
+  }
+
+  .counts {
+    margin: 0.5rem 0 0 0.5rem;
+    font-size: 0.875rem;
+
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    grid-auto-rows: max-content;
+    column-gap: 0.5rem;
+    row-gap: 0.25rem;
+    align-items: center;
+
+    .count-data {
+      font-size: 1.25rem;
+      font-weight: 700;
+    }
+    
+  }
+
+}

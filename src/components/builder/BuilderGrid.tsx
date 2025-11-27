@@ -1,12 +1,12 @@
-import { AllCommunityModule, ModuleRegistry, type ColDef, type GridReadyEvent, type IRowNode, type SelectionChangedEvent } from 'ag-grid-community';
+import { AllCommunityModule, ModuleRegistry, type ColDef, type GetRowIdParams, type GridReadyEvent, type IRowNode, type SelectionChangedEvent } from 'ag-grid-community';
 import { AgGridReact } from 'ag-grid-react'; // React Data Grid Component
 import { useLayoutEffect, useMemo } from 'react';
 import { useStore } from '@nanostores/react';
+import { Button, Input, TextField } from 'react-aria-components';
 
 import type { SystemEntry } from '../../ts/data/SystemEntry';
 import { $gridQuickfilter, $selectedSystemEntries, $systemEntries, $systemEntryGridApi } from '../../state/builder-state';
 import { builderGridTheme } from './builder-grid-theme';
-import { Button, Input, Label, TextField } from 'react-aria-components';
 
 // Register all Community features
 ModuleRegistry.registerModules([AllCommunityModule]);
@@ -20,99 +20,33 @@ export function BuilderGrid() {
 
   const rowData = useMemo<RowData[]>(() => data.map(toRowData), [data]);
 
-  useLayoutEffect(() => {
-
-    const api = $systemEntryGridApi.get()!;
-
-    if (!api) {
-      return;
-    }
-
-    if (selected.length > 0) {
-
-      // pre-select existing selections using a bulk operation, else XML will generate per node selection (thats bad 💀)
-      const selectedIds = new Set(selected.map(o => o.ID));
-
-      const nodesToSelectByDefault: IRowNode<any>[] = [];
-
-      api.forEachNode(node => {
-        if (selectedIds.has(node.data.ID)) {
-          nodesToSelectByDefault.push(node);
-        }
-      });
-
-      if (nodesToSelectByDefault.length > 0) {
-        api.setNodesSelected({ nodes: nodesToSelectByDefault, newValue: true, source: "api" });
-      }
-    } else {
-      console.log("clearing selection");
-      api.deselectAll();
-    }
-
-  }, [selected]);
-
-  const onGridReady = (event: GridReadyEvent<any, any>) => {
-    $systemEntryGridApi.set(event.api);
-
-    if ($selectedSystemEntries.get().length > 0) {
-
-      // pre-select existing selections using a bulk operation, else XML will generate per node selection (thats bad 💀)
-      const selectedIds = new Set($selectedSystemEntries.get().map(o => o.ID));
-
-      const nodesToSelectByDefault: IRowNode<any>[] = [];
-      event.api.forEachNode(node => {
-        if (selectedIds.has(node.data.ID)) {
-          nodesToSelectByDefault.push(node);
-        }
-      });
-
-      if (nodesToSelectByDefault.length > 0) {
-        event.api.setNodesSelected({ nodes: nodesToSelectByDefault, newValue: true, source: "api" });
-      }
-    }
-  };
-
-  const addVisible = () => {
-
-    const entries = $selectedSystemEntries.get();
-
-    $systemEntryGridApi.get()?.forEachNodeAfterFilter(node => {
-
-      if (!entries.includes(node.data)) {
-        $selectedSystemEntries.set([...$selectedSystemEntries.get(), node.data]);
-      }
-
-    });
-  };
-
-  const clearSelection = () => {
-    $selectedSystemEntries.set([]);
-  };
-
-  const onQuickfilterChange = (value: string) => {
-    $gridQuickfilter.set(value);
-  }
+  // whenever selected changes from global state, update the grid selection
+  useLayoutEffect(() => updateGridSelection(selected), [selected]);
 
   return (
     <section id="builder-grid-section">
       <section className="actions">
 
-        <Button onClick={addVisible}>Add Visible to Selection</Button>
-
-        <Button onClick={clearSelection}>Clear Selection</Button>
-
-        <TextField onChange={onQuickfilterChange} value={quickfilter}>
+        <TextField aria-label="quick filter" onChange={onQuickfilterChange} value={quickfilter}>
           <Input placeholder='filter...' />
         </TextField>
 
+        <Button onClick={addFiltered}>Add Filtered</Button>
+
+        <Button onClick={removeFiltered}>Remove Filtered</Button>
+
+        <Button onClick={clearSelection}>🔥 Clear Selection</Button>
+
+
       </section>
-      <AgGridReact
+      <AgGridReact<SystemEntry>
         autoSizeStrategy={{ type: "fitCellContents", skipHeader: false }}
         quickFilterText={quickfilter}
         rowSelection={{ mode: "multiRow" }}
         cellSelection={false}
         theme={builderGridTheme}
         rowData={rowData}
+        getRowId={getRowId}
         columnDefs={COLUMNS}
         suppressCellFocus
         onSelectionChanged={onSelectionChanged}
@@ -121,6 +55,10 @@ export function BuilderGrid() {
     </section>
 
   )
+}
+
+function getRowId(row: GetRowIdParams<SystemEntry, any>): string {
+  return row.data.ID;
 }
 
 interface RowData extends SystemEntry {
@@ -152,4 +90,104 @@ function onSelectionChanged(event: SelectionChangedEvent<any, any>) {
 
 function toRowData(data: SystemEntry): RowData {
   return data;
+}
+
+function updateGridSelection(selected: SystemEntry[]) {
+
+  const api = $systemEntryGridApi.get()!;
+
+  if (!api) {
+    return;
+  }
+
+  if (selected.length > 0) {
+
+    // pre-select existing selections using a bulk operation, else XML will generate per node selection (thats bad 💀)
+    const selectedIds = new Set(selected.map(o => o.ID));
+
+    const nodesToBeSelected: IRowNode<any>[] = [];
+    const nodesToBeDeselected: IRowNode<any>[] = [];
+
+    api.forEachNode(node => {
+      if (selectedIds.has(node.data.ID)) {
+        nodesToBeSelected.push(node);
+      } else if (node.isSelected()) {
+        nodesToBeDeselected.push(node);
+      }
+    });
+
+    if (nodesToBeSelected.length > 0) {
+      api.setNodesSelected({ nodes: nodesToBeSelected, newValue: true, source: "api" });
+      api.setNodesSelected({ nodes: nodesToBeDeselected, newValue: false, source: "api" });
+    }
+
+  } else {
+    api.deselectAll();
+  }
+
+}
+
+function onGridReady(event: GridReadyEvent<any, any>) {
+  $systemEntryGridApi.set(event.api);
+
+  if ($selectedSystemEntries.get().length > 0) {
+
+    // pre-select existing selections using a bulk operation, else XML will generate per node selection (thats bad 💀)
+    const selectedIds = new Set($selectedSystemEntries.get().map(o => o.ID));
+
+    const nodesToSelectByDefault: IRowNode<any>[] = [];
+    event.api.forEachNode(node => {
+      if (selectedIds.has(node.data.ID)) {
+        nodesToSelectByDefault.push(node);
+      }
+    });
+
+    if (nodesToSelectByDefault.length > 0) {
+      event.api.setNodesSelected({ nodes: nodesToSelectByDefault, newValue: true, source: "api" });
+    }
+  }
+};
+
+
+function addFiltered() {
+
+  const entries = $selectedSystemEntries.get();
+
+  $systemEntryGridApi.get()?.forEachNodeAfterFilter(node => {
+
+    if (!entries.includes(node.data)) {
+      $selectedSystemEntries.set([...$selectedSystemEntries.get(), node.data]);
+    }
+
+  });
+};
+
+
+function removeFiltered() {
+
+
+  let itemsToRemove: SystemEntry[] = [];
+
+  $systemEntryGridApi.get()?.forEachNodeAfterFilter(node => {
+    itemsToRemove.push(node.data);
+  });
+
+  const workingSet = [...$selectedSystemEntries.get()];
+
+  for (const item of itemsToRemove) {
+    if (workingSet.includes(item)) {
+      workingSet.splice(workingSet.indexOf(item), 1);
+    }
+  };
+
+  $selectedSystemEntries.set(workingSet);
+};
+
+function clearSelection() {
+  $selectedSystemEntries.set([]);
+};
+
+
+function onQuickfilterChange(value: string) {
+  $gridQuickfilter.set(value);
 }

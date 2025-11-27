@@ -9,6 +9,7 @@ import { SystemXmlEditor } from './builder/SystemXmlEditor';
 import { BuilderInstructions } from './builder/BuilderInstructions';
 import { BuilderSystemSettings } from './builder/BuilderSystemSettings';
 import { BuilderCrafts } from './builder/BuilderCrafts';
+import { BuilderSelection } from './builder/BuilderSelection';
 
 
 export function BuilderPage() {
@@ -91,7 +92,9 @@ export function Inner() {
       </Tabs>
 
       <section id="info" className="page-container">
-        
+
+        <BuilderSelection />
+
       </section>
 
     </div>
