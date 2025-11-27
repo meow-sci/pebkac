@@ -91,7 +91,7 @@ export function Inner() {
       </Tabs>
 
       <section id="info" className="page-container">
-        <Button >Generate XML   🚀</Button>
+        
       </section>
 
     </div>
