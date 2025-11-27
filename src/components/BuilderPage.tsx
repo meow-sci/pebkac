@@ -86,7 +86,7 @@ export function Inner() {
         </TabPanel>
 
         <TabPanel id="logs">
-          body: Other Stuff
+          logs go here Soon(tm)
         </TabPanel>
 
       </Tabs>
