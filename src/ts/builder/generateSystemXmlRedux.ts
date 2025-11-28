@@ -4,7 +4,7 @@ import type { SystemEntry } from "../data/SystemEntry";
 import type { SystemSettings } from "../data/SystemSettings";
 import { transformSystemEntryToKsaXml, transformSystemEntryToKsaXmlIntoElement } from "../transform/transformSystemEntryToKsaXml";
 import { fixPathsToCore } from "../xml/fixPathsToCore";
-import { hack_stripBrokenDiffuseNode } from "../xml/hack_stripBrokenDiffuseNode";
+import { hack_fixMars } from "../xml/hack_fixMars";
 import { isElementNode } from "../xml/isXmlNodeTypeGuards";
 import { prettifyDocument } from "../xml/prettifyDocument";
 import { serializeDocument } from "../xml/serializeDocument";
@@ -60,7 +60,7 @@ export function generateSystemXml(config: GenerateSystemXmlConfig): string {
   const doc = createSystemDocument(config, generatedElements);
   
   if (config.hack_RemoveMarsLunaCliffsDiffuse) {
-    hack_stripBrokenDiffuseNode(doc);
+    hack_fixMars(doc);
   }
 
   fixPathsToCore(doc);

@@ -1,4 +1,4 @@
-import { Button, Tab, TabList, TabPanel, Tabs } from 'react-aria-components';
+import { Tab, TabList, TabPanel, Tabs } from 'react-aria-components';
 import { NuqsAdapter } from 'nuqs/adapters/react'
 import { useQueryState } from 'nuqs';
 
