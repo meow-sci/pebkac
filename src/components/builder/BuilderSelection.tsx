@@ -71,7 +71,6 @@ function useCraftCount() {
 
   let count = 0;
 
-  if (settings.addGemini6aReference) count++;
   if (settings.addGemini7Reference) count++;
   if (settings.addRocketReference) count++;
 

@@ -35,11 +35,6 @@ export function BuilderCrafts() {
         <span className="label">Add Gemini7</span>
       </Checkbox>
 
-      <Checkbox onChange={onChangeGemini6a} isSelected={settings.addGemini6aReference}>
-        {checkbox}
-        <span className="label">Add Gemini6a</span>
-      </Checkbox>
-
     </section>
   )
 
@@ -51,4 +46,3 @@ const onChangeBanjo = (selected: boolean) => $systemSettings.setKey("addBanjoRef
 const onChangePolaris = (selected: boolean) => $systemSettings.setKey("addPolarisReference", selected);
 const onChangeRocket = (selected: boolean) => $systemSettings.setKey("addRocketReference", selected);
 const onChangeGemini7 = (selected: boolean) => $systemSettings.setKey("addGemini7Reference", selected);
-const onChangeGemini6a = (selected: boolean) => $systemSettings.setKey("addGemini6aReference", selected);

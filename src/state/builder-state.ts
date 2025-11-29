@@ -46,7 +46,6 @@ export const $systemSettings = map<SystemSettings>({
   addSolReference: true,
   addRocketReference: true,
   addGemini7Reference: true,
-  addGemini6aReference: true,
   addHunterReference: true,
   addBanjoReference: true,
   addPolarisReference: true,

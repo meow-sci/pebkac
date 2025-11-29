@@ -125,10 +125,6 @@ function createSystemDocument(config: GenerateSystemXmlConfig, celestials: Eleme
     addLoadFromLibrary("Gemini7", "Earth");
   }
 
-  if (config.addGemini6aReference) {
-    addLoadFromLibrary("Gemini6a", "Earth");
-  }
-
   if (config.addHunterReference) {
     addLoadFromLibrary("Hunter", "Earth");
   }

@@ -28,7 +28,6 @@
     <LoadFromLibrary Id="Earth" Parent="Sol"/>
     
     <LoadFromLibrary Id="Gemini7" Parent="Earth" />
-    <LoadFromLibrary Id="Gemini6a" Parent="Earth" />
 
     <LoadFromLibrary Id="Rocket" Parent="Earth" />
     <LoadFromLibrary Id="Hunter" Parent="Earth" />
