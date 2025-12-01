@@ -12,7 +12,7 @@ export function BuilderCrafts() {
 
       <Checkbox onChange={onChangeHunter} isSelected={settings.addHunterReference}>
         {checkbox}
-        <span className="label">Add Hunder</span>
+        <span className="label">Add Hunter</span>
       </Checkbox>
 
       <Checkbox onChange={onChangeBanjo} isSelected={settings.addBanjoReference}>
