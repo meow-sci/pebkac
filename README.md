@@ -1,6 +1,19 @@
+# PEBKAC
+
+Problem Exists Between Kitten and Chair
+
+https://meow.science.fail/pebkac/
+
+A tool to take in CSV data representing celestial bodies and spit out Kitten Space Agency `<System />` XML for it
+
+The default dataset is about 473 Sol system bodies
+
 # TODOs
 
-* 🚧 Add zod/arktype schema validation of system data
+* 🚧 Add zod/arktype schema validation of CSV data
+* 🚧 Add a "download zip" or tar.gz archive of a full mod folder including a `mod.toml` etc
+* 🚧 Add a auto installer (zero install, from browser) that manages the file installation and manifest.toml updation using File System Access API
+
 
 # Updation Instructions
 
