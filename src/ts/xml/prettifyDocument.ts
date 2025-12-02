@@ -1,4 +1,4 @@
-import { isElementNode, isTextNode } from "./isXmlNodeTypeGuards";
+import { isCommentNode, isElementNode, isTextNode } from "./isXmlNodeTypeGuards";
 
 const NUM_SPACES = 2;
 
@@ -24,7 +24,7 @@ function removeWhitespaceNodes(node: Node): void {
   }
 }
 
-function prettifyNode(node: Element, depth: number): void {
+function prettifyNode(node: Element | Comment, depth: number): void {
   const indent = '\n' + ' '.repeat(depth * NUM_SPACES);
   const childIndent = '\n' + ' '.repeat((depth + 1) * NUM_SPACES);
 
@@ -35,7 +35,7 @@ function prettifyNode(node: Element, depth: number): void {
   }
 
   // Check if node has only text content (no element children)
-  const hasElementChildren = childNodes.some(child => isElementNode(child));
+  const hasElementChildren = childNodes.some(child => isElementNode(child) || isCommentNode(child));
 
   if (!hasElementChildren) {
     // Keep text as-is for elements with only text content
@@ -46,7 +46,7 @@ function prettifyNode(node: Element, depth: number): void {
   for (let i = childNodes.length - 1; i >= 0; i--) {
     const child = childNodes[i];
 
-    if (isElementNode(child)) {
+    if (isElementNode(child) || isCommentNode(child)) {
       // Add indent before element
       node.insertBefore(node.ownerDocument.createTextNode(childIndent), child);
       // Recursively prettify child

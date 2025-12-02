@@ -11,3 +11,7 @@ export function isAttributeNode(node: any): node is Attr {
 export function isTextNode(node: any): node is Text {
   return node && node.nodeType === 3 // Node.TEXT_NODE
 }
+
+export function isCommentNode(node: any): node is Comment {
+  return node && node.nodeType === 8 // Node.COMMENT_NODE
+}
