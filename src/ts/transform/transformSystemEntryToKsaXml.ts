@@ -46,8 +46,8 @@ export function transformSystemEntryToKsaXmlIntoElement(context: GeneratorContex
     // First add a comment line listing the EPOCH used for this orbit, and the JPLREF number of the body JPLREF=
     if (isNotEmptyString(source.EPOCH) || isNotEmptyString(source.ID_JPLREF)) {
       let commentText = " Source:";
-      if (isNotEmptyString(source.EPOCH)) { commentText += ` EPOCH=${source.EPOCH}`; }
-      if (isNotEmptyString(source.ID_JPLREF)) { commentText += ` JPL_REF=${source.ID_JPLREF}`; }
+      if (isNotEmptyString(source.EPOCH)) { commentText += ` EPOCH=${source.EPOCH} `; }
+      if (isNotEmptyString(source.ID_JPLREF)) { commentText += `JPL_REF=${source.ID_JPLREF} `; }
       orbitEl.insertBefore(doc.createComment(commentText), orbitEl.firstChild);
     }
     addElementWithAttribute(context, doc, orbitEl, true, "SemiMajorAxis", "Km", source.A_SEMI_MAJOR_AXIS_KM);
