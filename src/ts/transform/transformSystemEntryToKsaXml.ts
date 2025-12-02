@@ -35,9 +35,10 @@ export function transformSystemEntryToKsaXml(context: GeneratorContext, source: 
 export function transformSystemEntryToKsaXmlIntoElement(context: GeneratorContext, source: SystemEntry, doc: Document, el: Element): void {
 
   // KSA now defines the orbital data inside an <Orbit> element which itself has attributes: <Orbit DefinitionFrame="Ecliptic" />
-  // When making this element with data always include the DefinitionFrame attribute with either "Ecliptic" or "Equitorial" value, defaulting to "Ecliptic"
-  if (isNotEmptyString(source.REF_FRAME) && (source.REF_FRAME == "Equitorial" || source.REF_FRAME == "Ecliptic")) {
-    addElementWithAttribute(context, doc, el, true, "Orbit", "DefinitionFrame", source.REF_FRAME);
+  if (isNotEmptyString(source.REF_FRAME) && (source.REF_FRAME.toLowerCase() == "equatorial" || source.REF_FRAME.toLowerCase() == "ecliptic")) {
+    if (source.REF_FRAME.toLowerCase() == "equatorial") { addElementWithAttribute(context, doc, el, true, "Orbit", "DefinitionFrame", "Equatorial"); }
+    else if (source.REF_FRAME.toLowerCase() == "ecliptic") { addElementWithAttribute(context, doc, el, true, "Orbit", "DefinitionFrame", "Ecliptic"); }
+    else { addElementWithAttribute(context, doc, el, true, "Orbit", "DefinitionFrame", "Ecliptic"); }
   } else { addElementWithAttribute(context, doc, el, true, "Orbit", "DefinitionFrame", "Ecliptic"); }
   // Now add the child elements to the Orbit element
   const orbitEl = xpath.select1(`Orbit`, el);
