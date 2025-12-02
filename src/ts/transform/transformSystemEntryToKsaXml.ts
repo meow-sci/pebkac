@@ -47,7 +47,7 @@ export function transformSystemEntryToKsaXmlIntoElement(context: GeneratorContex
       let commentText = " Source:";
       if (isNotEmptyString(source.EPOCH)) { commentText += ` EPOCH=${source.EPOCH}`; }
       if (isNotEmptyString(source.ID_JPLREF)) { commentText += ` JPL_REF=${source.ID_JPLREF}`; }
-      orbitEl.appendChild(doc.createComment(commentText));
+      orbitEl.insertBefore(doc.createComment(commentText), orbitEl.firstChild);
     }
     addElementWithAttribute(context, doc, orbitEl, true, "SemiMajorAxis", "Km", source.A_SEMI_MAJOR_AXIS_KM);
     addElementWithAttribute(context, doc, orbitEl, true, "Inclination", "Degrees", source.IN_INCLINATION_DEG);
