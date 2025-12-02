@@ -34,14 +34,31 @@ export function transformSystemEntryToKsaXml(context: GeneratorContext, source: 
  */
 export function transformSystemEntryToKsaXmlIntoElement(context: GeneratorContext, source: SystemEntry, doc: Document, el: Element): void {
 
-  addElementWithAttribute(context, doc, el, true, "SemiMajorAxis", "Km", source.A_SEMI_MAJOR_AXIS_KM);
-  addElementWithAttribute(context, doc, el, true, "Inclination", "Degrees", source.IN_INCLINATION_DEG);
-  addElementWithAttribute(context, doc, el, true, "Eccentricity", "Value", source.EC_ECCENTRICITY);
-  addElementWithAttribute(context, doc, el, true, "LongitudeOfAscendingNode", "Degrees", source.OM_LONGITUDE_ASCENDING_NODE_DEG);
-  addElementWithAttribute(context, doc, el, true, "ArgumentOfPeriapsis", "Degrees", source.W_ARG_PERIAPSIS_DEG);
-  addElementWithAttribute(context, doc, el, true, "MeanAnomalyAtEpoch", "Degrees", source.MA_MEAN_ANOMALY_DEG);
+  // KSA now defines the orbital data inside an <Orbit> element which itself has attributes: <Orbit DefinitionFrame="Ecliptic" />
+  // When making this element with data always include the DefinitionFrame attribute with either "Ecliptic" or "Equitorial" value, defaulting to "Ecliptic"
+  if (isNotEmptyString(source.REF_FRAME) && (source.REF_FRAME == "Equitorial" || source.REF_FRAME == "Ecliptic")) {
+    addElementWithAttribute(context, doc, el, true, "Orbit", "DefinitionFrame", source.REF_FRAME);
+  } else { addElementWithAttribute(context, doc, el, true, "Orbit", "DefinitionFrame", "Ecliptic"); }
+  // Now add the child elements to the Orbit element
+  const orbitEl = xpath.select1(`Orbit`, el);
+  if (isElementNode(orbitEl)) {
+    // First add a comment line listing the EPOCH used for this orbit, and the JPLREF number of the body JPLREF=
+    if (isNotEmptyString(source.EPOCH) || isNotEmptyString(source.ID_JPLREF)) {
+      let commentText = " Source:";
+      if (isNotEmptyString(source.EPOCH)) { commentText += ` EPOCH=${source.EPOCH}`; }
+      if (isNotEmptyString(source.ID_JPLREF)) { commentText += ` JPL_REF=${source.ID_JPLREF}`; }
+      orbitEl.appendChild(doc.createComment(commentText));
+    }
+    addElementWithAttribute(context, doc, orbitEl, true, "SemiMajorAxis", "Km", source.A_SEMI_MAJOR_AXIS_KM);
+    addElementWithAttribute(context, doc, orbitEl, true, "Inclination", "Degrees", source.IN_INCLINATION_DEG);
+    addElementWithAttribute(context, doc, orbitEl, true, "Eccentricity", "Value", source.EC_ECCENTRICITY);
+    addElementWithAttribute(context, doc, orbitEl, true, "LongitudeOfAscendingNode", "Degrees", source.OM_LONGITUDE_ASCENDING_NODE_DEG);
+    addElementWithAttribute(context, doc, orbitEl, true, "ArgumentOfPeriapsis", "Degrees", source.W_ARG_PERIAPSIS_DEG);
+    addElementWithAttribute(context, doc, orbitEl, true, "MeanAnomalyAtEpoch", "Degrees", source.MA_MEAN_ANOMALY_DEG);
+  }
+
   addElementWithAttribute(context, doc, el, true, "MeanRadius", "Km", source.MEAN_RADIUS_KM);
-  addElementWithAttribute(context, doc, el, true, "Period", "Seconds", source.PERIOD_SEC);
+  addElementWithAttribute(context, doc, el, true, "RotationPeriod", "Seconds", source.PERIOD_SEC);
   addElementWithAttribute(context, doc, el, true, "AxialTilt", "Degrees", source.AXIAL_TILT_DEG);
 
   // mass is (GM_KM3/S2) / (gravitational constant) = celestial mass in Kg
@@ -56,7 +73,7 @@ export function transformSystemEntryToKsaXmlIntoElement(context: GeneratorContex
 
   // Retrograde if RETROGRADE_ROT is true
   if (isTrueString(source.RETROGRADE_ROT)) {
-    addElementWithAttribute(context, doc, el, true, "Retrograde", "Value", "true");
+    addElementWithAttribute(context, doc, el, true, "RetrogradeRotation", "Value", "true");
   }
 
   // add a newline after last child for formatting

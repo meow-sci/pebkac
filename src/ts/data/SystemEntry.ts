@@ -3,9 +3,10 @@ import type { BodyType } from "./CelestialType";
 export interface SystemEntry {
   ID: string;
   PARENT: string;
-  PARENT_IAU: string;
-  ID_IAU: string;
+  PARENT_JPLREF: string;
+  ID_JPLREF: string;
   EPOCH: string;
+  REF_FRAME: string;
   A_SEMI_MAJOR_AXIS_KM: string;
   EC_ECCENTRICITY: string;
   W_ARG_PERIAPSIS_DEG: string;

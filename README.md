@@ -19,7 +19,7 @@ The default dataset is about 473 Sol system bodies
 
 ## When new KSA version lands
 
-1. Take the new version (e.g. `v2025.11.5.2897`) and update it in
+1. Take the new version (e.g. `v2025.12.5.2976`) and update it in
     1. `src/pages/index.astro` - the baked version info
 2. Update Core data in folder `src/data/mods/Core`
     1. Copy the following files from the `Kitten Space Agency` game dir into this folder

@@ -10,180 +10,184 @@
 
     <Vehicle Id="Gemini7" Parent="Earth">
 
-        <RootPart Id="Core_Command_A_Prefab_MediumCapsule_VariantA">
+        <PartRef InstanceOf="Core_Command_A_Prefab_MediumCapsule_VariantA">
 
-            <Part Id="Core_ServiceModule_A_Prefab_MediumServiceModuleA">
+            <PartRef InstanceOf="Core_ServiceModule_A_Prefab_MediumServiceModuleA">
                 <Transform>
                     <Position X="-2.1748"/>
                 </Transform>
 
-                <Part Id="Low Profile Thruster (Dual)">
+                <PartRef InstanceOf="Low Profile Thruster (Dual)">
                     <Transform>
                         <Position X="-1.4197" Y="-1.3013" Z="0"/>
                         <Rotation X="1.57" Z="-3.03687"/>
                     </Transform>
-                </Part>
+                </PartRef>
 
-                <Part Id="Low Profile Thruster (Dual)">
+                <PartRef InstanceOf="Low Profile Thruster (Dual)">
                     <Transform>
                         <Position X="-1.4197" Z="-1.3013"/>
                         <Rotation Y="0.10472" Z="3.14"/>
                     </Transform>
-                </Part>
+                </PartRef>
 
-                <Part Id="Low Profile Thruster (Dual)">
+                <PartRef InstanceOf="Low Profile Thruster (Dual)">
                     <Transform>
                         <Position X="-1.4197" Y="1.3013"/>
                         <Rotation X="1.57" Y="-3.14" Z="-0.10472"/>
                     </Transform>
-                </Part>
+                </PartRef>
 
-                <Part Id="Low Profile Thruster (Dual)">
+                <PartRef InstanceOf="Low Profile Thruster (Dual)">
                     <Transform>
                         <Position X="-1.4197" Z="1.3013"/>
                         <Rotation Y="3.24631"/>
                     </Transform>
-                </Part>
+                </PartRef>
 
-                <Part Id="FuelTank_3W3HA">
+                <PartRef InstanceOf="FuelTank_3W3HA">
                     <Transform>
                         <Position X="-4.7768"/>
                         <Rotation Z="3.14"/>
                     </Transform>
 
-                    <Part Id="Large Apollo CSM Thruster (Pent)">
+                    <PartRef InstanceOf="Large Apollo CSM Thruster (Pent)">
                         <Transform>
                             <Position X="-3.75" Y="-1.6915" Z="0.0"/>
                             <Rotation X="-1.57"/>
                         </Transform>
-                    </Part>
+                    </PartRef>
 
-                    <Part Id="Large Apollo CSM Thruster (Pent)">
+                    <PartRef InstanceOf="Large Apollo CSM Thruster (Pent)">
                         <Transform>
                             <Position X="-3.75" Y="1.6915" Z="0.0"/>
                             <Rotation X="1.57"/>
                         </Transform>
-                    </Part>
+                    </PartRef>
 
-                    <Part Id="Low Profile Thruster (Dual)">
+                    <PartRef InstanceOf="Low Profile Thruster (Dual)">
                         <Transform>
                             <Position X="-6.0087" Y="-1.5084" Z="0"/>
                             <Rotation X="-1.57"/>
                         </Transform>
-                    </Part>
+                    </PartRef>
 
-                    <Part Id="Low Profile Thruster (Dual)">
+                    <PartRef InstanceOf="Low Profile Thruster (Dual)">
                         <Transform>
                             <Position X="-6.0087" Y="1.5084" Z="0"/>
                             <Rotation X="1.57"/>
                         </Transform>
-                    </Part>
+                    </PartRef>
 
-                    <Part Id="Low Profile Thruster (Dual)">
+                    <PartRef InstanceOf="Low Profile Thruster (Dual)">
                         <Transform>
                             <Position X="-6.0087" Z="-1.5084"/>
                         </Transform>
-                    </Part>
+                    </PartRef>
 
-                    <Part Id="Low Profile Thruster (Dual)">
+                    <PartRef InstanceOf="Low Profile Thruster (Dual)">
                         <Transform>
                             <Position X="-6.0087" Z="1.5084"/>
                             <Rotation X="3.14"/>
                         </Transform>
-                    </Part>
+                    </PartRef>
 
-                    <Part Id="Small Block Thruster (Mono)">
+                    <PartRef InstanceOf="Small Block Thruster (Mono)">
                         <Transform>
                             <Position X="-6.2348" Y="1.5078"/>
                             <Rotation X="1.57"/>
                         </Transform>
-                    </Part>
+                    </PartRef>
 
-                    <Part Id="Small Block Thruster (Mono)">
+                    <PartRef InstanceOf="Small Block Thruster (Mono)">
                         <Transform>
                             <Position X="-6.2348" Y="-1.5078"/>
                             <Rotation X="-1.57"/>
                         </Transform>
-                    </Part>
+                    </PartRef>
 
-                    <Part Id="Small Block Thruster (Mono)">
+                    <PartRef InstanceOf="Small Block Thruster (Mono)">
                         <Transform>
                             <Position X="-6.2348" Z="-1.5078"/>
                         </Transform>
-                    </Part>
+                    </PartRef>
 
-                    <Part Id="Small Block Thruster (Mono)">
+                    <PartRef InstanceOf="Small Block Thruster (Mono)">
                         <Transform>
                             <Position X="-6.2348" Z="1.5078"/>
                             <Rotation X="3.14"/>
                         </Transform>
-                    </Part>
+                    </PartRef>
 
-                    <Part Id="Core_Propulsion_A_Prefab_EngineA1">
+                    <PartRef InstanceOf="Core_Propulsion_A_Prefab_EngineA1">
                         <Transform>
                             <Position X="-7.5389"/>
                         </Transform>
-                    </Part>
+                    </PartRef>
 
-                </Part>
+                </PartRef>
 
-            </Part>
+            </PartRef>
 
-            <Part Id="MonoTank_HalfB">
+            <PartRef InstanceOf="MonoTank_HalfB">
                 <Transform>
                     <Position X="1.2825"/>
                 </Transform>
 
-                <Part Id="FuelMono">
+                <PartRef InstanceOf="FuelMono">
                     <Transform>
                         <Position X="0.9748" Y="-0.765"/>
                         <Rotation X="-1.57"/>
                     </Transform>
-                </Part>
+                </PartRef>
 
-                <Part Id="FuelMono">
+                <PartRef InstanceOf="FuelMono">
                     <Transform>
                         <Position X="0.9748" Y="0.765"/>
                         <Rotation X="1.57"/>
                     </Transform>
-                </Part>
+                </PartRef>
 
-                <Part Id="FuelMonoMini">
+                <PartRef InstanceOf="FuelMonoMini">
                     <Transform>
                         <Position X="0.9685" Z="-0.6381"/>
                     </Transform>
 
-                    <Part Id="Small Block Thruster (Mono)">
+                    <PartRef InstanceOf="Small Block Thruster (Mono)">
                         <Transform>
                             <Position X="1.0474" Z="-0.6446"/>
                             <Rotation Z="3.14"/>
                         </Transform>
-                    </Part>
-                </Part>
+                    </PartRef>
+                </PartRef>
 
-                <Part Id="FuelMonoMini">
+                <PartRef InstanceOf="FuelMonoMini">
                     <Transform>
                         <Position X="0.9685" Z="0.6381"/>
                         <Rotation X="3.14"/>
                     </Transform>
 
-                    <Part Id="Small Block Thruster (Mono)">
+                    <PartRef InstanceOf="Small Block Thruster (Mono)">
                         <Transform>
                             <Position X="1.0474" Z="0.6446"/>
                             <Rotation Y="3.14"/>
                         </Transform>
-                    </Part>
-                </Part>
+                    </PartRef>
+                </PartRef>
 
-            </Part>
+            </PartRef>
 
-        </RootPart>
+        </PartRef>
 
-        <SemiMajorAxis Km="6713" />
-        <Inclination Degrees="28.87" />
-        <Eccentricity Value="0.0077" />
-        <LongitudeOfAscendingNode Degrees="60.48" />
-        <ArgumentOfPeriapsis Degrees="30.0015" />
+        <Orbit>
+            <SemiMajorAxis Km="6713" />
+            <Inclination Degrees="28.87" />
+            <Eccentricity Value="0.0077" />
+            <LongitudeOfAscendingNode Degrees="60.48" />
+            <ArgumentOfPeriapsis Degrees="30.0015" />
+            <TimeAtPeriapsis Minutes="-20" />
+        </Orbit>
+
         <MeanRadius M="1.5" />
         <MassSpecificPMI X="1.13" Y="2.83" Z="2.83" />
         <Mass Kg="3396" />
@@ -195,182 +199,185 @@
 
     <Vehicle Id="Rocket" Parent="Earth">
 
-        <RootPart Id="Core_Command_A_Prefab_MediumCapsule_VariantA">
+        <PartRef InstanceOf="Core_Command_A_Prefab_MediumCapsule_VariantA">
 
-            <Part Id="Core_ServiceModule_A_Prefab_MediumServiceModuleA">
+            <PartRef InstanceOf="Core_ServiceModule_A_Prefab_MediumServiceModuleA">
                 <Transform>
                     <Position X="-2.1748"/>
                 </Transform>
 
-                <Part Id="Low Profile Thruster (Dual)">
+                <PartRef InstanceOf="Low Profile Thruster (Dual)">
                     <Transform>
                         <Position X="-1.4197" Y="-1.3013" Z="0"/>
                         <Rotation X="1.57" Z="-3.03687"/>
                     </Transform>
-                </Part>
+                </PartRef>
 
-                <Part Id="Low Profile Thruster (Dual)">
+                <PartRef InstanceOf="Low Profile Thruster (Dual)">
                     <Transform>
                         <Position X="-1.4197" Z="-1.3013"/>
                         <Rotation Y="0.10472" Z="3.14"/>
                     </Transform>
-                </Part>
+                </PartRef>
 
-                <Part Id="Low Profile Thruster (Dual)">
+                <PartRef InstanceOf="Low Profile Thruster (Dual)">
                     <Transform>
                         <Position X="-1.4197" Y="1.3013"/>
                         <Rotation X="1.57" Y="-3.14" Z="-0.10472"/>
                     </Transform>
-                </Part>
+                </PartRef>
 
-                <Part Id="Low Profile Thruster (Dual)">
+                <PartRef InstanceOf="Low Profile Thruster (Dual)">
                     <Transform>
                         <Position X="-1.4197" Z="1.3013"/>
                         <Rotation Y="3.24631"/>
                     </Transform>
-                </Part>
+                </PartRef>
 
-                <Part Id="FuelTank_3W3HA">
+                <PartRef InstanceOf="FuelTank_3W3HA">
                     <Transform>
                         <Position X="-4.7768"/>
                         <Rotation Z="3.14"/>
                     </Transform>
 
-                    <Part Id="Large Apollo CSM Thruster (Pent)">
+                    <PartRef InstanceOf="Large Apollo CSM Thruster (Pent)">
                         <Transform>
                             <Position X="-3.75" Y="-1.6915" Z="0.0"/>
                             <Rotation X="-1.57"/>
                         </Transform>
-                    </Part>
+                    </PartRef>
 
-                    <Part Id="Large Apollo CSM Thruster (Pent)">
+                    <PartRef InstanceOf="Large Apollo CSM Thruster (Pent)">
                         <Transform>
                             <Position X="-3.75" Y="1.6915" Z="0.0"/>
                             <Rotation X="1.57"/>
                         </Transform>
-                    </Part>
+                    </PartRef>
 
-                    <Part Id="Low Profile Thruster (Dual)">
+                    <PartRef InstanceOf="Low Profile Thruster (Dual)">
                         <Transform>
                             <Position X="-6.0087" Y="-1.5084" Z="0"/>
                             <Rotation X="-1.57"/>
                         </Transform>
-                    </Part>
+                    </PartRef>
 
-                    <Part Id="Low Profile Thruster (Dual)">
+                    <PartRef InstanceOf="Low Profile Thruster (Dual)">
                         <Transform>
                             <Position X="-6.0087" Y="1.5084" Z="0"/>
                             <Rotation X="1.57"/>
                         </Transform>
-                    </Part>
+                    </PartRef>
 
-                    <Part Id="Low Profile Thruster (Dual)">
+                    <PartRef InstanceOf="Low Profile Thruster (Dual)">
                         <Transform>
                             <Position X="-6.0087" Z="-1.5084"/>
                         </Transform>
-                    </Part>
+                    </PartRef>
 
-                    <Part Id="Low Profile Thruster (Dual)">
+                    <PartRef InstanceOf="Low Profile Thruster (Dual)">
                         <Transform>
                             <Position X="-6.0087" Z="1.5084"/>
                             <Rotation X="3.14"/>
                         </Transform>
-                    </Part>
+                    </PartRef>
 
-                    <Part Id="Small Block Thruster (Mono)">
+                    <PartRef InstanceOf="Small Block Thruster (Mono)">
                         <Transform>
                             <Position X="-6.2348" Y="1.5078"/>
                             <Rotation X="1.57"/>
                         </Transform>
-                    </Part>
+                    </PartRef>
 
-                    <Part Id="Small Block Thruster (Mono)">
+                    <PartRef InstanceOf="Small Block Thruster (Mono)">
                         <Transform>
                             <Position X="-6.2348" Y="-1.5078"/>
                             <Rotation X="-1.57"/>
                         </Transform>
-                    </Part>
+                    </PartRef>
 
-                    <Part Id="Small Block Thruster (Mono)">
+                    <PartRef InstanceOf="Small Block Thruster (Mono)">
                         <Transform>
                             <Position X="-6.2348" Z="-1.5078"/>
                         </Transform>
-                    </Part>
+                    </PartRef>
 
-                    <Part Id="Small Block Thruster (Mono)">
+                    <PartRef InstanceOf="Small Block Thruster (Mono)">
                         <Transform>
                             <Position X="-6.2348" Z="1.5078"/>
                             <Rotation X="3.14"/>
                         </Transform>
-                    </Part>
+                    </PartRef>
 
-                    <Part Id="Core_Propulsion_A_Prefab_EngineA1">
+                    <PartRef InstanceOf="Core_Propulsion_A_Prefab_EngineA1">
                         <Transform>
                             <Position X="-7.5389"/>
                         </Transform>
-                    </Part>
+                    </PartRef>
 
-                </Part>
+                </PartRef>
 
-            </Part>
+            </PartRef>
 
-            <Part Id="MonoTank_HalfB">
+            <PartRef InstanceOf="MonoTank_HalfB">
                 <Transform>
                     <Position X="1.2825"/>
                 </Transform>
 
-                <Part Id="FuelMono">
+                <PartRef InstanceOf="FuelMono">
                     <Transform>
                         <Position X="0.9748" Y="-0.765"/>
                         <Rotation X="-1.57"/>
                     </Transform>
-                </Part>
+                </PartRef>
 
-                <Part Id="FuelMono">
+                <PartRef InstanceOf="FuelMono">
                     <Transform>
                         <Position X="0.9748" Y="0.765"/>
                         <Rotation X="1.57"/>
                     </Transform>
-                </Part>
+                </PartRef>
 
-                <Part Id="FuelMonoMini">
+                <PartRef InstanceOf="FuelMonoMini">
                     <Transform>
                         <Position X="0.9685" Z="-0.6381"/>
                     </Transform>
 
-                    <Part Id="Small Block Thruster (Mono)">
+                    <PartRef InstanceOf="Small Block Thruster (Mono)">
                         <Transform>
                             <Position X="1.0474" Z="-0.6446"/>
                             <Rotation Z="3.14"/>
                         </Transform>
-                    </Part>
-                </Part>
+                    </PartRef>
+                </PartRef>
 
-                <Part Id="FuelMonoMini">
+                <PartRef InstanceOf="FuelMonoMini">
                     <Transform>
                         <Position X="0.9685" Z="0.6381"/>
                         <Rotation X="3.14"/>
                     </Transform>
 
-                    <Part Id="Small Block Thruster (Mono)">
+                    <PartRef InstanceOf="Small Block Thruster (Mono)">
                         <Transform>
                             <Position X="1.0474" Z="0.6446"/>
                             <Rotation Y="3.14"/>
                         </Transform>
-                    </Part>
-                </Part>
+                    </PartRef>
+                </PartRef>
 
-            </Part>
+            </PartRef>
 
-        </RootPart>
+        </PartRef>
 
-        <SemiMajorAxis Km="6578" />
-        <Inclination Degrees="18.28" />
-        <Eccentricity Value="0" />
-        <LongitudeOfAscendingNode Degrees="90" />
-        <ArgumentOfPeriapsis Degrees="0" />
-        <MeanAnomalyAtEpoch Degrees="63" />
-        <TimeAtPeriapsis Minutes="-36"/>
+        <Orbit DefinitionFrame="Ecliptic">
+            <SemiMajorAxis Km="6578" />
+            <Inclination Degrees="5.027765739305488E+00" />
+            <Eccentricity Value="0" />
+            <LongitudeOfAscendingNode Degrees="3.439586928342719E+02" />
+            <ArgumentOfPeriapsis Degrees="9.095632163367938E+01" />
+            <MeanAnomalyAtEpoch Degrees="63" />
+            <TimeAtPeriapsis Minutes="-46"/>
+        </Orbit>
+
         <MeanRadius M="20" />
         <MassSpecificPMI X="2.409102" Y="6.951899552083333" Z="6.951899552083333" />
         <Mass Kg="6110" />
@@ -382,14 +389,18 @@
     <KittenEva Id="Hunter" Parent="Earth">
         
         <Character Id="HunterKitten"/>
-        <RootPart Id="KittenBackPackPart">
-        </RootPart>
+        <PartRef InstanceOf="KittenBackPackPart">
+        </PartRef>
 
-        <SemiMajorAxis Km="6713" />
-        <Inclination Degrees="28.87" />
-        <Eccentricity Value="0.0077" />
-        <LongitudeOfAscendingNode Degrees="60.48" />
-        <ArgumentOfPeriapsis Degrees="30.003" />
+        <Orbit>
+            <SemiMajorAxis Km="6713" />
+            <Inclination Degrees="28.87" />
+            <Eccentricity Value="0.0077" />
+            <LongitudeOfAscendingNode Degrees="60.48" />
+            <ArgumentOfPeriapsis Degrees="30.003" />
+            <TimeAtPeriapsis Minutes="-20" />
+        </Orbit>
+
         <MeanRadius M="1.5" />
         <MassSpecificPMI X="0.5" Y="0.5" Z="0.25" />
         <Mass Kg="50" />
@@ -403,14 +414,18 @@
     <KittenEva Id="Banjo" Parent="Earth">
 
         <Character Id="BanjoKitten"/>
-        <RootPart Id="KittenBackPackPart">
-        </RootPart>
+        <PartRef InstanceOf="KittenBackPackPart">
+        </PartRef>
 
-        <SemiMajorAxis Km="6712" />
-        <Inclination Degrees="28.87" />
-        <Eccentricity Value="0.0077" />
-        <LongitudeOfAscendingNode Degrees="60.48" />
-        <ArgumentOfPeriapsis Degrees="30.003" />
+        <Orbit>
+            <SemiMajorAxis Km="6712" />
+            <Inclination Degrees="28.87" />
+            <Eccentricity Value="0.0077" />
+            <LongitudeOfAscendingNode Degrees="60.48" />
+            <ArgumentOfPeriapsis Degrees="30.003" />
+            <TimeAtPeriapsis Minutes="-20" />
+        </Orbit>
+
         <MeanRadius M="1.5" />
         <MassSpecificPMI X="0.5" Y="0.5" Z="0.25" />
         <Mass Kg="50" />
@@ -424,14 +439,18 @@
     <KittenEva Id="Polaris" Parent="Earth">
 
         <Character Id="PolarisKitten"/>
-        <RootPart Id="KittenBackPackPart">
-        </RootPart>
+        <PartRef InstanceOf="KittenBackPackPart">
+        </PartRef>
 
-        <SemiMajorAxis Km="6711" />
-        <Inclination Degrees="28.87" />
-        <Eccentricity Value="0.0077" />
-        <LongitudeOfAscendingNode Degrees="60.48" />
-        <ArgumentOfPeriapsis Degrees="30.003" />
+        <Orbit>
+            <SemiMajorAxis Km="6711" />
+            <Inclination Degrees="28.87" />
+            <Eccentricity Value="0.0077" />
+            <LongitudeOfAscendingNode Degrees="60.48" />
+            <ArgumentOfPeriapsis Degrees="30.003" />
+            <TimeAtPeriapsis Minutes="-20" />
+        </Orbit>
+
         <MeanRadius M="1.5" />
         <MassSpecificPMI X="0.5" Y="0.5" Z="0.25" />
         <Mass Kg="50" />
@@ -443,12 +462,17 @@
     </KittenEva>
     
     <AtmosphericBody Id="Earth" Parent="Sol">
+        <Orbit>
+            <!-- JPL Horizons ephemerides at Julian Day 2461009.500000000 -->
+            <SemiMajorAxis Km="1.495396277103892E+08" />
+            <Inclination Degrees="4.495777668608611E-03" />
+            <Eccentricity Value="1.657443784940060E-02" />
+            <LongitudeOfAscendingNode Degrees="2.001005464352027E+02" />
+            <ArgumentOfPeriapsis Degrees="2.647204271842132E+02" />
+            <TimeAtPeriapsis Seconds="3155415.2731954656" />
+        </Orbit>
+
         <MeshCollection Id="EarthScale"/>
-        <SemiMajorAxis Au="1" />
-        <Inclination Degrees="0.00005" />
-        <Eccentricity Value="0.0167" />
-        <LongitudeOfAscendingNode Degrees="-11.261" />
-        <ArgumentOfPeriapsis Degrees="114.207" />
         <Diffuse Path="Textures/Earth_Diffuse.dds" Category="Terrain"/>
         <Normal Path="Textures/Earth_Normal.dds" Category="Terrain"/>
         <Height Path="Textures/Earth_Height.ktx2" Category="Terrain">
@@ -677,13 +701,12 @@
             </BiomeMaterials>
         </Terrain>
 
-        <MeanAnomalyAtEpoch Degrees="100" />
         <MeanRadius Km="6371" />
         <Mass Earths="1" />
         <Color R="0.11" G="0.31" B="0.415" />
-        <Period Days="1"/>
-        <AxialTilt Degrees="23.44" />
-        <AxialAlignment Degrees="0" />
+        <RotationPeriod Days="1"/>
+        <AxialTilt Degrees="23.4392911" />
+        <AxialAlignment Degrees="77" />
         <Atmosphere>
             <Visual>
                 <RayleighScattering>
@@ -1233,12 +1256,17 @@
     </AtmosphericBody>
 
     <PlanetaryBody Id="Luna" Parent="Earth">
+        <Orbit DefinitionFrame="Ecliptic">
+            <!-- JPL Horizons ephemerides at Julian Day 2461009.500000000 -->
+            <SemiMajorAxis Km="3.808633349807188E+05" />
+            <Inclination Degrees="5.027765739305488E+00" />
+            <Eccentricity Value="6.734146418596218E-02" />
+            <LongitudeOfAscendingNode Degrees="3.439586928342719E+02" />
+            <ArgumentOfPeriapsis Degrees="9.095632163367938E+01" />
+            <TimeAtPeriapsis Seconds="442332.8562855744" />
+        </Orbit>
+
         <MeshCollection Id="Default"/>
-        <SemiMajorAxis Km="384400" />
-        <Inclination Degrees="18.28" />
-        <Eccentricity Value="0.0549" />
-        <LongitudeOfAscendingNode Degrees="90" />
-        <ArgumentOfPeriapsis Degrees="318.15" />
         <Color R="0.33" G="0.33" B="0.33" /> <!-- used for the sprite and planetshine -->
         <Diffuse Path="Textures/Luna_Diffuse.ktx2" Category="Terrain"/>
         <Normal Path="Textures/Luna_Normal.dds" Category="Terrain"/>
@@ -1989,12 +2017,12 @@
             </Group>
         </GroundClutter>
         -->
-        <MeanAnomalyAtEpoch Degrees="0" />
         <MeanRadius Km="1737.1" />
         <Mass Lunars="1" />
         <TidallyLocked Value="true" />
-        <AxialTilt Degrees="6.68" />
-        <AxialAlignment Degrees="180" />
+        <InitialRotation Degrees="104.56" />
+        <AxialTilt Degrees="6.67" />
+        <AxialAlignment Degrees="0" />
         <Landmark Id="Apollo11">
             <Latitude Degrees="0.67408" />
             <Longitude Degrees="23.47297" />
@@ -2071,63 +2099,80 @@
 
 
     <Comet Id="MakemakeComet" Parent="Sol">
-        <SemiMajorAxis Au="45.79" />
-        <Inclination Degrees="28.98" />
-        <Eccentricity Value="0.159" />
-        <LongitudeOfAscendingNode Degrees="79.35" />
-        <ArgumentOfPeriapsis Degrees="294.88" />
-        <MeanAnomalyAtEpoch Degrees="160.6" />
+        <Orbit>
+            <SemiMajorAxis Au="45.79" />
+            <Inclination Degrees="28.98" />
+            <Eccentricity Value="0.159" />
+            <LongitudeOfAscendingNode Degrees="79.35" />
+            <ArgumentOfPeriapsis Degrees="294.88" />
+            <MeanAnomalyAtEpoch Degrees="160.6" />
+        </Orbit>
+
         <MeanRadius Km="739" />
     </Comet>
 
     <Comet Id="HalleysComet" Parent="Sol">
-        <SemiMajorAxis Au="17.737" />
-        <Inclination Degrees="161.96" />
-        <Eccentricity Value="0.96658" />
-        <LongitudeOfAscendingNode Degrees="59.396" />
-        <ArgumentOfPeriapsis Degrees="112.05" />
-        <MeanAnomalyAtEpoch Degrees="58.42" />
+        <Orbit>
+            <SemiMajorAxis Au="17.737" />
+            <Inclination Degrees="161.96" />
+            <Eccentricity Value="0.96658" />
+            <LongitudeOfAscendingNode Degrees="59.396" />
+            <ArgumentOfPeriapsis Degrees="112.05" />
+            <MeanAnomalyAtEpoch Degrees="58.42" />
+        </Orbit>
+
         <MeanRadius Km="11" />
     </Comet>
 
     <Comet Id="LovejoyComet" Parent="Sol">
-        <SemiMajorAxis Au="78.68" />
-        <Inclination Degrees="134.2" />
-        <Eccentricity Value="0.99993" />
-        <LongitudeOfAscendingNode Degrees="326.369" />
-        <ArgumentOfPeriapsis Degrees="53.5092" />
-        <MeanAnomalyAtEpoch Degrees="-0.1" />
+        <Orbit>
+            <SemiMajorAxis Au="78.68" />
+            <Inclination Degrees="134.2" />
+            <Eccentricity Value="0.99993" />
+            <LongitudeOfAscendingNode Degrees="326.369" />
+            <ArgumentOfPeriapsis Degrees="53.5092" />
+            <MeanAnomalyAtEpoch Degrees="-0.1" />
+        </Orbit>
+
         <MeanRadius Km="0.5" />
     </Comet>
 
     <Comet Id="HaleBoppComet" Parent="Sol">
-        <SemiMajorAxis Au="186" />
-        <Inclination Degrees="89.43" />
-        <Eccentricity Value="0.995" />
-        <LongitudeOfAscendingNode Degrees="282.47" />
-        <ArgumentOfPeriapsis Degrees="130.59" />
-        <MeanAnomalyAtEpoch Degrees="130.59" />
+        <Orbit>
+            <SemiMajorAxis Au="186" />
+            <Inclination Degrees="89.43" />
+            <Eccentricity Value="0.995" />
+            <LongitudeOfAscendingNode Degrees="282.47" />
+            <ArgumentOfPeriapsis Degrees="130.59" />
+            <MeanAnomalyAtEpoch Degrees="130.59" />
+        </Orbit>
+
         <MeanRadius Km="30" />
     </Comet>
 
     <Comet Id="Borisov" Parent="Sol">
-        <Periapsis Au="2.006"/>
-        <Inclination Degrees="44.0535" />
-        <Eccentricity Value="3.357" />
-        <LongitudeOfAscendingNode Degrees="308.15" />
-        <ArgumentOfPeriapsis Degrees="209.1244" />
+        <Orbit>
+            <Periapsis Au="2.006"/>
+            <Inclination Degrees="44.0535" />
+            <Eccentricity Value="3.357" />
+            <LongitudeOfAscendingNode Degrees="308.15" />
+            <ArgumentOfPeriapsis Degrees="209.1244" />
+            <TimeAtPeriapsis Months="-1"/>
+        </Orbit>
 
-        <TimeAtPeriapsis Months="-1"/>
         <MeanRadius Km="0.5" />
     </Comet>
 
     <Comet Id="3I_ATLAS" Parent="Sol">
-        <Periapsis Au="1.3746" />
-        <Inclination Degrees="175.1167" />
-        <Eccentricity Value="6.2769" />
-        <LongitudeOfAscendingNode Degrees="322.2722" />
-        <ArgumentOfPeriapsis Degrees="127.7932" />
-        <TimeAtPeriapsis Days="118.21095" />
+        <Orbit>
+            <Periapsis Au="1.3746" />
+            <Inclination Degrees="175.1167" />
+            <Eccentricity Value="6.2769" />
+            <LongitudeOfAscendingNode Degrees="322.2722" />
+            <ArgumentOfPeriapsis Degrees="127.7932" />
+            <TimeAtPeriapsis Days="118.21095" />
+        </Orbit>
+
         <MeanRadius Km="0.5" />
         <Color R="0.4" G="0.8" B="1.0" />
     </Comet>
