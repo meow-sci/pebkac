@@ -374,7 +374,6 @@
             <Eccentricity Value="0" />
             <LongitudeOfAscendingNode Degrees="3.439586928342719E+02" />
             <ArgumentOfPeriapsis Degrees="9.095632163367938E+01" />
-            <MeanAnomalyAtEpoch Degrees="63" />
             <TimeAtPeriapsis Minutes="-46"/>
         </Orbit>
 
@@ -471,6 +470,12 @@
             <ArgumentOfPeriapsis Degrees="2.647204271842132E+02" />
             <TimeAtPeriapsis Seconds="3155415.2731954656" />
         </Orbit>
+        <Rotation DefinitionFrame="Ecliptic">
+            <SiderealPeriod Hours="23.9344695944"/>
+            <Tilt Degrees="23.441522" />
+            <Azimuth Degrees="-0.363633" />
+            <InitialParentFacingLongitude Degrees="-118" />
+        </Rotation>
 
         <MeshCollection Id="EarthScale"/>
         <Diffuse Path="Textures/Earth_Diffuse.dds" Category="Terrain"/>
@@ -704,9 +709,6 @@
         <MeanRadius Km="6371" />
         <Mass Earths="1" />
         <Color R="0.11" G="0.31" B="0.415" />
-        <RotationPeriod Days="1"/>
-        <AxialTilt Degrees="23.4392911" />
-        <AxialAlignment Degrees="77" />
         <Atmosphere>
             <Visual>
                 <RayleighScattering>
@@ -1265,6 +1267,13 @@
             <ArgumentOfPeriapsis Degrees="9.095632163367938E+01" />
             <TimeAtPeriapsis Seconds="442332.8562855744" />
         </Orbit>
+        <Rotation DefinitionFrame="Ecliptic">
+            <!-- JPL Horizons ephemerides at Julian Day 2461009.500000000 -->
+            <IsTidallyLocked Value="true" />
+            <Tilt Degrees="1.528734" />
+            <Azimuth Degrees="-15.3758" />
+            <InitialParentFacingLongitude Degrees="352.990171" />
+        </Rotation>
 
         <MeshCollection Id="Default"/>
         <Color R="0.33" G="0.33" B="0.33" /> <!-- used for the sprite and planetshine -->
@@ -2019,10 +2028,6 @@
         -->
         <MeanRadius Km="1737.1" />
         <Mass Lunars="1" />
-        <TidallyLocked Value="true" />
-        <InitialRotation Degrees="104.56" />
-        <AxialTilt Degrees="6.67" />
-        <AxialAlignment Degrees="0" />
         <Landmark Id="Apollo11">
             <Latitude Degrees="0.67408" />
             <Longitude Degrees="23.47297" />
@@ -2105,7 +2110,6 @@
             <Eccentricity Value="0.159" />
             <LongitudeOfAscendingNode Degrees="79.35" />
             <ArgumentOfPeriapsis Degrees="294.88" />
-            <MeanAnomalyAtEpoch Degrees="160.6" />
         </Orbit>
 
         <MeanRadius Km="739" />
@@ -2118,7 +2122,6 @@
             <Eccentricity Value="0.96658" />
             <LongitudeOfAscendingNode Degrees="59.396" />
             <ArgumentOfPeriapsis Degrees="112.05" />
-            <MeanAnomalyAtEpoch Degrees="58.42" />
         </Orbit>
 
         <MeanRadius Km="11" />
@@ -2131,7 +2134,6 @@
             <Eccentricity Value="0.99993" />
             <LongitudeOfAscendingNode Degrees="326.369" />
             <ArgumentOfPeriapsis Degrees="53.5092" />
-            <MeanAnomalyAtEpoch Degrees="-0.1" />
         </Orbit>
 
         <MeanRadius Km="0.5" />
@@ -2144,7 +2146,6 @@
             <Eccentricity Value="0.995" />
             <LongitudeOfAscendingNode Degrees="282.47" />
             <ArgumentOfPeriapsis Degrees="130.59" />
-            <MeanAnomalyAtEpoch Degrees="130.59" />
         </Orbit>
 
         <MeanRadius Km="30" />

@@ -31,31 +31,47 @@
     <LoadFromLibrary Id="Sol"/>
 
     <PlanetaryBody Id="Mercury" Parent="Sol">
-        <Orbit>
-            <SemiMajorAxis Au="0.39" />
-            <Inclination Degrees="7.00487" />
-            <Eccentricity Value="0.2056" />
-            <LongitudeOfAscendingNode Degrees="48.331" />
-            <ArgumentOfPeriapsis Degrees="29.124" />
-            <MeanAnomalyAtEpoch Degrees="252.25084" />
+        <Orbit DefinitionFrame="Ecliptic">
+            <!-- JPL Horizons ephemerides at Julian Day 2461009.500000000 -->
+            <SemiMajorAxis Km="5.790896153292818E+07" />
+            <Inclination Degrees="7.003433958539783E+00" />
+            <Eccentricity Value="2.056462028967717E-01" />
+            <LongitudeOfAscendingNode Degrees="4.829884437379905E+01" />
+            <ArgumentOfPeriapsis Degrees="2.919855011314794E+01" />
+            <TimeAtPeriapsis Seconds="-563615.3399035392" />
         </Orbit>
+        <Rotation DefinitionFrame="Ecliptic">
+            <!-- JPL Horizons ephemerides at Julian Day 2461009.500000000 -->
+            <SiderealPeriod Days="58.6463" />
+            <Tilt Degrees="7.0354" />
+            <Azimuth Degrees="228.20282" />
+            <InitialParentFacingLongitude Degrees="179.685634" />
+        </Rotation>
 
         <MeshCollection Id="Default"/>
         <MeanRadius Km="2439.7" />
         <Mass Zg="330.11" />
         <Color R="1" G="1" B="1" />
-        <RotationPeriod Days="58" Hours="15" Minutes="30" Seconds="14"/>
     </PlanetaryBody>
 
     <AtmosphericBody Id="Venus" Parent="Sol">
-        <Orbit>
-            <SemiMajorAxis Au="0.72" />
-            <Inclination Degrees="3.39458" />
-            <Eccentricity Value="0.0068" />
-            <LongitudeOfAscendingNode Degrees="76.680" />
-            <ArgumentOfPeriapsis Degrees="54.891" />
-            <MeanAnomalyAtEpoch Degrees="181.97973" />
+        <Orbit DefinitionFrame="Ecliptic">
+            <!-- JPL Horizons ephemerides at Julian Day 2461009.500000000 -->
+            <SemiMajorAxis Km="1.082086368510616E+08" />
+            <Inclination Degrees="3.394398656865404E+00" />
+            <Eccentricity Value="6.781458454862293E-03" />
+            <LongitudeOfAscendingNode Degrees="7.660714455490883E+01" />
+            <ArgumentOfPeriapsis Degrees="5.481586957836043E+01" />
+            <TimeAtPeriapsis Seconds="-5064962.5577151648" />
         </Orbit>
+        <Rotation DefinitionFrame="Ecliptic">
+            <!-- JPL Horizons ephemerides at Julian Day 2461009.500000000 -->
+            <IsRetrograde Value="true"/>
+            <SiderealPeriod Days="243.018484"/>
+            <Tilt Degrees="1.23901" />
+            <Azimuth Degrees="-59.81325" />
+            <InitialParentFacingLongitude Degrees="223.822536" />
+        </Rotation>
 
         <MeshCollection Id="Default"/>
         <MeanRadius Km="6051.8" />
@@ -66,10 +82,6 @@
         </Height>
         <Mass Earths="0.815" />
         <Color R="1.0" G="0.87" B="0.68" />
-        <RetrogradeRotation Value="true"/>
-        <RotationPeriod Days="243"/>
-        <AxialTilt Degrees="177.4" />
-        <AxialAlignment Degrees="0" />
         <Atmosphere>
             <Visual>
                 <RayleighScattering>
@@ -430,16 +442,24 @@
     <LoadFromLibrary Id="Earth" Parent="Sol"/>
 
     <LoadFromLibrary Id="Luna" Parent="Earth"/>
-    
+
     <AtmosphericBody Id="Mars" Parent="Sol">
-        <Orbit>
-            <SemiMajorAxis Au="1.523679" />
-            <Inclination Degrees="1.85061" />
-            <Eccentricity Value="0.0934" />
-            <LongitudeOfAscendingNode Degrees="49.558" />
-            <ArgumentOfPeriapsis Degrees="286.537" />
-            <MeanAnomalyAtEpoch Degrees="355.453" />
+        <Orbit DefinitionFrame="Ecliptic">
+            <!-- JPL Horizons ephemerides at Julian Day 2461009.500000000 -->
+            <SemiMajorAxis Km="2.279399440595953E+08" />
+            <Inclination Degrees="1.847500920441235E+00" />
+            <Eccentricity Value="9.348560325567271E-02" />
+            <LongitudeOfAscendingNode Degrees="4.948350995893581E+01" />
+            <ArgumentOfPeriapsis Degrees="2.866279383251176E+02" />
+            <TimeAtPeriapsis Seconds="10049350.4347086144" />
         </Orbit>
+        <Rotation DefinitionFrame="Ecliptic">
+            <!-- JPL Horizons ephemerides at Julian Day 2461009.500000000 -->
+            <SiderealPeriod Hours="24.622962" />
+            <Tilt Degrees="26.71906" />
+            <Azimuth Degrees="262.85549" />
+            <InitialParentFacingLongitude Degrees="147.640089" />
+        </Rotation>
 
         <MeshCollection Id="MarsScale"/>
         <Diffuse Id="MarsDiffuse" Path="Textures/Mars_Diffuse.dds" Category="Terrain"/>
@@ -669,9 +689,6 @@
         <MeanRadius Km="3389.5" />
         <Mass Zg="641.71" />
         <Color R="1.0" G="0.27" B="0.0" />
-        <RotationPeriod Days="1" Minutes="37" Seconds="22"/>
-        <AxialTilt Degrees="25.19" />
-        <AxialAlignment Degrees="0" />
         <Atmosphere>
             <Visual>
                 <RayleighScattering>
@@ -973,20 +990,27 @@
         </Crater>
     </AtmosphericBody>
     <MinorBody Id="Phobos" Parent="Mars">
-        <Orbit>
-            <SemiMajorAxis Km="9377" />
-            <Inclination Degrees="1.093" />
-            <Eccentricity Value="0.0151" />
-            <LongitudeOfAscendingNode Degrees="48.331" />
-            <ArgumentOfPeriapsis Degrees="150.057" />
-            <MeanAnomalyAtEpoch Degrees="15.0" />
+        <Orbit DefinitionFrame="Ecliptic">
+            <!-- JPL Horizons ephemerides at Julian Day 2461009.500000000 -->
+            <SemiMajorAxis Km="9.379383282690138E+03" />
+            <Inclination Degrees="2.759125810541645E+01" />
+            <Eccentricity Value="1.504527739875488E-02" />
+            <LongitudeOfAscendingNode Degrees="8.150327669126401E+01" />
+            <ArgumentOfPeriapsis Degrees="1.434659767065662E+02" />
+            <TimeAtPeriapsis Seconds="7342.3314482112" />
         </Orbit>
+        <Rotation DefinitionFrame="Ecliptic">
+            <!-- JPL Horizons ephemerides at Julian Day 2461009.500000000 -->
+            <IsTidallyLocked Value="true" />
+            <Tilt Degrees="27.59077" />
+            <Azimuth Degrees="261.50216" />
+            <InitialParentFacingLongitude Degrees="216.244984" />
+        </Rotation>
 
         <MeshCollection Id="Asteroid"/>
         <SphereOfInfluence Km = "30" /> <!-- Wrong! Just here so we can collide with and land on it -->
         <MeanRadius Km="11.267" />
         <Mass Pg="10.659" />
-        <TidallyLocked Value="true" />
 
         <Color R="0.33" G="0.33" B="0.33" />
         <Diffuse Path="Textures/Phobos_Diffuse.dds" Category="Terrain"/>
@@ -1161,18 +1185,25 @@
 
     </MinorBody>
     <MinorBody Id="Deimos" Parent="Mars">
-        <Orbit>
-            <SemiMajorAxis Km="23463.2" />
-            <Inclination Degrees="1.788" />
-            <Eccentricity Value="0.00033" />
-            <LongitudeOfAscendingNode Degrees="23.264" />
-            <ArgumentOfPeriapsis Degrees="79.465" />
-            <MeanAnomalyAtEpoch Degrees="53.23" />
+        <Orbit DefinitionFrame="Ecliptic">
+            <!-- JPL Horizons ephemerides at Julian Day 2461009.500000000 -->
+            <SemiMajorAxis Km="2.345839038729485E+04" />
+            <Inclination Degrees="2.418396669450255E+01" />
+            <Eccentricity Value="1.984652800573767E-04" />
+            <LongitudeOfAscendingNode Degrees="8.116938156204388E+01" />
+            <ArgumentOfPeriapsis Degrees="3.816862353970838E+01" />
+            <TimeAtPeriapsis Seconds="-53307.6243952032" />
         </Orbit>
+        <Rotation DefinitionFrame="Ecliptic">
+            <!-- JPL Horizons ephemerides at Julian Day 2461009.500000000 -->
+            <IsTidallyLocked Value="true" />
+            <InitialParentFacingLongitude Degrees="27.708884" />
+            <Tilt Degrees="24.1841" />
+            <Azimuth Degrees="261.16712" />
+        </Rotation>
 
         <MeanRadius Km="6.2" />
         <Mass Pg="1.4762" />
-        <TidallyLocked Value="true" />
     </MinorBody>
 
     <MinorBody Id="Ceres" Parent="Sol">
@@ -1182,7 +1213,6 @@
             <Eccentricity Value="0.0758" />
             <LongitudeOfAscendingNode Degrees="80.3056" />
             <ArgumentOfPeriapsis Degrees="73.5977" />
-            <MeanAnomalyAtEpoch Degrees="95.989" />
         </Orbit>
 
         <MeanRadius Km="469.73" />
@@ -1197,7 +1227,6 @@
             <Eccentricity Value="0.089" />
             <LongitudeOfAscendingNode Degrees="103.851" />
             <ArgumentOfPeriapsis Degrees="151.198" />
-            <MeanAnomalyAtEpoch Degrees="20.308" />
         </Orbit>
 
         <MeanRadius Km="262.7" />
@@ -1212,7 +1241,6 @@
             <Eccentricity Value="0.231" />
             <LongitudeOfAscendingNode Degrees="173.085" />
             <ArgumentOfPeriapsis Degrees="310.881" />
-            <MeanAnomalyAtEpoch Degrees="33.274" />
         </Orbit>
 
         <MeanRadius Km="265" />
@@ -1227,7 +1255,6 @@
             <Eccentricity Value="0.113" />
             <LongitudeOfAscendingNode Degrees="283.916" />
             <ArgumentOfPeriapsis Degrees="312.345" />
-            <MeanAnomalyAtEpoch Degrees="142.555" />
         </Orbit>
 
         <MeanRadius Km="215" />
@@ -1242,7 +1269,6 @@
             <Eccentricity Value="0.223" />
             <LongitudeOfAscendingNode Degrees="304.4" />
             <ArgumentOfPeriapsis Degrees="178.8" />
-            <MeanAnomalyAtEpoch Degrees="89.0" />
         </Orbit>
 
         <MeanRadius Km="8.42" />
@@ -1251,23 +1277,28 @@
     </MinorBody>
 
     <AtmosphericBody Id="Jupiter" Parent="Sol">	
-        <Orbit>
-            <SemiMajorAxis Au="5.2044" />
-            <Inclination Degrees="1.30530" />
-            <Eccentricity Value="0.0489" />
-            <LongitudeOfAscendingNode Degrees="100.464" />
-            <ArgumentOfPeriapsis Degrees="273.867" />
-            <MeanAnomalyAtEpoch Degrees="34.35152" />
+        <Orbit DefinitionFrame="Ecliptic">
+            <!-- JPL Horizons ephemerides at Julian Day 2461009.500000000 -->
+            <SemiMajorAxis Km="7.783184372433803E+08" />
+            <Inclination Degrees="1.303590359360468E+00" />
+            <Eccentricity Value="4.832479219312407E-02" />
+            <LongitudeOfAscendingNode Degrees="1.005180387211400E+02" />
+            <ArgumentOfPeriapsis Degrees="2.735957096173138E+02" />
+            <TimeAtPeriapsis Seconds="-90113548.8271415328" />
         </Orbit>
+        <Rotation DefinitionFrame="Ecliptic">
+            <!-- JPL Horizons ephemerides at Julian Day 2461009.500000000 -->
+            <SiderealPeriod Hours="9" Minutes="55" Seconds="29.711"/>
+            <Tilt Degrees="2.21503" />
+            <Azimuth Degrees="157.81684" />
+            <InitialParentFacingLongitude Degrees="199.376786" />
+        </Rotation>
 
         <MeshCollection Id="Default"/>
         <MeanRadius Km="69911" />
         <Mass Jupiters="1" />
         <Diffuse Id="JupiterDiffuse" Path="Textures/Jupiter_Diffuse.dds" Category="Terrain"/>
         <Color R="1.0" G="0.69" B="0.36" />
-        <RotationPeriod Hours="9" Minutes="55" Seconds="30"/>
-        <AxialTilt Degrees="3.13" />
-        <AxialAlignment Degrees="0" />
         <Atmosphere>
             <Visual>
                 <RayleighScattering>
@@ -1782,16 +1813,17 @@
             <Eccentricity Value="0.0041" />
             <LongitudeOfAscendingNode Degrees="355.8" />
             <ArgumentOfPeriapsis Degrees="84.129" />
-            <MeanAnomalyAtEpoch Degrees="355.8" />
         </Orbit>
+        <Rotation>
+            <SiderealPeriod Days="1" Hours="18" Minutes="27" Seconds="21"/>
+            <IsTidallyLocked Value="true" />
+        </Rotation>
 
         <MeshCollection Id="Default"/>
         <Diffuse Path="Textures/Io_Diffuse.jpg" Category="Terrain"/>
         <Height Path="Textures/Io_Height.jpg" Category="Terrain"/>
         <MeanRadius Km="1821.6" />
         <Mass Zg="89.32" />
-        <RotationPeriod Days="1" Hours="18" Minutes="27" Seconds="21"/>
-        <TidallyLocked Value="true" />
     </PlanetaryBody>
     <PlanetaryBody Id="Europa" Parent="Jupiter">
         <Orbit>
@@ -1800,15 +1832,14 @@
             <Eccentricity Value="0.0094" />
             <LongitudeOfAscendingNode Degrees="181.4" />
             <ArgumentOfPeriapsis Degrees="219.106" />
-            <MeanAnomalyAtEpoch Degrees="181.4" />
         </Orbit>
+        <Rotation>
+            <IsTidallyLocked Value="true" />
+            <Tilt Degrees="0.1" />
+        </Rotation>
 
         <MeanRadius Km="1560.8" />
         <Mass Zg="47.97" />
-        <RotationPeriod Days="3" Hours="13" Minutes="13" Seconds="26"/>
-        <TidallyLocked Value="true" />
-        <AxialTilt Degrees="0.1" />
-        <AxialAlignment Degrees="0" />
     </PlanetaryBody>
     <PlanetaryBody Id="Ganymede" Parent="Jupiter">
         <Orbit>
@@ -1817,13 +1848,13 @@
             <Eccentricity Value="0.0015" />
             <LongitudeOfAscendingNode Degrees="52.2" />
             <ArgumentOfPeriapsis Degrees="63.552" />
-            <MeanAnomalyAtEpoch Degrees="52.2" />
         </Orbit>
+        <Rotation>
+            <IsTidallyLocked Value="true" />
+        </Rotation>
 
         <MeanRadius Km="2634.1" />
         <Mass Zg="148.2" />
-        <RotationPeriod Days="7" Hours="3" Minutes="43" Seconds="12"/>
-        <TidallyLocked Value="true" />
     </PlanetaryBody>
     <PlanetaryBody Id="Callisto" Parent="Jupiter">
         <Orbit>
@@ -1832,13 +1863,13 @@
             <Eccentricity Value="0.0074" />
             <LongitudeOfAscendingNode Degrees="21.6" />
             <ArgumentOfPeriapsis Degrees="298.848" />
-            <MeanAnomalyAtEpoch Degrees="21.6" />
         </Orbit>
+        <Rotation>
+            <IsTidallyLocked Value="true" />
+        </Rotation>
 
         <MeanRadius Km="2410.3" />
         <Mass Zg="107.6" />
-        <RotationPeriod Days="16" Hours="16" Minutes="32" Seconds="10"/>
-        <TidallyLocked Value="true" />
     </PlanetaryBody>
 
     <MinorBody Id="Amalthea" Parent="Jupiter">
@@ -1848,13 +1879,14 @@
             <Eccentricity Value="0.0032" />
             <LongitudeOfAscendingNode Degrees="85.1" />
             <ArgumentOfPeriapsis Degrees="54.1" />
-            <MeanAnomalyAtEpoch Degrees="141.6" />
         </Orbit>
+        <Rotation>
+            <IsTidallyLocked Value="true" />
+        </Rotation>
 
         <MeanRadius Km="83.5" />
         <Mass Zg="0.025" />
         <Color R="1.0" G="0.2" B="0.1" />
-        <TidallyLocked Value="true" />
     </MinorBody>
 
     <MinorBody Id="Himalia" Parent="Jupiter">
@@ -1864,12 +1896,13 @@
             <Eccentricity Value="0.162" />
             <LongitudeOfAscendingNode Degrees="25.3" />
             <ArgumentOfPeriapsis Degrees="187.48" />
-            <MeanAnomalyAtEpoch Degrees="25.3" />
         </Orbit>
+        <Rotation>
+            <IsTidallyLocked Value="true" />
+        </Rotation>
 
         <MeanRadius Km="85" />
         <Color R="1.0" G="0.82" B="0.57" />
-        <TidallyLocked Value="true" />
     </MinorBody>
 
     <MinorBody Id="Elara" Parent="Jupiter">
@@ -1879,11 +1912,12 @@
             <Eccentricity Value="0.217" />
             <LongitudeOfAscendingNode Degrees="141.4" />
             <ArgumentOfPeriapsis Degrees="218.02" />
-            <MeanAnomalyAtEpoch Degrees="141.4" />
         </Orbit>
+        <Rotation>
+            <IsTidallyLocked Value="true" />
+        </Rotation>
 
         <MeanRadius Km="43" />
-        <TidallyLocked Value="true" />
     </MinorBody>
 
     <MinorBody Id="Pasiphae" Parent="Jupiter">
@@ -1893,11 +1927,12 @@
             <Eccentricity Value="0.409" />
             <LongitudeOfAscendingNode Degrees="45.9" />
             <ArgumentOfPeriapsis Degrees="192.82" />
-            <MeanAnomalyAtEpoch Degrees="45.9" />
         </Orbit>
+        <Rotation>
+            <IsTidallyLocked Value="true" />
+        </Rotation>
 
         <MeanRadius Km="30" />
-        <TidallyLocked Value="true" />
     </MinorBody>
 
     <MinorBody Id="Sinope" Parent="Jupiter">
@@ -1907,11 +1942,12 @@
             <Eccentricity Value="0.250" />
             <LongitudeOfAscendingNode Degrees="298.5" />
             <ArgumentOfPeriapsis Degrees="158.42" />
-            <MeanAnomalyAtEpoch Degrees="298.5" />
         </Orbit>
+        <Rotation>
+            <IsTidallyLocked Value="true" />
+        </Rotation>
 
         <MeanRadius Km="19" />
-        <TidallyLocked Value="true" />
     </MinorBody>
 
     <MinorBody Id="Lysithea" Parent="Jupiter">
@@ -1921,31 +1957,37 @@
             <Eccentricity Value="0.110" />
             <LongitudeOfAscendingNode Degrees="116.7" />
             <ArgumentOfPeriapsis Degrees="91.41" />
-            <MeanAnomalyAtEpoch Degrees="116.7" />
         </Orbit>
+        <Rotation>
+            <IsTidallyLocked Value="true" />
+        </Rotation>
 
         <MeanRadius Km="18" />
-        <TidallyLocked Value="true" />
     </MinorBody>
 
     <AtmosphericBody Id="Saturn" Parent="Sol">
-        <Orbit>
-            <SemiMajorAxis Au="9.58" />
-            <Inclination Degrees="2.48446" />
-            <Eccentricity Value="0.0565" />
-            <LongitudeOfAscendingNode Degrees="113.665" />
-            <ArgumentOfPeriapsis Degrees="338.911" />
-            <MeanAnomalyAtEpoch Degrees="50.07744" />
+        <Orbit DefinitionFrame="Ecliptic">
+            <!-- JPL Horizons ephemerides at Julian Day 2461009.500000000 -->
+            <SemiMajorAxis Km="1.427887258370589E+09" />
+            <Inclination Degrees="2.486575364141227E+00" />
+            <Eccentricity Value="5.542239872393825E-02" />
+            <LongitudeOfAscendingNode Degrees="1.135601857911130E+02" />
+            <ArgumentOfPeriapsis Degrees="3.383383032687136E+02" />
+            <TimeAtPeriapsis Seconds="219817510.331082336" />
         </Orbit>
+        <Rotation DefinitionFrame="Ecliptic">
+            <!-- JPL Horizons ephemerides at Julian Day 2461009.500000000 -->
+            <SiderealPeriod Hours="10" Minutes="39" Seconds="22.4" />
+            <Tilt Degrees="28.0523" />
+            <Azimuth Degrees="-10.47562" />
+            <InitialParentFacingLongitude Degrees="303.094944" />
+        </Rotation>
 
         <MeshCollection Id="Default"/>
         <MeanRadius Km="58232" />
         <Mass Jupiters="0.299" />
         <Diffuse Path="Textures/Saturn_Diffuse.dds" Category="Terrain"/>
         <Color R="1.0" G="0.82" B="0.57" />
-        <RotationPeriod Hours="10" Minutes="39" Seconds="22"/>
-        <AxialTilt Degrees="26.73" />
-        <AxialAlignment Degrees="0" />
         <Atmosphere>
             <Visual>
                 <RayleighScattering>
@@ -1978,14 +2020,14 @@
             <Eccentricity Value="0.0202" />
             <LongitudeOfAscendingNode Degrees="342.7" />
             <ArgumentOfPeriapsis Degrees="130.822" />
-            <MeanAnomalyAtEpoch Degrees="324.7" />
         </Orbit>
+        <Rotation>
+            <IsTidallyLocked Value="true" />
+        </Rotation>
 
         <MeanRadius Km="198.2" />
         <Mass Eg="374.9" />
         <Diffuse Path="Textures/Mimas_Diffuse.jpg" Category="Terrain"/>
-        <RotationPeriod Hours="22" Minutes="36" Seconds="29"/>
-        <TidallyLocked Value="true" />
     </PlanetaryBody>
     <PlanetaryBody Id="Enceladus" Parent="Saturn">
         <Orbit>
@@ -1994,13 +2036,13 @@
             <Eccentricity Value="0.0047" />
             <LongitudeOfAscendingNode Degrees="143.7" />
             <ArgumentOfPeriapsis Degrees="203.459" />
-            <MeanAnomalyAtEpoch Degrees="143.7" />
         </Orbit>
+        <Rotation>
+            <IsTidallyLocked Value="true" />
+        </Rotation>
 
         <MeanRadius Km="252.1" />
         <Mass Zg="108.5" />
-        <RotationPeriod Days="1" Hours="8" Minutes="53" Seconds="48"/>
-        <TidallyLocked Value="true" />
     </PlanetaryBody>
     <PlanetaryBody Id="Tethys" Parent="Saturn">
         <Orbit>
@@ -2009,12 +2051,13 @@
             <Eccentricity Value="0.0001" />
             <LongitudeOfAscendingNode Degrees="285.3" />
             <ArgumentOfPeriapsis Degrees="5.576" />
-            <MeanAnomalyAtEpoch Degrees="285.3" />
         </Orbit>
+        <Rotation>
+            <IsTidallyLocked Value="true" />
+        </Rotation>
 
         <MeanRadius Km="531.1" />
         <Mass Eg="617.4" />
-        <TidallyLocked Value="true" />
     </PlanetaryBody>
     <PlanetaryBody Id="Dione" Parent="Saturn">
         <Orbit>
@@ -2023,12 +2066,13 @@
             <Eccentricity Value="0.0022" />
             <LongitudeOfAscendingNode Degrees="168.8" />
             <ArgumentOfPeriapsis Degrees="90.771" />
-            <MeanAnomalyAtEpoch Degrees="168.8" />
         </Orbit>
+        <Rotation>
+            <IsTidallyLocked Value="true" />
+        </Rotation>
 
         <MeanRadius Km="561.4" />
         <Mass Zg="1.095" />
-        <TidallyLocked Value="true" />
     </PlanetaryBody>
     <PlanetaryBody Id="Rhea" Parent="Saturn">
         <Orbit>
@@ -2037,12 +2081,13 @@
             <Eccentricity Value="0.0010" />
             <LongitudeOfAscendingNode Degrees="227.9" />
             <ArgumentOfPeriapsis Degrees="359.856" />
-            <MeanAnomalyAtEpoch Degrees="227.9" />
         </Orbit>
+        <Rotation>
+            <IsTidallyLocked Value="true" />
+        </Rotation>
 
         <MeanRadius Km="763.8" />
         <Mass Zg="2.308" />
-        <TidallyLocked Value="true" />
     </PlanetaryBody>
     <AtmosphericBody Id="Titan" Parent="Saturn">
         <Orbit>
@@ -2051,14 +2096,15 @@
             <Eccentricity Value="0.0288" />
             <LongitudeOfAscendingNode Degrees="187.3" />
             <ArgumentOfPeriapsis Degrees="28.060" />
-            <MeanAnomalyAtEpoch Degrees="187.3" />
         </Orbit>
+        <Rotation>
+            <IsTidallyLocked Value="true" />
+        </Rotation>
 
         <MeshCollection Id="Default"/>
         <MeanRadius Km="2575.5" />
         <Mass Zg="13.4553" />
         <Diffuse Path="Textures/Titan_Diffuse.dds" Category="Terrain"/>
-        <TidallyLocked Value="true" />
         <Atmosphere>
             <Visual>
                 <RayleighScattering>
@@ -2393,32 +2439,39 @@
             <Eccentricity Value="0.0293" />
             <LongitudeOfAscendingNode Degrees="15.47" />
             <ArgumentOfPeriapsis Degrees="271.608" />
-            <MeanAnomalyAtEpoch Degrees="91.0" />
         </Orbit>
+        <Rotation>
+            <IsTidallyLocked Value="true" />
+        </Rotation>
 
         <MeanRadius Km="734.5" />
         <Mass Zg="1.81" />
-        <TidallyLocked Value="true" />
     </MinorBody>
 
     <AtmosphericBody Id="Uranus" Parent="Sol">
-        <Orbit>
-            <SemiMajorAxis Au="19.22" />
-            <Inclination Degrees="0.76986" />
-            <Eccentricity Value="0.0461" />
-            <LongitudeOfAscendingNode Degrees="74.229" />
-            <ArgumentOfPeriapsis Degrees="96.541" />
-            <MeanAnomalyAtEpoch Degrees="314.055" />
+        <Orbit DefinitionFrame="Ecliptic">
+            <!-- JPL Horizons ephemerides at Julian Day 2461009.500000000 -->
+            <SemiMajorAxis Km="2.884868668009094E+09" />
+            <Inclination Degrees="7.715046771137000E-01" />
+            <Eccentricity Value="4.674030784521282E-02" />
+            <LongitudeOfAscendingNode Degrees="7.404163324936681E+01" />
+            <ArgumentOfPeriapsis Degrees="9.130136405887312E+01" />
+            <TimeAtPeriapsis Seconds="749579493.83722992" />
         </Orbit>
+        <Rotation DefinitionFrame="Ecliptic">
+            <!-- JPL Horizons ephemerides at Julian Day 2461009.500000000 -->
+            <SiderealPeriod Hours="17" Minutes="14" Seconds="24"/>
+            <Tilt Degrees="82.278322" />
+            <Azimuth Degrees="167.646683" />
+            <InitialParentFacingLongitude Degrees="166.177439" />
+            <IsRetrograde Value="true" />
+        </Rotation>
 
         <MeshCollection Id="Default"/>
         <MeanRadius Km="25362" />
         <Mass Earths="14.54" />
         <Diffuse Path="Textures/Uranus_Diffuse.jpg" Category="Terrain"/>
         <Color R="0.69" G="1.0" B="0.87" />
-        <RotationPeriod Hours="17" Minutes="14" Seconds="24"/>
-        <AxialTilt Degrees="97.77" />
-        <AxialAlignment Degrees="0" />
         <Atmosphere>
             <Visual>
                 <RayleighScattering>
@@ -2451,12 +2504,13 @@
             <Eccentricity Value="0.0013" />
             <LongitudeOfAscendingNode Degrees="326.438" />
             <ArgumentOfPeriapsis Degrees="285.431" />
-            <MeanAnomalyAtEpoch Degrees="326.438" />
         </Orbit>
+        <Rotation>
+            <IsTidallyLocked Value="true" />
+        </Rotation>
 
         <MeanRadius Km="235.8" />
         <Mass Eg="66.1" />
-        <TidallyLocked Value="true" />
     </MinorBody>
     <MinorBody Id="Ariel" Parent="Uranus">
         <Orbit>
@@ -2465,12 +2519,13 @@
             <Eccentricity Value="0.0012" />
             <LongitudeOfAscendingNode Degrees="74.392" />
             <ArgumentOfPeriapsis Degrees="326.528" />
-            <MeanAnomalyAtEpoch Degrees="74.392" />
         </Orbit>
+        <Rotation>
+            <IsTidallyLocked Value="true" />
+        </Rotation>
 
         <MeanRadius Km="578.9" />
         <Mass Zg="1.2597" />
-        <TidallyLocked Value="true" />
     </MinorBody>
     <MinorBody Id="Umbriel" Parent="Uranus">
         <Orbit>
@@ -2479,12 +2534,13 @@
             <Eccentricity Value="0.0039" />
             <LongitudeOfAscendingNode Degrees="170.606" />
             <ArgumentOfPeriapsis Degrees="270.572" />
-            <MeanAnomalyAtEpoch Degrees="170.606" />
         </Orbit>
+        <Rotation>
+            <IsTidallyLocked Value="true" />
+        </Rotation>
 
         <MeanRadius Km="584.7" />
         <Mass Zg="1.167" />
-        <TidallyLocked Value="true" />
     </MinorBody>
     <MinorBody Id="Titania" Parent="Uranus">
         <Orbit>
@@ -2493,12 +2549,13 @@
             <Eccentricity Value="0.0011" />
             <LongitudeOfAscendingNode Degrees="314.608" />
             <ArgumentOfPeriapsis Degrees="284.419" />
-            <MeanAnomalyAtEpoch Degrees="314.608" />
         </Orbit>
+        <Rotation>
+            <IsTidallyLocked Value="true" />
+        </Rotation>
 
         <MeanRadius Km="788.9" />
         <Mass Zg="3.5275" />
-        <TidallyLocked Value="true" />
     </MinorBody>
     <MinorBody Id="Oberon" Parent="Uranus">
         <Orbit>
@@ -2507,32 +2564,38 @@
             <Eccentricity Value="0.0014" />
             <LongitudeOfAscendingNode Degrees="79.709" />
             <ArgumentOfPeriapsis Degrees="271.885" />
-            <MeanAnomalyAtEpoch Degrees="79.709" />
         </Orbit>
+        <Rotation>
+            <IsTidallyLocked Value="true" />
+        </Rotation>
 
         <MeanRadius Km="761.4" />
         <Mass Zg="3.014" />
-        <TidallyLocked Value="true" />
     </MinorBody>
 
     <AtmosphericBody Id="Neptune" Parent="Sol">
-        <Orbit>
-            <SemiMajorAxis Au="30.05" />
-            <Inclination Degrees="1.76917" />
-            <Eccentricity Value="0.0097" />
-            <LongitudeOfAscendingNode Degrees="131.721" />
-            <ArgumentOfPeriapsis Degrees="272.846" />
-            <MeanAnomalyAtEpoch Degrees="304.349" />
+        <Orbit DefinitionFrame="Ecliptic">
+            <!-- JPL Horizons ephemerides at Julian Day 2461009.500000000 -->
+            <SemiMajorAxis Km="4.507242315761140E+09" />
+            <Inclination Degrees="1.768597277631640E+00" />
+            <Eccentricity Value="1.138133706260087E-02" />
+            <LongitudeOfAscendingNode Degrees="1.317269095031692E+02" />
+            <ArgumentOfPeriapsis Degrees="2.743220743935685E+02" />
+            <TimeAtPeriapsis Seconds="642412304.1308462688" />
         </Orbit>
+        <Rotation DefinitionFrame="Ecliptic">
+            <!-- JPL Horizons ephemerides at Julian Day 2461009.500000000 -->
+            <SiderealPeriod Hours="16" Minutes="6" Seconds="36"/>
+            <Tilt Degrees="28.52341" />
+            <Azimuth Degrees="228.99362" />
+            <InitialParentFacingLongitude Degrees="255.080843" />
+        </Rotation>
 
         <MeshCollection Id="Default"/>
         <MeanRadius Km="24622" />
         <Mass Earths="17.15" />
         <Diffuse Path="Textures/Neptune_Diffuse.jpg" Category="Terrain"/>
         <Color R="0.38" G="0.54" B="0.96" />
-        <RotationPeriod Hours="16" Minutes="6" Seconds="36"/>
-        <AxialTilt Degrees="28.32" />
-        <AxialAlignment Degrees="0" />
         <Atmosphere>
             <Visual>
                 <RayleighScattering>
@@ -2565,22 +2628,24 @@
             <Eccentricity Value="0.0000" />
             <LongitudeOfAscendingNode Degrees="131.721" />
             <ArgumentOfPeriapsis Degrees="272.846" />
-            <MeanAnomalyAtEpoch Degrees="304.349" />
         </Orbit>
+        <Rotation>
+            <IsTidallyLocked Value="true" />
+        </Rotation>
 
         <MeanRadius Km="1353.4" />
         <Mass Zg="21.4" />
-        <TidallyLocked Value="true" />
     </MinorBody>
 
     <PlanetaryBody Id="Pluto" Parent="Sol">
-        <Orbit>
-            <SemiMajorAxis Au="39.48" />
-            <Inclination Degrees="17.14175" />
-            <Eccentricity Value="0.2488" />
-            <LongitudeOfAscendingNode Degrees="110.30347" />
-            <ArgumentOfPeriapsis Degrees="113.76329" />
-            <MeanAnomalyAtEpoch Degrees="238.92881" />
+        <Orbit DefinitionFrame="Ecliptic">
+            <!-- JPL Horizons ephemerides at Julian Day 2461009.500000000 -->
+            <SemiMajorAxis Km="5.923845154796118E+09" />
+            <Inclination Degrees="1.701891625997185E+01" />
+            <Eccentricity Value="2.471491415054861E-01" />
+            <LongitudeOfAscendingNode Degrees="1.102120704382104E+02" />
+            <ArgumentOfPeriapsis Degrees="1.149008997051256E+02" />
+            <TimeAtPeriapsis Seconds="-1131531650.253796608" />
         </Orbit>
 
         <MeshCollection Id="Default"/>
@@ -2596,13 +2661,14 @@
             <Eccentricity Value="0.0022" />
             <LongitudeOfAscendingNode Degrees="0.0" />
             <ArgumentOfPeriapsis Degrees="0.0" />
-            <MeanAnomalyAtEpoch Degrees="0.0" />
         </Orbit>
+        <Rotation>
+            <IsTidallyLocked Value="true" />
+        </Rotation>
 
         <MeshCollection Id="Default"/>
         <MeanRadius Km="606" />
         <Mass Zg="1.586" />
-        <TidallyLocked Value="true" />
     </MinorBody>
 
     <MinorBody Id="Eris" Parent="Sol">
@@ -2612,7 +2678,6 @@
             <Eccentricity Value="0.436" />
             <LongitudeOfAscendingNode Degrees="35.951" />
             <ArgumentOfPeriapsis Degrees="151.950" />
-            <MeanAnomalyAtEpoch Degrees="151.950" />
         </Orbit>
 
         <MeanRadius Km="1163" />
@@ -2627,7 +2692,6 @@
             <Eccentricity Value="0.195" />
             <LongitudeOfAscendingNode Degrees="121.77" />
             <ArgumentOfPeriapsis Degrees="239.61" />
-            <MeanAnomalyAtEpoch Degrees="239.61" />
         </Orbit>
 
         <MeanRadius Km="816" />
@@ -2641,7 +2705,6 @@
             <Eccentricity Value="0.8496" />
             <LongitudeOfAscendingNode Degrees="144.248" />
             <ArgumentOfPeriapsis Degrees="311.352" />
-            <MeanAnomalyAtEpoch Degrees="358.117" />
         </Orbit>
 
         <MeanRadius Km="995" />
@@ -2682,7 +2745,6 @@
             <LongitudeOfAscendingNode Degrees="333.87360"/>
             <Eccentricity Value="0.0640155"/>
             <ArgumentOfPeriapsis Degrees="142.13492"/>
-            <MeanAnomalyAtEpoch Degrees="68.19045"/>
         </Orbit>
 
         <MeanRadius Km="2.3"/>

@@ -55,26 +55,40 @@ export function transformSystemEntryToKsaXmlIntoElement(context: GeneratorContex
     addElementWithAttribute(context, doc, orbitEl, true, "Eccentricity", "Value", source.EC_ECCENTRICITY);
     addElementWithAttribute(context, doc, orbitEl, true, "LongitudeOfAscendingNode", "Degrees", source.OM_LONGITUDE_ASCENDING_NODE_DEG);
     addElementWithAttribute(context, doc, orbitEl, true, "ArgumentOfPeriapsis", "Degrees", source.W_ARG_PERIAPSIS_DEG);
-    addElementWithAttribute(context, doc, orbitEl, true, "MeanAnomalyAtEpoch", "Degrees", source.MA_MEAN_ANOMALY_DEG);
+    addElementWithAttribute(context, doc, orbitEl, true, "TimeAtPeriapsis", "Days", source.TP_TIME_DAYS);
   }
 
+  // KSA now defines the rotational data inside an <Rotation> element which itself has attributes: <Rotation DefinitionFrame="Perifocal" /> (default)
+  addElementWithAttribute(context, doc, el, true, "Rotation", "DefinitionFrame", "Ecliptic")
+  // Now add the child elements to the Rotation element
+  const rotationEl = xpath.select1(`Rotation`, el);
+
+  if (isElementNode(rotationEl)) {
+
+    // TidallyLocked if PERIOD_SEC is 0 use isTidallyLocked, otherwise use SiderealPeriod for independant rotation from main body.
+    if (source.PERIOD_SEC === "0") {
+      addElementWithAttribute(context, doc, rotationEl, true, "isTidallyLocked", "Value", "true");
+    } else {
+      addElementWithAttribute(context, doc, rotationEl, true, "SiderealPeriod", "Seconds", source.PERIOD_SEC);
+    }
+
+    // Retrograde if RETROGRADE_ROT is true
+    if (isTrueString(source.RETROGRADE_ROT)) {
+      addElementWithAttribute(context, doc, rotationEl, true, "IsRetrograde", "Value", "true");
+    }
+
+    addElementWithAttribute(context, doc, rotationEl, true, "Tilt", "Degrees", source.TILT_OBLIQUITY_DEG);
+    addElementWithAttribute(context, doc, rotationEl, true, "Azimuth", "Degrees", source.TILT_AZIMUTH_DEG);
+    addElementWithAttribute(context, doc, rotationEl, true, "InitialParentFacingLongitude", "Degrees", source.PARENT_ROT_LONG);
+  }
+
+  // GENERAL elements below
+  
   addElementWithAttribute(context, doc, el, true, "MeanRadius", "Km", source.MEAN_RADIUS_KM);
-  addElementWithAttribute(context, doc, el, true, "RotationPeriod", "Seconds", source.PERIOD_SEC);
-  addElementWithAttribute(context, doc, el, true, "AxialTilt", "Degrees", source.AXIAL_TILT_DEG);
 
   // mass is (GM_KM3/S2) / (gravitational constant) = celestial mass in Kg
   if (isNotEmptyString(source["GM_KM3/S2"])) {
     addElementWithAttribute(context, doc, el, true, "Mass", "Kg", calculateMassKgFromGm(source["GM_KM3/S2"], context));
-  }
-
-  // TidallyLocked if PERIOD_SEC is 0
-  if (source.PERIOD_SEC === "0") {
-    addElementWithAttribute(context, doc, el, true, "TidallyLocked", "Value", "true");
-  }
-
-  // Retrograde if RETROGRADE_ROT is true
-  if (isTrueString(source.RETROGRADE_ROT)) {
-    addElementWithAttribute(context, doc, el, true, "RetrogradeRotation", "Value", "true");
   }
 
   // add a newline after last child for formatting
