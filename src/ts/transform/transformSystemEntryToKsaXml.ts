@@ -66,10 +66,10 @@ export function transformSystemEntryToKsaXmlIntoElement(context: GeneratorContex
   if (isElementNode(rotationEl)) {
 
     // TidallyLocked if PERIOD_SEC is 0 use isTidallyLocked, otherwise use SiderealPeriod for independant rotation from main body.
-    if (source.PERIOD_SEC === "0") {
+    if (source.SIDEREAL_PERIOD_SEC === "0") {
       addElementWithAttribute(context, doc, rotationEl, true, "isTidallyLocked", "Value", "true");
     } else {
-      addElementWithAttribute(context, doc, rotationEl, true, "SiderealPeriod", "Seconds", source.PERIOD_SEC);
+      addElementWithAttribute(context, doc, rotationEl, true, "SiderealPeriod", "Seconds", source.SIDEREAL_PERIOD_SEC);
     }
 
     // Retrograde if RETROGRADE_ROT is true

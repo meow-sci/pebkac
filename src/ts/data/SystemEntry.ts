@@ -20,7 +20,7 @@ export interface SystemEntry {
   PARENT_ROT_LONG: string;
   MEAN_RADIUS_KM: string;
   "GM_KM3/S2": string;
-  PERIOD_SEC: string;
+  SIDEREAL_PERIOD_SEC: string;
   RETROGRADE_ROT: string;
   GROUP: string;
   BODY_TYPE: BodyType;
