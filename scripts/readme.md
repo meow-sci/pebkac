@@ -11,6 +11,8 @@ and paste the results into the Pebkac website tool to generate that data into XM
 
 --- 
 
+### Running the script
+
 - Have powershell installed 
     - Windows - either the default OS installed Powershell 5 (call terminal with 'powershell), 
         or install Powershell 7 (call terminal with 'pwsh') 
@@ -28,5 +30,29 @@ Linux / MacOS
 
 --- 
 
+### Using the data
+
 After the data is harvested / generated, you can copy/paste the new data in orbital-bodies-seed-file_updated.csv to 
 the Pebkac website tool if you wish 
+
+---
+
+### Terms legend
+
+- `EPOCH` - The time calculations are made for - Julian date (JD)
+- `REF_FRAME` - The coordinate plane that orbital elements to be referenced off of - 'Ecliptic' (wrt the J2000 ecliptic) or 'Equitorial' (wrt the parent body equator)
+- `ROT_FRAME` - The coordinate plane that body tilt and rotation is referenced off of - 'Ecliptic' (wrt the J2000 ecliptic) or 'Perifocal' (wrt the orbit's focus)
+- `TILT_OBLIQUITY` - The tilt in degrees from the reference frame being used
+- `TILT_AZIMUTH_DEG` - The coordinate rotation in degrees where the TILT_OBLIQUITY is rotated to.
+- `PARENT_ROT_LONG` - The parent's rotational longitude at the time
+- `MEAN_RADIUS_KM` - The body's mean radius in KM
+- `GM_KM3/S2` - The gravitational parameter for the body.  The value used for GM is the produce of the mass (in kg) times the gravitational constant (in km^3*kg^-1*s^-2)
+- `SIDEREAL_PERIOD_SEC` - The body's period for one full rotation on its axis relative to the fixed stars - in seconds
+- `RETROGRADE_ROT` - If the body rotates clockwise (most bodies in the solar system rotate counter-clockwise) - TRUE or FALSE
+- `GROUP` - A name you can enter for helpful sorting in the Pebkac website selection table
+- `BODY_TYPE` - A KSA body type to use during XML generation - 'PlanetaryBody, Asteroid, MinorBody, Comet, AtmosphericBody'
+
+
+---
+
+
