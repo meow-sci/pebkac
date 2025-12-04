@@ -3,7 +3,7 @@
 # The input CSV list is REQUIRED to have a header using AT LEAST these non-zero values entered: 
 # ID,ID_JPLREF,PARENT,PARENT_JPLREF,EPOCH,REF_FRAME,A_SEMI_MAJOR_AXIS_KM,EC_ECCENTRICITY,W_ARG_PERIAPSIS_DEG,TP_TIME_DAYS,MA_MEAN_ANOMALY_DEG,IN_INCLINATION_DEG,OM_LONGITUDE_ASCENDING_NODE_DEG,PR_SIDEREAL_ORBIT_PERIOD_SEC,ROT_FRAME,TILT_OBLIQUITY_DEG,TILT_AZIMUTH_DEG,PARENT_ROT_LONG,MEAN_RADIUS_KM,GM_KM3/S2,SIDEREAL_PERIOD_SEC,RETROGRADE_ROT,GROUP,BODY_TYPE
 #
-# (Example data lines below the header with 0 values not needing entries - use a spreadsheet to or text editor extention to align columns.)
+# (Example data lines below the header with 0 values not needing entries - use a spreadsheet or text editor extention to align columns.)
 # Vesta,A807%20FA,Sol,10,2451545,Ecliptic,353280597.821,0.0900,149.587,69.8708,341.024,7.134,103.951,0,Ecliptic,32.276,240.826,111.467,261.4,17.288,19224,FALSE,Asteroid,Asteroid
 # Sedna,90377,Sol,10,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,453,266.9,36982,FALSE,Trans-Neptunian,Asteroid
 # Tempel 1,90000192,Sol,10,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,3,0.00000504,146520,FALSE,Comet,Comet
@@ -32,8 +32,8 @@ param(
         # 'span' = get EC, IN, and A averaged over the time span / steps, and use MA, W, OM, and PR from the starting date.
         [ValidateSet('sheet','fixed','span')][string]$Mode = 'sheet',
 
-        # Time for 'FIXED' mode setting - these are Julian Days JD Date/Time converters online.
-        # NASA JPN JD Date/Time Converter - https://ssd.jpl.nasa.gov/tools/jdc
+        # Time for 'FIXED' mode setting - there are Julian Days JD Date/Time converters online.
+        # NASA JPL JD Date/Time Converter - https://ssd.jpl.nasa.gov/tools/jdc
         [string]$FixedTime = '2461014.0',
 
         # SPAN mode begin/end/steps
