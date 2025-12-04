@@ -14,7 +14,7 @@ and paste the results into the Pebkac website tool to generate that data into XM
 ### Running the script
 
 - Have powershell installed 
-    - Windows - either the default OS installed Powershell 5 (call terminal with 'powershell), 
+    - Windows - either the default OS installed Powershell 5 (call terminal with 'powershell'), 
         or install Powershell 7 (call terminal with 'pwsh') 
     - Linux / MacOS - install Powershell 7 Powershell 7 
 
