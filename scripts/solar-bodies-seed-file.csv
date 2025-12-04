@@ -1,0 +1,477 @@
+ID,ID_JPLREF,PARENT,PARENT_JPLREF,EPOCH,REF_FRAME,A_SEMI_MAJOR_AXIS_KM,EC_ECCENTRICITY,W_ARG_PERIAPSIS_DEG,TP_TIME_DAYS,MA_MEAN_ANOMALY_DEG,IN_INCLINATION_DEG,OM_LONGITUDE_ASCENDING_NODE_DEG,PR_SIDEREAL_ORBIT_PERIOD_SEC,ROT_FRAME,TILT_OBLIQUITY_DEG,TILT_AZIMUTH_DEG,PARENT_ROT_LONG,MEAN_RADIUS_KM,GM_KM3/S2,SIDEREAL_PERIOD_SEC,RETROGRADE_ROT,GROUP,BODY_TYPE
+Mercury,199,Sol,10,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,2439.4,22031.868,5067014,FALSE,Planet,PlanetaryBody
+Venus,299,Sol,10,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,6051.84,324858.592,20996755,TRUE,Planet,AtmosphericBody
+Earth,399,Sol,10,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,6371,398600.435,86162,FALSE,Planet,PlanetaryBody
+Mars,499,Sol,10,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,3389.9,42828.38,88639,FALSE,Planet,AtmosphericBody
+Jupiter,599,Sol,10,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,69911,126686531.9,35730,FALSE,Planet,AtmosphericBody
+Saturn,699,Sol,10,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,58232,37931206.234,38358,FALSE,Planet,AtmosphericBody
+Uranus,799,Sol,10,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,25362,5793950.6103,62064,FALSE,Planet,AtmosphericBody
+Neptune,899,Sol,10,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,24624,6835099.97,57996,FALSE,Planet,AtmosphericBody
+Pluto,999,Sol,10,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1188.3,869.326,551844,TRUE,Planet,PlanetaryBody
+Luna,301,Earth,399,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1737.53,4902.8,0,FALSE,Planet,PlanetaryBody
+Phobos,401,Mars,499,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,11.08,0.0007087,27561.6,FALSE,Planet,MinorBody
+Deimos,402,Mars,499,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,6.2,0.0000962,109123.2,FALSE,Planet,MinorBody
+Io,501,Jupiter,599,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1821.49,5959.9155,0,FALSE,Galilean,PlanetaryBody
+Europa,502,Jupiter,599,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1560.8,3202.7121,0,FALSE,Galilean,PlanetaryBody
+Ganymede,503,Jupiter,599,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,2631.2,9887.8328,0,FALSE,Galilean,PlanetaryBody
+Callisto,504,Jupiter,599,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,2410.3,7179.2834,0,FALSE,Galilean,PlanetaryBody
+Amalthea,505,Jupiter,599,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,83.5,0.16456,0,FALSE,Inner Jupiter,MinorBody
+Thebe,514,Jupiter,599,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,49.3,0.03015,0,FALSE,Inner Jupiter,MinorBody
+Adrastea,515,Jupiter,599,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,8.2,0.00014,0,FALSE,Inner Jupiter,MinorBody
+Metis,516,Jupiter,599,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,21.5,0.0025,0,FALSE,Inner Jupiter,MinorBody
+Himalia,506,Jupiter,599,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,85,0.151552,34560,FALSE,Himalia,MinorBody
+Elara,507,Jupiter,599,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,40,0.01802061,43200,FALSE,Himalia,MinorBody
+Pasiphae,508,Jupiter,599,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,18,0.0066743,86400,TRUE,Pasiphae,MinorBody
+Sinope,509,Jupiter,599,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,14,0.001468346,47376,TRUE,Pasiphae,MinorBody
+Lysithea,510,Jupiter,599,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,21,0.002602977,46008,FALSE,Himalia,MinorBody
+Carme,511,Jupiter,599,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,23.4,0.003604122,37440,TRUE,Carme,MinorBody
+Ananke,512,Jupiter,599,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,14.5,0.000867659,29916,TRUE,Ananke,MinorBody
+Leda,513,Jupiter,599,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,10.7,0.0003470636,86400,FALSE,Himalia,MinorBody
+Callirrhoe,517,Jupiter,599,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,4.8,0.00003070178,35640,FALSE,Pasiphae,MinorBody
+Themisto,518,Jupiter,599,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,4.5,0.00002536234,86400,FALSE,Themisto,MinorBody
+Magaclite,519,Jupiter,599,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,3,0.000004338295,35640,FALSE,Pasiphae,MinorBody
+Taygete,520,Jupiter,599,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,2.5,0.000004338295,86400,FALSE,Carme,MinorBody
+Chaldene,521,Jupiter,599,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,2,0.000002269262,86400,FALSE,Carme,MinorBody
+Harpalyke,522,Jupiter,599,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,2,0.000002269262,86400,FALSE,Ananke,MinorBody
+Kalyke,523,Jupiter,599,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,3.5,0.00001134631,86400,FALSE,Carme,MinorBody
+Iocaste,524,Jupiter,599,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,2,0.000002269262,86400,FALSE,Ananke,MinorBody
+Erinome,525,Jupiter,599,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.000000934402,86400,FALSE,Carme,MinorBody
+Isonoe,526,Jupiter,599,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,2,0.000002269262,86400,FALSE,Carme,MinorBody
+Praxidike,527,Jupiter,599,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,3.5,0.00001201374,86400,FALSE,Ananke,MinorBody
+Autonoe,528,Jupiter,599,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,2,0.000002269262,86400,FALSE,Pasiphae,MinorBody
+Thyone,529,Jupiter,599,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,2,0.000002269262,86400,FALSE,Ananke,MinorBody
+Hermippe,530,Jupiter,599,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,2,0.000002269262,86400,FALSE,Ananke,MinorBody
+Aitne,531,Jupiter,599,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.000000934402,86400,FALSE,Carme,MinorBody
+Eurydome,532,Jupiter,599,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.000000934402,86400,FALSE,Pasiphae,MinorBody
+Euanthe,533,Jupiter,599,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.000000934402,86400,FALSE,Ananke,MinorBody
+Euporie,534,Jupiter,599,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1,0.0000002803206,86400,FALSE,Ananke,MinorBody
+Orthosie,535,Jupiter,599,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1,0.0000002803206,86400,FALSE,Ananke,MinorBody
+Sponde,536,Jupiter,599,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1,0.0000002803206,86400,FALSE,Pasiphae,MinorBody
+Kale,537,Jupiter,599,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1,0.0000002803206,86400,FALSE,Carme,MinorBody
+Pasithee,538,Jupiter,599,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1,0.0000002803206,86400,FALSE,Carme,MinorBody
+Hegemone,539,Jupiter,599,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.0000000934402,86400,FALSE,Pasiphae,MinorBody
+Mneme,540,Jupiter,599,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1,0.0000002803206,86400,FALSE,Ananke,MinorBody
+Aoede,541,Jupiter,599,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,2,0.000002269262,86400,FALSE,Pasiphae,MinorBody
+Thelxinoe,542,Jupiter,599,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1,0.000002803206,86400,FALSE,Ananke,MinorBody
+Arche,543,Jupiter,599,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.000000934402,86400,FALSE,Carme,MinorBody
+Kallichore,544,Jupiter,599,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1,0.0000002803206,86400,FALSE,Carme,MinorBody
+Helike,545,Jupiter,599,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,2,0.000002269262,86400,FALSE,Ananke,MinorBody
+Carpo,546,Jupiter,599,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.000000934402,86400,FALSE,Carpo,MinorBody
+Eukelade,547,Jupiter,599,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,2,0.000002269262,86400,FALSE,Carme,MinorBody
+Cyllene,548,Jupiter,599,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1,0.0000002803206,86400,FALSE,Pasiphae,MinorBody
+Kore,549,Jupiter,599,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1,0.0000002803206,86400,FALSE,Pasiphae,MinorBody
+Herse,550,Jupiter,599,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1,0.0000002803206,86400,FALSE,Carme,MinorBody
+S2010_J_1,551,Jupiter,599,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1,0.0000002803206,86400,FALSE,Carme,MinorBody
+S2010_J_2,552,Jupiter,599,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,0.5,0.00000003470636,86400,FALSE,Ananke,MinorBody
+Dia,553,Jupiter,599,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,2,0.000002269262,86400,FALSE,Himalia,MinorBody
+S2016_J_1,554,Jupiter,599,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,0.5,0.00000003470636,86400,FALSE,Ananke,MinorBody
+S2003_J_18,555,Jupiter,599,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1,0.0000002803206,86400,FALSE,Ananke,MinorBody
+S2011_J_2,556,Jupiter,599,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,0.5,0.00000003470636,86400,FALSE,Pasiphae,MinorBody
+Eirene,557,Jupiter,599,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,2,0.000002269262,86400,FALSE,Carme,MinorBody
+Philophrosyne,558,Jupiter,599,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1,0.0000002803206,86400,FALSE,Carme,MinorBody
+S2017_J_1,559,Jupiter,599,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1,0.0000002803206,86400,FALSE,Pasiphae,MinorBody
+Eupheme,560,Jupiter,599,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1,0.0000002803206,86400,FALSE,Ananke,MinorBody
+S2003_J_19,561,Jupiter,599,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1,0.0000002803206,86400,FALSE,Carme,MinorBody
+Valetudo,562,Jupiter,599,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,0.5,0.00000003470636,86400,FALSE,Valetudo,MinorBody
+S2017_J_2,563,Jupiter,599,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1,0.0000002803206,86400,FALSE,Carme,MinorBody
+S2017_J_3,564,Jupiter,599,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1,0.0000002803206,86400,FALSE,Ananke,MinorBody
+Pandia,565,Jupiter,599,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.000000934402,86400,FALSE,Himalia,MinorBody
+S2017_J_5,566,Jupiter,599,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1,0.0000002803206,86400,FALSE,Carme,MinorBody
+S2017_J_6,567,Jupiter,599,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1,0.0000002803206,86400,FALSE,Pasiphae,MinorBody
+S2017_J_7,568,Jupiter,599,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1,0.0000002803206,86400,FALSE,Ananke,MinorBody
+S2017_J_8,569,Jupiter,599,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,0.5,0.00000003470636,86400,FALSE,Carme,MinorBody
+S2017_J_9,570,Jupiter,599,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.000000934402,86400,FALSE,Ananke,MinorBody
+Ersa,571,Jupiter,599,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.000000934402,86400,FALSE,Himalia,MinorBody
+S2011_J_1,572,Jupiter,599,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1,0.0000002803206,86400,FALSE,Carme,MinorBody
+S2003_J_2,55501,Jupiter,599,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1,0.0000002803206,86400,FALSE,Ananke,MinorBody
+S2003_J_4,55502,Jupiter,599,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1,0.0000002803206,86400,FALSE,Pasiphae,MinorBody
+S2003_J_9,55503,Jupiter,599,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,0.5,0.00000003470636,86400,FALSE,Carme,MinorBody
+S2003_J_10,55504,Jupiter,599,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1,0.0000002803206,86400,FALSE,Carme,MinorBody
+S2003_J_12,55505,Jupiter,599,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,0.5,0.00000003470636,86400,FALSE,Ananke,MinorBody
+S2003_J_16,55506,Jupiter,599,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1,0.0000002803206,86400,FALSE,Ananke,MinorBody
+S2003_J_23,55507,Jupiter,599,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1,0.0000002803206,86400,FALSE,Pasiphae,MinorBody
+S2003_J_24,55508,Jupiter,599,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1,0.0000002803206,86400,FALSE,Carme,MinorBody
+S2011_J_3,55509,Jupiter,599,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.000000934402,86400,FALSE,Himalia,MinorBody
+S2018_J_2,55510,Jupiter,599,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.000000934402,86400,FALSE,Himalia,MinorBody
+S2018_J_3,55511,Jupiter,599,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,0.5,0.00000003470636,86400,FALSE,Carme,MinorBody
+S2021_J_1,55512,Jupiter,599,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,0.5,0.00000003470636,86400,FALSE,Ananke,MinorBody
+S2021_J_2,55513,Jupiter,599,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,0.5,0.00000003470636,86400,FALSE,Ananke,MinorBody
+S2021_J_3,55514,Jupiter,599,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1,0.0000002803206,86400,FALSE,Ananke,MinorBody
+S2021_J_4,55515,Jupiter,599,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,0.5,0.00000003470636,86400,FALSE,Carme,MinorBody
+S2021_J_5,55516,Jupiter,599,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1,0.0000002803206,86400,FALSE,Carme,MinorBody
+S2021_J_6,55517,Jupiter,599,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,0.5,0.00000003470636,86400,FALSE,Carme,MinorBody
+S2016_J_3,55518,Jupiter,599,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1,0.0000002803206,86400,FALSE,Carme,MinorBody
+S2016_J_4,55519,Jupiter,599,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,0.5,0.00000003470636,86400,FALSE,Pasiphae,MinorBody
+S2018_J_4,55520,Jupiter,599,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1,0.0000002803206,86400,FALSE,Carpo,MinorBody
+S2022_J_1,55521,Jupiter,599,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,0.5,0.00000003470636,86400,FALSE,Carme,MinorBody
+S2022_J_2,55522,Jupiter,599,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,0.5,0.00000003470636,86400,FALSE,Carme,MinorBody
+S2022_J_3,55523,Jupiter,599,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,0.5,0.00000003470636,86400,FALSE,Ananke,MinorBody
+S2017_J_10,55525,Jupiter,599,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,0.5,0.00000003470636,86400,FALSE,Ananke,MinorBody
+S2017_J_11,55526,Jupiter,599,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,0.5,0.00000003470636,86400,FALSE,Carme,MinorBody
+Mimas,601,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,198.8,2.50349,0,FALSE,Major Saturn,PlanetaryBody
+Enceladus,602,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,252.3,7.210367,0,FALSE,Major Saturn,PlanetaryBody
+Tethys,603,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,531.1,41.21353,0,FALSE,Major Saturn,PlanetaryBody
+Dione,604,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,561.4,73.11607,0,FALSE,Major Saturn,PlanetaryBody
+Rhea,605,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,763.5,153.941175,0,FALSE,Major Saturn,PlanetaryBody
+Titan,606,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,2574.76,8978.1371,0,FALSE,Major Saturn,PlanetaryBody
+Hyperion,607,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,135,0.37049,1123200,FALSE,Irregular Saturn,PlanetaryBody
+Iapetus,608,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,734.3,120.51511,0,FALSE,Major Saturn,PlanetaryBody
+Phoebe,609,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,106.5,0.55479,33480,TRUE,Norse,PlanetaryBody
+Janus,610,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,89.2,0.12662,0,FALSE,Irregular Saturn,PlanetaryBody
+Epimetheus,611,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,58.2,0.03514,0,FALSE,Irregular Saturn,PlanetaryBody
+Helene,612,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,18,0.00048,0,FALSE,Irregular,PlanetaryBody
+Telesto,613,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,12.6,0.00048,0,FALSE,Irregular,MinorBody
+Calypso,614,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,10.3,0.0003597,0,FALSE,Irregular,MinorBody
+Atlas,615,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,15.1,0.00037,0,FALSE,Irregular,MinorBody
+Prometheus,616,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,43.1,0.01071,0,FALSE,Irregular,PlanetaryBody
+Pandora,617,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,40.6,0.00926,0,FALSE,Irregular,PlanetaryBody
+Pan,618,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,14,0.0002869949,0,FALSE,Irregular,MinorBody
+Ymir,619,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,8.5,0.0003737608,42919,FALSE,Norse,MinorBody
+Paaliaq,620,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,12.5,0.000934402,67644,FALSE,Inuit,MinorBody
+Tarvos,621,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,7.2,0.0001401603,38376,FALSE,Gallic,MinorBody
+Ijiraq,622,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,6.5,0.0001201374,46908,FALSE,Inuit,MinorBody
+Suttungr,623,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,3.5,0.00001802061,27612,FALSE,Norse,MinorBody
+Kiviuq,624,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,8.5,0.0002402748,78552,FALSE,Inuit,MinorBody
+Mundilfari,625,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,3.5,0.00001802061,24264,FALSE,Norse,MinorBody
+Albiorix,626,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,14.3,0.000800916,47988,FALSE,Gallic,MinorBody
+Skathi,627,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,4,0.00002536234,39960,FALSE,Norse,MinorBody
+Erriapus,628,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,5,0.00006340585,101340,FALSE,Gallic,MinorBody
+Siarnaq,629,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,19.7,0.002135776,36673,FALSE,Inuit,MinorBody
+Thrymr,630,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,4,0.00002536234,139644,FALSE,Norse,MinorBody
+Narvi,631,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,3.5,0.00001802061,36756,FALSE,Norsee,MinorBody
+Methone,632,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.00000026163256,0,FALSE,Irregular Saturn,MinorBody
+Pallene,633,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,2.2,0.00001535089,0,FALSE,Irregular Saturn,MinorBody
+Polydeuces,634,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.3,0.0000005005725,0,FALSE,Irregular Saturn,MinorBody
+Daphnis,635,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,3.8,0.000004538524,0,FALSE,Irregular Saturn,MinorBody
+Aegir,636,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,3,0.00004338295,38160,FALSE,Norse,MinorBody
+Bebhionn,637,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,3,0.00001201374,58788,FALSE,Gallic,MinorBody
+Bergelmir,638,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,2.5,0.00000734173,29268,FALSE,Norse,MinorBody
+Bestla,639,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,3.5,0.00001802061,52632,FALSE,Norse,MinorBody
+Farbauti,640,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,3.5,0.000004338295,38160,FALSE,Norse,MinorBody
+Fenrir,641,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,2,0.000002269262,38160,FALSE,Norse,MinorBody
+Fornjot,642,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,3,0.00000734173,29520,FALSE,Norse,MinorBody
+Hati,643,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,2.5,0.00000734173,19620,FALSE,Norse,MinorBody
+Hyrrokkin,644,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,4,0.00002536234,45936,FALSE,Norse,MinorBody
+Kari,645,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,3,0.00001802061,27720,FALSE,Norse,MinorBody
+Loge,646,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,2.5,0.00000734173,24840,FALSE,Norse,MinorBody
+Skoll,647,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,2.5,0.00000734173,26136,FALSE,Norse,MinorBody
+Surtur,648,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,3,0.000004338295,38160,FALSE,Norse,MinorBody
+Anthe,649,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,0.9,0.0000001001145,0,FALSE,Irregular Saturn,MinorBody
+Jarnsaxa,650,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,3,0.000004338295,38160,FALSE,Norse,MinorBody
+Greip,651,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,2.5,0.00000734173,45900,FALSE,Norse,MinorBody
+Tarqeq,652,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,3.5,0.00001201374,274068,FALSE,Inuit,MinorBody
+Aegaeon,653,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,0.38,0.0000000052193026,0,FALSE,Irregular Saturn,MinorBody
+Gridr,654,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,2,0.000004338295,38160,FALSE,Norse,MinorBody
+Angrboda,655,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,2,0.000002269262,38160,FALSE,Norse,MinorBody
+Skrymir,656,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,2,0.000004338295,38160,FALSE,Norse,MinorBody
+Gerd,657,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,2,0.000002269262,0,FALSE,Norse,MinorBody
+Eggther,659,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,3,0.00000734173,38160,FALSE,Norse,MinorBody
+Beli,661,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,2,0.000002269262,19800,FALSE,Norse,MinorBody
+Gunnlod,662,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,2,0.000004338295,38160,FALSE,Norse,MinorBody
+Thiazzi,663,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,2,0.000002269262,38160,FALSE,Norse,MinorBody
+Alvaldi,665,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,3,0.000004338295,38160,FALSE,Norse,MinorBody
+Geirrod,666,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,2,0.000002269262,38160,FALSE,Norse,MinorBody
+S2004_S_07,65085,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,2.5,0.000004338295,38160,FALSE,Norse,MinorBody
+S2004_S_12,65086,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,2,0.000002269262,38160,FALSE,Norse,MinorBody
+S2004_S_13,65087,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,2,0.000002269262,38160,FALSE,Norse,MinorBody
+S2004_S_17,65088,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,2,0.000002269262,38160,FALSE,Norse,MinorBody
+S2004_S_21,65079,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,2,0.000002269262,38160,FALSE,Norse,MinorBody
+S2004_S_24,65070,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,2,0.000002269262,38160,FALSE,Gallic,MinorBody
+S2004_S_28,65077,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,2.5,0.000004338295,38160,FALSE,Norse,MinorBody
+S2004_S_26,658,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,2.5,0.000004338295,38160,FALSE,Norse,MinorBody
+S2004_S_29,660,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,2.5,0.000004338295,38160,FALSE,Gallic,MinorBody
+S2004_S_31,65067,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,2.5,0.000004338295,38160,FALSE,Inuit,MinorBody
+S2004_S_34,664,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,2,0.000002269262,38160,FALSE,Norse,MinorBody
+S2004_S_36,65081,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,2,0.000002269262,38160,FALSE,Norse,MinorBody
+S2004_S_37,65082,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,2,0.000002269262,38160,FALSE,Norse,MinorBody
+S2004_S_39,65084,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,2,0.000002269262,38160,FALSE,Norse,MinorBody
+S2004_S_40,65098,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,2,0.000002269262,38160,FALSE,Norse,MinorBody
+S2004_S_41,65104,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,2,0.000002269262,38160,FALSE,Norse,MinorBody
+S2004_S_42,65108,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,2,0.000002269262,38160,FALSE,Norse,MinorBody
+S2004_S_43,65111,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,2,0.000002269262,38160,FALSE,Norse,MinorBody
+S2004_S_44,65112,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,2.5,0.000004338295,38160,FALSE,Norse,MinorBody
+S2004_S_45,65113,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,2,0.000002269262,38160,FALSE,Norse,MinorBody
+S2004_S_46,65121,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.000000934402,38160,FALSE,Norse,MinorBody
+S2004_S_47,65123,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,2,0.000002269262,38160,FALSE,Norse,MinorBody
+S2004_S_48,65139,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,2,0.000002269262,38160,FALSE,Norse,MinorBody
+S2004_S_49,65141,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,2,0.000002269262,38160,FALSE,Norse,MinorBody
+S2004_S_50,65142,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.000000934402,38160,FALSE,Norse,MinorBody
+S2004_S_51,65150,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,2,0.000002269262,38160,FALSE,Norse,MinorBody
+S2004_S_52,65152,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.000000934402,38160,FALSE,Norse,MinorBody
+S2004_S_53,65154,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,2,0.000002269262,38160,FALSE,Norse,MinorBody
+S2004_S_54,65158,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,2,0.000002269262,38160,FALSE,Inuit,MinorBody
+S2004_S_55,65159,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.000000934402,38160,FALSE,Inuit,MinorBody
+S2004_S_56,65160,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,2.5,0.000004338295,38160,FALSE,Norse,MinorBody
+S2004_S_57,65161,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,2,0.000002269262,38160,FALSE,Norse,MinorBody
+S2004_S_58,65162,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,2.5,0.000004338295,38160,FALSE,Inuit,MinorBody
+S2004_S_59,65163,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.000000934402,38160,FALSE,Norse,MinorBody
+S2004_S_60,65164,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.000000934402,38160,FALSE,Norse,MinorBody
+S2004_S_61,65165,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,2,0.000002269262,38160,FALSE,Norse,MinorBody
+S2005_S_04,65129,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,2.5,0.000004338295,38160,FALSE,Inuit,MinorBody
+S2005_S_05,65135,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.000000934402,38160,FALSE,Norse,MinorBody
+S2005_S_06,65166,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,2,0.000002269262,38160,FALSE,Inuit,MinorBody
+S2005_S_07,65167,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.000000934402,38160,FALSE,Gallic,MinorBody
+S2006_S_01,65089,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,2.5,0.000004338295,38160,FALSE,Norse,MinorBody
+S2006_S_03,65090,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,2.5,0.000004338295,38160,FALSE,Norse,MinorBody
+S2006_S_09,65100,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.000000934402,38160,FALSE,Norse,MinorBody
+S2006_S_10,65109,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.000000934402,38160,FALSE,Norse,MinorBody
+S2006_S_11,65114,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.000000934402,38160,FALSE,Norse,MinorBody
+S2006_S_12,65115,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,2,0.000002269262,38160,FALSE,Gallic,MinorBody
+S2006_S_13,65117,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,2,0.000002269262,38160,FALSE,Norse,MinorBody
+S2006_S_14,65125,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.000000934402,38160,FALSE,Norse,MinorBody
+S2006_S_15,65136,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,2,0.000002269262,38160,FALSE,Norse,MinorBody
+S2006_S_16,65137,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.000000934402,38160,FALSE,Norse,MinorBody
+S2006_S_17,65138,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,2,0.000002269262,38160,FALSE,Norse,MinorBody
+S2006_S_18,65143,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,2,0.000002269262,38160,FALSE,Norse,MinorBody
+S2006_S_19,65149,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,2,0.000002269262,38160,FALSE,Norse,MinorBody
+S2006_S_20,65157,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,2.5,0.000000934402,38160,FALSE,Norse,MinorBody
+S2006_S_21,65168,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.000000934402,38160,FALSE,Norse,MinorBody
+S2006_S_22,65169,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.000000934402,38160,FALSE,Norse,MinorBody
+S2006_S_23,65170,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.000000934402,38160,FALSE,Inuit,MinorBody
+S2006_S_24,65171,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.000000934402,38160,FALSE,Norse,MinorBody
+S2006_S_25,65172,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.000000934402,38160,FALSE,Norse,MinorBody
+S2006_S_26,65173,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.000000934402,38160,FALSE,Norse,MinorBody
+S2006_S_27,65174,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,2,0.000002269262,38160,FALSE,Norse,MinorBody
+S2006_S_28,65175,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,2,0.000002269262,38160,FALSE,Norse,MinorBody
+S2006_S_29,65176,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.000000934402,38160,FALSE,Norse,MinorBody
+S2007_S_02,65091,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,2.5,0.000004338295,38160,FALSE,Norse,MinorBody
+S2007_S_03,65092,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,2.5,0.000004338295,38160,FALSE,Norse,MinorBody
+S2007_S_05,65101,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,2,0.000002269262,38160,FALSE,Norse,MinorBody
+S2007_S_06,65107,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.000000934402,38160,FALSE,Norse,MinorBody
+S2007_S_07,65130,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,2,0.000002269262,38160,FALSE,Norse,MinorBody
+S2007_S_08,65131,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,2,0.000002269262,38160,FALSE,Gallic,MinorBody
+S2007_S_09,65153,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,2,0.000002269262,38160,FALSE,Norse,MinorBody
+S2007_S_10,65177,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,2,0.000002269262,38160,FALSE,Inuit,MinorBody
+S2007_S_11,65178,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,2,0.000002269262,38160,FALSE,Gallic,MinorBody
+S2009_S_01,none,Saturn,699,2451545,Equatorial,0,0,0,0,0,0,0,0,Perifocal,0,0,0,0.15,4.1773E-10,40752,FALSE,Irregular Saturn,MinorBody
+S2019_S_01,65093,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,2.5,0.000004338295,38160,FALSE,Norse,MinorBody
+S2019_S_02,65094,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.000000934402,38160,FALSE,Norse,MinorBody
+S2019_S_03,65095,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,2,0.000002269262,38160,FALSE,Norse,MinorBody
+S2019_S_04,65103,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.000000934402,38160,FALSE,Norse,MinorBody
+S2019_S_05,65110,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.000000934402,38160,FALSE,Norse,MinorBody
+S2019_S_06,65116,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,2.5,0.000004338295,38160,FALSE,Inuit,MinorBody
+S2019_S_07,65118,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,2,0.000002269262,38160,FALSE,Norse,MinorBody
+S2019_S_08,65119,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,2,0.000002269262,38160,FALSE,Norse,MinorBody
+S2019_S_09,65120,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,2,0.000002269262,38160,FALSE,Norse,MinorBody
+S2019_S_10,65122,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.000000934402,38160,FALSE,Norse,MinorBody
+S2019_S_11,65124,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,2,0.000002269262,38160,FALSE,Norse,MinorBody
+S2019_S_12,65126,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,2,0.000002269262,38160,FALSE,Norse,MinorBody
+S2019_S_13,65128,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.000000934402,38160,FALSE,Norse,MinorBody
+S2019_S_14,65133,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,2,0.000002269262,38160,FALSE,Inuit,MinorBody
+S2019_S_15,65134,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.000000934402,38160,FALSE,Norse,MinorBody
+S2019_S_16,65144,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.000000934402,38160,FALSE,Norse,MinorBody
+S2019_S_17,65145,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,2,0.000002269262,38160,FALSE,Norse,MinorBody
+S2019_S_18,65146,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.000000934402,38160,FALSE,Norse,MinorBody
+S2019_S_19,65147,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.000000934402,38160,FALSE,Norse,MinorBody
+S2019_S_20,65148,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.000000934402,38160,FALSE,Norse,MinorBody
+S2019_S_21,65156,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,2,0.000002269262,38160,FALSE,Norse,MinorBody
+S2019_S_22,65179,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.000000934402,38160,FALSE,Inuit,MinorBody
+S2019_S_23,65180,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.000000934402,38160,FALSE,Inuit,MinorBody
+S2019_S_24,65181,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,2,0.000002269262,38160,FALSE,Inuit,MinorBody
+S2019_S_25,65182,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,2,0.000002269262,38160,FALSE,Inuit,MinorBody
+S2019_S_26,65183,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.000000934402,38160,FALSE,Inuit,MinorBody
+S2019_S_27,65184,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.000000934402,38160,FALSE,Norse,MinorBody
+S2019_S_28,65185,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,2,0.000002269262,38160,FALSE,Norse,MinorBody
+S2019_S_29,65186,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.000000934402,38160,FALSE,Gallic,MinorBody
+S2019_S_30,65187,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.000000934402,38160,FALSE,Norse,MinorBody
+S2019_S_31,65188,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.000000934402,38160,FALSE,Gallic,MinorBody
+S2019_S_32,65189,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,2.5,0.000004338295,38160,FALSE,Inuit,MinorBody
+S2019_S_33,65190,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,2,0.000002269262,38160,FALSE,Norse,MinorBody
+S2019_S_34,65191,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.000000934402,38160,FALSE,Gallic,MinorBody
+S2019_S_35,65192,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.000000934402,38160,FALSE,Norse,MinorBody
+S2019_S_36,65193,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.000000934402,38160,FALSE,Norse,MinorBody
+S2019_S_37,65194,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.000000934402,38160,FALSE,Norse,MinorBody
+S2019_S_38,65195,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.000000934402,38160,FALSE,Norse,MinorBody
+S2019_S_39,65196,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.000000934402,38160,FALSE,Norse,MinorBody
+S2019_S_40,65197,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.000000934402,38160,FALSE,Norse,MinorBody
+S2019_S_41,65198,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.000000934402,38160,FALSE,Norse,MinorBody
+S2019_S_42,65199,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,2,0.000002269262,38160,FALSE,Norse,MinorBody
+S2019_S_43,65200,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.000000934402,38160,FALSE,Norse,MinorBody
+S2019_S_44,65201,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.000000934402,38160,FALSE,Norse,MinorBody
+S2020_S_01,65096,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,2,0.000002269262,38160,FALSE,Inuit,MinorBody
+S2020_S_02,65097,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.000000934402,38160,FALSE,Norse,MinorBody
+S2020_S_03,65102,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.000000934402,38160,FALSE,Inuit,MinorBody
+S2020_S_04,65105,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.000000934402,38160,FALSE,Gallic,MinorBody
+S2020_S_05,65106,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.000000934402,38160,FALSE,Inuit,MinorBody
+S2020_S_06,65127,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.000000934402,38160,FALSE,Norse,MinorBody
+S2020_S_07,65132,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.000000934402,38160,FALSE,Norse,MinorBody
+S2020_S_08,65140,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.000000934402,38160,FALSE,Norse,MinorBody
+S2020_S_09,65151,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,2,0.000002269262,38160,FALSE,Norse,MinorBody
+S2020_S_10,65155,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.000000934402,38160,FALSE,Norse,MinorBody
+S2020_S_11,65202,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.000000934402,38160,FALSE,Inuit,MinorBody
+S2020_S_12,65203,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.000000934402,38160,FALSE,Inuit,MinorBody
+S2020_S_13,65204,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.000000934402,38160,FALSE,Inuit,MinorBody
+S2020_S_14,65205,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.000000934402,38160,FALSE,Norse,MinorBody
+S2020_S_15,65206,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.000000934402,38160,FALSE,Gallic,MinorBody
+S2020_S_16,65207,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.000000934402,38160,FALSE,Norse,MinorBody
+S2020_S_17,65208,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,2,0.000002269262,38160,FALSE,Norse,MinorBody
+S2020_S_18,65209,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.000000934402,38160,FALSE,Norse,MinorBody
+S2020_S_19,65210,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.000000934402,38160,FALSE,Inuit,MinorBody
+S2020_S_20,65211,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.000000934402,38160,FALSE,Norse,MinorBody
+S2020_S_21,65212,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.000000934402,38160,FALSE,Norse,MinorBody
+S2020_S_22,65213,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.000000934402,38160,FALSE,Norse,MinorBody
+S2020_S_23,65214,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.000000934402,38160,FALSE,Norse,MinorBody
+S2020_S_24,65215,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.000000934402,38160,FALSE,Norse,MinorBody
+S2020_S_25,65216,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.000000934402,38160,FALSE,Norse,MinorBody
+S2020_S_26,65217,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.000000934402,38160,FALSE,Norse,MinorBody
+S2020_S_27,65218,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.000000934402,38160,FALSE,Norse,MinorBody
+S2020_S_28,65219,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.000000934402,38160,FALSE,Norse,MinorBody
+S2020_S_29,65220,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.000000934402,38160,FALSE,Norse,MinorBody
+S2020_S_30,65221,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.000000934402,38160,FALSE,Norse,MinorBody
+S2020_S_31,65222,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.000000934402,38160,FALSE,Norse,MinorBody
+S2020_S_32,65223,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.000000934402,38160,FALSE,Norse,MinorBody
+S2020_S_33,65224,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.000000934402,38160,FALSE,Norse,MinorBody
+S2020_S_34,65225,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.000000934402,38160,FALSE,Norse,MinorBody
+S2020_S_35,65226,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.000000934402,38160,FALSE,Norse,MinorBody
+S2020_S_36,65227,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.000000934402,38160,FALSE,Norse,MinorBody
+S2020_S_37,65228,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.000000934402,38160,FALSE,Norse,MinorBody
+S2020_S_38,65229,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,2,0.000002269262,38160,FALSE,Norse,MinorBody
+S2020_S_39,65230,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.000000934402,38160,FALSE,Norse,MinorBody
+S2020_S_40,65231,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.000000934402,38160,FALSE,Norse,MinorBody
+S2020_S_41,65232,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.000000934402,38160,FALSE,Norse,MinorBody
+S2020_S_42,65233,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.000000934402,38160,FALSE,Norse,MinorBody
+S2020_S_43,65234,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.000000934402,38160,FALSE,Norse,MinorBody
+S2020_S_44,65235,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.000000934402,38160,FALSE,Norse,MinorBody
+S2023_S_01,65236,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.000000934402,38160,FALSE,Inuit,MinorBody
+S2023_S_02,65237,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.000000934402,38160,FALSE,Inuit,MinorBody
+S2023_S_03,65238,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.000000934402,38160,FALSE,Inuit,MinorBody
+S2023_S_04,65239,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.000000934402,38160,FALSE,Norse,MinorBody
+S2023_S_05,65240,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.000000934402,38160,FALSE,Norse,MinorBody
+S2023_S_06,65241,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.000000934402,38160,FALSE,Inuit,MinorBody
+S2023_S_07,65242,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,2,0.000002269262,38160,FALSE,Inuit,MinorBody
+S2023_S_08,65243,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.000000934402,38160,FALSE,Norse,MinorBody
+S2023_S_09,65244,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.000000934402,38160,FALSE,Norse,MinorBody
+S2023_S_10,65245,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.000000934402,38160,FALSE,Norse,MinorBody
+S2023_S_11,65246,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.000000934402,38160,FALSE,Norse,MinorBody
+S2023_S_12,65247,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.000000934402,38160,FALSE,Norse,MinorBody
+S2023_S_13,65248,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.000000934402,38160,FALSE,Norse,MinorBody
+S2023_S_14,65249,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.000000934402,38160,FALSE,Norse,MinorBody
+S2023_S_15,65250,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.000000934402,38160,FALSE,Norse,MinorBody
+S2023_S_16,65251,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.000000934402,38160,FALSE,Norse,MinorBody
+S2023_S_17,65252,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.000000934402,38160,FALSE,Gallic,MinorBody
+S2023_S_18,65253,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.000000934402,38160,FALSE,Gallic,MinorBody
+S2023_S_19,65254,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.000000934402,38160,FALSE,Inuit,MinorBody
+S2023_S_20,65255,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.000000934402,38160,FALSE,Norse,MinorBody
+S2023_S_21,65256,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.000000934402,38160,FALSE,Norse,MinorBody
+S2023_S_22,65257,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,2,0.000002269262,38160,FALSE,Inuit,MinorBody
+S2023_S_23,65258,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.000000934402,38160,FALSE,Norse,MinorBody
+S2023_S_24,65259,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.000000934402,38160,FALSE,Norse,MinorBody
+S2023_S_25,65260,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.000000934402,38160,FALSE,Norse,MinorBody
+S2023_S_26,65261,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.000000934402,38160,FALSE,Norse,MinorBody
+S2023_S_27,65262,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.000000934402,38160,FALSE,Norse,MinorBody
+S2023_S_28,65263,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.000000934402,38160,FALSE,Norse,MinorBody
+S2023_S_29,65264,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.000000934402,38160,FALSE,Norse,MinorBody
+S2023_S_30,65265,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.000000934402,38160,FALSE,Norse,MinorBody
+S2023_S_31,65266,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.000000934402,38160,FALSE,Norse,MinorBody
+S2023_S_32,65267,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1,0.000000266972,38160,FALSE,Norse,MinorBody
+S2023_S_33,65268,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.000000934402,38160,FALSE,Norse,MinorBody
+S2023_S_34,65269,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.000000934402,38160,FALSE,Norse,MinorBody
+S2023_S_35,65270,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.000000934402,38160,FALSE,Norse,MinorBody
+S2023_S_36,65271,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.000000934402,38160,FALSE,Norse,MinorBody
+S2023_S_37,65272,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.000000934402,38160,FALSE,Norse,MinorBody
+S2023_S_38,65273,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.000000934402,38160,FALSE,Norse,MinorBody
+S2023_S_39,65274,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.000000934402,38160,FALSE,Norse,MinorBody
+S2023_S_40,65275,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.000000934402,38160,FALSE,Norse,MinorBody
+S2023_S_41,65276,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.000000934402,38160,FALSE,Norse,MinorBody
+S2023_S_42,65277,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.000000934402,38160,FALSE,Norse,MinorBody
+S2023_S_43,65278,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.000000934402,38160,FALSE,Norse,MinorBody
+S2023_S_44,65279,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.000000934402,38160,FALSE,Norse,MinorBody
+S2023_S_45,65280,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.000000934402,38160,FALSE,Norse,MinorBody
+S2023_S_46,65281,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.000000934402,38160,FALSE,Norse,MinorBody
+S2023_S_47,65282,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.000000934402,38160,FALSE,Norse,MinorBody
+S2023_S_48,65283,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.000000934402,38160,FALSE,Norse,MinorBody
+S2023_S_49,65284,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.000000934402,38160,FALSE,Norse,MinorBody
+S2023_S_50,65285,Saturn,699,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.5,0.000000934402,38160,FALSE,Norse,MinorBody
+Ariel,701,Uranus,799,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,578.9,83.5,0,FALSE,Major,PlanetaryBody
+Umbriel,702,Uranus,799,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,584.7,85.1,0,FALSE,Major,PlanetaryBody
+Titania,703,Uranus,799,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,788.9,226.9,0,FALSE,Major,PlanetaryBody
+Oberon,704,Uranus,799,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,761.4,205.3,0,FALSE,Major,PlanetaryBody
+Miranda,705,Uranus,799,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,235.8,4.3,0,FALSE,Major,PlanetaryBody
+Cordelia,706,Uranus,799,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,13,0.0040579744,0,FALSE,Inner Uranus,MinorBody
+Ophelia,707,Uranus,799,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,16,0.0023827251,0,FALSE,Inner Uranus,MinorBody
+Bianca,708,Uranus,799,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,22,0.004605267,0,FALSE,Inner Uranus,MinorBody
+Cressida,709,Uranus,799,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,33,0.0122740377,0,FALSE,Inner Uranus,MinorBody
+Desdemona,710,Uranus,799,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,29,0.00934402,0,FALSE,Inner Uranus,MinorBody
+Juliet,711,Uranus,799,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,42,0.02869949,0,FALSE,Inner Uranus,MinorBody
+Portia,712,Uranus,799,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,55,0.0867659,0,FALSE,Inner Uranus,MinorBody
+Rosalind,713,Uranus,799,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,29,0.0133486,0,FALSE,Inner Uranus,MinorBody
+Belinda,714,Uranus,799,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,34,0.02536234,0,FALSE,Inner Uranus,MinorBody
+Puck,715,Uranus,799,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,77,0.12747913,0,FALSE,Inner Uranus,MinorBody
+Caliban,716,Uranus,799,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,30,0.002602977,35812,FALSE,Caliban,MinorBody
+Sycorax,717,Uranus,799,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,60,0.133486,24898,FALSE,Irregular Uranus,MinorBody
+Prospero,718,Uranus,799,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,50,0.004338295,25722,FALSE,Irregular Uranus,MinorBody
+Setebos,719,Uranus,799,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,23.5,0.003604122,15318,FALSE,Irregular Uranus,MinorBody
+Stephano,720,Uranus,799,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,16,0.001134631,35812,FALSE,Caliban,MinorBody
+Trinculo,721,Uranus,799,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,9,0.0002069033,15318,FALSE,Irregular Uranus,MinorBody
+Francisco,722,Uranus,799,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,11,0.0003737608,15318,FALSE,Irregular Uranus,MinorBody
+Margaret,723,Uranus,799,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,10,0.0002803206,15318,FALSE,Margaret,MinorBody
+Ferdinand,724,Uranus,799,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,10.5,0.0003203664,42624,FALSE,Irregular Uranus,MinorBody
+Perdita,725,Uranus,799,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,15,0.000934402,0,FALSE,Inner Uranus,MinorBody
+Mab,726,Uranus,799,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,9,0.0002069033,0,FALSE,Inner Uranus,MinorBody
+Cupid,727,Uranus,799,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,9,0.0002069033,0,FALSE,Inner Uranus,MinorBody
+S2023_U_01,75051,Uranus,799,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,4,0.00001802061,15318,FALSE,Caliban,MinorBody
+S2025_U_01,75052,Uranus,799,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,4.5,0.0000266972,0,FALSE,Inner Uranus,MinorBody
+Triton,801,Neptune,899,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1352.6,1428.49546,0,TRUE,Triton,PlanetaryBody
+Nereid,802,Neptune,899,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,170,1.601832,48960,FALSE,Nereid,PlanetaryBody
+Naiad,803,Neptune,899,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,29,0.00853,0,FALSE,Inner Neptune,MinorBody
+Thalassa,804,Neptune,899,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,40,0.2359,0,FALSE,Inner Neptune,MinorBody
+Despina,805,Neptune,899,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,74,0.11673,0,FALSE,Inner Neptune,MinorBody
+Galatea,806,Neptune,899,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,79,0.1899,0,FALSE,Inner Neptune,MinorBody
+Larissa,807,Neptune,899,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,96,0.25484,0,FALSE,Inner Neptune,MinorBody
+Proteus,808,Neptune,899,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,208,2.58342,0,FALSE,Inner Neptune,MinorBody
+Halimede,809,Neptune,899,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,61,0.00800916,0,FALSE,Halimede,MinorBody
+Psamathe,810,Neptune,899,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,38,0.001935547,0,FALSE,Neso,MinorBody
+Sao,811,Neptune,899,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,40,0.002269262,0,FALSE,Sao,MinorBody
+Laomedeia,812,Neptune,899,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,40,0.002269262,0,FALSE,Sao,MinorBody
+Neso,813,Neptune,899,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,60,0.00734173,0,FALSE,Neso,MinorBody
+Hippocamp,814,Neptune,899,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,34.8,0.001468346,0,FALSE,Inner,MinorBody
+S2002_N_05,85051,Neptune,899,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,19,0.001935547,0,FALSE,Sao,MinorBody
+S2021_N_01,85052,Neptune,899,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,25,0.000533944,0,FALSE,Neso,MinorBody
+Charon,901,Pluto,999,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,606,106.1,0,FALSE,Charon,PlanetaryBody
+Nix,902,Pluto,999,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,18,0.001496,158025,FALSE,Minor Pluto,MinorBody
+Hydra,903,Pluto,999,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,18.5,0.00201,37116,FALSE,Minor Pluto,MinorBody
+Kerberos,904,Pluto,999,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,6,0.00006038,458784,FALSE,Minor Pluto,MinorBody
+Styx,905,Pluto,999,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,5.2,0.0000405,279936,FALSE,Minor Pluto,MinorBody
+Ceres,A801%20AA,Sol,10,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,469.7,62.628,32757,FALSE,Asteroid,Asteroid
+Pallas,A802%20FA,Sol,10,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,256.5,13.63,28126,FALSE,Asteroid,Asteroid
+Juno,A804%20RA,Sol,10,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,123.3,1.02,25956,FALSE,Asteroid,Asteroid
+Vesta,A807%20FA,Sol,10,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,261.4,17.288,19224,FALSE,Asteroid,Asteroid
+Psyche,16,Sol,10,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,111,1.601,15105,FALSE,Asteroid,Asteroid
+Lutetia,21,Sol,10,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,49,0.1134,29395,FALSE,Asteroid,Asteroid
+Ida,243,Sol,10,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,16,0.00275,16682,TRUE,Asteroid,Asteroid
+Mathilde,253,Sol,10,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,26.4,0.00689,1503720,FALSE,Asteroid,Asteroid
+Eros,433,Sol,10,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,8.42,0.0004463,18972,FALSE,Asteroid,Asteroid
+Gaspra,951,Sol,10,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,6.1,0.00017,255351,FALSE,Asteroid,MinorBody
+Steins,2867,Sol,10,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,2.58,0.000105,21776,FALSE,Asteroid,MinorBody
+Toutatis,4179,Sol,10,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.25,0.000001268,633600,FALSE,Asteroid,MinorBody
+Annefrank,5535,Sol,10,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,2.4,0.00032,54432,FALSE,Asteroid,MinorBody
+Braille,9969,Sol,10,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.37,0.00000052,815040,FALSE,Asteroid,MinorBody
+Itokawa,25143,Sol,10,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,0.165,0.0000000021,43675,FALSE,Asteroid,MinorBody
+Quaoar,920050000,Sol,10,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,543,95.6,63644,FALSE,Trans-Neptunian,Asteroid
+Didymos,65803,Sol,10,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,0.358,0.000000003489,8136,FALSE,Asteroid,MinorBody
+Sedna,90377,Sol,10,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,453,266.9,36982,FALSE,Trans-Neptunian,Asteroid
+Orcus,920090482,Sol,10,2457388.5,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,455,38.56,47484,FALSE,Trans-Neptunian,Asteroid
+Bennu,101955,Sol,10,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,0.241,4.89159447E-09,15466,FALSE,Asteroid,MinorBody
+Salacia,120347,Sol,10,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,452.5,32.444,21924,FALSE,Asteroid,Asteroid
+Haumea,920136108,Sol,10,2457388.5,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,809,264.41,14094,FALSE,Trans-Neptunian,Asteroid
+Makemake,136472,Sol,10,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,715,179.5,82176,FALSE,Trans-Neptunian,Asteroid
+Eris,136199,Sol,10,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1163,1079,1365120,FALSE,Trans-Neptunian,Asteroid
+Ryugu,162173,Sol,10,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,0.448,0.00000003,27477,FALSE,Asteroid,MinorBody
+Kagara,469705,Sol,10,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,69,0.0837,34740,FALSE,Asteroid,Asteroid
+Arrokoth,486958,Sol,10,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,10.78,0.0000499571355,57376,FALSE,Trans-Neptunian,MinorBody
+Dimorphos,120065803,Didymos,920065803,2457388.5,Ecliptic,0,0,0,0,0,0,0,0,Perifocal,0,0,0,0.074,2.98047E-10,42912,FALSE,Asteroid,MinorBody
+Dysnomia,120136199,Eris,20136199,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,350,9.56,0,FALSE,Trans-Neptunian,MinorBody
+Haunu,120469705,Kagara,20469705,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,60,0.2803,0,FALSE,Asteroid,MinorBody
+Hiaka,120136108,Haumea,920136108,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,160,1.194,35280,FALSE,Trans-Neptunian,MinorBody
+Namaka,220136108,Haumea,920136108,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,85,0.036,0,FALSE,Trans-Neptunian,MinorBody
+Vanth,120090482,Orcus,920090482,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,221.5,3.47,0,FALSE,Trans-Neptunian,MinorBody
+Weywot,120050000,Quaoar,920050000,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,82.5,0.04783,0,FALSE,Trans-Neptunian,MinorBody
+Dactyl,243,Ida,243,2451545,Equatorial,0,0,0,0,0,0,0,0,Perifocal,0,0,0,0.7,0.00000003470636,0,FALSE,Asteroid,MinorBody
+S/2015_1 (MK2),136472,Makemake,136472,2451545,Ecliptic,0,0,0,0,0,0,0,0,Perifocal,0,0,0,87.5,0.00032037,0,FALSE,Trans-Neptunian,MinorBody
+Oumuamua,DES=3788040,Sol,10,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,0.2,1.6E-11,28573,FALSE,Interstellar,Asteroid
+Halley,90000030,Sol,10,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,5.5,0.00001468,190080,FALSE,Comet,Comet
+Borrelly,90000305,Sol,10,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,2.4,0.000001335,45000,FALSE,Comet,Comet
+Tempel 1,90000192,Sol,10,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,3,0.00000504,146520,FALSE,Comet,Comet
+Wild 2,90000860,Sol,10,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,2.1,0.000001535,146880,FALSE,Comet,Comet
+Hartley 2,90000955,Sol,10,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,0.8,0.00000002,65160,FALSE,Comet,Comet
+Churyumov-Gerasimnko,90000701,Sol,10,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,1.7,0.000000662,44640,FALSE,Comet,Comet
