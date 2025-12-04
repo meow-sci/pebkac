@@ -21,6 +21,7 @@ export interface SystemEntry {
   MEAN_RADIUS_KM: string;
   "GM_KM3/S2": string;
   SIDEREAL_PERIOD_SEC: string;
+  ROT_FRAME: string;
   RETROGRADE_ROT: string;
   GROUP: string;
   BODY_TYPE: BodyType;

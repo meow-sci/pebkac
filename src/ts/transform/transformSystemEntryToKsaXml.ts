@@ -59,7 +59,7 @@ export function transformSystemEntryToKsaXmlIntoElement(context: GeneratorContex
   }
 
   // KSA now defines the rotational data inside an <Rotation> element which itself has attributes: <Rotation DefinitionFrame="Perifocal" /> (default)
-  addElementWithAttribute(context, doc, el, true, "Rotation", "DefinitionFrame", "Ecliptic")
+  addElementWithAttribute(context, doc, el, true, "Rotation", "DefinitionFrame", source.ROT_FRAME || "Ecliptic");
   // Now add the child elements to the Rotation element
   const rotationEl = xpath.select1(`Rotation`, el);
 
