@@ -3,7 +3,7 @@
 # The input CSV list is REQUIRED to have a header using AT LEAST these non-zero values entered: 
 # ID,ID_JPLREF,PARENT,PARENT_JPLREF,EPOCH,REF_FRAME,A_SEMI_MAJOR_AXIS_KM,EC_ECCENTRICITY,W_ARG_PERIAPSIS_DEG,TP_TIME_DAYS,MA_MEAN_ANOMALY_DEG,IN_INCLINATION_DEG,OM_LONGITUDE_ASCENDING_NODE_DEG,PR_SIDEREAL_ORBIT_PERIOD_SEC,ROT_FRAME,TILT_OBLIQUITY_DEG,TILT_AZIMUTH_DEG,PARENT_ROT_LONG,MEAN_RADIUS_KM,GM_KM3/S2,SIDEREAL_PERIOD_SEC,RETROGRADE_ROT,GROUP,BODY_TYPE
 #
-# (Example data lines below the header with 0 values not needing entries - use a spreadsheet or text editor extention to align columns.)
+# (Example data lines below the header with 0 values not needing entries - use a spreadsheet to or text editor extention to align columns.)
 # Vesta,A807%20FA,Sol,10,2451545,Ecliptic,353280597.821,0.0900,149.587,69.8708,341.024,7.134,103.951,0,Ecliptic,32.276,240.826,111.467,261.4,17.288,19224,FALSE,Asteroid,Asteroid
 # Sedna,90377,Sol,10,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,453,266.9,36982,FALSE,Trans-Neptunian,Asteroid
 # Tempel 1,90000192,Sol,10,2451545,Ecliptic,0,0,0,0,0,0,0,0,Ecliptic,0,0,0,3,0.00000504,146520,FALSE,Comet,Comet
@@ -32,9 +32,9 @@ param(
         # 'span' = get EC, IN, and A averaged over the time span / steps, and use MA, W, OM, and PR from the starting date.
         [ValidateSet('sheet','fixed','span')][string]$Mode = 'sheet',
 
-        # Time for 'FIXED' mode setting - there are Julian Days JD Date/Time converters online.
-        # NASA JPL JD Date/Time Converter - https://ssd.jpl.nasa.gov/tools/jdc
-        [string]$FixedTime = '2461014.0',
+        # Time for 'FIXED' mode setting - these are Julian Days JD Date/Time converters online.
+        # NASA JPN JD Date/Time Converter - https://ssd.jpl.nasa.gov/tools/jdc
+        [string]$FixedTime = '2461014.643',
 
         # SPAN mode begin/end/steps
         [string]$SpanBegin = '2451545.0',
@@ -44,8 +44,19 @@ param(
     # General Settings
         # If true then another new file will output which is the input CSV file updated with the new orbital data obtained.
         # If the resulting combined CSV has all of the columns/information required by the Pebkac website tool, then it can be copy/pasted there directly.
-        [bool]$CreateUpdatedCsvInputFile = $true
-)
+        [bool]$CreateUpdatedCsvInputFile = $true,
+
+    # Special placeholder parameters for CLI useage.
+        [string]$DateConvert = '',
+        [string]$get = '',
+        [string]$bodies = '',
+        [string]$time = ''
+        )
+
+
+
+
+
 
 
 
@@ -53,12 +64,64 @@ param(
 
 # Don't edit below this unless you know what you're doing.
 
-Set-StrictMode -Version Latest
-$HEADER = 'ID,ID_JPLREF,PARENT,PARENT_JPLREF,EPOCH,REF_FRAME,A_SEMI_MAJOR_AXIS_KM,EC_ECCENTRICITY,W_ARG_PERIAPSIS_DEG,TP_TIME_DAYS,MA_MEAN_ANOMALY_DEG,IN_INCLINATION_DEG,OM_LONGITUDE_ASCENDING_NODE_DEG,PR_SIDEREAL_ORBIT_PERIOD_SEC,ROT_FRAME,TILT_OBLIQUITY_DEG,TILT_AZIMUTH_DEG,PARENT_ROT_LONG'
 
-# OutputFile.csv and averages files
-$outCsv = "$OutputFile.csv"
-$outAvgs = "${OutputFile}_averages.csv"
+# FUNCTIONS BEGIN - These need to be defined first before being called in the main body (that's just how Powershell works).
+function Get-CurrentUtcTime() {
+    # If powershell is version 7 or greater, use Get-Date -AsUTC for better performance.
+    if ($PSVersionTable.PSVersion.Major -ge 7) {
+        $UtcNow = Get-Date -AsUTC
+    } else {
+        $UtcNow = (Get-Date).ToUniversalTime()
+    }
+    # Now converts the UTC time to string format 'YYYY-MM-DD HH:MM'
+    $utcString = $UtcNow.ToString("yyyy-MM-dd HH:mm")
+    return $utcString
+}
+function Convert-ToJulianDate {
+    param(
+        [string]$DateConvert
+    )
+    # Calculates the exact Julian date for the provided string of the date in the form of 'YYYY-MM-DD HH:MM'
+    # If $DateConvert doesn't have a 0 in front of 1-9 hours, add it.
+    if ( $DateConvert -match '^\d{4}-\d{2}-\d{2} \d{1}:' ) {
+        $DateConvert = $DateConvert -replace '(\d{4}-\d{2}-\d{2} )(\d{1}:)', '${1}0${2}'
+    }
+    $dateTime = [DateTime]::ParseExact($DateConvert, 'yyyy-MM-dd HH:mm', $null)
+    $julianDate = $dateTime.ToOADate() + 2415018.5
+    return $julianDate
+}
+# Briefly checks a few special CLI parameters and handles them before the main body of the script before we get too far down for no reason.
+if ( $get -ne '' -and $get.ToLower() -eq 'currentdate' ) {
+    $currentUtc = Get-CurrentUtcTime
+    $julianDate = Convert-ToJulianDate -DateConvert $currentUtc
+    Write-Host "`nJulian Date for current UTC time $currentUtc is: " -NoNewline
+    Write-Host "$([Math]::Round($julianDate,4))`n" -ForegroundColor Yellow
+    exit 0
+}
+if ( $DateConvert -ne '' ) {
+    $julianDate = Convert-ToJulianDate -DateConvert $DateConvert
+    Write-Host "`nJulian Date for $DateConvert UTC is: " -NoNewline
+    Write-Host "$([Math]::Round($julianDate,4))`n" -ForegroundColor Yellow
+    exit 0
+}
+# IF -help was used, show help and exit.
+if ( $get -ne '' -and $get -eq 'help' ) {
+    Write-Host "`nAvailable script parameters to pass directly:" -ForegroundColor Yellow; Write-Host "`n (1)  " -NoNewline; Write-Host "-dateconvert" -ForegroundColor Yellow -NoNewline; Write-Host " `"<YYYY-MM-DD HH:MM>`"`n (2)" -NoNewline
+    Write-Host "  -get " -ForegroundColor Yellow -NoNewline; Write-Host "currentdate";
+    Write-Host " (3)  " -NoNewline; Write-Host "-get" -ForegroundColor Yellow -NoNewline; Write-Host " bodies " -NoNewline; Write-Host "-bodies" -ForegroundColor Yellow -NoNewline; Write-Host " `"<comma delimited list>`"";
+    Write-Host " (4)  " -NoNewline; Write-Host "-get" -ForegroundColor Yellow -NoNewline; Write-Host " bodies " -NoNewline; Write-Host "-bodies" -ForegroundColor Yellow -NoNewline; Write-Host " `"<cdl>`" " -NoNewline; Write-Host "-time" -ForegroundColor Yellow -NoNewline; Write-Host " <JD date/'currentdate'>"
+    Write-Host " (5)  " -NoNewline; Write-Host "-get" -ForegroundColor Yellow -NoNewline; Write-Host " bodies " -NoNewline; Write-Host "-bodies" -ForegroundColor Yellow -NoNewline; Write-Host " `"<cdl>`" " -NoNewline; Write-Host "-mode" -ForegroundColor Yellow -NoNewline; Write-Host " span " -NoNewline; Write-Host "-spanbegin" -ForegroundColor Yellow -NoNewline; Write-Host " <JD> " -NoNewline; Write-Host "-spanend" -ForegroundColor Yellow -NoNewline; Write-Host " <JD> " -NoNewline; Write-Host "-spanssteps" -ForegroundColor Yellow -NoNewline; Write-Host " `<steps>`"`n"
+    Write-Host " (1): Converts the provided UTC date/time string to Julian Date."
+    Write-Host " (2): Outputs the current UTC date/time as a decimal Julian Date."
+    Write-Host " (3): Only processes the bodies listed in the comma delimited list provided (found in the set input CSV file)"
+    Write-Host " (4): The same as get bodies but overrides the EPOCH time to find to the entered decimal Julian Date entered."
+    Write-Host " (5): Gets bodies in span mode for the specified range of Julian Dates and the number of data point steps between those dates.`n"
+    Write-Host "  Examples:`n  -dateconvert '2025-12-25 15:30'`n  -get bodies -bodies 'Earth,Luna,Quaoar,Weywot' -time currentdate`n  -get bodies -bodies 'Vesta,Sedna,Tempel 1' -time '2461014.5'`n  -get bodies -bodies 'Vesta,Sedna' -mode span -spanbegin '2451545.0' -spanend '2455195.0' -spanssteps '3650'`n"
+    exit 0
+}
+
+# Past the special CLI parameter handling for ones which only do small functions and exit, now the main body of the script.
+Set-StrictMode -Version Latest
 function TargetExceptions {
     param($TARGET)
     # Pre-checks if an exception target was found, and if it passes that sets the output file name based on mod.
@@ -80,37 +143,12 @@ function SpanExceptions {
     # Placeholder for any special handling of targets in span mode if needed.
     if ( $TARGET -eq 'Dimorphos' ) { 
         return [PSCustomObject]@{
-            Handled = $true
-            FRAME = 'Equatorial'
-            A_SEMI_MAJOR_AXIS = 1.2
-            EC_ECCENTRICITY = 0.01817
-            W_ARG_PERIAPSIS = 54.5
-            TP_TIME_DAYS = 0
-            MA_MEAN_ANOMALY = 359.9
-            IN_INCLINATION = 1.7
-            OM_LONGITUDE_ASCENDING_NODE = 40
-            PR_SIDEREAL_ORBIT_PERIOD_SECONDS = 44514
+            Handled = $true; FRAME = 'Equatorial'; A_SEMI_MAJOR_AXIS = 1.2; EC_ECCENTRICITY = 0.01817; W_ARG_PERIAPSIS = 54.5; TP_TIME_DAYS = 0;
+            MA_MEAN_ANOMALY = 359.9; IN_INCLINATION = 1.7; OM_LONGITUDE_ASCENDING_NODE = 40; PR_SIDEREAL_ORBIT_PERIOD_SECONDS = 44514;
         }
     }
     return [PSCustomObject]@{ Handled = $false }
 }
-
-
-
-
-# Remove any existing outputs
-if (Test-Path $outCsv) { Remove-Item $outCsv }
-if (Test-Path $outAvgs) { Remove-Item $outAvgs }
-
-# Write headers
-if ($Mode -eq 'span') { "$HEADER" | Out-File -FilePath $outAvgs -Encoding utf8 } else { "$HEADER" | Out-File -FilePath $outCsv -Encoding utf8 }
-
-# Read input CSV (assumes header row)
-if (-Not (Test-Path $InputFile)) { throw "Input CSV file not found with valid column headers." }
-$rows = Import-Csv -Path $InputFile
-
-# DOESN'T WORK - if (Get-Member -inputobject $rows -name "ID" -Membertype Properties) { Write-Host "ID column found" } else { Write-Host "ID column NOT found"; exit 1 }
-
 function Invoke-HorizonsApiText {
     param(
         [string]$CommandUri
@@ -141,7 +179,28 @@ function Get-LinesData {
         if ($inDataSection) { $global:lines += $trimmedLine }
     }
 }
+# FUNCTIONS END
 
+# Sets the header to be sent to the data output CSV file.
+$HEADER = 'ID,ID_JPLREF,PARENT,PARENT_JPLREF,EPOCH,REF_FRAME,A_SEMI_MAJOR_AXIS_KM,EC_ECCENTRICITY,W_ARG_PERIAPSIS_DEG,TP_TIME_DAYS,MA_MEAN_ANOMALY_DEG,IN_INCLINATION_DEG,OM_LONGITUDE_ASCENDING_NODE_DEG,PR_SIDEREAL_ORBIT_PERIOD_SEC,ROT_FRAME,TILT_OBLIQUITY_DEG,TILT_AZIMUTH_DEG,PARENT_ROT_LONG'
+
+# OutputFile.csv and averages files
+$outCsv = "$OutputFile.csv"
+$outAvgs = "${OutputFile}_averages.csv"
+
+# Remove any existing outputs
+if (Test-Path $outCsv) { Remove-Item $outCsv }
+if (Test-Path $outAvgs) { Remove-Item $outAvgs }
+
+# Write headers
+if ($Mode -eq 'span') { "$HEADER" | Out-File -FilePath $outAvgs -Encoding utf8 } else { "$HEADER" | Out-File -FilePath $outCsv -Encoding utf8 }
+
+# Read input CSV (assumes header row)
+if (-Not (Test-Path $InputFile)) { throw "Input CSV file not found with valid column headers." }
+$rows = Import-Csv -Path $InputFile
+
+
+# The main loop of the script which processes each target in the input CSV file and generates output data.
 foreach ($r in $rows) {
     # Map expected columns - tolerate different header names by fallback
     $TARGET = $r.ID
@@ -152,6 +211,19 @@ foreach ($r in $rows) {
     $FRAME = if ($r.REF_FRAME -ne '' ) { $r.REF_FRAME } else { '' }
     $ROT_FRAME = $r.ROT_FRAME
     if ([string]::IsNullOrEmpty($EPOCH)) { $EPOCH = '2451545.0' } # Default epoch if none provided - the J2000 reference date.
+
+    # If -get flag was used with bodies, only process those targets and continue on if not in the $bodies comma delimited list.
+    if ($get -eq 'bodies' -and $bodies -ne '' -and -not ($bodies -split ',' | ForEach-Object { $_.Trim() } | Where-Object { $_ -eq $TARGET })) {
+        continue
+    }
+    # If the -time flag was used with -get 'bodies override the EPOCH - better hope they entered Julian JD date!
+    if ($get -eq 'bodies' -and $time -ne '' ) {
+        if ( $time -eq 'currentdate' ) {
+            $currentUtc = Get-CurrentUtcTime
+            $time = Convert-ToJulianDate -DateConvert $currentUtc
+        }
+        $EPOCH = $time
+    }
 
     # Build center value like 500@<PARENT_JPLREF>
     $CENTER = "500@${PARENT_JPLREF}"
@@ -225,7 +297,6 @@ foreach ($r in $rows) {
         }
     }
 
-
     # SECOND - Use Horizons API to get osculating elements orbital data for the target at the specified time or time span
     if ($Mode -ne 'span') {
         # SHEET OR FIXED MODE - for time used.
@@ -259,7 +330,6 @@ foreach ($r in $rows) {
     
             $outLine = "${TARGET},${TARGET_JPLREF},${PARENT_NAME},${PARENT_JPLREF},${EPOCH},${FRAME},${A_SEMI_MAJOR_AXIS},${EC_ECCENTRICITY},${W_ARG_PERIAPSIS},${TP_TIME_DAYS},${MA_MEAN_ANOMALY},${IN_INCLINATION},${OM_LONGITUDE_ASCENDING_NODE},${PR_SIDEREAL_ORBIT_PERIOD_SECONDS},${ROT_FRAME},${TILT_OBLIQUITY},${AZIMUTH},${PARENT_ROT_LONG}"
             $outLine | Out-File -FilePath $outCsv -Append -Encoding utf8
-
         }
     }
     else {
@@ -302,7 +372,6 @@ foreach ($r in $rows) {
         $a_vals = @()
         $ec_vals = @()
         $in_vals = @()
-        # $lastLineTokens = $null
 
         $firstIteration = $true
         foreach ($line in $lines) {
@@ -337,17 +406,14 @@ foreach ($r in $rows) {
     }
 }
 
-Write-Output "`n`nFinished obtaining and processing orbital ephemeris data."
-if ( $mode -eq 'span' ) { Write-Output "    In 'span' mode, SpanSteps - $SpanSteps, Range - $SpanBegin to $SpanEnd" } elseif (
-    $mode -eq 'fixed' ) { Write-Output "    In 'fixed' mode, FixedTime - $FixedTime" } else { Write-Output "    In 'sheet' mode, using EPOCH column from input CSV." }
+Write-Output "`nFinished obtaining and processing orbital ephemeris data.`n"
 
-if ($Mode -eq 'span') { Write-Output "Generated: $outAvgs`n" } else { Write-Output "Generated: $outCsv`n"  }
+if ($Mode -eq 'span') { Write-Host "Orbital data only: " -NoNewline; Write-Host "$outAvgs" -ForegroundColor Green } else { Write-Host "Output orbital data: " -NoNewline; Write-Host "$outCsv" -ForegroundColor Green }
 
 # If option is $true to create an update CSV file which is the original input file with values updated from the generated orbital data.
 if ($CreateUpdatedCsvInputFile) {
     $updatedCsv = "${InputFile}_updated.csv"
     if (Test-Path $updatedCsv) { Remove-Item $updatedCsv }
-    Write-Output "Creating updated input CSV file with new orbital data: $updatedCsv"
 
     # Read generated orbital data CSV
     if ($Mode -eq 'span') { $updatedDataRows = Import-Csv -Path $outAvgs } else { $updatedDataRows = Import-Csv -Path $outCsv }
@@ -383,7 +449,23 @@ if ($CreateUpdatedCsvInputFile) {
     # ConvertTo-Csv creates CSV lines; strip double quotes from each line to avoid quotes in the output.
     $csvLines = $rows2 | ConvertTo-Csv -NoTypeInformation
     $csvLines = $csvLines | ForEach-Object { $_ -replace '"','' }
+
+    # If the -get bodies flag was used, only include those bodies in the updated CSV.
+    if ($get -eq 'bodies' -and $bodies -ne '' ) {
+        $bodiesList = $bodies -split ',' | ForEach-Object { $_.Trim() }
+        # Keep only lines where the ID column matches one of the specified bodies.
+        $headerLine = $csvLines[0]
+        $filteredLines = @($headerLine)
+        foreach ($line in $csvLines[1..($csvLines.Count - 1)]) {
+            $columns = $line -split ','
+            $idValue = $columns[0]
+            if ($bodiesList -contains $idValue) {
+                $filteredLines += $line
+            }
+        }
+        $csvLines = $filteredLines
+    }
     $csvLines | Set-Content -Path $updatedCsv -Encoding utf8
 
-    Write-Output "Updated input CSV file created: $updatedCsv`n"
+    Write-Host "Updated CSV data file: " -NoNewline; Write-Host "$updatedCsv`n" -ForegroundColor Green
 }
