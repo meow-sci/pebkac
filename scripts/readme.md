@@ -37,6 +37,20 @@ the Pebkac website tool if you wish
 
 ---
 
+### CLI parameters
+
+If no parameters are passed to the script when running, it will use the currently saved settings values and run through the entire solar-bodies-seed-file.csv, or whatever CSV file is set.
+
+Some parameters may be passed to the script to do a few things rather than let the script run and simply use the settings set inside.
+To see what the current possible parameters are - use the `-get help` parameter when running the script
+- Windows  
+  ```./pebkac-orbital-updates -get help```  
+  
+- Linux / MacOS  
+  ```pwsh -File ./pebkac-orbital-updates.ps1 -get help```  
+  
+---
+
 ### Terms legend
 
 - `EPOCH` - The time calculations are made for - Julian date (JD)
@@ -51,6 +65,13 @@ the Pebkac website tool if you wish
 - `RETROGRADE_ROT` - If the body rotates clockwise (most bodies in the solar system rotate counter-clockwise) - TRUE or FALSE
 - `GROUP` - A name you can enter for helpful sorting in the Pebkac website selection table
 - `BODY_TYPE` - A KSA body type to use during XML generation - 'PlanetaryBody, Asteroid, MinorBody, Comet, AtmosphericBody'
+
+
+---
+
+
+
+
 
 
 ---
