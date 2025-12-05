@@ -22,8 +22,8 @@
 
 # These params can be edited to change default behavoir, or you can override set these when invoking the script.
 param(
-    # File name settings
-        [string]$InputFile = "solar-bodies-seed-file.csv",
+    # File name settings (just the name without .csv extension)
+        [string]$InputFile = "solar-bodies-seed-file",
         [string]$OutputFile = "orbital-update-data",
 
     # MODE settings
@@ -196,8 +196,8 @@ if (Test-Path $outAvgs) { Remove-Item $outAvgs }
 if ($Mode -eq 'span') { "$HEADER" | Out-File -FilePath $outAvgs -Encoding utf8 } else { "$HEADER" | Out-File -FilePath $outCsv -Encoding utf8 }
 
 # Read input CSV (assumes header row)
-if (-Not (Test-Path $InputFile)) { throw "Input CSV file not found with valid column headers." }
-$rows = Import-Csv -Path $InputFile
+if (-Not (Test-Path "$InputFile.csv")) { throw "Input CSV file not found with valid column headers." }
+$rows = Import-Csv -Path "$InputFile.csv"
 
 
 # The main loop of the script which processes each target in the input CSV file and generates output data.
@@ -418,7 +418,7 @@ if ($CreateUpdatedCsvInputFile) {
     # Read generated orbital data CSV
     if ($Mode -eq 'span') { $updatedDataRows = Import-Csv -Path $outAvgs } else { $updatedDataRows = Import-Csv -Path $outCsv }
 
-    $rows2 = Import-Csv -Path $InputFile
+    $rows2 = Import-Csv -Path "$InputFile.csv"
 
     # Build a lookup hashtable for updated data (ID -> row)
     $updatedDataMap = @{}
