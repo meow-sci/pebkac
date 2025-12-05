@@ -115,7 +115,7 @@ if ( $get -ne '' -and $get -eq 'help' ) {
     Write-Host " (2): Outputs the current UTC date/time as a decimal Julian Date."
     Write-Host " (3): Only processes the bodies listed in the comma delimited list provided (found in the set input CSV file)"
     Write-Host " (4): The same as get bodies but overrides the EPOCH time to find to the entered decimal Julian Date entered."
-    Write-Host " (5): Gets bodies in span mode for the specified range of Julian Dates and the number of data point steps between those dates.`n"
+    Write-Host " (5): Gets bodies in span mode for the specified range of Julian Dates and the number of data point steps between`n      those dates. -spanbegin and -spanend must both be Julian Dates, they cannot be the 'currentdate' keyword.`n"
     Write-Host "  Examples:`n  -dateconvert '2025-12-25 15:30'`n  -get bodies -bodies 'Earth,Luna,Quaoar,Weywot' -time currentdate`n  -get bodies -bodies 'Vesta,Sedna,Tempel 1' -time '2461014.5'`n  -get bodies -bodies 'Vesta,Sedna' -mode span -spanbegin '2451545.0' -spanend '2455195.0' -spanssteps '3650'`n"
     exit 0
 }
