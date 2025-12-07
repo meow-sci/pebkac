@@ -1,13 +1,26 @@
 # PEBKAC
 
-Problem Exists Between Kitten and Chair
+___Problem Exists Between Kitten and Chair___
 
-https://meow.science.fail/pebkac/
+A web browser based tool to take in CSV data representing celestial bodies and spit out Kitten Space Agency `<System />` XML for it.
 
-A tool to take in CSV data representing celestial bodies and spit out Kitten Space Agency `<System />` XML for it
+https://meow.science.fail/pebkac/  
 
-The default dataset is about 473 Sol system bodies
+  - The default dataset is about 476 Sol system bodies  
 
+---
+
+### Script to get new orbital data
+
+A script file provided in the [scripts folder](https://github.com/meow-sci/pebkac/tree/main/scripts) on the project github (here) can be used to generate new data, which you can bring to the Pebkac website tool to generate into XML format for KSA solar system inclusion.  
+
+See the readme in the [scripts folder](https://github.com/meow-sci/pebkac/tree/main/scripts) for details on how to use it.  
+
+  - Written in Powershell script - which is OS cross-compatible and available for Windows (native), and Linux/MacOS (on installation).
+  - Use it to update the already provided default CSV file of over 476 solar system bodies for different times / parameters!
+  - Use it in combination with your own CSV file of solar system bodies (use the same format!) to generate new solar system body orbit data!
+
+---
 # TODOs
 
 * 🚧 Add zod/arktype schema validation of CSV data
