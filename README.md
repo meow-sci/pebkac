@@ -37,9 +37,6 @@ See the readme in the [scripts folder](https://github.com/meow-sci/pebkac/tree/m
 2. Update Core data in folder `src/data/mods/Core`
     1. Copy the following files from the `Kitten Space Agency` game dir into this folder
         1. `Content/Core/Astronomicals.xml`
-        1. `Content/Core/EarthMercuryLoveJoy.xml`
-        1. `Content/Core/EarthOnly.xml`
-        1. `Content/Core/EarthSystem.xml`
         1. `Content/Core/SolSystem.xml`
 
 ## When CSV data updates

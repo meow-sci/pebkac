@@ -1,6 +1,7 @@
 
 import { atom, computed, map, type ReadableAtom } from "nanostores";
 import { logger } from "@nanostores/logger";
+import type { GridApi } from "ag-grid-community";
 
 import { type SystemEntry } from "../ts/data/SystemEntry";
 
@@ -17,7 +18,7 @@ import systemDataCsv from "../data/earth_system_data.csv?raw";
 // raw XML data from Core KSA mod.  this data needs to be updated when the KSA game data is updated
 import ksaAstronomicalsXml from "../data/mods/Core/Astronomicals.xml?raw";
 import ksaSolSystemXml from "../data/mods/Core/SolSystem.xml?raw";
-import type { GridApi } from "ag-grid-community";
+
 
 // app logs to be displayed to end-user
 export const $logs = atom<LogEntry[]>([]);
@@ -49,7 +50,6 @@ export const $systemSettings = map<SystemSettings>({
   addHunterReference: true,
   addBanjoReference: true,
   addPolarisReference: true,
-  hack_RemoveMarsLunaCliffsDiffuse: true,
 });
 
 

@@ -17,102 +17,102 @@
                     <Position X="-2.1748"/>
                 </Transform>
 
-                <PartRef InstanceOf="Low Profile Thruster (Dual)">
+                <PartRef InstanceOf="Core_Propulsion_B_Prefab_RCS_A_MediumLowA">
                     <Transform>
                         <Position X="-1.4197" Y="-1.3013" Z="0"/>
                         <Rotation X="1.57" Z="-3.03687"/>
                     </Transform>
                 </PartRef>
 
-                <PartRef InstanceOf="Low Profile Thruster (Dual)">
+                <PartRef InstanceOf="Core_Propulsion_B_Prefab_RCS_A_MediumLowA">
                     <Transform>
                         <Position X="-1.4197" Z="-1.3013"/>
                         <Rotation Y="0.10472" Z="3.14"/>
                     </Transform>
                 </PartRef>
 
-                <PartRef InstanceOf="Low Profile Thruster (Dual)">
+                <PartRef InstanceOf="Core_Propulsion_B_Prefab_RCS_A_MediumLowA">
                     <Transform>
                         <Position X="-1.4197" Y="1.3013"/>
                         <Rotation X="1.57" Y="-3.14" Z="-0.10472"/>
                     </Transform>
                 </PartRef>
 
-                <PartRef InstanceOf="Low Profile Thruster (Dual)">
+                <PartRef InstanceOf="Core_Propulsion_B_Prefab_RCS_A_MediumLowA">
                     <Transform>
                         <Position X="-1.4197" Z="1.3013"/>
                         <Rotation Y="3.24631"/>
                     </Transform>
                 </PartRef>
 
-                <PartRef InstanceOf="FuelTank_3W3HA">
+                <PartRef InstanceOf="Core_FuelTank_A_Prefab_LF3W3HA">
                     <Transform>
                         <Position X="-4.7768"/>
                         <Rotation Z="3.14"/>
                     </Transform>
 
-                    <PartRef InstanceOf="Large Apollo CSM Thruster (Pent)">
+                    <PartRef InstanceOf="Core_Propulsion_B_Prefab_RCS_A_LargeB">
                         <Transform>
                             <Position X="-3.75" Y="-1.6915" Z="0.0"/>
                             <Rotation X="-1.57"/>
                         </Transform>
                     </PartRef>
 
-                    <PartRef InstanceOf="Large Apollo CSM Thruster (Pent)">
+                    <PartRef InstanceOf="Core_Propulsion_B_Prefab_RCS_A_LargeB">
                         <Transform>
                             <Position X="-3.75" Y="1.6915" Z="0.0"/>
                             <Rotation X="1.57"/>
                         </Transform>
                     </PartRef>
 
-                    <PartRef InstanceOf="Low Profile Thruster (Dual)">
+                    <PartRef InstanceOf="Core_Propulsion_B_Prefab_RCS_A_MediumLowA">
                         <Transform>
                             <Position X="-6.0087" Y="-1.5084" Z="0"/>
                             <Rotation X="-1.57"/>
                         </Transform>
                     </PartRef>
 
-                    <PartRef InstanceOf="Low Profile Thruster (Dual)">
+                    <PartRef InstanceOf="Core_Propulsion_B_Prefab_RCS_A_MediumLowA">
                         <Transform>
                             <Position X="-6.0087" Y="1.5084" Z="0"/>
                             <Rotation X="1.57"/>
                         </Transform>
                     </PartRef>
 
-                    <PartRef InstanceOf="Low Profile Thruster (Dual)">
+                    <PartRef InstanceOf="Core_Propulsion_B_Prefab_RCS_A_MediumLowA">
                         <Transform>
                             <Position X="-6.0087" Z="-1.5084"/>
                         </Transform>
                     </PartRef>
 
-                    <PartRef InstanceOf="Low Profile Thruster (Dual)">
+                    <PartRef InstanceOf="Core_Propulsion_B_Prefab_RCS_A_MediumLowA">
                         <Transform>
                             <Position X="-6.0087" Z="1.5084"/>
                             <Rotation X="3.14"/>
                         </Transform>
                     </PartRef>
 
-                    <PartRef InstanceOf="Small Block Thruster (Mono)">
+                    <PartRef InstanceOf="Core_Propulsion_B_Prefab_RCS_A_SmallA">
                         <Transform>
                             <Position X="-6.2348" Y="1.5078"/>
                             <Rotation X="1.57"/>
                         </Transform>
                     </PartRef>
 
-                    <PartRef InstanceOf="Small Block Thruster (Mono)">
+                    <PartRef InstanceOf="Core_Propulsion_B_Prefab_RCS_A_SmallA">
                         <Transform>
                             <Position X="-6.2348" Y="-1.5078"/>
                             <Rotation X="-1.57"/>
                         </Transform>
                     </PartRef>
 
-                    <PartRef InstanceOf="Small Block Thruster (Mono)">
+                    <PartRef InstanceOf="Core_Propulsion_B_Prefab_RCS_A_SmallA">
                         <Transform>
                             <Position X="-6.2348" Z="-1.5078"/>
                         </Transform>
                     </PartRef>
 
-                    <PartRef InstanceOf="Small Block Thruster (Mono)">
+                    <PartRef InstanceOf="Core_Propulsion_B_Prefab_RCS_A_SmallA">
                         <Transform>
                             <Position X="-6.2348" Z="1.5078"/>
                             <Rotation X="3.14"/>
@@ -129,31 +129,31 @@
 
             </PartRef>
 
-            <PartRef InstanceOf="MonoTank_HalfB">
+            <PartRef InstanceOf="Core_FuelTank_A_Prefab_LF1WHalfHB">
                 <Transform>
                     <Position X="1.2825"/>
                 </Transform>
 
-                <PartRef InstanceOf="FuelMono">
+                <PartRef InstanceOf="Core_FuelTank_A_Prefab_Radial_MPHalfWA">
                     <Transform>
                         <Position X="0.9748" Y="-0.765"/>
                         <Rotation X="-1.57"/>
                     </Transform>
                 </PartRef>
 
-                <PartRef InstanceOf="FuelMono">
+                <PartRef InstanceOf="Core_FuelTank_A_Prefab_Radial_MPHalfWA">
                     <Transform>
                         <Position X="0.9748" Y="0.765"/>
                         <Rotation X="1.57"/>
                     </Transform>
                 </PartRef>
 
-                <PartRef InstanceOf="FuelMonoMini">
+                <PartRef InstanceOf="Core_FuelTank_A_Prefab_Radial_MPQuarterWA">
                     <Transform>
                         <Position X="0.9685" Z="-0.6381"/>
                     </Transform>
 
-                    <PartRef InstanceOf="Small Block Thruster (Mono)">
+                    <PartRef InstanceOf="Core_Propulsion_B_Prefab_RCS_A_SmallA">
                         <Transform>
                             <Position X="1.0474" Z="-0.6446"/>
                             <Rotation Z="3.14"/>
@@ -161,13 +161,13 @@
                     </PartRef>
                 </PartRef>
 
-                <PartRef InstanceOf="FuelMonoMini">
+                <PartRef InstanceOf="Core_FuelTank_A_Prefab_Radial_MPQuarterWA">
                     <Transform>
                         <Position X="0.9685" Z="0.6381"/>
                         <Rotation X="3.14"/>
                     </Transform>
 
-                    <PartRef InstanceOf="Small Block Thruster (Mono)">
+                    <PartRef InstanceOf="Core_Propulsion_B_Prefab_RCS_A_SmallA">
                         <Transform>
                             <Position X="1.0474" Z="0.6446"/>
                             <Rotation Y="3.14"/>
@@ -206,102 +206,102 @@
                     <Position X="-2.1748"/>
                 </Transform>
 
-                <PartRef InstanceOf="Low Profile Thruster (Dual)">
+                <PartRef InstanceOf="Core_Propulsion_B_Prefab_RCS_A_MediumLowA">
                     <Transform>
                         <Position X="-1.4197" Y="-1.3013" Z="0"/>
                         <Rotation X="1.57" Z="-3.03687"/>
                     </Transform>
                 </PartRef>
 
-                <PartRef InstanceOf="Low Profile Thruster (Dual)">
+                <PartRef InstanceOf="Core_Propulsion_B_Prefab_RCS_A_MediumLowA">
                     <Transform>
                         <Position X="-1.4197" Z="-1.3013"/>
                         <Rotation Y="0.10472" Z="3.14"/>
                     </Transform>
                 </PartRef>
 
-                <PartRef InstanceOf="Low Profile Thruster (Dual)">
+                <PartRef InstanceOf="Core_Propulsion_B_Prefab_RCS_A_MediumLowA">
                     <Transform>
                         <Position X="-1.4197" Y="1.3013"/>
                         <Rotation X="1.57" Y="-3.14" Z="-0.10472"/>
                     </Transform>
                 </PartRef>
 
-                <PartRef InstanceOf="Low Profile Thruster (Dual)">
+                <PartRef InstanceOf="Core_Propulsion_B_Prefab_RCS_A_MediumLowA">
                     <Transform>
                         <Position X="-1.4197" Z="1.3013"/>
                         <Rotation Y="3.24631"/>
                     </Transform>
                 </PartRef>
 
-                <PartRef InstanceOf="FuelTank_3W3HA">
+                <PartRef InstanceOf="Core_FuelTank_A_Prefab_LF3W3HA">
                     <Transform>
                         <Position X="-4.7768"/>
                         <Rotation Z="3.14"/>
                     </Transform>
 
-                    <PartRef InstanceOf="Large Apollo CSM Thruster (Pent)">
+                    <PartRef InstanceOf="Core_Propulsion_B_Prefab_RCS_A_LargeB">
                         <Transform>
                             <Position X="-3.75" Y="-1.6915" Z="0.0"/>
                             <Rotation X="-1.57"/>
                         </Transform>
                     </PartRef>
 
-                    <PartRef InstanceOf="Large Apollo CSM Thruster (Pent)">
+                    <PartRef InstanceOf="Core_Propulsion_B_Prefab_RCS_A_LargeB">
                         <Transform>
                             <Position X="-3.75" Y="1.6915" Z="0.0"/>
                             <Rotation X="1.57"/>
                         </Transform>
                     </PartRef>
 
-                    <PartRef InstanceOf="Low Profile Thruster (Dual)">
+                    <PartRef InstanceOf="Core_Propulsion_B_Prefab_RCS_A_MediumLowA">
                         <Transform>
                             <Position X="-6.0087" Y="-1.5084" Z="0"/>
                             <Rotation X="-1.57"/>
                         </Transform>
                     </PartRef>
 
-                    <PartRef InstanceOf="Low Profile Thruster (Dual)">
+                    <PartRef InstanceOf="Core_Propulsion_B_Prefab_RCS_A_MediumLowA">
                         <Transform>
                             <Position X="-6.0087" Y="1.5084" Z="0"/>
                             <Rotation X="1.57"/>
                         </Transform>
                     </PartRef>
 
-                    <PartRef InstanceOf="Low Profile Thruster (Dual)">
+                    <PartRef InstanceOf="Core_Propulsion_B_Prefab_RCS_A_MediumLowA">
                         <Transform>
                             <Position X="-6.0087" Z="-1.5084"/>
                         </Transform>
                     </PartRef>
 
-                    <PartRef InstanceOf="Low Profile Thruster (Dual)">
+                    <PartRef InstanceOf="Core_Propulsion_B_Prefab_RCS_A_MediumLowA">
                         <Transform>
                             <Position X="-6.0087" Z="1.5084"/>
                             <Rotation X="3.14"/>
                         </Transform>
                     </PartRef>
 
-                    <PartRef InstanceOf="Small Block Thruster (Mono)">
+                    <PartRef InstanceOf="Core_Propulsion_B_Prefab_RCS_A_SmallA">
                         <Transform>
                             <Position X="-6.2348" Y="1.5078"/>
                             <Rotation X="1.57"/>
                         </Transform>
                     </PartRef>
 
-                    <PartRef InstanceOf="Small Block Thruster (Mono)">
+                    <PartRef InstanceOf="Core_Propulsion_B_Prefab_RCS_A_SmallA">
                         <Transform>
                             <Position X="-6.2348" Y="-1.5078"/>
                             <Rotation X="-1.57"/>
                         </Transform>
                     </PartRef>
 
-                    <PartRef InstanceOf="Small Block Thruster (Mono)">
+                    <PartRef InstanceOf="Core_Propulsion_B_Prefab_RCS_A_SmallA">
                         <Transform>
                             <Position X="-6.2348" Z="-1.5078"/>
                         </Transform>
                     </PartRef>
 
-                    <PartRef InstanceOf="Small Block Thruster (Mono)">
+                    <PartRef InstanceOf="Core_Propulsion_B_Prefab_RCS_A_SmallA">
                         <Transform>
                             <Position X="-6.2348" Z="1.5078"/>
                             <Rotation X="3.14"/>
@@ -318,31 +318,31 @@
 
             </PartRef>
 
-            <PartRef InstanceOf="MonoTank_HalfB">
+            <PartRef InstanceOf="Core_FuelTank_A_Prefab_LF1WHalfHB">
                 <Transform>
                     <Position X="1.2825"/>
                 </Transform>
 
-                <PartRef InstanceOf="FuelMono">
+                <PartRef InstanceOf="Core_FuelTank_A_Prefab_Radial_MPHalfWA">
                     <Transform>
                         <Position X="0.9748" Y="-0.765"/>
                         <Rotation X="-1.57"/>
                     </Transform>
                 </PartRef>
 
-                <PartRef InstanceOf="FuelMono">
+                <PartRef InstanceOf="Core_FuelTank_A_Prefab_Radial_MPHalfWA">
                     <Transform>
                         <Position X="0.9748" Y="0.765"/>
                         <Rotation X="1.57"/>
                     </Transform>
                 </PartRef>
 
-                <PartRef InstanceOf="FuelMonoMini">
+                <PartRef InstanceOf="Core_FuelTank_A_Prefab_Radial_MPQuarterWA">
                     <Transform>
                         <Position X="0.9685" Z="-0.6381"/>
                     </Transform>
 
-                    <PartRef InstanceOf="Small Block Thruster (Mono)">
+                    <PartRef InstanceOf="Core_Propulsion_B_Prefab_RCS_A_SmallA">
                         <Transform>
                             <Position X="1.0474" Z="-0.6446"/>
                             <Rotation Z="3.14"/>
@@ -350,13 +350,13 @@
                     </PartRef>
                 </PartRef>
 
-                <PartRef InstanceOf="FuelMonoMini">
+                <PartRef InstanceOf="Core_FuelTank_A_Prefab_Radial_MPQuarterWA">
                     <Transform>
                         <Position X="0.9685" Z="0.6381"/>
                         <Rotation X="3.14"/>
                     </Transform>
 
-                    <PartRef InstanceOf="Small Block Thruster (Mono)">
+                    <PartRef InstanceOf="Core_Propulsion_B_Prefab_RCS_A_SmallA">
                         <Transform>
                             <Position X="1.0474" Z="0.6446"/>
                             <Rotation Y="3.14"/>

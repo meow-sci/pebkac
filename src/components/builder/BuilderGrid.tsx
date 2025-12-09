@@ -79,7 +79,7 @@ const COLUMNS: ColDef<SystemEntry>[] = [
   { ...COL_DEFAULTS, field: "MEAN_RADIUS_KM", headerName: "Mean Radius (Km)" },
   { ...COL_DEFAULTS, field: "A_SEMI_MAJOR_AXIS_KM", headerName: "SemiMajor Axis (Km)" },
   { ...COL_DEFAULTS, field: "EC_ECCENTRICITY", headerName: "Eccentricity" },
-  { ...COL_DEFAULTS, field: "PERIOD_SEC", headerName: "Sidereal Rotation (S)" },
+  { ...COL_DEFAULTS, field: "SIDEREAL_PERIOD_SEC", headerName: "Sidereal Rotation (S)" },
   { ...COL_DEFAULTS, field: "RETROGRADE_ROT", headerName: "Retrograde Roation" },
   { ...COL_DEFAULTS, field: "GROUP", headerName: "Orbital Group" },
 ];
