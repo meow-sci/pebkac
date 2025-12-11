@@ -378,7 +378,7 @@
         </Orbit>
 
         <MeanRadius M="20" />
-        <MassSpecificPMI X="2.409102" Y="6.951899552083333" Z="6.951899552083333" />
+        <MassSpecificPMI X="2.409102" Y="6.952" Z="6.951" />
         <Mass Kg="6110" />
         <PropellantMass Kg="18410" />
         <Color R="0.33" G="0.95" B="0" />
@@ -1879,7 +1879,6 @@
                     </RadialNoiseCurve>
                 </Modifier>
 
-                <!-- more modifiers here -->
                 
             </ProceduralModifiers>
 
@@ -2015,17 +2014,17 @@
         </Terrain>
 
         <!-- Ground Clutter - Please keep this, it's just commented out for everyone for now -->
-        <!-- <GroundClutter>
+        <GroundClutter>
             <Group Id="Rocks">
                 <ObjectSeparation M="500" /> 
-                <GenerationRange M="10000" />
+                <GenerationRange M="5000" />
             
                 <ClutterObject Name="RockType1">
                     
                 </ClutterObject>
             </Group>
         </GroundClutter>
-        -->
+
         <MeanRadius Km="1737.1" />
         <Mass Lunars="1" />
         <Landmark Id="Apollo11">

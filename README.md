@@ -32,7 +32,7 @@ See the readme in the [scripts folder](https://github.com/meow-sci/pebkac/tree/m
 
 ## When new KSA version lands
 
-1. Take the new version (e.g. `v2025.12.8.3030`) and update it in
+1. Take the new version (e.g. `v2025.12.25.3047`) and update it in
     1. `src/pages/index.astro` - the baked version info
 2. Update Core data in folder `src/data/mods/Core`
     1. Copy the following files from the `Kitten Space Agency` game dir into this folder
