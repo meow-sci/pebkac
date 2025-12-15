@@ -190,8 +190,6 @@
 
         <MeanRadius M="1.5" />
         <MassSpecificPMI X="1.13" Y="2.83" Z="2.83" />
-        <Mass Kg="3396" />
-        <PropellantMass Kg="12220" />
         <Body2Cce X="1.815" Y="0.0091" Z="1.9134" />
         <BodyRates X="0" Y="0.0011657209075534262" Z="0" />
         <Color R="0.33" G="0.95" B="0" />
@@ -379,14 +377,11 @@
 
         <MeanRadius M="20" />
         <MassSpecificPMI X="2.409102" Y="6.952" Z="6.951" />
-        <Mass Kg="6110" />
-        <PropellantMass Kg="18410" />
         <Color R="0.33" G="0.95" B="0" />
         <SoundEvent Action="Rcs" SoundId="DefaultRcsThruster"/>
     </Vehicle>
 
     <KittenEva Id="Hunter" Parent="Earth">
-        
         <Character Id="HunterKitten"/>
         <PartRef InstanceOf="KittenBackPackPart">
         </PartRef>
@@ -401,9 +396,6 @@
         </Orbit>
 
         <MeanRadius M="1.5" />
-        <MassSpecificPMI X="0.5" Y="0.5" Z="0.25" />
-        <Mass Kg="50" />
-        <PropellantMass Kg="20" />
         <Body2Cce X="-1.8158" Y="-0.0083" Z="-1.2297" />
         <BodyRates X="0" Y="-0.0011657209075534262" Z="0" />
         <Color R="0.37" G="0.85" B="0" />
@@ -411,7 +403,6 @@
     </KittenEva>
 
     <KittenEva Id="Banjo" Parent="Earth">
-
         <Character Id="BanjoKitten"/>
         <PartRef InstanceOf="KittenBackPackPart">
         </PartRef>
@@ -426,9 +417,6 @@
         </Orbit>
 
         <MeanRadius M="1.5" />
-        <MassSpecificPMI X="0.5" Y="0.5" Z="0.25" />
-        <Mass Kg="50" />
-        <PropellantMass Kg="20" />
         <Body2Cce X="-1.8158" Y="-0.0083" Z="-1.2297" />
         <BodyRates X="0" Y="-0.0011657209075534262" Z="0" />
         <Color R="0.37" G="0.85" B="0" />
@@ -436,7 +424,6 @@
     </KittenEva>
 
     <KittenEva Id="Polaris" Parent="Earth">
-
         <Character Id="PolarisKitten"/>
         <PartRef InstanceOf="KittenBackPackPart">
         </PartRef>
@@ -451,15 +438,12 @@
         </Orbit>
 
         <MeanRadius M="1.5" />
-        <MassSpecificPMI X="0.5" Y="0.5" Z="0.25" />
-        <Mass Kg="50" />
-        <PropellantMass Kg="20" />
         <Body2Cce X="-1.8158" Y="-0.0083" Z="-1.2297" />
         <BodyRates X="0" Y="-0.0011657209075534262" Z="0" />
         <Color R="0.37" G="0.85" B="0" />
         <SoundEvent Action="Rcs" SoundId="DefaultRcsThruster"/>
     </KittenEva>
-    
+
     <AtmosphericBody Id="Earth" Parent="Sol">
         <Orbit>
             <!-- JPL Horizons ephemerides at Julian Day 2461009.500000000 -->
@@ -716,9 +700,9 @@
                     <ScaleHeight Km="8" />
                 </RayleighScattering>
                 <MieScattering>
-                    <Coefficients R="0.0015761662727847277" G="0.0015761662727847277" B="0.0015761662727847277" />
+                    <Coefficients R="0.003464101645248918" G="0.003464101645248918" B="0.003464101645248918" />
                     <ScaleHeight Km="1.8" />
-                    <PhaseFunctionAsymmetry X="0.83" Y="0.83" Z="0.83" />
+                    <PhaseFunctionAsymmetry X="0.75" Y="0.75" Z="0.75" />
                     <AbsorptionMultiplier Value="1.1111" />
                 </MieScattering>
                 <Ozone>
@@ -785,8 +769,8 @@
                     <Size Km="0.07"/>
                     <MaxSize Km="1.5"/>
                 </Step>
-                <LightDistance Km="1.8"/>
-                <LightSamples Value="6"/>
+                <LightDistance Km="1.2"/>
+                <LightSamples Value="4"/>
             </Raymarching>
             <Noise>
                 <ScrollSpeed Value="5"/>
@@ -994,7 +978,7 @@
                     <Texture Path="Textures/Clouds/Compressed/CirroStratusDetail.dds" Category="Terrain"/>
                     <Size Km ="400"/>
                 </Detail>
-                <Color R="1.0" G="1.0" B="1.0" />
+                <Color R="0.7" G="0.7" B="0.7" />
                 <TwoDimensionalCloud>
                     <Color R="1.0" G="1.0" B="1.0" />
                     <Lambertian Value="0.65" />
@@ -1005,8 +989,8 @@
                         <Size Km="0.11"/>
                         <MaxSize Km="4.5"/>
                     </Step>
-                    <LightDistance Km="2.8"/>
-                    <LightSamples Value="4"/>
+                    <LightDistance Km="1.4"/>
+                    <LightSamples Value="2"/>
                 </Raymarching>
                 <Noise>
                     <ScrollSpeed Value="5"/>
@@ -1014,7 +998,7 @@
                 <CloudType Name="CirroStratus">
                     <StartAltitude Km="11.0"/>
                     <Height Km="1.2"/>
-                    <Density Value="0.001"/>
+                    <Density Value="0.002"/>
                     <NoiseScale Km="4.0"/>
                     <EdgeSharpness Value="0.5"/>
                     <MultipleScatteringBrightness Value="0.7"/>
@@ -2014,6 +1998,7 @@
         </Terrain>
 
         <!-- Ground Clutter - Please keep this, it's just commented out for everyone for now -->
+        <!--
         <GroundClutter>
             <Group Id="Rocks">
                 <ObjectSeparation M="500" /> 
@@ -2024,6 +2009,7 @@
                 </ClutterObject>
             </Group>
         </GroundClutter>
+        -->
 
         <MeanRadius Km="1737.1" />
         <Mass Lunars="1" />
