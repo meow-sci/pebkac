@@ -30,13 +30,13 @@ This implementation plan breaks down the zip download feature into discrete codi
   - **Property 3: Loading state management**
   - **Validates: Requirements 3.1, 3.2, 3.3, 3.4**
 
-- [ ] 3. Integrate download button with SystemXmlEditor
+- [x] 3. Integrate download button with SystemXmlEditor
   - Add DownloadButton to existing SystemXmlEditor component
   - Connect with nanostores for systemId and generated XML
   - Ensure proper styling and layout within existing tab
   - _Requirements: 4.1, 4.2, 4.3_
 
-- [ ] 3.1 Write property test for state integration
+- [x] 3.1 Write property test for state integration
   - **Property 4: State integration**
   - **Validates: Requirements 4.1, 4.2, 4.3, 4.4**
 
