@@ -147,7 +147,7 @@ describe('Zip Download Integration Tests', () => {
           expect(readmeContent).toContain('manifest.toml');
           expect(readmeContent).toContain(`id = "${systemId}"`);
           expect(readmeContent).toContain('enabled = true');
-          expect(readmeContent).toContain('$HOME\\Documents\\My Games\\Kitten Space Agency\\manifest.toml');
+          expect(readmeContent).toContain('%HOME%\\Documents\\My Games\\Kitten Space Agency\\manifest.toml');
 
           // Test System.xml is preserved exactly
           const systemXmlFile = rootFolder?.file('System.xml');

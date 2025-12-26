@@ -44,7 +44,7 @@ export function InstallationInstructions({ systemId: propSystemId }: Installatio
           fontFamily: 'monospace',
           margin: '0.5rem 0'
         }}>
-          $HOME\Documents\My Games\Kitten Space Agency\manifest.toml
+          %HOME%\Documents\My Games\Kitten Space Agency\manifest.toml
         </div>
         <p>
           Add the following entry to enable your custom system:

@@ -98,7 +98,7 @@ systems = [ "System.xml" ]
 ```
 Your custom system [systemId] mod!
 
-To have KSA enable your mod, you must edit $HOME\Documents\My Games\Kitten Space Agency\manifest.toml and add the following entry:
+To have KSA enable your mod, you must edit %HOME%\Documents\My Games\Kitten Space Agency\manifest.toml and add the following entry:
 
 [[mods]]
 id = "[systemId]"

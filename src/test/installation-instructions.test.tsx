@@ -39,7 +39,7 @@ describe('InstallationInstructions', () => {
           expect(content).toContain(`custom system ${systemId}`);
           
           // Verify the manifest.toml path is shown
-          expect(content).toContain('$HOME\\Documents\\My Games\\Kitten Space Agency\\manifest.toml');
+          expect(content).toContain('%HOME%\\Documents\\My Games\\Kitten Space Agency\\manifest.toml');
           
           // Verify the exact format needed for manifest.toml entry is provided
           expect(content).toContain('[[mods]]');

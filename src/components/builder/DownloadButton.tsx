@@ -96,7 +96,7 @@ export function DownloadButton({
         <Button
           onPress={() => handleDownload()}
           isDisabled={state.isLoading}
-          aria-label={state.isLoading ? 'Downloading...' : 'Download ZIP'}
+          aria-label={state.isLoading ? 'Downloading...' : 'Download Mod ZIP'}
         >
           {state.isLoading ? (
             <>
@@ -106,7 +106,7 @@ export function DownloadButton({
           ) : (
             <>
               <Download size={16} />
-              Download ZIP
+              Download your custom System mod ZIP
             </>
           )}
         </Button>
