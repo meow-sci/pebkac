@@ -6,13 +6,13 @@ This implementation plan breaks down the zip download feature into discrete codi
 
 ## Tasks
 
-- [ ] 1. Create zip download service
+- [x] 1. Create zip download service
   - Implement ZipDownloadService class with JSZip integration
   - Add methods for generating mod.toml and README.txt templates
   - Create zip structure with systemId folder and required files
   - _Requirements: 1.1, 1.2, 2.1, 2.2, 2.3, 2.4, 2.5_
 
-- [ ] 1.1 Write property test for zip structure
+- [x] 1.1 Write property test for zip structure
   - **Property 2: Zip structure correctness**
   - **Validates: Requirements 2.1, 2.2, 2.3, 2.4, 2.5**
 
