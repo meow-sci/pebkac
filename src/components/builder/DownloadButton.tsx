@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Button } from 'react-aria-components';
 import { Download, Loader2, AlertCircle, RotateCcw } from 'lucide-react';
 import { saveAs } from 'file-saver';

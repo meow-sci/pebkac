@@ -1,7 +1,6 @@
 import { describe, test, expect, vi } from 'vitest';
 import fc from 'fast-check';
 import { render } from '@testing-library/react';
-import React from 'react';
 import { InstallationInstructions } from '../components/builder/InstallationInstructions';
 
 // Mock nanostores
