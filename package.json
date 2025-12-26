@@ -41,12 +41,17 @@
   },
   "devDependencies": {
     "@astrojs/check": "0.9.6",
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.1",
+    "@testing-library/user-event": "^14.6.1",
     "@types/file-saver": "2.0.7",
     "@types/react": "19.2.6",
     "@types/react-dom": "19.2.3",
     "@types/wicg-file-system-access": "2023.10.7",
+    "@vitejs/plugin-react": "^5.1.2",
     "@xmldom/xmldom": "0.8.11",
     "fast-check": "^4.5.2",
+    "jsdom": "^27.4.0",
     "typescript": "5.9.3",
     "vitest": "4.0.14"
   }

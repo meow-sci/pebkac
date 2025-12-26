@@ -16,17 +16,17 @@ This implementation plan breaks down the zip download feature into discrete codi
   - **Property 2: Zip structure correctness**
   - **Validates: Requirements 2.1, 2.2, 2.3, 2.4, 2.5**
 
-- [ ] 2. Create download button component
+- [x] 2. Create download button component
   - Implement DownloadButton React component with loading states
   - Add click handler that calls zip service and file-saver
   - Integrate with existing UI patterns and styling
   - _Requirements: 1.1, 1.3, 3.1, 3.2, 3.3_
 
-- [ ] 2.1 Write property test for download flow
+- [x] 2.1 Write property test for download flow
   - **Property 1: Complete zip download flow**
   - **Validates: Requirements 1.1, 1.3, 1.4**
 
-- [ ] 2.2 Write property test for loading state management
+- [x] 2.2 Write property test for loading state management
   - **Property 3: Loading state management**
   - **Validates: Requirements 3.1, 3.2, 3.3, 3.4**
 
