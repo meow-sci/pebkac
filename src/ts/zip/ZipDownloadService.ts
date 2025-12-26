@@ -6,33 +6,66 @@ export interface ModFileContents {
   readmeTxt: string;
 }
 
+export class ZipDownloadError extends Error {
+  constructor(message: string, public readonly cause?: Error) {
+    super(message);
+    this.name = 'ZipDownloadError';
+  }
+}
+
 export class ZipDownloadService {
   /**
    * Generates a complete KSA mod zip package
    * @param systemId - The unique identifier for the celestial system
    * @param systemXml - The generated KSA XML content
    * @returns Promise<Blob> - The zip file as a blob
+   * @throws ZipDownloadError - When zip generation fails
    */
   async generateModZip(systemId: string, systemXml: string): Promise<Blob> {
-    const zip = new JSZip();
-    
-    // Create root folder with systemId name
-    const rootFolder = zip.folder(systemId);
-    
-    if (!rootFolder) {
-      throw new Error(`Failed to create root folder: ${systemId}`);
+    try {
+      // Validate inputs
+      if (!systemId || typeof systemId !== 'string' || systemId.trim().length === 0) {
+        throw new ZipDownloadError('System ID is required and must be a non-empty string');
+      }
+      
+      if (!systemXml || typeof systemXml !== 'string' || systemXml.trim().length === 0) {
+        throw new ZipDownloadError('System XML is required and must be a non-empty string');
+      }
+
+      const zip = new JSZip();
+      
+      // Create root folder with systemId name
+      const rootFolder = zip.folder(systemId);
+      
+      if (!rootFolder) {
+        throw new ZipDownloadError(`Failed to create root folder: ${systemId}`);
+      }
+      
+      // Generate file contents
+      const fileContents = this.generateFileContents(systemId, systemXml);
+      
+      // Add files to the zip with error handling
+      try {
+        rootFolder.file('System.xml', fileContents.systemXml);
+        rootFolder.file('mod.toml', fileContents.modToml);
+        rootFolder.file('README.txt', fileContents.readmeTxt);
+      } catch (error) {
+        throw new ZipDownloadError('Failed to add files to zip archive', error instanceof Error ? error : undefined);
+      }
+      
+      // Generate and return the zip blob with error handling
+      try {
+        return await zip.generateAsync({ type: 'blob' });
+      } catch (error) {
+        throw new ZipDownloadError('Failed to generate zip blob', error instanceof Error ? error : undefined);
+      }
+    } catch (error) {
+      // Re-throw ZipDownloadError as-is, wrap other errors
+      if (error instanceof ZipDownloadError) {
+        throw error;
+      }
+      throw new ZipDownloadError('Unexpected error during zip generation', error instanceof Error ? error : undefined);
     }
-    
-    // Generate file contents
-    const fileContents = this.generateFileContents(systemId, systemXml);
-    
-    // Add files to the zip
-    rootFolder.file('System.xml', fileContents.systemXml);
-    rootFolder.file('mod.toml', fileContents.modToml);
-    rootFolder.file('README.txt', fileContents.readmeTxt);
-    
-    // Generate and return the zip blob
-    return await zip.generateAsync({ type: 'blob' });
   }
   
   /**

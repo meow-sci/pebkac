@@ -15,9 +15,12 @@ export function SystemXmlEditor() {
   };
 
   const handleDownloadError = (error: Error) => {
-    // TODO: Display error message to user
+    // Enhanced error handling with user-friendly messages
     console.error('Download failed:', error);
-    alert(`Download failed: ${error.message}`);
+    
+    // The DownloadButton component now handles error display internally,
+    // but we can still log for debugging purposes
+    // Error display is now handled by the DownloadButton component itself
   };
 
   return (

@@ -1,7 +1,7 @@
-import { describe, test, expect } from 'vitest';
+import { describe, test, expect, vi, beforeEach, afterEach } from 'vitest';
 import fc from 'fast-check';
 import JSZip from 'jszip';
-import { ZipDownloadService } from '../ts/zip/ZipDownloadService';
+import { ZipDownloadService, ZipDownloadError } from '../ts/zip/ZipDownloadService';
 
 describe('ZipDownloadService', () => {
   
@@ -25,7 +25,12 @@ describe('ZipDownloadService', () => {
           
           // Load the zip to verify structure
           // Convert blob to ArrayBuffer for JSZip compatibility
-          const arrayBuffer = await zipBlob.arrayBuffer();
+          const arrayBuffer = await new Promise<ArrayBuffer>((resolve, reject) => {
+            const reader = new FileReader();
+            reader.onload = () => resolve(reader.result as ArrayBuffer);
+            reader.onerror = reject;
+            reader.readAsArrayBuffer(zipBlob);
+          });
           const zip = await JSZip.loadAsync(arrayBuffer);
           
           // Requirement 2.1: Root folder named with systemId
@@ -66,6 +71,63 @@ describe('ZipDownloadService', () => {
           expect(filesInRoot).toContain(`${systemId}/System.xml`);
           expect(filesInRoot).toContain(`${systemId}/mod.toml`);
           expect(filesInRoot).toContain(`${systemId}/README.txt`);
+        }
+      ),
+      { numRuns: 100 }
+    );
+  });
+
+  /**
+   * Property 6: Error handling
+   * Feature: add-zip-download, Property 6: Error handling
+   * Validates: Requirements 6.2, 6.4
+   */
+  test('error handling property', async () => {
+    await fc.assert(
+      fc.asyncProperty(
+        // Generate invalid inputs and error scenarios
+        fc.oneof(
+          // Invalid systemId cases
+          fc.record({
+            systemId: fc.oneof(
+              fc.constant(''), // empty string
+              fc.constant('   '), // whitespace only
+              fc.constant(null as any), // null
+              fc.constant(undefined as any), // undefined
+              fc.constant(123 as any) // wrong type
+            ),
+            systemXml: fc.string({ minLength: 1 }).map(s => `<System>${s}</System>`),
+            expectedError: fc.constant('System ID is required and must be a non-empty string')
+          }),
+          // Invalid systemXml cases
+          fc.record({
+            systemId: fc.stringMatching(/^[a-zA-Z0-9][a-zA-Z0-9\s\-_]{0,30}[a-zA-Z0-9]$/).filter(s => s.length >= 1),
+            systemXml: fc.oneof(
+              fc.constant(''), // empty string
+              fc.constant('   '), // whitespace only
+              fc.constant(null as any), // null
+              fc.constant(undefined as any), // undefined
+              fc.constant(456 as any) // wrong type
+            ),
+            expectedError: fc.constant('System XML is required and must be a non-empty string')
+          })
+        ),
+        async ({ systemId, systemXml, expectedError }) => {
+          const service = new ZipDownloadService();
+          
+          // Requirement 6.2: Appropriate error messages for library failures
+          try {
+            await service.generateModZip(systemId, systemXml);
+            // Should not reach here - expect an error to be thrown
+            expect.fail('Expected ZipDownloadError to be thrown');
+          } catch (error) {
+            // Requirement 6.4: Clear error messaging
+            expect(error).toBeInstanceOf(ZipDownloadError);
+            if (error instanceof ZipDownloadError) {
+              expect(error.message).toBe(expectedError);
+              expect(error.name).toBe('ZipDownloadError');
+            }
+          }
         }
       ),
       { numRuns: 100 }
