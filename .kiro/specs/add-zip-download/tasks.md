@@ -50,7 +50,7 @@ This implementation plan breaks down the zip download feature into discrete codi
   - **Property 5: Instruction page rendering**
   - **Validates: Requirements 5.1, 5.3**
 
-- [ ] 5. Add navigation to instruction page
+- [x] 5. Add navigation to instruction page
   - Create new tab or route for installation instructions
   - Implement navigation logic after successful download
   - Update BuilderPage component with new tab if needed

@@ -10,7 +10,8 @@ import { BuilderInstructions } from './builder/BuilderInstructions';
 import { BuilderSystemSettings } from './builder/BuilderSystemSettings';
 import { BuilderCrafts } from './builder/BuilderCrafts';
 import { BuilderSelection } from './builder/BuilderSelection';
-import { CandyCane, Cat, CodeXml, FileText, Flame, NotebookPen, Orbit } from 'lucide-react';
+import { InstallationInstructions } from './builder/InstallationInstructions';
+import { CandyCane, Cat, CodeXml, FileText, Flame, NotebookPen, Orbit, Package } from 'lucide-react';
 
 
 export function BuilderPage() {
@@ -57,6 +58,9 @@ export function Inner() {
           <Tab id="systemxml">
             <TabContent label="Your <System /> XML" step={<CodeXml />} />
           </Tab>
+          <Tab id="installation">
+            <TabContent label="Installation Guide" step={<Package />} />
+          </Tab>
           <Tab id="logs">
             <TabContent label="Logs" step={<Flame />} />
           </Tab>
@@ -84,6 +88,10 @@ export function Inner() {
 
         <TabPanel id="systemxml">
           <SystemXmlEditor />
+        </TabPanel>
+
+        <TabPanel id="installation">
+          <InstallationInstructions />
         </TabPanel>
 
         <TabPanel id="logs">

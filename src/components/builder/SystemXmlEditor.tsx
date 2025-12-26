@@ -1,4 +1,5 @@
 import { useStore } from "@nanostores/react";
+import { useQueryState } from 'nuqs';
 import { XmlEditor } from "../monaco/XmlEditor";
 import { DownloadButton } from "./DownloadButton";
 import { $generatedSystemXml, $systemSettings } from "../../state/builder-state";
@@ -6,10 +7,11 @@ import { $generatedSystemXml, $systemSettings } from "../../state/builder-state"
 export function SystemXmlEditor() {
   const xml = useStore($generatedSystemXml);
   const systemSettings = useStore($systemSettings);
+  const [, setTab] = useQueryState('tab');
 
   const handleDownloadComplete = () => {
-    // TODO: Navigate to instruction page
-    console.log('Download completed, should navigate to instruction page');
+    // Navigate to instruction page after successful download
+    setTab('installation');
   };
 
   const handleDownloadError = (error: Error) => {
