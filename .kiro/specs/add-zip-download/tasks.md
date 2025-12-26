@@ -40,13 +40,13 @@ This implementation plan breaks down the zip download feature into discrete codi
   - **Property 4: State integration**
   - **Validates: Requirements 4.1, 4.2, 4.3, 4.4**
 
-- [ ] 4. Create installation instructions page
+- [x] 4. Create installation instructions page
   - Implement InstallationInstructions React component
   - Add template rendering for systemId interpolation
   - Include extraction path and manifest.toml instructions
   - _Requirements: 5.1, 5.2, 5.3, 5.4_
 
-- [ ] 4.1 Write property test for instruction page rendering
+- [x] 4.1 Write property test for instruction page rendering
   - **Property 5: Instruction page rendering**
   - **Validates: Requirements 5.1, 5.3**
 
