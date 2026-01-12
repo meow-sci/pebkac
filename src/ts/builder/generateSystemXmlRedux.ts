@@ -98,7 +98,8 @@ function createSystemDocument(config: GenerateSystemXmlConfig, celestials: Eleme
   loadFromLibraryElement.setAttribute("Value", config.systemId);
   systemElement.appendChild(loadFromLibraryElement);
 
-  function addLoadFromLibrary(id: string, parent?: string) {
+  // Function for adding Celestials
+  function addLoadFromLibraryCelestial(id: string, parent?: string) {
     const loadFromLibraryElement = doc.createElement("LoadFromLibrary");
     loadFromLibraryElement.setAttribute("Id", id);
     if (parent) {
@@ -108,28 +109,43 @@ function createSystemDocument(config: GenerateSystemXmlConfig, celestials: Eleme
     systemElement.appendChild(doc.createTextNode("\n"));
   }
 
+    // Function for adding Vehicles
+  function addLoadFromLibraryVehicle(id: string, parent?: string) {
+    const loadFromLibraryElement = doc.createElement("LoadVehicleFromLibrary");
+    loadFromLibraryElement.setAttribute("Id", id);
+    if (parent) {
+      loadFromLibraryElement.setAttribute("Parent", parent);
+    }
+    const situationRefElement = doc.createElement("SituationRef");
+    situationRefElement.setAttribute("InstanceOf", `${id}StartingSituation`);
+    loadFromLibraryElement.appendChild(situationRefElement);
+
+    systemElement.appendChild(loadFromLibraryElement);
+    systemElement.appendChild(doc.createTextNode("\n"));
+  }
+
   if (config.addSolReference) {
-    addLoadFromLibrary("Sol");
+    addLoadFromLibraryCelestial("Sol");
   }
 
   if (config.addRocketReference) {
-    addLoadFromLibrary("Rocket", "Earth");
+    addLoadFromLibraryVehicle("Rocket", "Earth");
   }
 
   if (config.addGemini7Reference) {
-    addLoadFromLibrary("Gemini7", "Earth");
+    addLoadFromLibraryVehicle("Gemini7", "Earth");
   }
 
   if (config.addHunterReference) {
-    addLoadFromLibrary("Hunter", "Earth");
+    addLoadFromLibraryVehicle("Hunter", "Earth");
   }
 
   if (config.addBanjoReference) {
-    addLoadFromLibrary("Banjo", "Earth");
+    addLoadFromLibraryVehicle("Banjo", "Earth");
   }
 
   if (config.addPolarisReference) {
-    addLoadFromLibrary("Polaris", "Earth");
+    addLoadFromLibraryVehicle("Polaris", "Earth");
   }
 
   doc.appendChild(systemElement);

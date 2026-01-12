@@ -9,4 +9,14 @@ export default defineConfig({
   base: '/pebkac/',
   trailingSlash: 'always',
   integrations: [react()],
+  vite: {
+    ssr: {
+      external: ['file-saver', 'jszip'],
+    },
+    build: {
+      rollupOptions: {
+        external: ['file-saver', 'jszip'],
+      },
+    },
+  },
 });
