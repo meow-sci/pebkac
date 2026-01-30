@@ -44,7 +44,7 @@
                     <GradientFalloff Value="0.1" />
                     <Curvature Value="0.00035" />
                     <Seed Value="1" />
-                    <Octaves Value="6" />
+                    <Octaves Value="7" />
                     <Order Value="1" />
                     <GenerateColor Value="false" />
                     <ValleyColor R="0.0" G="0.0" B="0.0" A="0.0" />
@@ -1568,20 +1568,486 @@
 
         </Terrain>
 
-        <!-- Ground Clutter - Please keep this, it's just commented out for everyone for now -->
-        
-        <!--
         <GroundClutter>
+
             <Ecotype Id="Rocks">
-                <ObjectSeparation M="40" /> 
-                <GenerationRange M="8000" />
+                <Placement>
+                    <ObjectSeparation M="35" /> 
+                    <GenerationRange M="2250" />
+
+                    <MinScale X="0.08" Y="0.08" Z="0.08" />
+                    <MaxScale X="0.4" Y="0.4" Z="0.4" />
+                    <MinRotation Degrees="0" />
+                    <MaxRotation Degrees="360" />
+                </Placement>
             
                 <ClutterObject Name="RockType1">
-                    
+                    <LODs>
+                        <LOD MinScreenSize="128">
+                            <Mesh Id="Rock0_LOD0" Path="Meshes/Planets/Luna/GroundClutter/Rock0Lod0.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="64">
+                            <Mesh Id="Rock0_LOD1" Path="Meshes/Planets/Luna/GroundClutter/Rock0Lod1.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="32">
+                            <Mesh Id="Rock0_LOD2" Path="Meshes/Planets/Luna/GroundClutter/Rock0Lod2.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="16">
+                            <Mesh Id="Rock0_LOD3" Path="Meshes/Planets/Luna/GroundClutter/Rock0Lod3.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="8">
+                            <Mesh Id="Rock0_LOD4" Path="Meshes/Planets/Luna/GroundClutter/Rock0Lod4.glb" />
+                        </LOD>
+                    </LODs>
                 </ClutterObject>
+
+                <ClutterObject Name="RockType2">
+                    <LODs>
+                        <LOD MinScreenSize="128">
+                            <Mesh Id="Rock1_LOD0" Path="Meshes/Planets/Luna/GroundClutter/Rock1Lod0.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="64">
+                            <Mesh Id="Rock1_LOD1" Path="Meshes/Planets/Luna/GroundClutter/Rock1Lod1.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="32">
+                            <Mesh Id="Rock1_LOD2" Path="Meshes/Planets/Luna/GroundClutter/Rock1Lod2.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="16">
+                            <Mesh Id="Rock1_LOD3" Path="Meshes/Planets/Luna/GroundClutter/Rock1Lod3.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="8">
+                            <Mesh Id="Rock1_LOD4" Path="Meshes/Planets/Luna/GroundClutter/Rock1Lod4.glb" />
+                        </LOD>
+                    </LODs>
+                </ClutterObject>
+
+                <ClutterObject Name="RockType3">
+                    <LODs>
+                        <LOD MinScreenSize="128">
+                            <Mesh Id="Rock2_LOD0" Path="Meshes/Planets/Luna/GroundClutter/Rock2Lod0.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="64">
+                            <Mesh Id="Rock2_LOD1" Path="Meshes/Planets/Luna/GroundClutter/Rock2Lod1.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="32">
+                            <Mesh Id="Rock2_LOD2" Path="Meshes/Planets/Luna/GroundClutter/Rock2Lod2.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="16">
+                            <Mesh Id="Rock2_LOD3" Path="Meshes/Planets/Luna/GroundClutter/Rock2Lod3.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="8">
+                            <Mesh Id="Rock2_LOD4" Path="Meshes/Planets/Luna/GroundClutter/Rock2Lod4.glb" />
+                        </LOD>
+                    </LODs>
+                </ClutterObject>
+
+                <ClutterObject Name="RockType4">
+                    <LODs>
+                        <LOD MinScreenSize="128">
+                            <Mesh Id="Rock3_LOD0" Path="Meshes/Planets/Luna/GroundClutter/Rock3Lod0.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="64">
+                            <Mesh Id="Rock3_LOD1" Path="Meshes/Planets/Luna/GroundClutter/Rock3Lod1.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="32">
+                            <Mesh Id="Rock3_LOD2" Path="Meshes/Planets/Luna/GroundClutter/Rock3Lod2.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="16">
+                            <Mesh Id="Rock3_LOD3" Path="Meshes/Planets/Luna/GroundClutter/Rock3Lod3.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="8">
+                            <Mesh Id="Rock3_LOD4" Path="Meshes/Planets/Luna/GroundClutter/Rock3Lod4.glb" />
+                        </LOD>
+                    </LODs>
+                </ClutterObject>
+
+                <ClutterObject Name="RockType5">
+                    <LODs>
+                        <LOD MinScreenSize="128">
+                            <Mesh Id="Rock4_LOD0" Path="Meshes/Planets/Luna/GroundClutter/Rock4Lod0.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="64">
+                            <Mesh Id="Rock4_LOD1" Path="Meshes/Planets/Luna/GroundClutter/Rock4Lod1.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="32">
+                            <Mesh Id="Rock4_LOD2" Path="Meshes/Planets/Luna/GroundClutter/Rock4Lod2.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="16">
+                            <Mesh Id="Rock4_LOD3" Path="Meshes/Planets/Luna/GroundClutter/Rock4Lod3.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="8">
+                            <Mesh Id="Rock4_LOD4" Path="Meshes/Planets/Luna/GroundClutter/Rock4Lod4.glb" />
+                        </LOD>
+                    </LODs>
+                </ClutterObject>
+
+                <ClutterObject Name="RockType6">
+                    <LODs>
+                        <LOD MinScreenSize="128">
+                            <Mesh Id="Rock5_LOD0" Path="Meshes/Planets/Luna/GroundClutter/Rock5Lod0.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="64">
+                            <Mesh Id="Rock5_LOD1" Path="Meshes/Planets/Luna/GroundClutter/Rock5Lod1.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="32">
+                            <Mesh Id="Rock5_LOD2" Path="Meshes/Planets/Luna/GroundClutter/Rock5Lod2.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="16">
+                            <Mesh Id="Rock5_LOD3" Path="Meshes/Planets/Luna/GroundClutter/Rock5Lod3.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="8">
+                            <Mesh Id="Rock5_LOD4" Path="Meshes/Planets/Luna/GroundClutter/Rock5Lod4.glb" />
+                        </LOD>
+                    </LODs>
+                </ClutterObject>
+
+                <ClutterObject Name="RockType7">
+                    <LODs>
+                        <LOD MinScreenSize="128">
+                            <Mesh Id="Rock6_LOD0" Path="Meshes/Planets/Luna/GroundClutter/Rock6Lod0.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="64">
+                            <Mesh Id="Rock6_LOD1" Path="Meshes/Planets/Luna/GroundClutter/Rock6Lod1.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="32">
+                            <Mesh Id="Rock6_LOD2" Path="Meshes/Planets/Luna/GroundClutter/Rock6Lod2.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="16">
+                            <Mesh Id="Rock6_LOD3" Path="Meshes/Planets/Luna/GroundClutter/Rock6Lod3.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="8">
+                            <Mesh Id="Rock6_LOD4" Path="Meshes/Planets/Luna/GroundClutter/Rock6Lod4.glb" />
+                        </LOD>
+                    </LODs>
+                </ClutterObject>
+
+                <Material>
+                    <Diffuse Id="LunaRockAtlasDiffuse" Path="Textures/Planets/Luna/GroundClutter/TestRocks_Diffuse.ktx2" Category="Terrain"/>
+                    <Normal Id="LunaRockAtlasNormal" Path="Textures/Planets/Luna/GroundClutter/TestRocks_Normal.dds" Category="Terrain"/>
+                    <AoRoughMetal Id="LunaRockAtlasAoRoughMetal" Path="Textures/Planets/Luna/GroundClutter/TestRocks_AoRoughMetal.dds" Category="Terrain"/>
+                </Material>
+
             </Ecotype>
+
+            <Ecotype Id="LargerRocks">
+                <Placement>
+                    <ObjectSeparation M="170" /> 
+                    <GenerationRange M="12000" />
+
+                    <MinScale X="0.3" Y="0.3" Z="0.3" />
+                    <MaxScale X="1.4" Y="1.4" Z="1.4" />
+                    <MinRotation Degrees="0" />
+                    <MaxRotation Degrees="360" />
+                </Placement>
+            
+                <ClutterObject Name="RockType1a">
+                    <LODs>
+                        <LOD MinScreenSize="128">
+                            <Mesh Id="Rock0_LOD0" Path="Meshes/Planets/Luna/GroundClutter/Rock0Lod0.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="64">
+                            <Mesh Id="Rock0_LOD1" Path="Meshes/Planets/Luna/GroundClutter/Rock0Lod1.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="32">
+                            <Mesh Id="Rock0_LOD2" Path="Meshes/Planets/Luna/GroundClutter/Rock0Lod2.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="16">
+                            <Mesh Id="Rock0_LOD3" Path="Meshes/Planets/Luna/GroundClutter/Rock0Lod3.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="8">
+                            <Mesh Id="Rock0_LOD4" Path="Meshes/Planets/Luna/GroundClutter/Rock0Lod4.glb" />
+                        </LOD>
+                    </LODs>
+                </ClutterObject>
+
+                <ClutterObject Name="RockType2a">
+                    <LODs>
+                        <LOD MinScreenSize="128">
+                            <Mesh Id="Rock1_LOD0" Path="Meshes/Planets/Luna/GroundClutter/Rock1Lod0.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="64">
+                            <Mesh Id="Rock1_LOD1" Path="Meshes/Planets/Luna/GroundClutter/Rock1Lod1.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="32">
+                            <Mesh Id="Rock1_LOD2" Path="Meshes/Planets/Luna/GroundClutter/Rock1Lod2.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="16">
+                            <Mesh Id="Rock1_LOD3" Path="Meshes/Planets/Luna/GroundClutter/Rock1Lod3.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="8">
+                            <Mesh Id="Rock1_LOD4" Path="Meshes/Planets/Luna/GroundClutter/Rock1Lod4.glb" />
+                        </LOD>
+                    </LODs>
+                </ClutterObject>
+
+                <ClutterObject Name="RockType3a">
+                    <LODs>
+                        <LOD MinScreenSize="128">
+                            <Mesh Id="Rock2_LOD0" Path="Meshes/Planets/Luna/GroundClutter/Rock2Lod0.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="64">
+                            <Mesh Id="Rock2_LOD1" Path="Meshes/Planets/Luna/GroundClutter/Rock2Lod1.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="32">
+                            <Mesh Id="Rock2_LOD2" Path="Meshes/Planets/Luna/GroundClutter/Rock2Lod2.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="16">
+                            <Mesh Id="Rock2_LOD3" Path="Meshes/Planets/Luna/GroundClutter/Rock2Lod3.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="8">
+                            <Mesh Id="Rock2_LOD4" Path="Meshes/Planets/Luna/GroundClutter/Rock2Lod4.glb" />
+                        </LOD>
+                    </LODs>
+                </ClutterObject>
+
+                <ClutterObject Name="RockType4a">
+                    <LODs>
+                        <LOD MinScreenSize="128">
+                            <Mesh Id="Rock3_LOD0" Path="Meshes/Planets/Luna/GroundClutter/Rock3Lod0.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="64">
+                            <Mesh Id="Rock3_LOD1" Path="Meshes/Planets/Luna/GroundClutter/Rock3Lod1.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="32">
+                            <Mesh Id="Rock3_LOD2" Path="Meshes/Planets/Luna/GroundClutter/Rock3Lod2.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="16">
+                            <Mesh Id="Rock3_LOD3" Path="Meshes/Planets/Luna/GroundClutter/Rock3Lod3.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="8">
+                            <Mesh Id="Rock3_LOD4" Path="Meshes/Planets/Luna/GroundClutter/Rock3Lod4.glb" />
+                        </LOD>
+                    </LODs>
+                </ClutterObject>
+
+                <ClutterObject Name="RockType5a">
+                    <LODs>
+                        <LOD MinScreenSize="128">
+                            <Mesh Id="Rock4_LOD0" Path="Meshes/Planets/Luna/GroundClutter/Rock4Lod0.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="64">
+                            <Mesh Id="Rock4_LOD1" Path="Meshes/Planets/Luna/GroundClutter/Rock4Lod1.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="32">
+                            <Mesh Id="Rock4_LOD2" Path="Meshes/Planets/Luna/GroundClutter/Rock4Lod2.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="16">
+                            <Mesh Id="Rock4_LOD3" Path="Meshes/Planets/Luna/GroundClutter/Rock4Lod3.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="8">
+                            <Mesh Id="Rock4_LOD4" Path="Meshes/Planets/Luna/GroundClutter/Rock4Lod4.glb" />
+                        </LOD>
+                    </LODs>
+                </ClutterObject>
+
+                <ClutterObject Name="RockType6a">
+                    <LODs>
+                        <LOD MinScreenSize="128">
+                            <Mesh Id="Rock5_LOD0" Path="Meshes/Planets/Luna/GroundClutter/Rock5Lod0.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="64">
+                            <Mesh Id="Rock5_LOD1" Path="Meshes/Planets/Luna/GroundClutter/Rock5Lod1.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="32">
+                            <Mesh Id="Rock5_LOD2" Path="Meshes/Planets/Luna/GroundClutter/Rock5Lod2.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="16">
+                            <Mesh Id="Rock5_LOD3" Path="Meshes/Planets/Luna/GroundClutter/Rock5Lod3.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="8">
+                            <Mesh Id="Rock5_LOD4" Path="Meshes/Planets/Luna/GroundClutter/Rock5Lod4.glb" />
+                        </LOD>
+                    </LODs>
+                </ClutterObject>
+
+                <ClutterObject Name="RockType7a">
+                    <LODs>
+                        <LOD MinScreenSize="128">
+                            <Mesh Id="Rock6_LOD0" Path="Meshes/Planets/Luna/GroundClutter/Rock6Lod0.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="64">
+                            <Mesh Id="Rock6_LOD1" Path="Meshes/Planets/Luna/GroundClutter/Rock6Lod1.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="32">
+                            <Mesh Id="Rock6_LOD2" Path="Meshes/Planets/Luna/GroundClutter/Rock6Lod2.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="16">
+                            <Mesh Id="Rock6_LOD3" Path="Meshes/Planets/Luna/GroundClutter/Rock6Lod3.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="8">
+                            <Mesh Id="Rock6_LOD4" Path="Meshes/Planets/Luna/GroundClutter/Rock6Lod4.glb" />
+                        </LOD>
+                    </LODs>
+                </ClutterObject>
+
+                <Material>
+                    <Diffuse Id="LunaRockAtlasDiffuse"/>
+                    <Normal Id="LunaRockAtlasNormal"/>
+                    <AoRoughMetal Id="LunaRockAtlasAoRoughMetal"/>
+                </Material>
+
+            </Ecotype>
+
+            <Ecotype Id="SmallerRocks">
+                <Placement>
+                    <ObjectSeparation M="7.5" /> 
+                    <GenerationRange M="350" />
+
+                    <MinScale X="0.03" Y="0.03" Z="0.03" />
+                    <MaxScale X="0.075" Y="0.075" Z="0.075" />
+                    <MinRotation Degrees="0" />
+                    <MaxRotation Degrees="360" />
+                </Placement>
+            
+                <ClutterObject Name="RockType1aa">
+                    <LODs>
+                        <LOD MinScreenSize="128">
+                            <Mesh Id="Rock0_LOD0" Path="Meshes/Planets/Luna/GroundClutter/Rock0Lod0.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="64">
+                            <Mesh Id="Rock0_LOD1" Path="Meshes/Planets/Luna/GroundClutter/Rock0Lod1.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="32">
+                            <Mesh Id="Rock0_LOD2" Path="Meshes/Planets/Luna/GroundClutter/Rock0Lod2.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="16">
+                            <Mesh Id="Rock0_LOD3" Path="Meshes/Planets/Luna/GroundClutter/Rock0Lod3.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="8">
+                            <Mesh Id="Rock0_LOD4" Path="Meshes/Planets/Luna/GroundClutter/Rock0Lod4.glb" />
+                        </LOD>
+                    </LODs>
+                </ClutterObject>
+
+                <ClutterObject Name="RockType2aa">
+                    <LODs>
+                        <LOD MinScreenSize="128">
+                            <Mesh Id="Rock1_LOD0" Path="Meshes/Planets/Luna/GroundClutter/Rock1Lod0.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="64">
+                            <Mesh Id="Rock1_LOD1" Path="Meshes/Planets/Luna/GroundClutter/Rock1Lod1.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="32">
+                            <Mesh Id="Rock1_LOD2" Path="Meshes/Planets/Luna/GroundClutter/Rock1Lod2.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="16">
+                            <Mesh Id="Rock1_LOD3" Path="Meshes/Planets/Luna/GroundClutter/Rock1Lod3.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="8">
+                            <Mesh Id="Rock1_LOD4" Path="Meshes/Planets/Luna/GroundClutter/Rock1Lod4.glb" />
+                        </LOD>
+                    </LODs>
+                </ClutterObject>
+
+                <ClutterObject Name="RockType3aa">
+                    <LODs>
+                        <LOD MinScreenSize="128">
+                            <Mesh Id="Rock2_LOD0" Path="Meshes/Planets/Luna/GroundClutter/Rock2Lod0.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="64">
+                            <Mesh Id="Rock2_LOD1" Path="Meshes/Planets/Luna/GroundClutter/Rock2Lod1.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="32">
+                            <Mesh Id="Rock2_LOD2" Path="Meshes/Planets/Luna/GroundClutter/Rock2Lod2.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="16">
+                            <Mesh Id="Rock2_LOD3" Path="Meshes/Planets/Luna/GroundClutter/Rock2Lod3.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="8">
+                            <Mesh Id="Rock2_LOD4" Path="Meshes/Planets/Luna/GroundClutter/Rock2Lod4.glb" />
+                        </LOD>
+                    </LODs>
+                </ClutterObject>
+
+                <ClutterObject Name="RockType4aa">
+                    <LODs>
+                        <LOD MinScreenSize="128">
+                            <Mesh Id="Rock3_LOD0" Path="Meshes/Planets/Luna/GroundClutter/Rock3Lod0.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="64">
+                            <Mesh Id="Rock3_LOD1" Path="Meshes/Planets/Luna/GroundClutter/Rock3Lod1.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="32">
+                            <Mesh Id="Rock3_LOD2" Path="Meshes/Planets/Luna/GroundClutter/Rock3Lod2.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="16">
+                            <Mesh Id="Rock3_LOD3" Path="Meshes/Planets/Luna/GroundClutter/Rock3Lod3.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="8">
+                            <Mesh Id="Rock3_LOD4" Path="Meshes/Planets/Luna/GroundClutter/Rock3Lod4.glb" />
+                        </LOD>
+                    </LODs>
+                </ClutterObject>
+
+                <ClutterObject Name="RockType5aa">
+                    <LODs>
+                        <LOD MinScreenSize="128">
+                            <Mesh Id="Rock4_LOD0" Path="Meshes/Planets/Luna/GroundClutter/Rock4Lod0.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="64">
+                            <Mesh Id="Rock4_LOD1" Path="Meshes/Planets/Luna/GroundClutter/Rock4Lod1.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="32">
+                            <Mesh Id="Rock4_LOD2" Path="Meshes/Planets/Luna/GroundClutter/Rock4Lod2.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="16">
+                            <Mesh Id="Rock4_LOD3" Path="Meshes/Planets/Luna/GroundClutter/Rock4Lod3.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="8">
+                            <Mesh Id="Rock4_LOD4" Path="Meshes/Planets/Luna/GroundClutter/Rock4Lod4.glb" />
+                        </LOD>
+                    </LODs>
+                </ClutterObject>
+
+                <ClutterObject Name="RockType6aa">
+                    <LODs>
+                        <LOD MinScreenSize="128">
+                            <Mesh Id="Rock5_LOD0" Path="Meshes/Planets/Luna/GroundClutter/Rock5Lod0.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="64">
+                            <Mesh Id="Rock5_LOD1" Path="Meshes/Planets/Luna/GroundClutter/Rock5Lod1.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="32">
+                            <Mesh Id="Rock5_LOD2" Path="Meshes/Planets/Luna/GroundClutter/Rock5Lod2.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="16">
+                            <Mesh Id="Rock5_LOD3" Path="Meshes/Planets/Luna/GroundClutter/Rock5Lod3.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="8">
+                            <Mesh Id="Rock5_LOD4" Path="Meshes/Planets/Luna/GroundClutter/Rock5Lod4.glb" />
+                        </LOD>
+                    </LODs>
+                </ClutterObject>
+
+                <ClutterObject Name="RockType7aa">
+                    <LODs>
+                        <LOD MinScreenSize="128">
+                            <Mesh Id="Rock6_LOD0" Path="Meshes/Planets/Luna/GroundClutter/Rock6Lod0.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="64">
+                            <Mesh Id="Rock6_LOD1" Path="Meshes/Planets/Luna/GroundClutter/Rock6Lod1.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="32">
+                            <Mesh Id="Rock6_LOD2" Path="Meshes/Planets/Luna/GroundClutter/Rock6Lod2.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="16">
+                            <Mesh Id="Rock6_LOD3" Path="Meshes/Planets/Luna/GroundClutter/Rock6Lod3.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="8">
+                            <Mesh Id="Rock6_LOD4" Path="Meshes/Planets/Luna/GroundClutter/Rock6Lod4.glb" />
+                        </LOD>
+                    </LODs>
+                </ClutterObject>
+
+                <Material>
+                    <Diffuse Id="LunaRockAtlasDiffuse"/>
+                    <Normal Id="LunaRockAtlasNormal"/>
+                    <AoRoughMetal Id="LunaRockAtlasAoRoughMetal"/>
+                </Material>
+
+            </Ecotype>
+
         </GroundClutter>
-        -->
 
         <MeanRadius Km="1737.1" />
         <Mass Lunars="1" />

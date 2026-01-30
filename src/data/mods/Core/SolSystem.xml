@@ -439,7 +439,7 @@
         </Landmark>
     </AtmosphericBody>
 
-    <LoadFromLibrary Id="Earth" Parent="Sol"/>
+    <LoadFromLibrary Id="Earth" Parent="Sol" HomeBody="true"/>
 
     <LoadFromLibrary Id="Luna" Parent="Earth"/>
 
@@ -2012,7 +2012,34 @@
                 <ScaleHeight Km="60" />
             </Physical>
         </Atmosphere>
+        <Rings DefinitionFrame="Equatorial">
+            <Inclination Degrees="0.0001" />
+            <LongitudeOfAscendingNode Degrees="0.0" />
+            <InnerRadius Km="69000" />
+            <OuterRadius Km="141100" />
+            <Thickness Km="10" /> <!-- temporary thickness to test with -->
+            <Texture Id="SaturnRings" Path="Textures/Planets/Saturn/Rings.png"/> <!-- this texture is 8192x1 and doesn't benefit from block compression -->
+            <DetailScale Value="300.0" />
+            <Volume>
+                <RenderDistance Km="1000" />
+                <SampleCount Value="20"/>
+            </Volume>
+        </Rings>
     </AtmosphericBody>
+    <PlanetaryBody Id="Pan" Parent="Saturn">
+        <Orbit>
+            <SemiMajorAxis Km="133584" />
+            <Inclination Degrees="0.0001" />
+            <LongitudeOfAscendingNode Degrees="0.0" />
+            <Eccentricity Value="0.0" />
+            <ArgumentOfPeriapsis Degrees="130.822" /> <!-- TODO: correct values from JPL horizons ephemerides -->
+        </Orbit>
+        <Rotation>
+            <IsTidallyLocked Value="true" />
+        </Rotation>
+        <MeanRadius Km="13.7" />
+        <Mass Eg="4.3" />
+    </PlanetaryBody>
     <PlanetaryBody Id="Mimas" Parent="Saturn">
         <Orbit>
             <SemiMajorAxis Km="185539" />
