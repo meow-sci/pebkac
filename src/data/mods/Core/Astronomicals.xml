@@ -3,7 +3,6 @@
     <StellarBody Id="Sol">
         <MeanRadius Km="696342" />
         <Mass Suns="1" />
-        <Diffuse Path="Textures/Sol_Diffuse.jpg" Category="Terrain"/>
         <Color R="1" G="1" B="1" />
         <Sunlight R="9" G="9" B="9" />
     </StellarBody>
@@ -25,19 +24,29 @@
         </Rotation>
 
         <MeshCollection Id="EarthScale"/>
-        <Diffuse Path="Textures/Earth_Diffuse.dds" Category="Terrain"/>
-        <Normal Path="Textures/Earth_Normal.dds" Category="Terrain"/>
+        <Diffuse Path="Textures/Earth_Diffuse.ktx2" Category="Terrain"/>
+        <Normal Path="Textures/Earth_Normal.ktx2" Category="Terrain"/>
         <Height Path="Textures/Earth_Height.ktx2" Category="Terrain">
             <Minimum Km="-10.930"/>
-            <Maximum Km="8.627"/>
+            <Maximum Km="8.631"/>   <!-- Up from 8.627 to prevent launch sites from being slightly flooded -->
         </Height>
-        <Terrain>
-            <BiomeIDMap Id="EarthBiomeID" Path="Textures/Earth_Biome_ID.png"/>
-            <BiomeControlMap Id="EarthBiomeControl" Path="Textures/Earth_Biome_Control.png"/>
 
+        <Biomes>
+            <BiomeIDMap Id="EarthBiomeID" Path="Textures/Earth_Biome_ID.ktx2"/>
+            <BiomeControlMap Id="EarthBiomeControl" Path="Textures/Earth_Biome_Control.ktx2"/>
+
+            <Biome IdMapIndex="0" Alias="Poles" />
+            <Biome IdMapIndex="1" Alias="Beach" />
+            <Biome IdMapIndex="2" Alias="Grass" />
+            <Biome IdMapIndex="3" Alias="Desert" />
+        </Biomes>
+
+        <Terrain>
             <ProceduralModifiers>
 
-                <Modifier Type="Erosion" Name="EarthErosion">
+                <GradientScale Value="3.5" />
+
+                <Modifier Type="Erosion" Name="EarthErosion" Biomes="Poles,Beach,Grass,Desert">
                     <Frequency Value="150" />
                     <Amplitude Value="1000" />
                     <Lacunarity Value="2" />
@@ -51,6 +60,46 @@
                     <RidgeColor R="0.42" G="0.42" B="0.42" A="1.0" />
                 </Modifier>
 
+                <Modifier Type="Dunes" Name="SandDunes" Biomes="Desert">
+                    <Frequency Value="250.0" />
+                    <Lacunarity Value="2.0" />
+                    <Persistence Value="0.63" />
+                    <Shear Value="0.71" />
+                    <DistortionScale Value="0.1" />
+                    <DistortionAmp Value="10.33" />
+                    <FalloffPower Value="2.808" />
+                    <Amplitude Value="1500" />
+                    <AmplitudeHeightCurve>
+                        <SplinePoint>
+                            <Key Value="0.0" />
+                            <Value Value="1.0" />   
+                            <InTangent Value="0.0" />
+                            <OutTangent Value="0.0" />
+                        </SplinePoint>
+                        <SplinePoint>
+                            <Key Value="0.5" />
+                            <Value Value="1.0" />
+                            <InTangent Value="0.0" />
+                            <OutTangent Value="0.0" />
+                        </SplinePoint>
+                        <SplinePoint>
+                            <Key Value="0.69" />
+                            <Value Value="0.0" />
+                            <InTangent Value="-1.0" />
+                            <OutTangent Value="0.0" />
+                        </SplinePoint>
+                        <SplinePoint>
+                            <Key Value="1.0" />
+                            <Value Value="0.0" />
+                            <InTangent Value="0.0" />
+                            <OutTangent Value="0.0" />
+                        </SplinePoint>
+                    </AmplitudeHeightCurve>
+                    <Seed Value="1" />
+                    <Octaves Value="7" />
+                    <Order Value="0" />
+                </Modifier>
+
             </ProceduralModifiers>
 
             <BiomeMaterials>
@@ -59,7 +108,7 @@
                 <DetailFadeInStart Km="3000" />
 
                 <!-- Order matters! The order these appear corresponds to the ID in the ID map, starting from 0 -->
-                <BiomeMaterial Name="Poles">
+                <BiomeMaterial Biome="Poles">
 
                     <SlopeBlendStrength Value="9.00" />
                     <SlopeBlendContrast Value="1.6" />
@@ -69,8 +118,7 @@
                         <Diffuse Id="EarthPolesDiffuse" Path="Textures/Planets/Mars/Snow/Snow_Albedo.dds" Category="Terrain"/>
                         <Normal Id="EarthPolesNormal" Path="Textures/Planets/Mars/Snow/Snow_Normal.dds" Category="Terrain"/>
                         <AoRoughMetal Id="EarthPolesAoRoughMetal" Path="Textures/Planets/Mars/Snow/Snow_AoRoughMetal.dds" Category="Terrain"/>
-                        <Displacement Id="EarthPolesDisplacement" Path="Textures/Planets/Mars/Snow/Snow_Displacement.png" Category="Terrain"/>
-                        <Height Id="Grey" Path="Textures/Planets/EmptyGrey.png" Category="Terrain"/>
+                        <Displacement Id="EarthPolesDisplacement" Path="Textures/Planets/Mars/Snow/Snow_Displacement.dds" Category="Terrain"/>
 
                         <TextureTiling Value="0.078" />
                         <HeightTiling Value="0.0000155" />
@@ -87,8 +135,7 @@
                         <Diffuse Id="EarthTundraCliffsDiffuse" Path="Textures/Planets/Earth/TundraCliffs/TundraCliffs_Albedo.dds" Category="Terrain"/>
                         <Normal Id="EarthTundraCliffsNormal" Path="Textures/Planets/Earth/TundraCliffs/TundraCliffs_Normal.dds" Category="Terrain"/>
                         <AoRoughMetal Id="EarthTundraCliffsAoRoughMetal" Path="Textures/Planets/Earth/TundraCliffs/TundraCliffs_AoRoughMetal.dds" Category="Terrain"/>
-                        <Displacement Id="EarthTundraCliffsDisplacement" Path="Textures/Planets/Earth/TundraCliffs/TundraCliffs_Displacement.png" Category="Terrain"/>
-                        <Height Id="Grey" Path="Textures/Planets/EmptyGrey.png" Category="Terrain"/>
+                        <Displacement Id="EarthTundraCliffsDisplacement" Path="Textures/Planets/Earth/TundraCliffs/TundraCliffs_Displacement.dds" Category="Terrain"/>
 
                         <TextureTiling Value="0.078" />
 
@@ -98,14 +145,13 @@
                     </SlopeMaterial>
                 </BiomeMaterial>
 
-                <BiomeMaterial Name="Beach">
+                <BiomeMaterial Biome="Beach">
 
                     <GroundMaterial>
                         <Diffuse Id="EarthBeachDiffuse" Path="Textures/Planets/Earth/Beach/Beach_Albedo.dds" Category="Terrain"/>
                         <Normal Id="EarthBeachNormal" Path="Textures/Planets/Earth/Beach/Beach_Normal.dds" Category="Terrain"/>
                         <AoRoughMetal Id="EarthBeachAoRoughMetal" Path="Textures/Planets/Earth/Beach/Beach_AoRoughMetal.dds" Category="Terrain"/>
-                        <Displacement Id="EarthBeachDisplacement" Path="Textures/Planets/Earth/Beach/Beach_Displacement.png" Category="Terrain"/>
-                        <Height Id="Grey" Path="Textures/Planets/EmptyGrey.png" Category="Terrain"/>
+                        <Displacement Id="EarthBeachDisplacement" Path="Textures/Planets/Earth/Beach/Beach_Displacement.dds" Category="Terrain"/>
 
                         <TextureTiling Value="0.078" />
                         <HeightTiling Value="0.0000155" />
@@ -121,8 +167,7 @@
                         <Diffuse Id="EarthSandstoneCliffsDiffuse" Path="Textures/Planets/Earth/SandstoneCliffs/SandstoneCliffs_Albedo.dds" Category="Terrain"/>
                         <Normal Id="EarthSandstoneCliffsNormal" Path="Textures/Planets/Earth/SandstoneCliffs/SandstoneCliffs_Normal.dds" Category="Terrain"/>
                         <AoRoughMetal Id="EarthSandstoneCliffsAoRoughMetal" Path="Textures/Planets/Earth/SandstoneCliffs/SandstoneCliffs_AoRoughMetal.dds" Category="Terrain"/>
-                        <Displacement Id="EarthSandstoneCliffsDisplacement" Path="Textures/Planets/Earth/SandstoneCliffs/SandstoneCliffs_Displacement.png" Category="Terrain"/>
-                        <Height Id="Grey" Path="Textures/Planets/EmptyGrey.png" Category="Terrain"/>
+                        <Displacement Id="EarthSandstoneCliffsDisplacement" Path="Textures/Planets/Earth/SandstoneCliffs/SandstoneCliffs_Displacement.dds" Category="Terrain"/>
 
                         <TextureTiling Value="0.078" />
 
@@ -132,7 +177,7 @@
                     </SlopeMaterial>
                 </BiomeMaterial>
 
-                <BiomeMaterial Name="Grass">
+                <BiomeMaterial Biome="Grass">
 
                     <SlopeBlendStrength Value="9.25" />
                     <SlopeBlendContrast Value="1.8" />
@@ -142,8 +187,7 @@
                         <Diffuse Id="EarthGrassDiffuse" Path="Textures/Planets/Earth/Grass/Grass_Albedo.dds" Category="Terrain"/>
                         <Normal Id="EarthGrassNormal" Path="Textures/Planets/Earth/Grass/Grass_Normal.dds" Category="Terrain"/>
                         <AoRoughMetal Id="EarthGrassAoRoughMetal" Path="Textures/Planets/Earth/Grass/Grass_AoRoughMetal.dds" Category="Terrain"/>
-                        <Displacement Id="EarthGrassDisplacement" Path="Textures/Planets/Earth/Grass/Grass_Displacement.png" Category="Terrain"/>
-                        <Height Id="Grey" Path="Textures/Planets/EmptyGrey.png" Category="Terrain"/>
+                        <Displacement Id="EarthGrassDisplacement" Path="Textures/Planets/Earth/Grass/Grass_Displacement.dds" Category="Terrain"/>
 
                         <TextureTiling Value="0.038" />
                         <HeightTiling Value="0.0000155" />
@@ -159,8 +203,7 @@
                         <Diffuse Id="EarthCliffsDiffuse" Path="Textures/Planets/Earth/Cliffs/Cliffs_Albedo.dds" Category="Terrain"/>
                         <Normal Id="EarthCliffsNormal" Path="Textures/Planets/Earth/Cliffs/Cliffs_Normal.dds" Category="Terrain"/>
                         <AoRoughMetal Id="EarthCliffsAoRoughMetal" Path="Textures/Planets/Earth/Cliffs/Cliffs_AoRoughMetal.dds" Category="Terrain"/>
-                        <Displacement Id="EarthCliffsDisplacement" Path="Textures/Planets/Earth/Cliffs/Cliffs_Displacement.png" Category="Terrain"/>
-                        <Height Id="Grey" Path="Textures/Planets/EmptyGrey.png" Category="Terrain"/>
+                        <Displacement Id="EarthCliffsDisplacement" Path="Textures/Planets/Earth/Cliffs/Cliffs_Displacement.dds" Category="Terrain"/>
 
                         <TextureTiling Value="0.028" />
 
@@ -170,60 +213,17 @@
                     </SlopeMaterial>
                 </BiomeMaterial>
 
-                <BiomeMaterial Name="Desert">
+                <BiomeMaterial Biome="Desert">
 
                     <SlopeBlendStrength Value="0.0001" />
                     <SlopeBlendContrast Value="1" />
                     <SlopeBlendBias Value="0.5" />
 
-                    <ProceduralModifiers>
-                        <Modifier Type="Dunes" Name="SandDunes">
-                            <Frequency Value="250.0" />
-                            <Lacunarity Value="2.0" />
-                            <Persistence Value="0.63" />
-                            <Shear Value="0.71" />
-                            <DistortionScale Value="0.1" />
-                            <DistortionAmp Value="10.33" />
-                            <FalloffPower Value="2.808" />
-                            <Amplitude Value="1500" />
-                            <AmplitudeHeightCurve>
-                                <SplinePoint>
-                                    <Key Value="0.0" />
-                                    <Value Value="1.0" />   
-                                    <InTangent Value="0.0" />
-                                    <OutTangent Value="0.0" />
-                                </SplinePoint>
-                                <SplinePoint>
-                                    <Key Value="0.5" />
-                                    <Value Value="1.0" />
-                                    <InTangent Value="0.0" />
-                                    <OutTangent Value="0.0" />
-                                </SplinePoint>
-                                <SplinePoint>
-                                    <Key Value="0.69" />
-                                    <Value Value="0.0" />
-                                    <InTangent Value="-1.0" />
-                                    <OutTangent Value="0.0" />
-                                </SplinePoint>
-                                <SplinePoint>
-                                    <Key Value="1.0" />
-                                    <Value Value="0.0" />
-                                    <InTangent Value="0.0" />
-                                    <OutTangent Value="0.0" />
-                                </SplinePoint>
-                            </AmplitudeHeightCurve>
-                            <Seed Value="1" />
-                            <Octaves Value="7" />
-                            <Order Value="0" />
-                        </Modifier>
-                    </ProceduralModifiers>
-
                     <GroundMaterial>
                         <Diffuse Id="EarthBareDesertDiffuse" Path="Textures/Planets/Earth/BareSand/BareSand_Albedo.dds" Category="Terrain"/>
                         <Normal Id="EarthBareDesertNormal" Path="Textures/Planets/Earth/BareSand/BareSand_Normal.dds" Category="Terrain"/>
                         <AoRoughMetal Id="EarthBareDesertAoRoughMetal" Path="Textures/Planets/Earth/BareSand/BareSand_AoRoughMetal.dds" Category="Terrain"/>
-                        <Displacement Id="EarthBareDesertDisplacement" Path="Textures/Planets/Earth/BareSand/BareSand_Displacement.png" Category="Terrain"/>
-                        <Height Id="Grey" Path="Textures/Planets/EmptyGrey.png" Category="Terrain"/>
+                        <Displacement Id="EarthBareDesertDisplacement" Path="Textures/Planets/Earth/BareSand/BareSand_Displacement.dds" Category="Terrain"/>
 
                         <TextureTiling Value="0.038" />
                         <HeightTiling Value="0.0000155" />
@@ -240,7 +240,6 @@
                         <Normal Id="EarthBareDesertNormal"/>
                         <AoRoughMetal Id="EarthBareDesertAoRoughMetal" />
                         <Displacement Id="EarthBareDesertDisplacement"/>
-                        <Height Id="Grey" Path="Textures/Planets/EmptyGrey.png" Category="Terrain"/>
 
                         <TextureTiling Value="0.078" />
 
@@ -307,7 +306,7 @@
             
             <!-- This color value and the colormap's content get multiplied -->
             <Color R="0.588" G="0.588" B="0.588" />
-            <ColorTexture Path="Textures/Earth_Ocean_Color_4096.dds" Category="Terrain"/>
+            <ColorTexture Path="Textures/Earth_Ocean_Color_4096.ktx2" Category="Terrain"/>
             
             <TransparencyDepth M="100" />
         </Ocean>
@@ -833,58 +832,39 @@
         <MeshCollection Id="Default"/>
         <Color R="0.33" G="0.33" B="0.33" /> <!-- used for the sprite and planetshine -->
         <Diffuse Path="Textures/Luna_Diffuse.ktx2" Category="Terrain"/>
-        <Normal Path="Textures/Luna_Normal.dds" Category="Terrain"/>
+        <Normal Path="Textures/Luna_Normal.ktx2" Category="Terrain"/>
         <Height Path="Textures/Luna_Height.ktx2" Category="Terrain">
             <Maximum Km="10.785"/>
             <Minimum Km="-9.129"/>
         </Height>
+
+        <Biomes>
+            <BiomeIDMap Path="Textures/Luna_Biome_ID.ktx2" Category="Terrain"/>
+            <BiomeControlMap Path="Textures/Luna_Biome_Control.ktx2" Category="Terrain"/>
+
+            <Biome IdMapIndex="0" Alias="Surface" />
+            <Biome IdMapIndex="1" Alias="Craters" />
+            <Biome IdMapIndex="2" Alias="Maria" />
+        </Biomes>
+
         <Terrain>
-            <!-- In progress... -->
-            <BiomeIDMap Path="Textures/Luna_Biome_ID.png" Category="Terrain"/>
-            <BiomeControlMap Path="Textures/Luna_Biome_Control.png" Category="Terrain"/>
 
             <!-- Global Procedural Modifiers -->
             <ProceduralModifiers>
 
                 <GradientScale Value="2.6" />
 
-                <Modifier Type="Simplex" Name="SmallPerturbations">
+                <Modifier Type="Simplex" Name="SmallPerturbations" Biomes="Surface,Craters">
                     <Frequency Value="250" />
                     <Lacunarity Value="2.0" />
                     <Persistence Value="0.5" />
                     <Amplitude Value="100" />
-                    <AmplitudeHeightCurve>
-                        <SplinePoint>
-                            <Key Value="0.0" />
-                            <Value Value="0.0" />
-                            <InTangent Value="0.0" />
-                            <OutTangent Value="0.0" />
-                        </SplinePoint>
-                        <SplinePoint>
-                            <Key Value="0.332" />
-                            <Value Value="0.0" />
-                            <InTangent Value="0.0" />
-                            <OutTangent Value="0.0" />
-                        </SplinePoint>
-                        <SplinePoint>
-                            <Key Value="0.5" />
-                            <Value Value="1.0" />
-                            <InTangent Value="0.0" />
-                            <OutTangent Value="0.0" />
-                        </SplinePoint>
-                        <SplinePoint>
-                            <Key Value="1.0" />
-                            <Value Value="1.0" />
-                            <InTangent Value="0.0" />
-                            <OutTangent Value="0.0" />
-                        </SplinePoint>
-                    </AmplitudeHeightCurve>
                     <Seed Value="1" />
                     <Octaves Value="5" />
                     <Order Value="7" />
                 </Modifier>
 
-                <Modifier Type="Decal" Name="TestDecal">
+                <Modifier Type="Decal" Name="TestDecal" Biomes="Maria">
                     <Amplitude Value="200" />
                     <Order Value="9999" />
 
@@ -902,7 +882,7 @@
                     <HeightMap Id="LunaTestDecalHeight" Path="Textures/Planets/Luna/TestDecalHeight.png" Category="Terrain"/>
                 </Modifier>
 
-                 <Modifier Type="Erosion" Name="LunaErosion">
+                <Modifier Type="Erosion" Name="LunaErosion">
                     <Frequency Value="50" />
                     <Amplitude Value="400" />
                     <Lacunarity Value="2" />
@@ -916,7 +896,7 @@
                     <RidgeColor R="0.0" G="0.0" B="0.0" A="0.0" />
                 </Modifier>
 
-                <Modifier Type="SimpleCraters" Name="TestSmallCraters">
+                <Modifier Type="SimpleCraters" Name="TestSmallCraters" Biomes="Surface,Craters">
                     <Frequency Value="150" />
                     <Amplitude Value="300" />
                     <Seed Value="1" />
@@ -962,33 +942,6 @@
                             <OutTangent Value="0.0" />
                         </SplinePoint>
                     </CraterShapeCurve>
-
-                    <AmplitudeHeightCurve>
-                        <SplinePoint>
-                            <Key Value="0.0" />
-                            <Value Value="0.0" />
-                            <InTangent Value="0.0" />
-                            <OutTangent Value="0.0" />
-                        </SplinePoint>
-                        <SplinePoint>
-                            <Key Value="0.423" />
-                            <Value Value="0.0" />
-                            <InTangent Value="0.0" />
-                            <OutTangent Value="0.0" />
-                        </SplinePoint>
-                        <SplinePoint>
-                            <Key Value="0.480" />
-                            <Value Value="1.0" />
-                            <InTangent Value="0.0" />
-                            <OutTangent Value="0.0" />
-                        </SplinePoint>
-                        <SplinePoint>
-                            <Key Value="1.0" />
-                            <Value Value="1.0" />
-                            <InTangent Value="0.0" />
-                            <OutTangent Value="0.0" />
-                        </SplinePoint>
-                    </AmplitudeHeightCurve>
                 </Modifier>
 
                 <Modifier Type="SimpleCraters" Name="MariaCratersMiniscule">
@@ -1053,13 +1006,13 @@
                         </SplinePoint>
                         <SplinePoint>
                             <Key Value="0.425" />
-                            <Value Value="0.35" />
+                            <Value Value="0.45" />
                             <InTangent Value="0.0" />
                             <OutTangent Value="0.0" />
                         </SplinePoint>
                         <SplinePoint>
                             <Key Value="1.0" />
-                            <Value Value="0.35" />
+                            <Value Value="0.45" />
                             <InTangent Value="0.0" />
                             <OutTangent Value="0.0" />
                         </SplinePoint>
@@ -1165,13 +1118,13 @@
                         </SplinePoint>
                         <SplinePoint>
                             <Key Value="0.425" />
-                            <Value Value="0.35" />
+                            <Value Value="0.43" />
                             <InTangent Value="0.0" />
                             <OutTangent Value="0.0" />
                         </SplinePoint>
                         <SplinePoint>
                             <Key Value="1.0" />
-                            <Value Value="0.35" />
+                            <Value Value="0.43" />
                             <InTangent Value="0.0" />
                             <OutTangent Value="0.0" />
                         </SplinePoint>
@@ -1240,13 +1193,13 @@
                         </SplinePoint>
                         <SplinePoint>
                             <Key Value="0.425" />
-                            <Value Value="0.35" />
+                            <Value Value="0.4" />
                             <InTangent Value="0.0" />
                             <OutTangent Value="0.0" />
                         </SplinePoint>
                         <SplinePoint>
                             <Key Value="1.0" />
-                            <Value Value="0.35" />
+                            <Value Value="0.4" />
                             <InTangent Value="0.0" />
                             <OutTangent Value="0.0" />
                         </SplinePoint>
@@ -1394,13 +1347,13 @@
                         </SplinePoint>
                         <SplinePoint>
                             <Key Value="0.425" />
-                            <Value Value="0.35" />
+                            <Value Value="0.4" />
                             <InTangent Value="0.0" />
                             <OutTangent Value="0.0" />
                         </SplinePoint>
                         <SplinePoint>
                             <Key Value="1.0" />
-                            <Value Value="0.35" />
+                            <Value Value="0.4" />
                             <InTangent Value="0.0" />
                             <OutTangent Value="0.0" />
                         </SplinePoint>
@@ -1443,7 +1396,7 @@
 
                 <BlendStrength Value="2.25" />
                 <!-- Base terrain -->
-                <BiomeMaterial Name="Surface">
+                <BiomeMaterial Biome="Surface">
 
                     <SlopeBlendStrength Value="10.5" />
                     <SlopeBlendContrast Value="2.0" />
@@ -1453,8 +1406,7 @@
                         <Diffuse Id="LunaGroundDiffuse" Path="Textures/Planets/Luna/Main/Luna_Albedo.dds" Category="Terrain"/>
                         <Normal Id="LunaGroundNormal" Path="Textures/Planets/Luna/Main/Luna_Normal.dds" Category="Terrain"/>
                         <AoRoughMetal Id="LunaGroundAoRoughMetal" Path="Textures/Planets/Luna/Main/Luna_AoRoughMetal.dds" Category="Terrain"/>
-                        <Displacement Id="LunaGroundDisplacement" Path="Textures/Planets/Luna/Main/Luna_Displacement.png" Category="Terrain"/>
-                        <Height Id="LunaTilingDetail" Path="Textures/Luna_Noise.png" Category="Terrain"/>
+                        <Displacement Id="LunaGroundDisplacement" Path="Textures/Planets/Luna/Main/Luna_Displacement.dds" Category="Terrain"/>
 
                         <TextureTiling Value="0.03" />
                         <HeightTiling Value="0.0000155" />
@@ -1471,8 +1423,7 @@
                         <Diffuse Id="LunaCliffsDiffuse" Path="Textures/Planets/Luna/Cliffs/Luna_Cliffs_Albedo.dds" Category="Terrain"/>
                         <Normal Id="LunaCliffsNormal" Path="Textures/Planets/Luna/Cliffs/Luna_Cliffs_Normal.dds" Category="Terrain"/>
                         <AoRoughMetal Id="LunaCliffsAoRoughMetal" Path="Textures/Planets/Luna/Cliffs/Luna_Cliffs_AoRoughMetal.dds" Category="Terrain"/>
-                        <Displacement Id="LunaCliffsDisplacement" Path="Textures/Planets/Luna/Cliffs/Luna_Cliffs_Displacement.png" Category="Terrain"/>
-                        <Height Id="LunaTilingDetail" Path="Textures/Luna_Noise.png" Category="Terrain"/>
+                        <Displacement Id="LunaCliffsDisplacement" Path="Textures/Planets/Luna/Cliffs/Luna_Cliffs_Displacement.dds" Category="Terrain"/>
 
                         <TextureTiling Value="0.04" />
                         <HeightTiling Value="0.0000155" />
@@ -1491,7 +1442,7 @@
                 </BiomeMaterial>
 
                 <!-- Craters -->
-                <BiomeMaterial Name="Craters">
+                <BiomeMaterial Biome="Craters">
 
                     <SlopeBlendStrength Value="15.5" />
                     <SlopeBlendContrast Value="2.0" />
@@ -1502,7 +1453,6 @@
                         <Normal Id="LunaGroundNormal" />
                         <AoRoughMetal Id="LunaGroundAoRoughMetal" />
                         <Displacement Id="LunaGroundDisplacement" />
-                        <Height Id="Grey" Path="Textures/Planets/EmptyGrey.png" Category="Terrain"/>
 
                         <TextureTiling Value="0.03" />
 
@@ -1516,7 +1466,6 @@
                         <Normal Id="LunaCliffsNormal" />
                         <AoRoughMetal Id="LunaCliffsAoRoughMetal" />
                         <Displacement Id="LunaCliffsDisplacement" />
-                        <Height Id="Grey" Path="Textures/Planets/EmptyGrey.png" Category="Terrain"/>
 
                         <TextureTiling Value="0.04" />
 
@@ -1528,7 +1477,7 @@
                 </BiomeMaterial>
 
                 <!-- Maria -->
-                <BiomeMaterial Name="Maria">
+                <BiomeMaterial Biome="Maria">
 
                     <SlopeBlendStrength Value="15.0" />
                     <SlopeBlendContrast Value="2.0" />
@@ -1539,7 +1488,6 @@
                         <Normal Id="LunaGroundNormal"/>
                         <AoRoughMetal Id="LunaGroundAoRoughMetal" />
                         <Displacement Id="LunaGroundDisplacement" />
-                        <Height Id="Grey" Path="Textures/Planets/EmptyGrey.png" Category="Terrain"/>
 
                         <TextureTiling Value="0.03" />
 
@@ -1553,7 +1501,6 @@
                         <Normal Id="LunaCliffsNormal" />
                         <AoRoughMetal Id="LunaCliffsAoRoughMetal" />
                         <Displacement Id="LunaCliffsDisplacement" />
-                        <Height Id="Grey" Path="Textures/Planets/EmptyGrey.png" Category="Terrain"/>
 
                         <TextureTiling Value="0.04" />
 
@@ -1571,14 +1518,19 @@
         <GroundClutter>
 
             <Ecotype Id="Rocks">
-                <Placement>
-                    <ObjectSeparation M="35" /> 
+                <Placement Biomes="Surface,Craters,Maria">
+                    <ObjectSeparation M="25" /> 
                     <GenerationRange M="2250" />
 
                     <MinScale X="0.08" Y="0.08" Z="0.08" />
                     <MaxScale X="0.4" Y="0.4" Z="0.4" />
+                    <Orientation Mode="SurfaceNormal" />
                     <MinRotation Degrees="0" />
                     <MaxRotation Degrees="360" />
+
+                    <DistributionTexture Id="TestDistribution" Path="Textures/Planets/Luna/TestDistribution.dds" />
+                    <DistributionTextureTiling Value="250" />
+                    <UseObjectTypeTexture Value="false" />
                 </Placement>
             
                 <ClutterObject Name="RockType1">
@@ -1730,14 +1682,19 @@
             </Ecotype>
 
             <Ecotype Id="LargerRocks">
-                <Placement>
-                    <ObjectSeparation M="170" /> 
+                <Placement Biomes="Surface,Craters">
+                    <ObjectSeparation M="130" /> 
                     <GenerationRange M="12000" />
 
                     <MinScale X="0.3" Y="0.3" Z="0.3" />
                     <MaxScale X="1.4" Y="1.4" Z="1.4" />
+                    <Orientation Mode="SurfaceNormal" />
                     <MinRotation Degrees="0" />
                     <MaxRotation Degrees="360" />
+                    
+                    <DistributionTexture Id="TestDistribution" />
+                    <DistributionTextureTiling Value="250" />
+                    <UseObjectTypeTexture Value="false" />
                 </Placement>
             
                 <ClutterObject Name="RockType1a">
@@ -1889,14 +1846,19 @@
             </Ecotype>
 
             <Ecotype Id="SmallerRocks">
-                <Placement>
-                    <ObjectSeparation M="7.5" /> 
+                <Placement Biomes="Surface,Craters,Maria">
+                    <ObjectSeparation M="6.5" /> 
                     <GenerationRange M="350" />
 
                     <MinScale X="0.03" Y="0.03" Z="0.03" />
                     <MaxScale X="0.075" Y="0.075" Z="0.075" />
+                    <Orientation Mode="SurfaceNormal" />
                     <MinRotation Degrees="0" />
                     <MaxRotation Degrees="360" />
+
+                    <DistributionTexture Id="TestDistribution" />
+                    <DistributionTextureTiling Value="250" />
+                    <UseObjectTypeTexture Value="false" />
                 </Placement>
             
                 <ClutterObject Name="RockType1aa">

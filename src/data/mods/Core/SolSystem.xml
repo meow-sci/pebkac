@@ -64,6 +64,97 @@
             <ArgumentOfPeriapsis Degrees="5.481586957836043E+01" />
             <TimeAtPeriapsis Seconds="-5064962.5577151648" />
         </Orbit>
+        <MeshCollection Id="EarthScale"/>
+
+        <Biomes>
+            <BiomeIDMap Path="Textures/Venus_Biome_ID.ktx2" Category="Terrain"/>
+            <BiomeControlMap Path="Textures/Venus_Biome_Control.ktx2" Category="Terrain"/>
+
+            <Biome IdMapIndex="0" Alias="Surface" />
+        </Biomes>
+
+        <Terrain>
+            <!-- Global Procedural Modifiers -->
+            <ProceduralModifiers>
+
+                <GradientScale Value="4.5" />
+
+                <Modifier Type="Simplex" Name="SmallPerturbations">
+                    <Frequency Value="550" />
+                    <Lacunarity Value="2.0" />
+                    <Persistence Value="0.5" />
+                    <Amplitude Value="100" />
+                    <Seed Value="1" />
+                    <Octaves Value="5" />
+                    <Order Value="7" />
+                </Modifier>
+
+                 <Modifier Type="Erosion" Name="VenusErosion">
+                    <Frequency Value="200" />
+                    <Amplitude Value="450" />
+                    <Lacunarity Value="2" />
+                    <GradientFalloff Value="2.25" />
+                    <Curvature Value="0.00035" />
+                    <Seed Value="1" />
+                    <Octaves Value="6" />
+                    <Order Value="5" />
+                    <GenerateColor Value="true" />
+                    <ValleyColor R="1.0" G="1.0" B="1.0" A="0.1" />
+                    <RidgeColor R="0.0" G="0.0" B="0.0" A="0.0" />
+                </Modifier>
+                
+            </ProceduralModifiers>
+
+            <BiomeMaterials>
+                <!-- Define any properties such as biome blending strength here -->
+                <!-- Order matters! The order these appear corresponds to the ID in the ID map, starting from 0 -->
+
+                <BlendStrength Value="2.25" />
+                <!-- Base terrain -->
+                <BiomeMaterial Biome="Surface">
+
+                    <SlopeBlendStrength Value="10.5" />
+                    <SlopeBlendContrast Value="2.0" />
+                    <SlopeBlendBias Value="0.00" />
+
+                    <GroundMaterial>
+                        <Diffuse Id="LunaGroundDiffuse" Path="Textures/Planets/Luna/Main/Luna_Albedo.dds" Category="Terrain"/>
+                        <Normal Id="LunaGroundNormal" Path="Textures/Planets/Luna/Main/Luna_Normal.dds" Category="Terrain"/>
+                        <AoRoughMetal Id="LunaGroundAoRoughMetal" Path="Textures/Planets/Luna/Main/Luna_AoRoughMetal.dds" Category="Terrain"/>
+                        <Displacement Id="LunaGroundDisplacement" Path="Textures/Planets/Luna/Main/Luna_Displacement.dds" Category="Terrain"/>
+
+                        <TextureTiling Value="0.03" />
+                        <HeightTiling Value="0.0000155" />
+
+                        <HeightDeformity Value="0.3" />
+
+                        <DiffuseScale Value="1.0" />
+                        <NormalScale Value="0.6" />
+                        <DisplacementScale Value="0.28400" />
+
+                    </GroundMaterial>
+
+                    <SlopeMaterial>
+                        <Diffuse Id="LunaCliffsDiffuse" Path="Textures/Planets/Luna/Cliffs/Luna_Cliffs_Albedo.dds" Category="Terrain"/>
+                        <Normal Id="LunaCliffsNormal" Path="Textures/Planets/Luna/Cliffs/Luna_Cliffs_Normal.dds" Category="Terrain"/>
+                        <AoRoughMetal Id="LunaCliffsAoRoughMetal" Path="Textures/Planets/Luna/Cliffs/Luna_Cliffs_AoRoughMetal.dds" Category="Terrain"/>
+                        <Displacement Id="LunaCliffsDisplacement" Path="Textures/Planets/Luna/Cliffs/Luna_Cliffs_Displacement.dds" Category="Terrain"/>
+
+                        <TextureTiling Value="0.04" />
+                        <HeightTiling Value="0.0000155" />
+
+                        <HeightDeformity Value="0.3" />
+
+                        <DiffuseScale Value="1.0" />
+                        <NormalScale Value="1.0" />
+                        <DisplacementScale Value="1.0" />
+                    </SlopeMaterial>
+
+                </BiomeMaterial>
+
+            </BiomeMaterials>
+
+        </Terrain>
         <Rotation DefinitionFrame="Ecliptic">
             <!-- JPL Horizons ephemerides at Julian Day 2461009.500000000 -->
             <IsRetrograde Value="true"/>
@@ -75,10 +166,11 @@
 
         <MeshCollection Id="Default"/>
         <MeanRadius Km="6051.8" />
-        <Diffuse Path="Textures/Venus_Diffuse.jpg" Category="Terrain"/>
-        <Normal Path="Textures/Venus_Normal.jpg" Category="Terrain"/>
-        <Height Path="Textures/Venus_Height.jpg" Category="Terrain">
-            <Maximum Km="20"/>
+        <Diffuse Path="Textures/Venus_Diffuse.ktx2" Category="Terrain"/>
+        <Normal Path="Textures/Venus_Normal.ktx2" Category="Terrain"/>
+        <Height Path="Textures/Venus_Height.ktx2" Category="Terrain">
+            <Minimum Km="-3.751"/>
+            <Maximum Km="11.0"/>
         </Height>
         <Mass Earths="0.815" />
         <Color R="1.0" G="0.87" B="0.68" />
@@ -462,21 +554,32 @@
         </Rotation>
 
         <MeshCollection Id="MarsScale"/>
-        <Diffuse Id="MarsDiffuse" Path="Textures/Mars_Diffuse.dds" Category="Terrain"/>
-        <Normal Path="Textures/Mars_Normal.dds" Power="0.2" Category="Terrain"/>
+        <Diffuse Id="MarsDiffuse" Path="Textures/Mars_Diffuse.ktx2" Category="Terrain"/>
+        <Normal Path="Textures/Mars_Normal.ktx2" Category="Terrain"/>
         <Height Path="Textures/Mars_Height.ktx2" Category="Terrain">
             <Minimum Km="-8.200"/>
             <Maximum Km="21.229"/>
         </Height>
+
+        <Biomes>
+            <BiomeIDMap Id="MarsBiomeID" Path="Textures/Mars_Biome_ID.ktx2" Category="Terrain"/>
+            <BiomeControlMap Id="MarsBiomeControl" Path="Textures/Mars_Biome_Control.ktx2" Category="Terrain"/>
+
+            <Biome IdMapIndex="0" Alias="SandOnly" />
+            <Biome IdMapIndex="1" Alias="SandAndCliffs" />
+            <Biome IdMapIndex="2" Alias="VallesMarineris" />
+            <Biome IdMapIndex="3" Alias="Poles" />
+        </Biomes>
+
         <Terrain>
             <!-- In progress... -->
-            <BiomeIDMap Id="MarsBiomeID" Path="Textures/Mars_Biome_ID.png" Category="Terrain"/>
-            <BiomeControlMap Id="MarsBiomeControl" Path="Textures/Mars_Biome_Control.png" Category="Terrain"/>
+            <BiomeIDMap Id="MarsBiomeID" Path="Textures/Mars_Biome_ID.ktx2" Category="Terrain"/>
+            <BiomeControlMap Id="MarsBiomeControl" Path="Textures/Mars_Biome_Control.ktx2" Category="Terrain"/>
 
             <ProceduralModifiers>
-                <GradientScale Value="2.2" />
+                <GradientScale Value="3.0" />
 
-                <Modifier Type="Decal" Name="MarsTestDecal">
+                <Modifier Type="Decal" Name="MarsTestDecal" Biomes="SandOnly">
                     <Frequency Value="250" />
                     <Amplitude Value="200" />
                     <Seed Value="1" />
@@ -498,7 +601,7 @@
 
                 <Modifier Type="Erosion" Name="MarsErosion">
                     <Frequency Value="150" />
-                    <Amplitude Value="750" />
+                    <Amplitude Value="500" />
                     <Lacunarity Value="2" />
                     <GradientFalloff Value="0.1" />
                     <Curvature Value="0.00035" />
@@ -510,6 +613,46 @@
                     <RidgeColor R="0.42" G="0.42" B="0.42" A="1.0" />
                 </Modifier>
 
+                <Modifier Type="Dunes" Name="SandDunes">
+                    <Frequency Value="1000.0" />
+                    <Lacunarity Value="2.0" />
+                    <Persistence Value="0.63" />
+                    <Shear Value="0.71" />
+                    <DistortionScale Value="0.1" />
+                    <DistortionAmp Value="10.33" />
+                    <FalloffPower Value="2.8" />
+                    <Amplitude Value="50" />
+                    <AmplitudeHeightCurve>
+                        <SplinePoint>
+                            <Key Value="0.0" />
+                            <Value Value="1.0" />   
+                            <InTangent Value="0.0" />
+                            <OutTangent Value="0.0" />
+                        </SplinePoint>
+                        <SplinePoint>
+                            <Key Value="0.5" />
+                            <Value Value="1.0" />
+                            <InTangent Value="0.0" />
+                            <OutTangent Value="0.0" />
+                        </SplinePoint>
+                        <SplinePoint>
+                            <Key Value="0.7" />
+                            <Value Value="0.0" />
+                            <InTangent Value="-1.0" />
+                            <OutTangent Value="0.0" />
+                        </SplinePoint>
+                        <SplinePoint>
+                            <Key Value="1.0" />
+                            <Value Value="0.0" />
+                            <InTangent Value="0.0" />
+                            <OutTangent Value="0.0" />
+                        </SplinePoint>
+                    </AmplitudeHeightCurve>
+                    <Seed Value="1" />
+                    <Octaves Value="7" />
+                    <Order Value="0" />
+                </Modifier>
+
             </ProceduralModifiers>
 
             <BiomeMaterials>
@@ -517,9 +660,11 @@
                 <!-- Order matters! The order these appear corresponds to the ID in the ID map, starting from 0 -->
 
                 <BlendStrength Value="2.25" />
+                <DetailFadeInEnd Km="10" />
+                <DetailFadeInStart Km="550" />
 
                 <!-- Appears in the lighter sandy areas, and mountains -->
-                <BiomeMaterial Name="SandOnly">
+                <BiomeMaterial Biome="SandOnly">
 
                     <SlopeBlendStrength Value="15.0" />
                     <SlopeBlendContrast Value="2.0" />
@@ -530,8 +675,7 @@
                         <Diffuse Id="MarsRegolithDiffuse" Path="Textures/Planets/Mars/Regolith/Regolith_Albedo.dds" Category="Terrain"/>
                         <Normal Id="MarsRegolithNormal" Path="Textures/Planets/Mars/Regolith/Regolith_Normal.dds" Category="Terrain"/>
                         <AoRoughMetal Id="MarsRegolithAoRoughMetal" Path="Textures/Planets/Mars/Regolith/Regolith_AoRoughMetal.dds" Category="Terrain"/>
-                        <Displacement Id="MarsRegolithDisplacement" Path="Textures/Planets/Mars/Regolith/Regolith_Displacement.png" Category="Terrain"/>
-                        <Height Id="MarsM" Path="Textures/Mars_Noise.png" Category="Terrain"/>
+                        <Displacement Id="MarsRegolithDisplacement" Path="Textures/Planets/Mars/Regolith/Regolith_Displacement.dds" Category="Terrain"/>
 
                         <TextureTiling Value="0.04" />
                         <HeightTiling Value="0.0000155" />
@@ -549,7 +693,6 @@
                         <Normal Id="LunaCliffsNormal" />
                         <AoRoughMetal Id="LunaCliffsAoRoughMetal" />
                         <Displacement Id="LunaCliffsDisplacement"/>
-                        <Height Id="Grey" Path="Textures/Planets/EmptyGrey.png" Category="Terrain"/>
 
                         <TextureTiling Value="0.068" />
 
@@ -561,7 +704,7 @@
                 </BiomeMaterial>
 
                 <!-- Appears in the darker sandy areas -->
-                <BiomeMaterial Name="SandAndCliffs">
+                <BiomeMaterial Biome="SandAndCliffs">
 
                     <SlopeBlendStrength Value="15.0" />
                     <SlopeBlendContrast Value="2.0" />
@@ -572,8 +715,7 @@
                         <Diffuse Id="MarsDebrisDiffuse" Path="Textures/Planets/Mars/Debris/Debris_Albedo.dds" Category="Terrain"/>
                         <Normal Id="MarsDebrisNormal" Path="Textures/Planets/Mars/Debris/Debris_Normal.dds" Category="Terrain"/>
                         <AoRoughMetal Id="MarsDebrisAoRoughMetal" Path="Textures/Planets/Mars/Debris/Debris_AoRoughMetal.dds" Category="Terrain"/>
-                        <Displacement Id="MarsDebrisDisplacement" Path="Textures/Planets/Mars/Debris/Debris_Displacement.png" Category="Terrain"/>
-                        <Height Id="Grey" Path="Textures/Planets/EmptyGrey.png" Category="Terrain"/>
+                        <Displacement Id="MarsDebrisDisplacement" Path="Textures/Planets/Mars/Debris/Debris_Displacement.dds" Category="Terrain"/>
 
                         <TextureTiling Value="0.068" />
 
@@ -586,8 +728,7 @@
                         <Diffuse Id="MarsCliffsDiffuse" Path="Textures/Planets/Mars/Cliffs/Cliffs_Albedo.dds" Category="Terrain"/>
                         <Normal Id="MarsCliffsNormal" Path="Textures/Planets/Mars/Cliffs/Cliffs_Normal.dds" Category="Terrain"/>
                         <AoRoughMetal Id="MarsCliffsAoRoughMetal" Path="Textures/Planets/Mars/Cliffs/Cliffs_AoRoughMetal.dds" Category="Terrain"/>
-                        <Displacement Id="MarsCliffsDisplacement" Path="Textures/Planets/Mars/Cliffs/Cliffs_Displacement.png" Category="Terrain"/>
-                        <Height Id="Grey" Path="Textures/Planets/EmptyGrey.png" Category="Terrain"/>
+                        <Displacement Id="MarsCliffsDisplacement" Path="Textures/Planets/Mars/Cliffs/Cliffs_Displacement.dds" Category="Terrain"/>
 
                         <TextureTiling Value="0.068" />
 
@@ -615,7 +756,7 @@
                 </BiomeMaterial>
 
                 <!-- The big canyon -->
-                <BiomeMaterial Name="VallesMarineris">
+                <BiomeMaterial Biome="VallesMarineris">
 
                     <SlopeBlendStrength Value="15.0" />
                     <SlopeBlendContrast Value="2.0" />
@@ -626,7 +767,6 @@
                         <Normal Id="MarsRegolithNormal"/>
                         <AoRoughMetal Id="MarsRegolithAoRoughMetal" />
                         <Displacement Id="MarsRegolithDisplacement" />
-                        <Height Id="Grey" Path="Textures/Planets/EmptyGrey.png" Category="Terrain"/>
 
                         <TextureTiling Value="0.068" />
 
@@ -640,7 +780,6 @@
                         <Normal Id="MarsCliffsNormal"/>
                         <AoRoughMetal Id="MarsCliffsAoRoughMetal" />
                         <Displacement Id="MarsCliffsDisplacement" />
-                        <Height Id="Grey" Path="Textures/Planets/EmptyGrey.png" Category="Terrain"/>
 
                         <TextureTiling Value="0.068" />
 
@@ -649,7 +788,8 @@
                         <DisplacementScale Value="0.6" />
                     </SlopeMaterial>
                 </BiomeMaterial>
-                <BiomeMaterial Name="Poles">
+
+                <BiomeMaterial Biome="Poles">
 
                     <SlopeBlendStrength Value="15.0" />
                     <SlopeBlendContrast Value="2.0" />
@@ -659,8 +799,7 @@
                         <Diffuse Id="MarsSnowDiffuse" Path="Textures/Planets/Mars/Snow/Snow_Albedo.dds" Category="Terrain"/>
                         <Normal Id="MarsSnowNormal" Path="Textures/Planets/Mars/Snow/Snow_Normal.dds" Category="Terrain"/>
                         <AoRoughMetal Id="MarsSnowAoRoughMetal" Path="Textures/Planets/Mars/Snow/Snow_AoRoughMetal.dds" Category="Terrain"/>
-                        <Displacement Id="MarsSnowDisplacement" Path="Textures/Planets/Mars/Snow/Snow_Displacement.png" Category="Terrain"/>
-                        <Height Id="Grey" Path="Textures/Planets/EmptyGrey.png" Category="Terrain"/>
+                        <Displacement Id="MarsSnowDisplacement" Path="Textures/Planets/Mars/Snow/Snow_Displacement.dds" Category="Terrain"/>
 
                         <TextureTiling Value="0.068" />
 
@@ -675,7 +814,6 @@
                         <Normal Id="LunaCliffsNormal" />
                         <AoRoughMetal Id="LunaCliffsAoRoughMetal" />
                         <Displacement Id="LunaCliffsDisplacement" />
-                        <Height Id="Grey" Path="Textures/Planets/EmptyGrey.png" Category="Terrain"/>
 
                         <TextureTiling Value="0.068" />
 
@@ -686,6 +824,505 @@
                 </BiomeMaterial>
             </BiomeMaterials>
         </Terrain>
+
+
+        <!-- For now, copy mars quick and dirty -->
+        <GroundClutter>
+            <Ecotype Id="Rocks">
+                <Placement Biomes="SandAndCliffs,SandOnly,VallesMarineris">
+                    <ObjectSeparation M="25" /> 
+                    <GenerationRange M="2250" />
+
+                    <MinScale X="0.08" Y="0.08" Z="0.08" />
+                    <MaxScale X="0.4" Y="0.4" Z="0.4" />
+                    <Orientation Mode="SurfaceNormal" />
+                    <MinRotation Degrees="0" />
+                    <MaxRotation Degrees="360" />
+
+                    <DistributionTexture Id="TestDistribution" Path="Textures/Planets/Luna/TestDistribution.dds" />
+                    <DistributionTextureTiling Value="250" />
+                    <UseObjectTypeTexture Value="false" />
+                </Placement>
+            
+                <ClutterObject Name="RockType1">
+                    <LODs>
+                        <LOD MinScreenSize="128">
+                            <Mesh Id="Rock0_LOD0" Path="Meshes/Planets/Luna/GroundClutter/Rock0Lod0.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="64">
+                            <Mesh Id="Rock0_LOD1" Path="Meshes/Planets/Luna/GroundClutter/Rock0Lod1.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="32">
+                            <Mesh Id="Rock0_LOD2" Path="Meshes/Planets/Luna/GroundClutter/Rock0Lod2.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="16">
+                            <Mesh Id="Rock0_LOD3" Path="Meshes/Planets/Luna/GroundClutter/Rock0Lod3.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="8">
+                            <Mesh Id="Rock0_LOD4" Path="Meshes/Planets/Luna/GroundClutter/Rock0Lod4.glb" />
+                        </LOD>
+                    </LODs>
+                </ClutterObject>
+
+                <ClutterObject Name="RockType2">
+                    <LODs>
+                        <LOD MinScreenSize="128">
+                            <Mesh Id="Rock1_LOD0" Path="Meshes/Planets/Luna/GroundClutter/Rock1Lod0.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="64">
+                            <Mesh Id="Rock1_LOD1" Path="Meshes/Planets/Luna/GroundClutter/Rock1Lod1.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="32">
+                            <Mesh Id="Rock1_LOD2" Path="Meshes/Planets/Luna/GroundClutter/Rock1Lod2.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="16">
+                            <Mesh Id="Rock1_LOD3" Path="Meshes/Planets/Luna/GroundClutter/Rock1Lod3.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="8">
+                            <Mesh Id="Rock1_LOD4" Path="Meshes/Planets/Luna/GroundClutter/Rock1Lod4.glb" />
+                        </LOD>
+                    </LODs>
+                </ClutterObject>
+
+                <ClutterObject Name="RockType3">
+                    <LODs>
+                        <LOD MinScreenSize="128">
+                            <Mesh Id="Rock2_LOD0" Path="Meshes/Planets/Luna/GroundClutter/Rock2Lod0.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="64">
+                            <Mesh Id="Rock2_LOD1" Path="Meshes/Planets/Luna/GroundClutter/Rock2Lod1.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="32">
+                            <Mesh Id="Rock2_LOD2" Path="Meshes/Planets/Luna/GroundClutter/Rock2Lod2.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="16">
+                            <Mesh Id="Rock2_LOD3" Path="Meshes/Planets/Luna/GroundClutter/Rock2Lod3.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="8">
+                            <Mesh Id="Rock2_LOD4" Path="Meshes/Planets/Luna/GroundClutter/Rock2Lod4.glb" />
+                        </LOD>
+                    </LODs>
+                </ClutterObject>
+
+                <ClutterObject Name="RockType4">
+                    <LODs>
+                        <LOD MinScreenSize="128">
+                            <Mesh Id="Rock3_LOD0" Path="Meshes/Planets/Luna/GroundClutter/Rock3Lod0.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="64">
+                            <Mesh Id="Rock3_LOD1" Path="Meshes/Planets/Luna/GroundClutter/Rock3Lod1.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="32">
+                            <Mesh Id="Rock3_LOD2" Path="Meshes/Planets/Luna/GroundClutter/Rock3Lod2.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="16">
+                            <Mesh Id="Rock3_LOD3" Path="Meshes/Planets/Luna/GroundClutter/Rock3Lod3.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="8">
+                            <Mesh Id="Rock3_LOD4" Path="Meshes/Planets/Luna/GroundClutter/Rock3Lod4.glb" />
+                        </LOD>
+                    </LODs>
+                </ClutterObject>
+
+                <ClutterObject Name="RockType5">
+                    <LODs>
+                        <LOD MinScreenSize="128">
+                            <Mesh Id="Rock4_LOD0" Path="Meshes/Planets/Luna/GroundClutter/Rock4Lod0.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="64">
+                            <Mesh Id="Rock4_LOD1" Path="Meshes/Planets/Luna/GroundClutter/Rock4Lod1.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="32">
+                            <Mesh Id="Rock4_LOD2" Path="Meshes/Planets/Luna/GroundClutter/Rock4Lod2.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="16">
+                            <Mesh Id="Rock4_LOD3" Path="Meshes/Planets/Luna/GroundClutter/Rock4Lod3.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="8">
+                            <Mesh Id="Rock4_LOD4" Path="Meshes/Planets/Luna/GroundClutter/Rock4Lod4.glb" />
+                        </LOD>
+                    </LODs>
+                </ClutterObject>
+
+                <ClutterObject Name="RockType6">
+                    <LODs>
+                        <LOD MinScreenSize="128">
+                            <Mesh Id="Rock5_LOD0" Path="Meshes/Planets/Luna/GroundClutter/Rock5Lod0.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="64">
+                            <Mesh Id="Rock5_LOD1" Path="Meshes/Planets/Luna/GroundClutter/Rock5Lod1.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="32">
+                            <Mesh Id="Rock5_LOD2" Path="Meshes/Planets/Luna/GroundClutter/Rock5Lod2.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="16">
+                            <Mesh Id="Rock5_LOD3" Path="Meshes/Planets/Luna/GroundClutter/Rock5Lod3.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="8">
+                            <Mesh Id="Rock5_LOD4" Path="Meshes/Planets/Luna/GroundClutter/Rock5Lod4.glb" />
+                        </LOD>
+                    </LODs>
+                </ClutterObject>
+
+                <ClutterObject Name="RockType7">
+                    <LODs>
+                        <LOD MinScreenSize="128">
+                            <Mesh Id="Rock6_LOD0" Path="Meshes/Planets/Luna/GroundClutter/Rock6Lod0.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="64">
+                            <Mesh Id="Rock6_LOD1" Path="Meshes/Planets/Luna/GroundClutter/Rock6Lod1.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="32">
+                            <Mesh Id="Rock6_LOD2" Path="Meshes/Planets/Luna/GroundClutter/Rock6Lod2.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="16">
+                            <Mesh Id="Rock6_LOD3" Path="Meshes/Planets/Luna/GroundClutter/Rock6Lod3.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="8">
+                            <Mesh Id="Rock6_LOD4" Path="Meshes/Planets/Luna/GroundClutter/Rock6Lod4.glb" />
+                        </LOD>
+                    </LODs>
+                </ClutterObject>
+
+                <!-- <UseTerrainMask Value="true" /> -->
+                <Material>
+                    <Diffuse Id="MarsRockAtlasDiffuse" Path="Textures/Planets/Luna/GroundClutter/TestRocks_Diffuse.ktx2" Category="Terrain"/>
+                    <Normal Id="LunaRockAtlasNormal" Path="Textures/Planets/Luna/GroundClutter/TestRocks_Normal.dds" Category="Terrain"/>
+                    <AoRoughMetal Id="LunaRockAtlasAoRoughMetal" Path="Textures/Planets/Luna/GroundClutter/TestRocks_AoRoughMetal.dds" Category="Terrain"/>
+                </Material>
+
+            </Ecotype>
+
+            <Ecotype Id="LargerRocks">
+                <Placement Biomes="SandAndCliffs,SandOnly,VallesMarineris">
+                    <ObjectSeparation M="130" /> 
+                    <GenerationRange M="12000" />
+
+                    <MinScale X="0.3" Y="0.3" Z="0.3" />
+                    <MaxScale X="1.4" Y="1.4" Z="1.4" />
+                    <Orientation Mode="SurfaceNormal" />
+                    <MinRotation Degrees="0" />
+                    <MaxRotation Degrees="360" />
+                    
+                    <DistributionTexture Id="TestDistribution" />
+                    <DistributionTextureTiling Value="250" />
+                    <UseObjectTypeTexture Value="false" />
+                </Placement>
+            
+                <ClutterObject Name="RockType1a">
+                    <LODs>
+                        <LOD MinScreenSize="128">
+                            <Mesh Id="Rock0_LOD0" Path="Meshes/Planets/Luna/GroundClutter/Rock0Lod0.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="64">
+                            <Mesh Id="Rock0_LOD1" Path="Meshes/Planets/Luna/GroundClutter/Rock0Lod1.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="32">
+                            <Mesh Id="Rock0_LOD2" Path="Meshes/Planets/Luna/GroundClutter/Rock0Lod2.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="16">
+                            <Mesh Id="Rock0_LOD3" Path="Meshes/Planets/Luna/GroundClutter/Rock0Lod3.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="8">
+                            <Mesh Id="Rock0_LOD4" Path="Meshes/Planets/Luna/GroundClutter/Rock0Lod4.glb" />
+                        </LOD>
+                    </LODs>
+                </ClutterObject>
+
+                <ClutterObject Name="RockType2a">
+                    <LODs>
+                        <LOD MinScreenSize="128">
+                            <Mesh Id="Rock1_LOD0" Path="Meshes/Planets/Luna/GroundClutter/Rock1Lod0.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="64">
+                            <Mesh Id="Rock1_LOD1" Path="Meshes/Planets/Luna/GroundClutter/Rock1Lod1.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="32">
+                            <Mesh Id="Rock1_LOD2" Path="Meshes/Planets/Luna/GroundClutter/Rock1Lod2.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="16">
+                            <Mesh Id="Rock1_LOD3" Path="Meshes/Planets/Luna/GroundClutter/Rock1Lod3.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="8">
+                            <Mesh Id="Rock1_LOD4" Path="Meshes/Planets/Luna/GroundClutter/Rock1Lod4.glb" />
+                        </LOD>
+                    </LODs>
+                </ClutterObject>
+
+                <ClutterObject Name="RockType3a">
+                    <LODs>
+                        <LOD MinScreenSize="128">
+                            <Mesh Id="Rock2_LOD0" Path="Meshes/Planets/Luna/GroundClutter/Rock2Lod0.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="64">
+                            <Mesh Id="Rock2_LOD1" Path="Meshes/Planets/Luna/GroundClutter/Rock2Lod1.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="32">
+                            <Mesh Id="Rock2_LOD2" Path="Meshes/Planets/Luna/GroundClutter/Rock2Lod2.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="16">
+                            <Mesh Id="Rock2_LOD3" Path="Meshes/Planets/Luna/GroundClutter/Rock2Lod3.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="8">
+                            <Mesh Id="Rock2_LOD4" Path="Meshes/Planets/Luna/GroundClutter/Rock2Lod4.glb" />
+                        </LOD>
+                    </LODs>
+                </ClutterObject>
+
+                <ClutterObject Name="RockType4a">
+                    <LODs>
+                        <LOD MinScreenSize="128">
+                            <Mesh Id="Rock3_LOD0" Path="Meshes/Planets/Luna/GroundClutter/Rock3Lod0.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="64">
+                            <Mesh Id="Rock3_LOD1" Path="Meshes/Planets/Luna/GroundClutter/Rock3Lod1.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="32">
+                            <Mesh Id="Rock3_LOD2" Path="Meshes/Planets/Luna/GroundClutter/Rock3Lod2.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="16">
+                            <Mesh Id="Rock3_LOD3" Path="Meshes/Planets/Luna/GroundClutter/Rock3Lod3.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="8">
+                            <Mesh Id="Rock3_LOD4" Path="Meshes/Planets/Luna/GroundClutter/Rock3Lod4.glb" />
+                        </LOD>
+                    </LODs>
+                </ClutterObject>
+
+                <ClutterObject Name="RockType5a">
+                    <LODs>
+                        <LOD MinScreenSize="128">
+                            <Mesh Id="Rock4_LOD0" Path="Meshes/Planets/Luna/GroundClutter/Rock4Lod0.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="64">
+                            <Mesh Id="Rock4_LOD1" Path="Meshes/Planets/Luna/GroundClutter/Rock4Lod1.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="32">
+                            <Mesh Id="Rock4_LOD2" Path="Meshes/Planets/Luna/GroundClutter/Rock4Lod2.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="16">
+                            <Mesh Id="Rock4_LOD3" Path="Meshes/Planets/Luna/GroundClutter/Rock4Lod3.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="8">
+                            <Mesh Id="Rock4_LOD4" Path="Meshes/Planets/Luna/GroundClutter/Rock4Lod4.glb" />
+                        </LOD>
+                    </LODs>
+                </ClutterObject>
+
+                <ClutterObject Name="RockType6a">
+                    <LODs>
+                        <LOD MinScreenSize="128">
+                            <Mesh Id="Rock5_LOD0" Path="Meshes/Planets/Luna/GroundClutter/Rock5Lod0.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="64">
+                            <Mesh Id="Rock5_LOD1" Path="Meshes/Planets/Luna/GroundClutter/Rock5Lod1.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="32">
+                            <Mesh Id="Rock5_LOD2" Path="Meshes/Planets/Luna/GroundClutter/Rock5Lod2.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="16">
+                            <Mesh Id="Rock5_LOD3" Path="Meshes/Planets/Luna/GroundClutter/Rock5Lod3.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="8">
+                            <Mesh Id="Rock5_LOD4" Path="Meshes/Planets/Luna/GroundClutter/Rock5Lod4.glb" />
+                        </LOD>
+                    </LODs>
+                </ClutterObject>
+
+                <ClutterObject Name="RockType7a">
+                    <LODs>
+                        <LOD MinScreenSize="128">
+                            <Mesh Id="Rock6_LOD0" Path="Meshes/Planets/Luna/GroundClutter/Rock6Lod0.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="64">
+                            <Mesh Id="Rock6_LOD1" Path="Meshes/Planets/Luna/GroundClutter/Rock6Lod1.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="32">
+                            <Mesh Id="Rock6_LOD2" Path="Meshes/Planets/Luna/GroundClutter/Rock6Lod2.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="16">
+                            <Mesh Id="Rock6_LOD3" Path="Meshes/Planets/Luna/GroundClutter/Rock6Lod3.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="8">
+                            <Mesh Id="Rock6_LOD4" Path="Meshes/Planets/Luna/GroundClutter/Rock6Lod4.glb" />
+                        </LOD>
+                    </LODs>
+                </ClutterObject>
+
+                <Material>
+                    <Diffuse Id="MarsRockAtlasDiffuse"/>
+                    <Normal Id="LunaRockAtlasNormal"/>
+                    <AoRoughMetal Id="LunaRockAtlasAoRoughMetal"/>
+                </Material>
+
+            </Ecotype>
+
+            <Ecotype Id="SmallerRocks">
+                <Placement Biomes="SandAndCliffs,SandOnly,VallesMarineris">
+                    <ObjectSeparation M="6.5" /> 
+                    <GenerationRange M="350" />
+
+                    <MinScale X="0.03" Y="0.03" Z="0.03" />
+                    <MaxScale X="0.075" Y="0.075" Z="0.075" />
+                    <Orientation Mode="SurfaceNormal" />
+                    <MinRotation Degrees="0" />
+                    <MaxRotation Degrees="360" />
+
+                    <DistributionTexture Id="TestDistribution" />
+                    <DistributionTextureTiling Value="250" />
+                    <UseObjectTypeTexture Value="false" />
+                </Placement>
+            
+                <ClutterObject Name="RockType1aa">
+                    <LODs>
+                        <LOD MinScreenSize="128">
+                            <Mesh Id="Rock0_LOD0" Path="Meshes/Planets/Luna/GroundClutter/Rock0Lod0.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="64">
+                            <Mesh Id="Rock0_LOD1" Path="Meshes/Planets/Luna/GroundClutter/Rock0Lod1.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="32">
+                            <Mesh Id="Rock0_LOD2" Path="Meshes/Planets/Luna/GroundClutter/Rock0Lod2.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="16">
+                            <Mesh Id="Rock0_LOD3" Path="Meshes/Planets/Luna/GroundClutter/Rock0Lod3.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="8">
+                            <Mesh Id="Rock0_LOD4" Path="Meshes/Planets/Luna/GroundClutter/Rock0Lod4.glb" />
+                        </LOD>
+                    </LODs>
+                </ClutterObject>
+
+                <ClutterObject Name="RockType2aa">
+                    <LODs>
+                        <LOD MinScreenSize="128">
+                            <Mesh Id="Rock1_LOD0" Path="Meshes/Planets/Luna/GroundClutter/Rock1Lod0.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="64">
+                            <Mesh Id="Rock1_LOD1" Path="Meshes/Planets/Luna/GroundClutter/Rock1Lod1.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="32">
+                            <Mesh Id="Rock1_LOD2" Path="Meshes/Planets/Luna/GroundClutter/Rock1Lod2.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="16">
+                            <Mesh Id="Rock1_LOD3" Path="Meshes/Planets/Luna/GroundClutter/Rock1Lod3.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="8">
+                            <Mesh Id="Rock1_LOD4" Path="Meshes/Planets/Luna/GroundClutter/Rock1Lod4.glb" />
+                        </LOD>
+                    </LODs>
+                </ClutterObject>
+
+                <ClutterObject Name="RockType3aa">
+                    <LODs>
+                        <LOD MinScreenSize="128">
+                            <Mesh Id="Rock2_LOD0" Path="Meshes/Planets/Luna/GroundClutter/Rock2Lod0.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="64">
+                            <Mesh Id="Rock2_LOD1" Path="Meshes/Planets/Luna/GroundClutter/Rock2Lod1.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="32">
+                            <Mesh Id="Rock2_LOD2" Path="Meshes/Planets/Luna/GroundClutter/Rock2Lod2.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="16">
+                            <Mesh Id="Rock2_LOD3" Path="Meshes/Planets/Luna/GroundClutter/Rock2Lod3.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="8">
+                            <Mesh Id="Rock2_LOD4" Path="Meshes/Planets/Luna/GroundClutter/Rock2Lod4.glb" />
+                        </LOD>
+                    </LODs>
+                </ClutterObject>
+
+                <ClutterObject Name="RockType4aa">
+                    <LODs>
+                        <LOD MinScreenSize="128">
+                            <Mesh Id="Rock3_LOD0" Path="Meshes/Planets/Luna/GroundClutter/Rock3Lod0.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="64">
+                            <Mesh Id="Rock3_LOD1" Path="Meshes/Planets/Luna/GroundClutter/Rock3Lod1.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="32">
+                            <Mesh Id="Rock3_LOD2" Path="Meshes/Planets/Luna/GroundClutter/Rock3Lod2.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="16">
+                            <Mesh Id="Rock3_LOD3" Path="Meshes/Planets/Luna/GroundClutter/Rock3Lod3.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="8">
+                            <Mesh Id="Rock3_LOD4" Path="Meshes/Planets/Luna/GroundClutter/Rock3Lod4.glb" />
+                        </LOD>
+                    </LODs>
+                </ClutterObject>
+
+                <ClutterObject Name="RockType5aa">
+                    <LODs>
+                        <LOD MinScreenSize="128">
+                            <Mesh Id="Rock4_LOD0" Path="Meshes/Planets/Luna/GroundClutter/Rock4Lod0.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="64">
+                            <Mesh Id="Rock4_LOD1" Path="Meshes/Planets/Luna/GroundClutter/Rock4Lod1.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="32">
+                            <Mesh Id="Rock4_LOD2" Path="Meshes/Planets/Luna/GroundClutter/Rock4Lod2.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="16">
+                            <Mesh Id="Rock4_LOD3" Path="Meshes/Planets/Luna/GroundClutter/Rock4Lod3.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="8">
+                            <Mesh Id="Rock4_LOD4" Path="Meshes/Planets/Luna/GroundClutter/Rock4Lod4.glb" />
+                        </LOD>
+                    </LODs>
+                </ClutterObject>
+
+                <ClutterObject Name="RockType6aa">
+                    <LODs>
+                        <LOD MinScreenSize="128">
+                            <Mesh Id="Rock5_LOD0" Path="Meshes/Planets/Luna/GroundClutter/Rock5Lod0.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="64">
+                            <Mesh Id="Rock5_LOD1" Path="Meshes/Planets/Luna/GroundClutter/Rock5Lod1.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="32">
+                            <Mesh Id="Rock5_LOD2" Path="Meshes/Planets/Luna/GroundClutter/Rock5Lod2.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="16">
+                            <Mesh Id="Rock5_LOD3" Path="Meshes/Planets/Luna/GroundClutter/Rock5Lod3.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="8">
+                            <Mesh Id="Rock5_LOD4" Path="Meshes/Planets/Luna/GroundClutter/Rock5Lod4.glb" />
+                        </LOD>
+                    </LODs>
+                </ClutterObject>
+
+                <ClutterObject Name="RockType7aa">
+                    <LODs>
+                        <LOD MinScreenSize="128">
+                            <Mesh Id="Rock6_LOD0" Path="Meshes/Planets/Luna/GroundClutter/Rock6Lod0.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="64">
+                            <Mesh Id="Rock6_LOD1" Path="Meshes/Planets/Luna/GroundClutter/Rock6Lod1.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="32">
+                            <Mesh Id="Rock6_LOD2" Path="Meshes/Planets/Luna/GroundClutter/Rock6Lod2.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="16">
+                            <Mesh Id="Rock6_LOD3" Path="Meshes/Planets/Luna/GroundClutter/Rock6Lod3.glb" />
+                        </LOD>
+                        <LOD MinScreenSize="8">
+                            <Mesh Id="Rock6_LOD4" Path="Meshes/Planets/Luna/GroundClutter/Rock6Lod4.glb" />
+                        </LOD>
+                    </LODs>
+                </ClutterObject>
+
+                <Material>
+                    <Diffuse Id="MarsRockAtlasDiffuse"/>
+                    <Normal Id="LunaRockAtlasNormal"/>
+                    <AoRoughMetal Id="LunaRockAtlasAoRoughMetal"/>
+                </Material>
+
+            </Ecotype>
+
+        </GroundClutter>
+
         <MeanRadius Km="3389.5" />
         <Mass Zg="641.71" />
         <Color R="1.0" G="0.27" B="0.0" />
@@ -1013,17 +1650,21 @@
         <Mass Pg="10.659" />
 
         <Color R="0.33" G="0.33" B="0.33" />
-        <Diffuse Path="Textures/Phobos_Diffuse.dds" Category="Terrain"/>
-        <Normal Path="Textures/Phobos_Normal.dds" Category="Terrain"/>
+        <Diffuse Path="Textures/Phobos_Diffuse.ktx2" Category="Terrain"/>
+        <Normal Path="Textures/Phobos_Normal.ktx2" Category="Terrain"/>
         <Height Path="Textures/Phobos_Height.ktx2" Category="Terrain">
             <Minimum Km="-2.970"/>
             <Maximum Km="3.000"/>
         </Height>
-        <Terrain>
-            <!-- In progress... -->
-            <BiomeIDMap Path="Textures/Phobos_Biome_ID.png" Category="Terrain"/>
-            <BiomeControlMap Path="Textures/Phobos_Biome_Control.png" Category="Terrain"/>
 
+        <Biomes>
+            <BiomeIDMap Id="PhobosBiomeID" Path="Textures/Phobos_Biome_ID.ktx2" Category="Terrain"/>
+            <BiomeControlMap Id="PhobosBiomeControl" Path="Textures/Phobos_Biome_Control.ktx2" Category="Terrain"/>
+
+            <Biome IdMapIndex="0" Alias="Surface" />
+        </Biomes>
+
+        <Terrain>
             <!-- Global Procedural Modifiers -->
             <ProceduralModifiers>
 
@@ -1047,7 +1688,7 @@
                         </SplinePoint>
                     </AmplitudeHeightCurve>
                     <Seed Value="1" />
-                    <Octaves Value="8" />
+                    <Octaves Value="6" />
                     <Order Value="0" />
                 </Modifier>
 
@@ -1132,8 +1773,9 @@
                 <BlendStrength Value="2.25" />
                 <DetailFadeInEnd Km="2" />
                 <DetailFadeInStart Km="100" />
+
                 <!-- Base terrain -->
-                <BiomeMaterial Name="Surface">
+                <BiomeMaterial Biome="Surface">
 
                     <SlopeBlendStrength Value="3.0" />
                     <SlopeBlendContrast Value="1.0" />
@@ -1143,8 +1785,7 @@
                         <Diffuse Id="PhobosGroundDiffuse" Path="Textures/Planets/Phobos/Main/Phobos_Albedo.dds" Category="Terrain"/>
                         <Normal Id="PhobosGroundNormal" Path="Textures/Planets/Phobos/Main/Phobos_Normal.dds" Category="Terrain"/>
                         <AoRoughMetal Id="PhobosGroundAoRoughMetal" Path="Textures/Planets/Phobos/Main/Phobos_AoRoughMetal.dds" Category="Terrain"/>
-                        <Displacement Id="PhobosGroundDisplacement" Path="Textures/Planets/Phobos/Main/Phobos_Displacement.png" Category="Terrain"/>
-                        <Height Id="PhobosTilingDetail" Path="Textures/Luna_Noise.png" Category="Terrain"/>
+                        <Displacement Id="PhobosGroundDisplacement" Path="Textures/Planets/Phobos/Main/Phobos_Displacement.dds" Category="Terrain"/>
 
                         <TextureTiling Value="0.04" />
                         <HeightTiling Value="0.0000155" />
@@ -1161,8 +1802,7 @@
                         <Diffuse Id="LunaCliffsDiffuse" Path="Textures/Planets/Luna/Cliffs/Luna_Cliffs_Albedo.dds" Category="Terrain"/>
                         <Normal Id="LunaCliffsNormal" Path="Textures/Planets/Luna/Cliffs/Luna_Cliffs_Normal.dds" Category="Terrain"/>
                         <AoRoughMetal Id="LunaCliffsAoRoughMetal" Path="Textures/Planets/Luna/Cliffs/Luna_Cliffs_AoRoughMetal.dds" Category="Terrain"/>
-                        <Displacement Id="LunaCliffsDisplacement" Path="Textures/Planets/Luna/Cliffs/Luna_Cliffs_Displacement.png" Category="Terrain"/>
-                        <Height Id="LunaTilingDetail" Path="Textures/Luna_Noise.png" Category="Terrain"/>
+                        <Displacement Id="LunaCliffsDisplacement" Path="Textures/Planets/Luna/Cliffs/Luna_Cliffs_Displacement.dds" Category="Terrain"/>
 
                         <TextureTiling Value="0.04" />
                         <HeightTiling Value="0.0000155" />
@@ -1297,7 +1937,7 @@
         <MeshCollection Id="Default"/>
         <MeanRadius Km="69911" />
         <Mass Jupiters="1" />
-        <Diffuse Id="JupiterDiffuse" Path="Textures/Jupiter_Diffuse.dds" Category="Terrain"/>
+        <Diffuse Id="JupiterDiffuse" Path="Textures/Jupiter_Diffuse.ktx2" Category="Terrain"/>
         <Color R="1.0" G="0.69" B="0.36" />
         <Atmosphere>
             <Visual>
@@ -1820,7 +2460,7 @@
         </Rotation>
 
         <MeshCollection Id="Default"/>
-        <Diffuse Path="Textures/Io_Diffuse.jpg" Category="Terrain"/>
+        <Diffuse Path="Textures/Io_Diffuse.ktx2" Category="Terrain"/>
         <Height Path="Textures/Io_Height.jpg" Category="Terrain"/>
         <MeanRadius Km="1821.6" />
         <Mass Zg="89.32" />
@@ -1986,7 +2626,7 @@
         <MeshCollection Id="Default"/>
         <MeanRadius Km="58232" />
         <Mass Jupiters="0.299" />
-        <Diffuse Path="Textures/Saturn_Diffuse.dds" Category="Terrain"/>
+        <Diffuse Path="Textures/Saturn_Diffuse.ktx2" Category="Terrain"/>
         <Color R="1.0" G="0.82" B="0.57" />
         <Atmosphere>
             <Visual>
@@ -2017,13 +2657,44 @@
             <LongitudeOfAscendingNode Degrees="0.0" />
             <InnerRadius Km="69000" />
             <OuterRadius Km="141100" />
-            <Thickness Km="10" /> <!-- temporary thickness to test with -->
+            <Thickness Km="1.0" />
             <Texture Id="SaturnRings" Path="Textures/Planets/Saturn/Rings.png"/> <!-- this texture is 8192x1 and doesn't benefit from block compression -->
             <DetailScale Value="300.0" />
             <Volume>
                 <RenderDistance Km="1000" />
-                <SampleCount Value="20"/>
+                <Step Scale="0.006">
+                    <Size Km="0.1" />
+                    <MaxSize Km="100" />
+                </Step>
+                <FadeToMeshes Value="true"/>
             </Volume>
+            <RingObjects Name="PlaceholderRock">
+                <Size M="10.0" />
+                <RenderDistance Km="20.0" />
+                <Density Value="3125" /> <!-- objects per km^3 -->
+                <LODs>
+                    <LOD MinScreenSize="32">
+                        <Mesh Id="RingRock_LOD0" Path="Meshes/Planets/Luna/GroundClutter/Rock0Lod0.glb" />
+                    </LOD>
+                    <LOD MinScreenSize="16">
+                        <Mesh Id="RingRock_LOD1" Path="Meshes/Planets/Luna/GroundClutter/Rock0Lod1.glb" />
+                    </LOD>
+                    <LOD MinScreenSize="8">
+                        <Mesh Id="RingRock_LOD2" Path="Meshes/Planets/Luna/GroundClutter/Rock0Lod2.glb" />
+                    </LOD>
+                    <LOD MinScreenSize="4">
+                        <Mesh Id="RingRock_LOD3" Path="Meshes/Planets/Luna/GroundClutter/Rock0Lod3.glb" />
+                    </LOD>
+                    <LOD MinScreenSize="2">
+                        <Mesh Id="RingRock_LOD4" Path="Meshes/Planets/Luna/GroundClutter/Rock0Lod4.glb" />
+                    </LOD>
+                </LODs>
+                <Material>
+                    <Diffuse Id="LunaRockAtlasDiffuse"/>
+                    <Normal Id="LunaRockAtlasNormal"/>
+                    <AoRoughMetal Id="LunaRockAtlasAoRoughMetal"/>
+                </Material>
+            </RingObjects>
         </Rings>
     </AtmosphericBody>
     <PlanetaryBody Id="Pan" Parent="Saturn">
@@ -2038,7 +2709,419 @@
             <IsTidallyLocked Value="true" />
         </Rotation>
         <MeanRadius Km="13.7" />
-        <Mass Eg="4.3" />
+        <Mass Pg="8.3" />
+        <SphereOfInfluence Km="50" /> <!-- Wrong! Just here so we can collide with and land on it -->
+        <Diffuse Path="Textures/Pan_Diffuse.ktx2" Category="Terrain"/>
+        <Normal Path="Textures/Pan_Normal.ktx2" Category="Terrain"/>
+        <Height Path="Textures/Pan_Height.ktx2" Category="Terrain">
+            <Minimum Km="-3.336"/>
+            <Maximum Km="6.27"/>
+        </Height>
+        <MeshCollection Id="Asteroid"/>
+
+        <Biomes>
+            <BiomeIDMap Id="PhobosBiomeID" Path="Textures/Phobos_Biome_ID.ktx2" Category="Terrain"/>
+            <BiomeControlMap Id="PhobosBiomeControl" Path="Textures/Phobos_Biome_Control.ktx2" Category="Terrain"/>
+
+            <Biome IdMapIndex="0" Alias="Surface" />
+        </Biomes>
+
+        <Terrain>
+            <ProceduralModifiers>
+
+                <Modifier Type="Simplex" Name="SmallPerturbations">
+                    <Frequency Value="1.501" />
+                    <Lacunarity Value="2.0" />
+                    <Persistence Value="0.5" />
+                    <Amplitude Value="150" />
+                    <AmplitudeHeightCurve>
+                        <SplinePoint>
+                            <Key Value="0.0" />
+                            <Value Value="0.5" />
+                            <InTangent Value="1.0" />
+                            <OutTangent Value="1.0" />
+                        </SplinePoint>
+                        <SplinePoint>
+                            <Key Value="1.0" />
+                            <Value Value="1.0" />
+                            <InTangent Value="1.0" />
+                            <OutTangent Value="1.0" />
+                        </SplinePoint>
+                    </AmplitudeHeightCurve>
+                    <Seed Value="1" />
+                    <Octaves Value="6" />
+                    <Order Value="0" />
+                </Modifier>
+
+                <Modifier Type="SimpleCraters" Name="TestSmallCraters">
+                    <Frequency Value="1.251" />
+                    <Amplitude Value="200" />
+                    <Seed Value="1" />
+                    <Order Value="6" />
+
+                    <CraterRadiusScale Value="0.497" />
+                    <RadiusNoiseFrequency Value="7.0" />
+                    <RadiusNoiseAmplitude Value="0.15" />
+                    <RadiusNoisePersistence Value="0.34" />
+                    <RadiusNoiseOctaves Value="1" />
+
+                    <CraterSizeVariation Value="1.0" />
+
+                    <CraterShapeCurve>
+                        <SplinePoint>
+                            <Key Value="0.0" />
+                            <Value Value="0.171" />
+                            <InTangent Value="0.0" />
+                            <OutTangent Value="0.0" />
+                        </SplinePoint>
+                        <SplinePoint>
+                            <Key Value="0.186" />
+                            <Value Value="0.171" />
+                            <InTangent Value="0.0" />
+                            <OutTangent Value="0.0" />
+                        </SplinePoint>
+                        <SplinePoint>
+                            <Key Value="0.254" />
+                            <Value Value="0.281" />
+                            <InTangent Value="3.251" />
+                            <OutTangent Value="2.845" />
+                        </SplinePoint>
+                        <SplinePoint>
+                            <Key Value="0.366" />
+                            <Value Value="0.554" />
+                            <InTangent Value="0.149" />
+                            <OutTangent Value="0.0" />
+                        </SplinePoint>
+                        <SplinePoint>
+                            <Key Value="0.497" />
+                            <Value Value="0.503" />
+                            <InTangent Value="-0.143" />
+                            <OutTangent Value="0.0" />
+                        </SplinePoint>
+                        <SplinePoint>
+                            <Key Value="1.0" />
+                            <Value Value="0.5" />
+                            <InTangent Value="0.0" />
+                            <OutTangent Value="0.0" />
+                        </SplinePoint>
+                    </CraterShapeCurve>
+
+                    <AmplitudeHeightCurve>
+                        <SplinePoint>
+                            <Key Value="0.0" />
+                            <Value Value="1" />
+                            <InTangent Value="0.0" />
+                            <OutTangent Value="0.0" />
+                        </SplinePoint>
+                        <SplinePoint>
+                            <Key Value="0.204" />
+                            <Value Value="1.0" />
+                            <InTangent Value="0.0" />
+                            <OutTangent Value="0.0" />
+                        </SplinePoint>
+                        <SplinePoint>
+                            <Key Value="0.290" />
+                            <Value Value="0.0" />
+                            <InTangent Value="0.0" />
+                            <OutTangent Value="0.0" />
+                        </SplinePoint>
+                        <SplinePoint>
+                            <Key Value="1.0" />
+                            <Value Value="1.0" />
+                            <InTangent Value="0.0" />
+                            <OutTangent Value="0.0" />
+                        </SplinePoint>
+                    </AmplitudeHeightCurve>
+                </Modifier>
+
+                <Modifier Type="SimpleCraters" Name="TestSmallCraters2">
+                    <Frequency Value="5.7" />
+                    <Amplitude Value="61" />
+                    <Seed Value="1" />
+                    <Order Value="12" />
+
+                    <CraterRadiusScale Value="1" />
+                    <RadiusNoiseFrequency Value="7.0" />
+                    <RadiusNoiseAmplitude Value="0.15" />
+                    <RadiusNoisePersistence Value="0.34" />
+                    <RadiusNoiseOctaves Value="1" />
+
+                    <CraterSizeVariation Value="1.0" />
+
+                    <CraterShapeCurve>
+                        <SplinePoint>
+                            <Key Value="0.0" />
+                            <Value Value="0.171" />
+                            <InTangent Value="0.0" />
+                            <OutTangent Value="0.0" />
+                        </SplinePoint>
+                        <SplinePoint>
+                            <Key Value="0.186" />
+                            <Value Value="0.171" />
+                            <InTangent Value="0.0" />
+                            <OutTangent Value="0.0" />
+                        </SplinePoint>
+                        <SplinePoint>
+                            <Key Value="0.254" />
+                            <Value Value="0.281" />
+                            <InTangent Value="3.251" />
+                            <OutTangent Value="2.845" />
+                        </SplinePoint>
+                        <SplinePoint>
+                            <Key Value="0.366" />
+                            <Value Value="0.554" />
+                            <InTangent Value="0.149" />
+                            <OutTangent Value="0.0" />
+                        </SplinePoint>
+                        <SplinePoint>
+                            <Key Value="0.497" />
+                            <Value Value="0.503" />
+                            <InTangent Value="-0.143" />
+                            <OutTangent Value="0.0" />
+                        </SplinePoint>
+                        <SplinePoint>
+                            <Key Value="1.0" />
+                            <Value Value="0.5" />
+                            <InTangent Value="0.0" />
+                            <OutTangent Value="0.0" />
+                        </SplinePoint>
+                    </CraterShapeCurve>
+
+                    <AmplitudeHeightCurve>
+                        <SplinePoint>
+                            <Key Value="0.0" />
+                            <Value Value="1" />
+                            <InTangent Value="0.0" />
+                            <OutTangent Value="0.0" />
+                        </SplinePoint>
+                        <SplinePoint>
+                            <Key Value="0.204" />
+                            <Value Value="1.0" />
+                            <InTangent Value="0.0" />
+                            <OutTangent Value="0.0" />
+                        </SplinePoint>
+                        <SplinePoint>
+                            <Key Value="0.530" />
+                            <Value Value="0.0" />
+                            <InTangent Value="0.0" />
+                            <OutTangent Value="0.0" />
+                        </SplinePoint>
+                        <SplinePoint>
+                            <Key Value="1.0" />
+                            <Value Value="1.0" />
+                            <InTangent Value="0.0" />
+                            <OutTangent Value="0.0" />
+                        </SplinePoint>
+                    </AmplitudeHeightCurve>
+                </Modifier>
+
+                <Modifier Type="SimpleCratersEjecta" Name="EjectaCraters">
+                    <Frequency Value="4.2" />
+                    <Amplitude Value="75" />
+                    <Seed Value="1" />
+                    <Order Value="8" />
+
+                    <CraterRadiusScale Value="0.36" />
+                    <RadiusNoiseFrequency Value="5.25" />
+                    <RadiusNoiseAmplitude Value="0.18" />
+                    <RadiusNoisePersistence Value="0.34" />
+                    <RadiusNoiseOctaves Value="1" />
+
+                    <CraterSizeVariation Value="1.5" />
+
+                    <EjectaChance Value="0.02" />
+                    <RadialNoisePower Value="4.0" />
+                    <RadialNoiseFrequency Value="2.5" />
+
+                    <CraterShapeCurve>
+                        <SplinePoint>
+                            <Key Value="0.0" />
+                            <Value Value="0.171" />
+                            <InTangent Value="0.0" />
+                            <OutTangent Value="0.0" />
+                        </SplinePoint>
+                        <SplinePoint>
+                            <Key Value="0.186" />
+                            <Value Value="0.171" />
+                            <InTangent Value="0.0" />
+                            <OutTangent Value="0.0" />
+                        </SplinePoint>
+                        <SplinePoint>
+                            <Key Value="0.254" />
+                            <Value Value="0.281" />
+                            <InTangent Value="3.251" />
+                            <OutTangent Value="2.845" />
+                        </SplinePoint>
+                        <SplinePoint>
+                            <Key Value="0.366" />
+                            <Value Value="0.554" />
+                            <InTangent Value="0.149" />
+                            <OutTangent Value="0.0" />
+                        </SplinePoint>
+                        <SplinePoint>
+                            <Key Value="0.497" />
+                            <Value Value="0.503" />
+                            <InTangent Value="-0.143" />
+                            <OutTangent Value="0.0" />
+                        </SplinePoint>
+                        <SplinePoint>
+                            <Key Value="1.0" />
+                            <Value Value="0.5" />
+                            <InTangent Value="0.0" />
+                            <OutTangent Value="0.0" />
+                        </SplinePoint>
+                    </CraterShapeCurve>
+
+                    <AmplitudeHeightCurve>
+                        <SplinePoint>
+                            <Key Value="0.0" />
+                            <Value Value="0.6" />
+                            <InTangent Value="0.0" />
+                            <OutTangent Value="0.0" />
+                        </SplinePoint>
+                        <SplinePoint>
+                            <Key Value="0.323" />
+                            <Value Value="0.6" />
+                            <InTangent Value="0.0" />
+                            <OutTangent Value="0.0" />
+                        </SplinePoint>
+                        <SplinePoint>
+                            <Key Value="0.425" />
+                            <Value Value="0.35" />
+                            <InTangent Value="0.0" />
+                            <OutTangent Value="0.0" />
+                        </SplinePoint>
+                        <SplinePoint>
+                            <Key Value="1.0" />
+                            <Value Value="0.35" />
+                            <InTangent Value="0.0" />
+                            <OutTangent Value="0.0" />
+                        </SplinePoint>
+                    </AmplitudeHeightCurve>
+
+                    <RadialNoiseCurve>
+                        <SplinePoint>
+                            <Key Value="0.0" />
+                            <Value Value="0.0" />
+                            <InTangent Value="0.0" />
+                            <OutTangent Value="0.0" />
+                        </SplinePoint>
+                        <SplinePoint>
+                            <Key Value="0.053" />
+                            <Value Value="0.25" />
+                            <InTangent Value="0.0" />
+                            <OutTangent Value="0.0" />
+                        </SplinePoint>
+                        <SplinePoint>
+                            <Key Value="0.347" />
+                            <Value Value="0.0" />
+                            <InTangent Value="0.0" />
+                            <OutTangent Value="0.0" />
+                        </SplinePoint>
+                        <SplinePoint>
+                            <Key Value="1.0" />
+                            <Value Value="0.35" />
+                            <InTangent Value="0.0" />
+                            <OutTangent Value="0.0" />
+                        </SplinePoint>
+                    </RadialNoiseCurve>
+                </Modifier>
+
+                <Modifier Type="Erosion" Name="PanErosion">
+                    <Frequency Value="14.2" />
+                    <Amplitude Value="44" />
+                    <Lacunarity Value="2" />
+                    <GradientFalloff Value="0.158" />
+                    <Curvature Value="0.00035" />
+                    <Seed Value="1" />
+                    <Octaves Value="5" />
+                    <Order Value="1" />
+                    <GenerateColor Value="false" />
+
+                    <AmplitudeHeightCurve>
+                        <SplinePoint>
+                            <Key Value="0.0" />
+                            <Value Value="1" />
+                            <InTangent Value="0.0" />
+                            <OutTangent Value="0.0" />
+                        </SplinePoint>
+                        <SplinePoint>
+                            <Key Value="0.088" />
+                            <Value Value="1" />
+                            <InTangent Value="0.0" />
+                            <OutTangent Value="0.0" />
+                        </SplinePoint>
+                        <SplinePoint>
+                            <Key Value="0.354" />
+                            <Value Value="0.0" />
+                            <InTangent Value="0.0" />
+                            <OutTangent Value="0.0" />
+                        </SplinePoint>
+                        <SplinePoint>
+                            <Key Value="1.0" />
+                            <Value Value="0.0" />
+                            <InTangent Value="0.0" />
+                            <OutTangent Value="0.0" />
+                        </SplinePoint>
+                    </AmplitudeHeightCurve>
+                </Modifier>
+
+            </ProceduralModifiers>
+
+            <BiomeMaterials>
+                <!-- Define any properties such as biome blending strength here -->
+                <!-- Order matters! The order these appear corresponds to the ID in the ID map, starting from 0 -->
+
+                <BlendStrength Value="2.25" />
+                <DetailFadeInEnd Km="2" />
+                <DetailFadeInStart Km="100" />
+                <!-- Base terrain -->
+                <BiomeMaterial Biome="Surface">
+
+                    <SlopeBlendStrength Value="0.01" />
+                    <SlopeBlendContrast Value="1.0" />
+                    <SlopeBlendBias Value="0.00" />
+
+                    <GroundMaterial>
+                        <Diffuse Id="PanGroundDiffuse" Path="Textures/Planets/Pan/Ice/Ice_Albedo.dds" Category="Terrain"/>
+                        <Normal Id="PanGroundNormal" Path="Textures/Planets/Pan/Ice/Ice_Normal.dds" Category="Terrain"/>
+                        <AoRoughMetal Id="PanGroundAoRoughMetal" Path="Textures/Planets/Pan/Ice/Ice_AoRoughMetal.dds" Category="Terrain"/>
+                        <Displacement Id="PanGroundDisplacement" Path="Textures/Planets/Pan/Ice/Ice_Displacement.dds" Category="Terrain"/>
+
+                        <TextureTiling Value="0.04" />
+                        <HeightTiling Value="0.0000155" />
+
+                        <HeightDeformity Value="0.3" />
+
+                        <DiffuseScale Value="0.6" />
+                        <NormalScale Value="1.0" />
+                        <DisplacementScale Value="0.8" />
+
+                    </GroundMaterial>
+
+                    <SlopeMaterial>
+                        <Diffuse Id="LunaCliffsDiffuse" Path="Textures/Planets/Luna/Cliffs/Luna_Cliffs_Albedo.dds" Category="Terrain"/>
+                        <Normal Id="LunaCliffsNormal" Path="Textures/Planets/Luna/Cliffs/Luna_Cliffs_Normal.dds" Category="Terrain"/>
+                        <AoRoughMetal Id="LunaCliffsAoRoughMetal" Path="Textures/Planets/Luna/Cliffs/Luna_Cliffs_AoRoughMetal.dds" Category="Terrain"/>
+                        <Displacement Id="LunaCliffsDisplacement" Path="Textures/Planets/Luna/Cliffs/Luna_Cliffs_Displacement.dds" Category="Terrain"/>
+
+                        <TextureTiling Value="0.04" />
+                        <HeightTiling Value="0.0000155" />
+
+                        <HeightDeformity Value="0.3" />
+
+                        <DiffuseScale Value="1.0" />
+                        <NormalScale Value="1.0" />
+                        <DisplacementScale Value="1.0" />
+                    </SlopeMaterial>
+
+                    
+
+                <!-- more modifiers here -->
+
+                </BiomeMaterial>
+            </BiomeMaterials>
+        </Terrain>
     </PlanetaryBody>
     <PlanetaryBody Id="Mimas" Parent="Saturn">
         <Orbit>
@@ -2054,7 +3137,7 @@
 
         <MeanRadius Km="198.2" />
         <Mass Eg="374.9" />
-        <Diffuse Path="Textures/Mimas_Diffuse.jpg" Category="Terrain"/>
+        <Diffuse Path="Textures/Mimas_Diffuse.ktx2" Category="Terrain"/>
     </PlanetaryBody>
     <PlanetaryBody Id="Enceladus" Parent="Saturn">
         <Orbit>
@@ -2131,7 +3214,7 @@
         <MeshCollection Id="Default"/>
         <MeanRadius Km="2575.5" />
         <Mass Zg="13.4553" />
-        <Diffuse Path="Textures/Titan_Diffuse.dds" Category="Terrain"/>
+        <Diffuse Path="Textures/Titan_Diffuse.ktx2" Category="Terrain"/>
         <Atmosphere>
             <Visual>
                 <RayleighScattering>
@@ -2497,7 +3580,7 @@
         <MeshCollection Id="Default"/>
         <MeanRadius Km="25362" />
         <Mass Earths="14.54" />
-        <Diffuse Path="Textures/Uranus_Diffuse.jpg" Category="Terrain"/>
+        <Diffuse Path="Textures/Uranus_Diffuse.ktx2" Category="Terrain"/>
         <Color R="0.69" G="1.0" B="0.87" />
         <Atmosphere>
             <Visual>
@@ -2621,7 +3704,7 @@
         <MeshCollection Id="Default"/>
         <MeanRadius Km="24622" />
         <Mass Earths="17.15" />
-        <Diffuse Path="Textures/Neptune_Diffuse.jpg" Category="Terrain"/>
+        <Diffuse Path="Textures/Neptune_Diffuse.ktx2" Category="Terrain"/>
         <Color R="0.38" G="0.54" B="0.96" />
         <Atmosphere>
             <Visual>
@@ -2709,7 +3792,7 @@
 
         <MeanRadius Km="1163" />
         <Mass Zg="16.7" />
-        <Diffuse Path="Textures/Eris_Diffuse.jpg" Category="Terrain"/>
+        <Diffuse Path="Textures/Eris_Diffuse.ktx2" Category="Terrain"/>
     </MinorBody>
 
     <MinorBody Id="Haumea" Parent="Sol">
