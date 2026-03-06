@@ -67,8 +67,8 @@
         <MeshCollection Id="EarthScale"/>
 
         <Biomes>
-            <BiomeIDMap Path="Textures/Venus_Biome_ID.ktx2" Category="Terrain"/>
-            <BiomeControlMap Path="Textures/Venus_Biome_Control.ktx2" Category="Terrain"/>
+            <BiomeIDMap Id="Venus_Biome_ID" Path="Textures/Venus_Biome_ID.ktx2" Category="Terrain"/>
+            <BiomeControlMap Id="Venus_Biome_Control" Path="Textures/Venus_Biome_Control.ktx2" Category="Terrain"/>
 
             <Biome IdMapIndex="0" Alias="Surface" />
         </Biomes>
@@ -166,9 +166,9 @@
 
         <MeshCollection Id="Default"/>
         <MeanRadius Km="6051.8" />
-        <Diffuse Path="Textures/Venus_Diffuse.ktx2" Category="Terrain"/>
-        <Normal Path="Textures/Venus_Normal.ktx2" Category="Terrain"/>
-        <Height Path="Textures/Venus_Height.ktx2" Category="Terrain">
+        <Diffuse Id="Venus_Diffuse" Path="Textures/Venus_Diffuse.ktx2" Category="Terrain"/>
+        <Normal Id="Venus_Normal" Path="Textures/Venus_Normal.ktx2" Category="Terrain"/>
+        <Height Id="Venus_Height" Path="Textures/Venus_Height.ktx2" Category="Terrain">
             <Minimum Km="-3.751"/>
             <Maximum Km="11.0"/>
         </Height>
@@ -555,8 +555,8 @@
 
         <MeshCollection Id="MarsScale"/>
         <Diffuse Id="MarsDiffuse" Path="Textures/Mars_Diffuse.ktx2" Category="Terrain"/>
-        <Normal Path="Textures/Mars_Normal.ktx2" Category="Terrain"/>
-        <Height Path="Textures/Mars_Height.ktx2" Category="Terrain">
+        <Normal Id="Mars_Normal" Path="Textures/Mars_Normal.ktx2" Category="Terrain"/>
+        <Height Id="Mars_Height" Path="Textures/Mars_Height.ktx2" Category="Terrain">
             <Minimum Km="-8.200"/>
             <Maximum Km="21.229"/>
         </Height>
@@ -828,7 +828,7 @@
 
         <!-- For now, copy mars quick and dirty -->
         <GroundClutter>
-            <Ecotype Id="Rocks">
+            <Ecotype Name="Rocks">
                 <Placement Biomes="SandAndCliffs,SandOnly,VallesMarineris">
                     <ObjectSeparation M="25" /> 
                     <GenerationRange M="2250" />
@@ -984,7 +984,7 @@
                     </LODs>
                 </ClutterObject>
 
-                <!-- <UseTerrainMask Value="true" /> -->
+                <UseTerrainMask Value="true" />
                 <Material>
                     <Diffuse Id="MarsRockAtlasDiffuse" Path="Textures/Planets/Luna/GroundClutter/TestRocks_Diffuse.ktx2" Category="Terrain"/>
                     <Normal Id="LunaRockAtlasNormal" Path="Textures/Planets/Luna/GroundClutter/TestRocks_Normal.dds" Category="Terrain"/>
@@ -993,7 +993,7 @@
 
             </Ecotype>
 
-            <Ecotype Id="LargerRocks">
+            <Ecotype Name="LargerRocks">
                 <Placement Biomes="SandAndCliffs,SandOnly,VallesMarineris">
                     <ObjectSeparation M="130" /> 
                     <GenerationRange M="12000" />
@@ -1149,6 +1149,7 @@
                     </LODs>
                 </ClutterObject>
 
+                <UseTerrainMask Value="true" />
                 <Material>
                     <Diffuse Id="MarsRockAtlasDiffuse"/>
                     <Normal Id="LunaRockAtlasNormal"/>
@@ -1157,7 +1158,7 @@
 
             </Ecotype>
 
-            <Ecotype Id="SmallerRocks">
+            <Ecotype Name="SmallerRocks">
                 <Placement Biomes="SandAndCliffs,SandOnly,VallesMarineris">
                     <ObjectSeparation M="6.5" /> 
                     <GenerationRange M="350" />
@@ -1313,6 +1314,7 @@
                     </LODs>
                 </ClutterObject>
 
+                <UseTerrainMask Value="true" />
                 <Material>
                     <Diffuse Id="MarsRockAtlasDiffuse"/>
                     <Normal Id="LunaRockAtlasNormal"/>
@@ -1650,9 +1652,9 @@
         <Mass Pg="10.659" />
 
         <Color R="0.33" G="0.33" B="0.33" />
-        <Diffuse Path="Textures/Phobos_Diffuse.ktx2" Category="Terrain"/>
-        <Normal Path="Textures/Phobos_Normal.ktx2" Category="Terrain"/>
-        <Height Path="Textures/Phobos_Height.ktx2" Category="Terrain">
+        <Diffuse Id="Phobos_Diffuse" Path="Textures/Phobos_Diffuse.ktx2" Category="Terrain"/>
+        <Normal Id="Phobos_Normal" Path="Textures/Phobos_Normal.ktx2" Category="Terrain"/>
+        <Height Id="Phobos_Height" Path="Textures/Phobos_Height.ktx2" Category="Terrain">
             <Minimum Km="-2.970"/>
             <Maximum Km="3.000"/>
         </Height>
@@ -2460,8 +2462,8 @@
         </Rotation>
 
         <MeshCollection Id="Default"/>
-        <Diffuse Path="Textures/Io_Diffuse.ktx2" Category="Terrain"/>
-        <Height Path="Textures/Io_Height.jpg" Category="Terrain"/>
+        <Diffuse Id="Io_Diffuse" Path="Textures/Io_Diffuse.ktx2" Category="Terrain"/>
+        <Height Id="Io_Height" Path="Textures/Io_Height.jpg" Category="Terrain"/>
         <MeanRadius Km="1821.6" />
         <Mass Zg="89.32" />
     </PlanetaryBody>
@@ -2626,7 +2628,7 @@
         <MeshCollection Id="Default"/>
         <MeanRadius Km="58232" />
         <Mass Jupiters="0.299" />
-        <Diffuse Path="Textures/Saturn_Diffuse.ktx2" Category="Terrain"/>
+        <Diffuse Id="Saturn_Diffuse" Path="Textures/Saturn_Diffuse.ktx2" Category="Terrain"/>
         <Color R="1.0" G="0.82" B="0.57" />
         <Atmosphere>
             <Visual>
@@ -2656,20 +2658,35 @@
             <Inclination Degrees="0.0001" />
             <LongitudeOfAscendingNode Degrees="0.0" />
             <InnerRadius Km="69000" />
-            <OuterRadius Km="141100" />
-            <Thickness Km="1.0" />
-            <Texture Id="SaturnRings" Path="Textures/Planets/Saturn/Rings.png"/> <!-- this texture is 8192x1 and doesn't benefit from block compression -->
+            <OuterRadius Km="313900" />
+            <!-- These textures have a single row and don't benefit from block compression -->
+            <Texture Id="SaturnRings" Path="Textures/Planets/Saturn/Rings.png"/>
+            <!--
+                This texture controls various aspects of the ring.
+                R: If meshes should draw at this location
+                G: Thickness of the volumetric ring at this location, interpolates between
+                   min/max thickness, renderDistance and stepSize settings
+                B: Visibility of procedural noise detail overlaid on ring texture at this location (not implemented yet)
+                A: Unused
+            -->
+            <ControlTexture Id="SaturnRingsControl" Path="Textures/Planets/Saturn/RingsControlTexture.png"/>
+            <!-- Scale of the procedural noise-based bands to overlay on the ring texture -->
             <DetailScale Value="300.0" />
             <Volume>
-                <RenderDistance Km="1000" />
+                <!-- Final volumetric properties are an interpolation of these based on the control texture -->
+                <MinThickness Km="1.25" />
+                <MaxThickness Km="4000.0" />
+                <MinRenderDistance Km="1000.0" />
+                <MaxRenderDistance Km="100000.0" />
                 <Step Scale="0.006">
-                    <Size Km="0.1" />
-                    <MaxSize Km="100" />
+                    <MinSize Km="0.1" />
+                    <MaxSize Km="1000.0" />
                 </Step>
                 <FadeToMeshes Value="true"/>
             </Volume>
             <RingObjects Name="PlaceholderRock">
                 <Size M="10.0" />
+                <Thickness Km="1.0" />
                 <RenderDistance Km="20.0" />
                 <Density Value="3125" /> <!-- objects per km^3 -->
                 <LODs>
@@ -2711,9 +2728,9 @@
         <MeanRadius Km="13.7" />
         <Mass Pg="8.3" />
         <SphereOfInfluence Km="50" /> <!-- Wrong! Just here so we can collide with and land on it -->
-        <Diffuse Path="Textures/Pan_Diffuse.ktx2" Category="Terrain"/>
-        <Normal Path="Textures/Pan_Normal.ktx2" Category="Terrain"/>
-        <Height Path="Textures/Pan_Height.ktx2" Category="Terrain">
+        <Diffuse Id="Pan_Diffuse" Path="Textures/Pan_Diffuse.ktx2" Category="Terrain"/>
+        <Normal Id="Pan_Normal" Path="Textures/Pan_Normal.ktx2" Category="Terrain"/>
+        <Height Id="Pan_Height" Path="Textures/Pan_Height.ktx2" Category="Terrain">
             <Minimum Km="-3.336"/>
             <Maximum Km="6.27"/>
         </Height>
@@ -3137,7 +3154,7 @@
 
         <MeanRadius Km="198.2" />
         <Mass Eg="374.9" />
-        <Diffuse Path="Textures/Mimas_Diffuse.ktx2" Category="Terrain"/>
+        <Diffuse Id="Mimas_Diffuse" Path="Textures/Mimas_Diffuse.ktx2" Category="Terrain"/>
     </PlanetaryBody>
     <PlanetaryBody Id="Enceladus" Parent="Saturn">
         <Orbit>
@@ -3214,7 +3231,7 @@
         <MeshCollection Id="Default"/>
         <MeanRadius Km="2575.5" />
         <Mass Zg="13.4553" />
-        <Diffuse Path="Textures/Titan_Diffuse.ktx2" Category="Terrain"/>
+        <Diffuse Id="Titan_Diffuse" Path="Textures/Titan_Diffuse.ktx2" Category="Terrain"/>
         <Atmosphere>
             <Visual>
                 <RayleighScattering>
@@ -3580,7 +3597,7 @@
         <MeshCollection Id="Default"/>
         <MeanRadius Km="25362" />
         <Mass Earths="14.54" />
-        <Diffuse Path="Textures/Uranus_Diffuse.ktx2" Category="Terrain"/>
+        <Diffuse Id="Uranus_Diffuse" Path="Textures/Uranus_Diffuse.ktx2" Category="Terrain"/>
         <Color R="0.69" G="1.0" B="0.87" />
         <Atmosphere>
             <Visual>
@@ -3704,7 +3721,7 @@
         <MeshCollection Id="Default"/>
         <MeanRadius Km="24622" />
         <Mass Earths="17.15" />
-        <Diffuse Path="Textures/Neptune_Diffuse.ktx2" Category="Terrain"/>
+        <Diffuse Id="Neptune_Diffuse" Path="Textures/Neptune_Diffuse.ktx2" Category="Terrain"/>
         <Color R="0.38" G="0.54" B="0.96" />
         <Atmosphere>
             <Visual>
@@ -3792,7 +3809,7 @@
 
         <MeanRadius Km="1163" />
         <Mass Zg="16.7" />
-        <Diffuse Path="Textures/Eris_Diffuse.ktx2" Category="Terrain"/>
+        <Diffuse Id="Eris_Diffuse" Path="Textures/Eris_Diffuse.ktx2" Category="Terrain"/>
     </MinorBody>
 
     <MinorBody Id="Haumea" Parent="Sol">

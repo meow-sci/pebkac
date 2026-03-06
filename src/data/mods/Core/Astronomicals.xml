@@ -24,9 +24,9 @@
         </Rotation>
 
         <MeshCollection Id="EarthScale"/>
-        <Diffuse Path="Textures/Earth_Diffuse.ktx2" Category="Terrain"/>
-        <Normal Path="Textures/Earth_Normal.ktx2" Category="Terrain"/>
-        <Height Path="Textures/Earth_Height.ktx2" Category="Terrain">
+        <Diffuse Id="Earth_Diffuse" Path="Textures/Earth_Diffuse.ktx2" Category="Terrain"/>
+        <Normal Id="Earth_Normal" Path="Textures/Earth_Normal.ktx2" Category="Terrain"/>
+        <Height Id="Earth_Height" Path="Textures/Earth_Height.ktx2" Category="Terrain">
             <Minimum Km="-10.930"/>
             <Maximum Km="8.631"/>   <!-- Up from 8.627 to prevent launch sites from being slightly flooded -->
         </Height>
@@ -831,16 +831,16 @@
 
         <MeshCollection Id="Default"/>
         <Color R="0.33" G="0.33" B="0.33" /> <!-- used for the sprite and planetshine -->
-        <Diffuse Path="Textures/Luna_Diffuse.ktx2" Category="Terrain"/>
-        <Normal Path="Textures/Luna_Normal.ktx2" Category="Terrain"/>
-        <Height Path="Textures/Luna_Height.ktx2" Category="Terrain">
+        <Diffuse Id="Luna_Diffuse" Path="Textures/Luna_Diffuse.ktx2" Category="Terrain"/>
+        <Normal Id="Luna_Normal" Path="Textures/Luna_Normal.ktx2" Category="Terrain"/>
+        <Height Id="Luna_Height" Path="Textures/Luna_Height.ktx2" Category="Terrain">
             <Maximum Km="10.785"/>
             <Minimum Km="-9.129"/>
         </Height>
 
         <Biomes>
-            <BiomeIDMap Path="Textures/Luna_Biome_ID.ktx2" Category="Terrain"/>
-            <BiomeControlMap Path="Textures/Luna_Biome_Control.ktx2" Category="Terrain"/>
+            <BiomeIDMap Id="Luna_Biome_ID" Path="Textures/Luna_Biome_ID.ktx2" Category="Terrain"/>
+            <BiomeControlMap Id="Luna_Biome_Control" Path="Textures/Luna_Biome_Control.ktx2" Category="Terrain"/>
 
             <Biome IdMapIndex="0" Alias="Surface" />
             <Biome IdMapIndex="1" Alias="Craters" />
@@ -1517,7 +1517,7 @@
 
         <GroundClutter>
 
-            <Ecotype Id="Rocks">
+            <Ecotype Name="Rocks">
                 <Placement Biomes="Surface,Craters,Maria">
                     <ObjectSeparation M="25" /> 
                     <GenerationRange M="2250" />
@@ -1673,6 +1673,7 @@
                     </LODs>
                 </ClutterObject>
 
+                <UseTerrainMask Value="true" />
                 <Material>
                     <Diffuse Id="LunaRockAtlasDiffuse" Path="Textures/Planets/Luna/GroundClutter/TestRocks_Diffuse.ktx2" Category="Terrain"/>
                     <Normal Id="LunaRockAtlasNormal" Path="Textures/Planets/Luna/GroundClutter/TestRocks_Normal.dds" Category="Terrain"/>
@@ -1681,7 +1682,7 @@
 
             </Ecotype>
 
-            <Ecotype Id="LargerRocks">
+            <Ecotype Name="LargerRocks">
                 <Placement Biomes="Surface,Craters">
                     <ObjectSeparation M="130" /> 
                     <GenerationRange M="12000" />
@@ -1837,6 +1838,7 @@
                     </LODs>
                 </ClutterObject>
 
+                <UseTerrainMask Value="true" />
                 <Material>
                     <Diffuse Id="LunaRockAtlasDiffuse"/>
                     <Normal Id="LunaRockAtlasNormal"/>
@@ -1845,7 +1847,7 @@
 
             </Ecotype>
 
-            <Ecotype Id="SmallerRocks">
+            <Ecotype Name="SmallerRocks">
                 <Placement Biomes="Surface,Craters,Maria">
                     <ObjectSeparation M="6.5" /> 
                     <GenerationRange M="350" />
@@ -2001,6 +2003,7 @@
                     </LODs>
                 </ClutterObject>
 
+                <UseTerrainMask Value="true" />
                 <Material>
                     <Diffuse Id="LunaRockAtlasDiffuse"/>
                     <Normal Id="LunaRockAtlasNormal"/>
